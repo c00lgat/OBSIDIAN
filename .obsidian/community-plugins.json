@@ -1,10 +1,7 @@
 [
   "obsidian-git",
   "obsidian-admonition",
-  "obsidian-icon-folder",
   "code-emitter",
-  "obsidian-rtl",
-  "highlightr-plugin",
   "table-editor-obsidian",
-  "various-complements"
+  "highlightr-plugin"
 ]

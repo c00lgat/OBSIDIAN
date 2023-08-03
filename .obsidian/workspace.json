@@ -73,8 +73,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python playground.md",
-                "mode": "source",
+                "file": "Python.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python playground.md",
+                "file": "Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python playground.md",
+                "file": "Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python playground.md"
+                "file": "Python.md"
               }
             }
           },
@@ -231,8 +231,14 @@
   },
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
-    "Basic Command Syntax.md",
+    "Python Essentials 1.md",
+    "Python.md",
+    "Nat service restart windows.md",
+    "Markup Guide.md",
+    "Learning the vi and Vim Editors.md",
+    "AWS resources.md",
     "Python playground.md",
+    "Basic Command Syntax.md",
     "Untitled 1.md",
     "This is a test for Github.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
@@ -242,7 +248,6 @@
     "2023-07-20.md",
     "2023-07-18.md",
     "AWS AGENDA.md",
-    "AWS resources.md",
     "Bash.md",
     "Docker.md",
     "Fantasy Books.md",
@@ -257,16 +262,11 @@
     "IMAGES/Pasted image 20230803095145.png",
     "Downloading books.md",
     "Regex.md",
-    "Untitled.md",
     "IMAGES/Pasted image 20230801122841.png",
     "IMAGES/Pasted image 20230801100303.png",
     "IMAGES/Pasted image 20230801100101.png",
     "IMAGES/Pasted image 20230801093707.png",
     "IMAGES/Pasted image 20230801093639.png",
-    "GIT & Github.md",
-    "Extra curriculum.md",
-    "Microservices.md",
-    "Motivation.md",
     "Presentations",
     "AGILE",
     "Google Search",
