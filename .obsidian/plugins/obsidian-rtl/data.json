@@ -1,0 +1,10 @@
+{
+  "fileDirections": {
+    "Regex.md": "auto"
+  },
+  "defaultDirection": "ltr",
+  "rememberPerFile": true,
+  "setNoteTitleDirection": true,
+  "setYamlDirection": false,
+  "statusBar": true
+}

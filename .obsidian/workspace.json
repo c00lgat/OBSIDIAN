@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "a7c5641b1dfc85aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e92e538bed232b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5eaf0bd23f3fdd43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "40b47a94f7889593",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWK.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62169f099cff04a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1fc6fe3e444cf891",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Command Syntax.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c8693798e25d263f",
+    "type": "split",
+    "children": [
+      {
+        "id": "383e8324e85d7d79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04b98147acbe29e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c065c2bfb3e29145",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b6f297ea69e6e5e2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "8209416ba59bf8f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ea3e1cd4d4222b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d75c35855e0f8267",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Docker.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f92a624541083ed9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Docker.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8960271caad64de2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "722ad5ad11d0c168",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Docker.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d75c35855e0f8267",
+  "lastOpenFiles": [
+    "Fantasy Books.md",
+    "Hexadecimal Numbers.md",
+    "Important Links.md",
+    "Learning resources.md",
+    "Basic Command Syntax.md",
+    "IMAGES/Pasted image 20230803115633.png",
+    "SED.md",
+    "AWK.md",
+    "AWS AGENDA.md",
+    "IMAGES/Pasted image 20230803101514.png",
+    "IMAGES/Pasted image 20230803100716.png",
+    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+    "IMAGES/Pasted image 20230803095703.png",
+    "IMAGES/Pasted image 20230803095145.png",
+    "Bash.md",
+    "Downloading books.md",
+    "AppleSeeds MOODLE.md",
+    "2023-07-26.md",
+    "2023-07-20.md",
+    "Regex.md",
+    "Untitled.md",
+    "IMAGES/Pasted image 20230801122841.png",
+    "IMAGES/Pasted image 20230801100303.png",
+    "IMAGES/Pasted image 20230801100101.png",
+    "IMAGES/Pasted image 20230801093707.png",
+    "IMAGES/Pasted image 20230801093639.png",
+    "GIT & Github.md",
+    "Extra curriculum.md",
+    "Docker.md",
+    "AWS resources.md",
+    "2023-07-18.md",
+    "Microservices.md",
+    "Motivation.md",
+    "MySQL.md",
+    "Nat service restart windows.md",
+    "Presentations",
+    "AGILE",
+    "Google Search",
+    "Udemy Courses",
+    "IMAGES",
+    "Untitled.canvas"
+  ]
+}
