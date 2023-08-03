@@ -1,4 +1,7 @@
 [
   "obsidian-rtl",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-admonition",
+  "table-editor-obsidian",
+  "obsidian-icon-folder"
 ]
