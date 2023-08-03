@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker.md",
-                "mode": "preview",
+                "file": "AWK.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker.md",
+                "file": "AWK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker.md",
+                "file": "AWK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker.md"
+                "file": "AWK.md"
               }
             }
           }
@@ -170,7 +170,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,27 +183,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d75c35855e0f8267",
+  "active": "62169f099cff04a2",
   "lastOpenFiles": [
+    "AppleSeeds MOODLE.md",
+    "2023-07-26.md",
+    "2023-07-20.md",
+    "2023-07-18.md",
+    "AWS AGENDA.md",
+    "AWK.md",
+    "AWS resources.md",
+    "Bash.md",
+    "Basic Command Syntax.md",
+    "Docker.md",
     "Fantasy Books.md",
     "Hexadecimal Numbers.md",
     "Important Links.md",
     "Learning resources.md",
-    "Basic Command Syntax.md",
     "IMAGES/Pasted image 20230803115633.png",
     "SED.md",
-    "AWK.md",
-    "AWS AGENDA.md",
     "IMAGES/Pasted image 20230803101514.png",
     "IMAGES/Pasted image 20230803100716.png",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "IMAGES/Pasted image 20230803095703.png",
     "IMAGES/Pasted image 20230803095145.png",
-    "Bash.md",
     "Downloading books.md",
-    "AppleSeeds MOODLE.md",
-    "2023-07-26.md",
-    "2023-07-20.md",
     "Regex.md",
     "Untitled.md",
     "IMAGES/Pasted image 20230801122841.png",
@@ -212,9 +216,6 @@
     "IMAGES/Pasted image 20230801093639.png",
     "GIT & Github.md",
     "Extra curriculum.md",
-    "Docker.md",
-    "AWS resources.md",
-    "2023-07-18.md",
     "Microservices.md",
     "Motivation.md",
     "MySQL.md",
