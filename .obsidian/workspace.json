@@ -215,8 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,14 +230,14 @@
   },
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
-    "Python Essentials 1.md",
+    "Basic Command Syntax.md",
     "Python.md",
+    "Python Essentials 1.md",
     "Nat service restart windows.md",
     "Markup Guide.md",
     "Learning the vi and Vim Editors.md",
     "AWS resources.md",
     "Python playground.md",
-    "Basic Command Syntax.md",
     "Untitled 1.md",
     "This is a test for Github.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",

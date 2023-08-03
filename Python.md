@@ -1,12 +1,11 @@
+
 ```python
-print("hello!")
-int count;
-for(i = 0; i < 100; i++)
-{
- i = i + 10;
- count = i;
-}
+counter = 1
 
-print(count);
+for _ in range(100):
+    counter = counter * 2
+    
 
+print("The final value of counter is:", counter)
 ```
+
