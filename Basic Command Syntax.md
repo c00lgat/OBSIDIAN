@@ -1064,7 +1064,7 @@ output: nnnnn nnnnn nnnnn nnnnn
 Instead, we want to enter a new line. And instead of substituting the words that we want to count, we need to substitute the non alphanumerical spaces into new lines. 
 
 echo "Hello hello World world" | tr \[:upper:\] \[:lower\] | tr -c '\[:alnum\]' '\\n'
--c is the compliment.
+-c is the compliment. 
 
 ![[Pasted image 20230803095145.png]]
 
