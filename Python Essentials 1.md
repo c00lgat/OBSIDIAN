@@ -29,3 +29,6 @@ print("Hello, this is the first argument","this is the second argument","and thi
 - a `print()` function invoked with more than one argument **outputs them all on one line**.
 - the `print()` function **puts a space between the outputted arguments** on its own initiative.
 
+### Keyword Arguments
+The `print()` function has two keyword arguments that can be used. 
+First one is called `end`.
