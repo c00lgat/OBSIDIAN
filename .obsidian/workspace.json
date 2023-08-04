@@ -215,7 +215,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,15 +231,16 @@
   },
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
-    "AWK.md",
+    "Practical Vim Edit Text at the Speed of Thought.md",
     "Python.md",
-    "Basic Command Syntax.md",
     "Python Essentials 1.md",
+    "Python playground.md",
+    "AWK.md",
+    "Basic Command Syntax.md",
     "Nat service restart windows.md",
     "Markup Guide.md",
     "Learning the vi and Vim Editors.md",
     "AWS resources.md",
-    "Python playground.md",
     "Untitled 1.md",
     "This is a test for Github.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
@@ -260,7 +262,6 @@
     "IMAGES/Pasted image 20230803095703.png",
     "IMAGES/Pasted image 20230803095145.png",
     "Downloading books.md",
-    "Regex.md",
     "IMAGES/Pasted image 20230801122841.png",
     "IMAGES/Pasted image 20230801100303.png",
     "IMAGES/Pasted image 20230801100101.png",
