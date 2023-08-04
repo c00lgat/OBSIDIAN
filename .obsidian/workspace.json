@@ -73,8 +73,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python.md",
-                "mode": "preview",
+                "file": "AWK.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python.md",
+                "file": "AWK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python.md",
+                "file": "AWK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python.md"
+                "file": "AWK.md"
               }
             }
           },
@@ -230,8 +230,8 @@
   },
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
-    "Basic Command Syntax.md",
     "Python.md",
+    "Basic Command Syntax.md",
     "Python Essentials 1.md",
     "Nat service restart windows.md",
     "Markup Guide.md",
