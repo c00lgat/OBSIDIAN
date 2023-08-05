@@ -128,3 +128,16 @@ Strings need quote marks the same way floats need points.
 
 Sometimes, we need to encode a quote inside a string which is already delimited by quotes such as:
 `I like "Monty Python"`
+
+One solution for that is using a backward slash or also known as, an *escape character* as we mentioned above. So in such a case, we have to place a `\` before each `"` we want to print: 
+`print("I like \"Monty Python\"")`
+Which results in the following output:
+```python
+print("I like \"Monty Python\"")
+```
+
+Another solution is using an *apostrophe* (`'`). Either of these can be used but we have to be consisted with their usage.
+`print('I like "Monty Python"')`
+```python
+print('I like "Monty Python"')
+```
