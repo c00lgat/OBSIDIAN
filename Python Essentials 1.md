@@ -345,3 +345,22 @@ We can use the `str()` function to convert a number to a string.
 leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: ")) print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) ** .5))
 ```
+ ___
+ 
+ ## LAB 2.6.1.11
+ ```python
+hour = 0#int(input("Starting time (hours): "))
+mins = 1#int(input("Starting time (minutes): "))
+dura = 2939#int(input("Event duration (minutes): "))
+
+# Write your code here.
+amount_of_hours = ((dura + mins) // 60)
+hour = (hour + amount_of_hours) % 24
+
+amount_of_minutes = (dura + mins) % 60
+mins = amount_of_minutes
+print(mins)
+
+print(str(hour) + ":" + str(mins))
+```
+ 
