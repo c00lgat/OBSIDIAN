@@ -53,7 +53,7 @@ print("My name is", "Python.", end=" ")
 print("Monty Python.")
 ```
 
-### sep
+### `sep`
 The second keyword argument that can be used in the `print()` function is called `sep` which stands for *separator*.
 ```python
 print("My", "name", "is", "Monty", "Python.", sep="-")
@@ -141,3 +141,21 @@ Another solution is using an *apostrophe* (`'`). Either of these can be used but
 ```python
 print('I like "Monty Python"')
 ```
+
+Using an apostrophe in a string can be done in one of both ways. For example, if we wanted to print `I'm Monty Python.`, we can use the following syntax to achieve that:
+`print('I\'m Monty Python.')`
+Or
+`print("I'm Monty Python.")`
+
+> A string can be empty. An empty string still remains a string: 
+> ''
+> ""
+> Both of which are still considered a string.
+
+---
+## Boolean values
+
+Boolean values represent an abstract value of *truthfulness*.
+When we ask Python if a number is bigger than the other, Python will return a *Boolean* value.
+
+A Boolean value has only two distinct values: `True` and `False`. Also denoted as `1` and `0`.
