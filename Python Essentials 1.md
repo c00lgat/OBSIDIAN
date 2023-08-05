@@ -302,3 +302,27 @@ Can be simplified to:
 ## Key takeaways
 
 Python is *dynamically-typed* meaning there is no need to declare variables in it. We can simply assign variables using the `=` sign.
+
+Tip: If you'd like to quickly comment or uncomment multiple lines of code, select the line(s) you wish to modify and use the following keyboard shortcut: **CTRL** + **/** (Windows) or **CMD** + **/** (Mac OS).
+
+---
+## The `input()` function
+The `input()` function allows us to read data entered by the user and send the data to the running program.
+
+Here is a simple showcase of using the `input()` function:
+```python
+print("Tell me anything...")  
+anything = input()
+print("Hmm...", anything, "... Really?")
+```
+
+The same example can be reduced to the following, which has the same functionality:
+```python
+anything = input("Tell me anything...")
+print("Hmm...", anything, "...Really?")
+```
+
+<mark style="background: #FF5582A6;">Important Note: The result of the `input()` function is a string. </mark>
+A string containing all the characters the user enters from the keyboard. It is not an integer or a float.
+This means that **you mustn't use it as an argument of any arithmetic operation**, e.g., you can't use this data to square it, divide it by anything, or divide anything by it.
+
