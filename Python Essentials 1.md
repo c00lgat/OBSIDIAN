@@ -64,3 +64,20 @@ Python Standard Library:
 https://docs.python.org/3/library/functions.html
 
 ---
+## Integers
+
+>Integers are numbers that are devoid of fractions.
+
+>Floating-point are numbers that contain (or able to contain) the fractional part.
+
+These two kinds of number differ in how they are stored in a computer memory.
+
+Python allows us to write numbers in the two following ways: 
+1. 11111111 
+2. Or, we can use underscores: 11_111_111 (Only available in Python 3.6 and newer versions).
+
+### Octal and hexadecimal numbers
+If an integer number is preceded by **0O** or **0o** (zero-o), it will be treated as an octal value. Meaning, the number must contain digits from the \[0--7\] range only.
+
+For example:
+`0o123` is an octal number 
