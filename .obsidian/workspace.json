@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SED.md",
+                "file": "AWK.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SED.md",
+                "file": "AWK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SED.md",
+                "file": "AWK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SED.md"
+                "file": "AWK.md"
               }
             }
           },
@@ -158,11 +158,11 @@
   },
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
+    "SED.md",
+    "AWK.md",
     "Python Essentials 1.md",
     "Basic Command Syntax.md",
-    "SED.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
-    "AWK.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "Python.md",
     "Python playground.md",

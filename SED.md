@@ -104,3 +104,15 @@ After running the command, we get the following output:
 Great! We removed Feta. 
 So, we can use SED to remove something and not just to replace something.
 
+Well, why did `sed 's//etc//' paths.txt` not work?
+Since we are trying to remove a forward slash `/` while also using the forward slash `/` delimiter, its confusing the poor interpreter. 
+
+In this case then, we can use a different delimiter. 
+So, we can change the command to the following:
+`sed 's./etc..' paths.txt`
+upon pressing enter, we can see that the `etc/` part of the text has been removed!
+
+Since the period `.` is the character that is directly following the `s` argument, the SED command understands that we are using the period `.` as the delimiter.
+
+SED can also be used to change words and replace them in real time:
+`echo "hello" | sed 's/hello/goodbye/'` will return `goodbye`.
