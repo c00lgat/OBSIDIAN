@@ -326,3 +326,18 @@ print("Hmm...", anything, "...Really?")
 A string containing all the characters the user enters from the keyboard. It is not an integer or a float.
 This means that **you mustn't use it as an argument of any arithmetic operation**, e.g., you can't use this data to square it, divide it by anything, or divide anything by it.
 
+---
+## Type casting
+Python introduces two solutions to the `input()` string problem which are `int()` and `float()`.
+
+Both  `int()` and `float()` take a string and try to convert it to an integer and a float respectively. 
+If the casting is failed, the program will be terminated.
+
+```python
+anything = float(input("Enter a number: "))
+something = anything ** 2.0
+print(anything, "to the power of 2 is", something)
+```
+---
+## String operators
+
