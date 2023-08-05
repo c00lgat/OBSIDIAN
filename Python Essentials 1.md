@@ -1,6 +1,5 @@
 https://realpython.com/
 [[Important Links]]
-https://realpython.com/learning-paths/python3-introduction/
 file:///C:/Users/Anan/Downloads/Learn%20Python%20the%20right%20way.pdf
 https://pymbook.readthedocs.io/en/latest/
 https://www.guru99.com/python-tutorials.html
@@ -343,7 +342,10 @@ print(anything, "to the power of 2 is", something)
 We can use the `str()` function to convert a number to a string.
 ```python
 leg_a = float(input("Input first leg length: "))
-leg_b = float(input("Input second leg length: ")) print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) ** .5))
+
+leg_b = float(input("Input second leg length: "))
+
+print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) **.5))
 ```
  ___
  
@@ -364,9 +366,3 @@ print(mins)
 print(str(hour) + ":" + str(mins))
 ```
 
-11%4
-
-x=3
-
-x = 3 % 4 
-x = 
