@@ -270,5 +270,31 @@ We can declare as many variables as we need.
 ```python
 var = 1
 account_balance = 1000.0
-client_name = ''
+client_name = 'John Doe'
+
+print(var, account_balance, client_name)
 ```
+
+Variables can also be used alongside strings in the `print()` function:
+```python
+var = "3.8.5"
+print("Python version: " + var)
+```
+
+### Shortcut operators
+
+The following calculations can be shortened:
+```python
+x = x * 2
+sheep = sheep + 1
+```
+Shortened version:
+```python
+x *= 2
+sheep += 1
+```
+
+In other words, <mark style="background: #FFF3A3A6;">variable</mark> = <mark style="background: #FFF3A3A6;">variable</mark> <mark style="background: #FF5582A6;">op</mark> <mark style="background: #BBFABBA6;">expression</mark>
+Can be simplified to:
+<mark style="background: #FFF3A3A6;">variable</mark> <mark style="background: #FF5582A6;">op</mark>= <mark style="background: #BBFABBA6;">expression</mark>
+
