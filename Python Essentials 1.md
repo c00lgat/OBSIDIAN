@@ -189,4 +189,4 @@ A `//` (double slash) is an *integer divisional* operator. Differs from the stan
 - The result does not have the fractional part. Its absent for integers and is always equal to zero in floats. Meaning, the results are always rounded.
 An integer by integer division gives an *integer result*. All other cases produce floats (with a rounded zero after the decimal point).
 Rounding always does toward the lesser integer value. For example:
-`-6 // 4` would give us `-2`.
+`-6 // 4` would give us `-2` instead of `-1.5` s
