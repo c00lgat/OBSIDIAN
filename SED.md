@@ -62,3 +62,10 @@ After changing it to a period `.` it is also still fine!
 
 Our hardworking researchers that are harnessing the power of SED and trying to understand it have announced that we are able to use any character as the delimiter. Good job guys.
 
+Well then. Why not keep using the forward slash `/` as the delimiter? 
+What if the character that we want to replace *is* a forward slash `/`?
+
+What we can do in this case, we can just use another delimiter! Basically, a forward slash `/` will work pretty much in every other case, other than the case where we want to replace a forward slash.
+
+Here is an example where using a forward slash `/` will cause chaos and unwanted results. Our hard working researchers hate chaos and unwanted results, very much like any other kind of researcher basically. Except for rocket science researchers maybe. They love explosions.
+
