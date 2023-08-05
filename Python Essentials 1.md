@@ -159,3 +159,7 @@ Boolean values represent an abstract value of *truthfulness*.
 When we ask Python if a number is bigger than the other, Python will return a *Boolean* value.
 
 A Boolean value has only two distinct values: `True` and `False`. Also denoted as `1` and `0`.
+
+When we want to use Boolean values in Python, we have to be strict about the denotations: we cannot change anything, including case sensitivity. 
+`True` and `False` values should be strictly used the same way they were just typed.
+
