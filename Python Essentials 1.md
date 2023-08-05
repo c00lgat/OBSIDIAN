@@ -258,4 +258,17 @@ Talks about good variable, function and class naming.
 
 ### Creating variables
 Variables can be used to store any value of any of the already presented kinds, and many more.
-\
+
+For example:
+```python
+var = 1
+print(var)
+```
+
+### Using variables
+We can declare as many variables as we need.
+```python
+var = 1
+account_balance = 1000.0
+client_name = ''
+```
