@@ -177,6 +177,15 @@ For example, in classical mathematics, 2 to the power of 3 is usually written as
 <mark style="background: #FF5582A6;">Note</mark>: when *both* arguments are integers, the result is an integer too.
 When at least one argument is a float, the result will be float as well.
 
+>Exponentiation operator uses right-sided binding.
+
+```python
+print(2 ** 2 ** 3)
+```
+Usually, when performing calculations using operators in Python, we start from left to right. 
+But, the order is a little different in exponentiation. 
+In the example above, the way we calculate the result is the following:
+`2**3` ->`8`; `2**8` -> `256`. As we can see, exponentiation operator uses **right-sided binding**.
 ### Multiplication
 An `*` (asterisk) sign is a *multiplication* operator.
 
@@ -216,4 +225,15 @@ If we do the same calculation as the one above:
 - `12-9.0` gives us `3.0`
 
 <mark style="background: #FF5582A6;">Note: Division by 0 does not work.</mark>
+
+## Addition
+Works as expected.
+
+## Subtraction
+Also works as intended. 
+One important thing to note though, is that the subtraction operator can be used in a unary way. Example:
+```python
+print(-1.1)
+```
+The minus sign can change the sign of a number.
 
