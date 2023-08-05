@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "SED.md",
                 "mode": "source",
                 "source": false
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "SED.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "SED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "SED.md"
               }
             }
           },
@@ -232,10 +232,10 @@
   },
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
+    "Python Essentials 1.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "Python.md",
-    "Python Essentials 1.md",
     "Python playground.md",
     "AWK.md",
     "Basic Command Syntax.md",
