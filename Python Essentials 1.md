@@ -29,11 +29,34 @@ print("Hello, this is the first argument","this is the second argument","and thi
 - a `print()` function invoked with more than one argument **outputs them all on one line**.
 - the `print()` function **puts a space between the outputted arguments** on its own initiative.
 
-###  Print() Keyword Arguments
+### Print() Keyword Arguments
 The `print()` function has two keyword arguments that can be used. 
 First one is called `end`.
 
 A keyword argument consists of three things:
 A keyword identifying the argument `end` in this case, an equal sign `=` and a value assigned to that argument.
 Keyword arguments are usually put at the end.
+
+### `end`
+```python
+print("My name is", "Python.", end=" ")
+print("Monty Python.")
+```
+The `end` keyword arguments determines what characters the print function will end with. 
+
+The default setting for an `end` argument is `end="\n"` which is reflected with `print()`'s behavior with how it automatically skips to a new line each time its invoked.
+
+>If the `end` argument is set to nothing, then the `print()` function will not skip to a new line upon invocation as seen below:
+
+```python
+print("My name is", "Python.", end=" ")
+print("Monty Python.")
+```
+
+### sep
+The second keyword argument that can be used in the `print()` function is called `sep` which stands for *separator*.
+```python
+print("My", "name", "is", "Monty", "Python.", sep="-")
+```
+The argument for the `sep` keyword argument can be empty as well. Doing so will not print and spaces between the words and it will come out as one word. 
 
