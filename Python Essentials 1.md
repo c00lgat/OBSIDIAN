@@ -339,5 +339,9 @@ something = anything ** 2.0
 print(anything, "to the power of 2 is", something)
 ```
 ---
-## String operators
-
+## String to number type conversion
+We can use the `str()` function to convert a number to a string.
+```python
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: ")) print("Hypotenuse length is " + ==str((leg_a**2 + leg_b**2) ** .5))==
+```
