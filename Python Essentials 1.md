@@ -179,4 +179,12 @@ When at least one argument is a float, the result will be float as well.
 
 ### Multiplication
 An `*` (asterisk) sign is a *multiplication* operator.
-Examples
+
+### Division
+A `/` (slash) sign is a *divisional* operator.
+**The result produced by the division operator is always a float.**
+
+### Integer Division
+A `//` (double slash) is an *integer divisional* operator. Differs from the standard `/` in one main way:
+- The result does not have the fractional part. Its absent for integers and is always equal to zero in floats. Meaning, the results are always rounded.
+An integer by integer division gives an *integer result*. All other cases produce floats (with a rounded zero after the decimal point).
