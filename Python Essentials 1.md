@@ -237,3 +237,12 @@ print(-1.1)
 ```
 The minus sign can change the sign of a number.
 
+## List of priorities
+
+| Priority | Operator                                                                                           |       |
+| -------- | -------------------------------------------------------------------------------------------------- | ----- |
+| 1        | `**`                                                                                               |       |
+| 2        | `+`,`-` (note: unary operators located next to the right of the power operator bind more strongly) | unary |
+| 3        | `*`, `/`, `//`, `%`                                                                                  |       |
+| 4        | `+`, `-`                                                                                                   | binary      |
+
