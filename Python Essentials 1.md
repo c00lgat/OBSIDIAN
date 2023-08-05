@@ -80,4 +80,36 @@ Python allows us to write numbers in the two following ways:
 If an integer number is preceded by **0O** or **0o** (zero-o), it will be treated as an octal value. Meaning, the number must contain digits from the \[0--7\] range only.
 
 For example:
-`0o123` is an octal number 
+`0o123` is an <mark style="background: #FFF3A3A6;">octal</mark> number. The `print()` function is able to translate octal to decimal automatically:
+```python
+print(0o123)
+```
+As we can see, an octal number `0o123` has a decimal value of 83.
+
+#### Hexadecimal numbers
+The other convention allows to use hexadecimal numbers. 
+Hexadecimal numbers should be preceded by the prefix `0x` or `0X` (zero-x).
+
+`0x123` is a hexadecimal with a decimal value of 291.
+```python
+print(0x123)
+```
+
+---
+## Floats
+The other type is called <mark style="background: #FFF3A3A6;">floats</mark>. Represent the numbers that have a *non-empty decimal fraction*.
+They are numbers that have (or may have) fractional part after the decimal point.
+
+Floating-point number examples:
+- 2.5
+- -0.4
+Python allows us to write the number `0.4` as `.4`.
+The value `4.0` can be written as `4.`.
+
+---
+When we want to write large numbers, Python allows us to write them as the following: 
+```python
+print(3E8)
+```
+The letter `E`, (or `e`, both will work) comes from the word exponent. Which means *times ten to the power of*.
+`3 x 10^8` is equal to `3E8
