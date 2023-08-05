@@ -43,3 +43,20 @@ https://www.cs.unibo.it/~renzo/doc/awk/nawkA4.pdf
 
 ---
 https://www.youtube.com/watch?v=oPEnvuj9QrI
+How does AWK work?
+We can use awk to create filters to write scrips to accept data from standard input, change it someway and then send it back through standard output in this changed form.
+
+Usually, the standard input is a text file and the standard output is typically our screen.
+
+The text file that we will be working with is called `tmnt.txt` which contains the following text:
+`leonardo blue leader`
+`raphael red hothead`
+`michelangelo orange party-animal`
+`donatello purple geek`
+
+We have their names, bandana color and their personality. 
+
+By default, awk sees spaces as delimiters for fields. If awk assumes that each space is the delimiter for each field then, we can conclude that field number one is their names, field number two is their bandana color and field number three is their personality/role.
+
+`awk 'command' file.txt`
+
