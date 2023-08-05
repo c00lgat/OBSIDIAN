@@ -69,3 +69,38 @@ What we can do in this case, we can just use another delimiter! Basically, a for
 
 Here is an example where using a forward slash `/` will cause chaos and unwanted results. Our hard working researchers hate chaos and unwanted results, very much like any other kind of researcher basically. Except for rocket science researchers maybe. They love explosions.
 
+For example, we fetched a list of all rows under `/etc` after running the following command:
+`find /etc -type f`
+and we got the following results:
+
+`/etc/snmp/snmp.conf`
+`/etc/magic.mime`
+`/etc/machine-id`
+`/etc/console-setup/compose.KOI8-R.inc`
+`/etc/console-setup/compose.ISO-8859-16.inc`
+`/etc/console-setup/compose.KOI8-U.inc`
+`/etc/console-setup/compose.ISO-8859-3.inc`
+`/etc/console-setup/cached_UTF-8_del.kmap.gz`
+`/etc/console-setup/compose.ARMSCII-8.inc`
+`/etc/console-setup/compose.ISO-8859-2.inc`
+
+And we wanted to save that list of paths into a file. 
+But instead of the full path, we just want to save what is after `/etc`
+How do we write a statement that includes a forward slash `/`?
+
+Running the command `sed 's//etc//'` will return an error and will not word at all.
+We are not really able to use the forward slash `/` as the delimiter in this case.
+
+`sed 's/Feta/Olives/' toppings.txt`
+This command that we ran earlier, it replaced the Feta topping with the Olives topping. But what if we did not want to replace it with anything and just wanted to remove it instead?
+For that, we can run the following command:
+`sed 's/Feta//' toppings.txt`
+After running the command, we get the following output:
+`Pizza topping combos:`
+`1. Spinach, Pepperoni,` 
+`2. Pepperoni, , Mushrooms`
+`3. Bacon, Banana Peppers, `
+`4. Cheese, `
+Great! We removed Feta. 
+So, we can use SED to remove something and not just to replace something.
+
