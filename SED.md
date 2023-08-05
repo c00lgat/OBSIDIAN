@@ -36,4 +36,29 @@ Or, we could just modify our command a bit and we can override our file!
 `sed -i 's/Pineapple/Feta/' toppings.txt`
 After running the command, we do not get an output this time around. But after running `cat toppings.txt`, we can see that the content of the file was indeed modified and pineapple is no longer on the menu, instead we have Feta cheese.
 
-The `
+The `-i` option lets everything to be done in place instead of simply printing it on the screen and not really changing the content of the file.
+
+Now, the pizza place owner changed his mind again. He wants to change the newly introduced Feta cheese topping to something else. So indecisive. But luckily, we have the power of SED on our side. The owner wants olives instead, so we give him the following command:
+`sed 's/Feta/Olives/' toppings.txt`
+The command prints the following on our console:
+`Pizza topping combos:`
+`1. Spinach, Pepperoni, Olives`
+`2. Pepperoni, Olives, Mushrooms`
+`3. Bacon, Banana Peppers, Olives`
+`4. Cheese, Olives`
+
+Now, upon further research and discovery of the true powers of SED, we have noticed that the slashes, are in fact, the delimiter. 
+`sed` `'s`<mark style="background: #FF5582A6;">/</mark>`Feta`<mark style="background: #FF5582A6;">/</mark>`Olives`<mark style="background: #FF5582A6;">/</mark>`'` `toppings.txt`
+Or, more precisely, the character that follows the `s` is the delimiter. 
+
+So, what happens if we change every occurrence of slash to a space? 
+`sed 's Feta Olives ' toppings.txt`
+... Nothing. It still works. Interesting
+
+Well! What about replacing the slash with a pipe then? 
+`sed 's|Feta|Olives|' toppings.txt`
+And once again, nothing. Its fine. We get the same output.
+After changing it to a period `.` it is also still fine!
+
+Our hardworking researchers that are harnessing the power of SED and trying to understand it have announced that we are able to use any character as the delimiter. Good job guys.
+
