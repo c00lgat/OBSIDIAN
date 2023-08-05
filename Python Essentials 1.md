@@ -107,9 +107,24 @@ Python allows us to write the number `0.4` as `.4`.
 The value `4.0` can be written as `4.`.
 
 ---
+#### Big exponential numbers
 When we want to write large numbers, Python allows us to write them as the following: 
 ```python
 print(3E8)
 ```
 The letter `E`, (or `e`, both will work) comes from the word exponent. Which means *times ten to the power of*.
-`3 x 10^8` is equal to `3E8
+`3 x 10^8` is equal to `3E8`.
+
+---
+#### Small exponential numbers
+Python will always choose the more economical form of the number's presentation. Run the code below and check the result that you get:
+```python
+print(0.0000000000000000000001)
+```
+
+---
+## Strings
+Strings need quote marks the same way floats need points.
+
+Sometimes, we need to encode a quote inside a string which is already delimited by quotes such as:
+`I like "Monty Python"`
