@@ -8,66 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5eaf0bd23f3fdd43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40b47a94f7889593",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWK.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "62169f099cff04a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWK.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6fb447a16094a1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Command Syntax.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "05e6a18530a1d10d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Command Syntax.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6a9433a94f3f821b",
             "type": "leaf",
             "state": {
@@ -78,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1fc6fe3e444cf891",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Command Syntax.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -233,12 +159,13 @@
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
     "Python Essentials 1.md",
+    "Basic Command Syntax.md",
+    "SED.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+    "AWK.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "Python.md",
     "Python playground.md",
-    "AWK.md",
-    "Basic Command Syntax.md",
     "Nat service restart windows.md",
     "Markup Guide.md",
     "Learning the vi and Vim Editors.md",
@@ -257,7 +184,6 @@
     "Important Links.md",
     "Learning resources.md",
     "IMAGES/Pasted image 20230803115633.png",
-    "SED.md",
     "IMAGES/Pasted image 20230803101514.png",
     "IMAGES/Pasted image 20230803100716.png",
     "IMAGES/Pasted image 20230803095703.png",
