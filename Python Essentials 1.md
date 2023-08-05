@@ -247,3 +247,11 @@ The minus sign can change the sign of a number.
 | 4        | `+`, `-`                                                                                                   | binary      |
 
 ---
+## Variables
+
+https://peps.python.org/pep-0008/#naming-conventions
+Talks about good variable, function and class naming. 
+
+- variable names should be lowercase, with words separated by underscores to improve readability (e.g., `var`, `my_variable`)
+- function names follow the same convention as variable names (e.g., `fun`, `my_function`)
+- it's also possible to use mixed case (e.g., `myVariable`), but only in contexts where that's already the prevailing style, to retain backwards compatibility with the adopted convention.
