@@ -60,3 +60,7 @@ print("My", "name", "is", "Monty", "Python.", sep="-")
 ```
 The argument for the `sep` keyword argument can be empty as well. Doing so will not print and spaces between the words and it will come out as one word. 
 
+Python Standard Library:
+https://docs.python.org/3/library/functions.html
+
+---
