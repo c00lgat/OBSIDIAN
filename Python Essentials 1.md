@@ -298,3 +298,7 @@ In other words, <mark style="background: #FFF3A3A6;">variable</mark> = <mark sty
 Can be simplified to:
 <mark style="background: #FFF3A3A6;">variable</mark> <mark style="background: #FF5582A6;">op</mark>= <mark style="background: #BBFABBA6;">expression</mark>
 
+---
+## Key takeaways
+
+Python is *dynamically-typed* meaning there is no need to declare variables in it. We can simply assign variables using the `=` sign.
