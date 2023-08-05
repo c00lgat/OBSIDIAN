@@ -187,6 +187,33 @@ A `/` (slash) sign is a *divisional* operator.
 ### Integer Division
 A `//` (double slash) is an *integer divisional* operator. Differs from the standard `/` in one main way:
 - The result does not have the fractional part. Its absent for integers and is always equal to zero in floats. Meaning, the results are always rounded.
-An integer by integer division gives an *integer result*. All other cases produce floats (with a rounded zero after the decimal point).
-Rounding always does toward the lesser integer value. For example:
-`-6 // 4` would give us `-2` instead of `-1.5` s
+- An integer by integer division gives an *integer result*. All other cases produce floats (with a rounded zero after the decimal point).
+- Rounding always does toward the lesser integer value. For example: `-6 // 4` would give us `-2` instead of `-1.5` because of the rounding.
+
+>Integer division can also be called floor division.
+
+
+## Modulo
+Its graphical representation in Python is `%` (percent) sign.
+The result of the operator is a <mark style="background: #BBFABBA6;">remainder left after the integer division</mark>.
+
+Examples: 
+```python
+print(14 % 4)
+```
+As we can see, the result is two and this is why:
+- `14//4` gives `3` --> *this is the integer quotient*
+- `3*4` gives `12` --> *as a result of quotient and divisor multiplication*
+- `14-12` gives `2` --> *this is the remainder*
+
+```python
+print(12 % 4.5)
+```
+Gives us `3.0` and not `3`.
+If we do the same calculation as the one above:
+- `12//4.5` gives us `2.0`
+- `2*4.5` gives us `9.0`
+- `12-9.0` gives us `3.0`
+
+<mark style="background: #FF5582A6;">Note: Division by 0 does not work.</mark>
+
