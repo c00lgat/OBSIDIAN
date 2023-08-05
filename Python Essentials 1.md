@@ -170,8 +170,13 @@ Some of the supported operators in Python are:
 `+`, `-`, `*`, `/`, `//`, `%`, `**`
 
 ### Exponentiation
-A `**` (double asterisk) is an exponentiation (power) operator. The left argument is the base and the right argument is the exponent.
+A `**` (double asterisk) is an *exponentiation* (power) operator. The left argument is the base and the right argument is the exponent.
 
 For example, in classical mathematics, 2 to the power of 3 is usually written as `2^3`. But in Python, we would write that as `2**3`.
 
-Note: when *both* ar
+<mark style="background: #FF5582A6;">Note</mark>: when *both* arguments are integers, the result is an integer too.
+When at least one argument is a float, the result will be float as well.
+
+### Multiplication
+An `*` (asterisk) sign is a *multiplication* operator.
+Examples
