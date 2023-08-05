@@ -163,3 +163,15 @@ A Boolean value has only two distinct values: `True` and `False`. Also denoted a
 When we want to use Boolean values in Python, we have to be strict about the denotations: we cannot change anything, including case sensitivity. 
 `True` and `False` values should be strictly used the same way they were just typed.
 
+---
+## Basic operators
+An operator is a symbol of the programming language, which is able to operate on the values.
+Some of the supported operators in Python are:
+`+`, `-`, `*`, `/`, `//`, `%`, `**`
+
+### Exponentiation
+A `**` (double asterisk) is an exponentiation (power) operator. The left argument is the base and the right argument is the exponent.
+
+For example, in classical mathematics, 2 to the power of 3 is usually written as `2^3`. But in Python, we would write that as `2**3`.
+
+Note: when *both* ar
