@@ -1276,6 +1276,8 @@ To view all environment variables:
 To view ONE environment variable:
 `echo $SHELL`
 
+`echo $USERNAME` will echo your username.
+
 To set the environment variables:
 `export TEST=1`
 `echo $TEST`
