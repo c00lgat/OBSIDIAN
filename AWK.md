@@ -58,5 +58,44 @@ We have their names, bandana color and their personality.
 
 By default, awk sees spaces as delimiters for fields. If awk assumes that each space is the delimiter for each field then, we can conclude that field number one is their names, field number two is their bandana color and field number three is their personality/role.
 
-`awk 'command' file.txt`
+Syntax: `awk 'command' file.txt`
+
+`awk '{print} tmnt.txt'
+When the command print is given to awk, it basically prints the file, very much the same as the command `cat tmnt.txt`
+Essentially does the same thing.
+
+But in reality, awk is much more useful than that.
+
+This time, we are going to use awk to show a specific field:
+`awk '{print $1} tmnt.txt'
+
+What this does, is that it tells awk to print the first field only.
+After running the command, we get the following output:
+`leonardo`
+`raphael`
+`michelangelo`
+`donatello`
+Which is their names.
+
+And then `awk '{print $2} tmnt.txt'` and `awk '{print $3} tmnt.txt'` will give us the second and third field respectively.
+
+It lets us to selectively print a specific field.
+
+Technically, the `{print $3}` is a script in itself. awk is a scripting language itself. 
+
+`awk '{print $0}' tmnt.txt` will print the entire file.
+
+We can tell awk to print more than one field:
+`awk '{print $1,$3} tmnt.txt'
+It prints the first and the third field.
+
+Even though we typically use awk with a file, we can use it in other instances:
+`ls -l | awk '{print $1}'
+This output is completely useless. It only tells us the permissions without knowing which permissions belong to which file.
+
+To make the command a bit more useful, we can use the following command:
+`ls -l | awk {print $1,$NF}`
+
+
+
 
