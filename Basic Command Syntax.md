@@ -1360,7 +1360,19 @@ Can be used when we want a shorter version of a long command that is used daily.
 
 `alias ls="ls -al"`
 `alias pl="pwd; ls"`
+`alias tell="whoami; hostname"`
+`alias dir="ls -l | grep ^d"`
 
-```python
-print("hello")
-```
+---
+## Creating User or Global Aliases
+
+- User = Applies only to a specific user profile
+- Global = Applies to everyone who has account on the system
+
+User = `/home/user/.bashrc`
+Global = `/etc/bashrc`
+
+---
+## Shell History
+
+Every comm
