@@ -1335,3 +1335,13 @@ become user and create dir inside of \/allineone: mkdir imrandir
 give all rwx perms to the dir: chmod 777 imrandir
 create 3 files in that dir: touch a b c
 Logging as another user and trying to delete the imrandir directory will result in deleting it.
+
+Now, becoming root and assigning sticky bit permission to \/allinone dir: `chmod +t /allinone`
+
+Become user and create a dir inside of \/allinone
+Give all rwx perms to that dir
+Create 3 files in that dir: touch a b c
+Become another user again and try to delete that dir
+We wont be able to delete the directory.
+
+---
