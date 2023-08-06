@@ -1353,3 +1353,4 @@ We wont be able to delete the directory.
 
 ---
 ## Alias
+`alias 'lsd'='ls -l -a'
