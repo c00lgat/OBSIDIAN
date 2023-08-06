@@ -1306,6 +1306,34 @@ Like crontab, lets you schedule jobs but only once.
 When the command is run it will enter interactive mode and you can get out by pressing `CTRL+D`
 
 Usage:
+- `at HH:MM PM` = Schedule a job
+- `atq` = list the at entries
+- `artm #` = remove an entry
+- `atd` = at daemon/service that
+- `systemctl status atd` = to manage the atd service.
+
+Creating an at entry by scheduling a task:
+`at 4:45PM`, *PRESS ENTER* `echo "this is my first entry" > at-entry` *CTRL+D*
+
+
+Other future scheduling format:
+`at 2:45 AM 101621` = schedule a job to run on Oct 16th, 2021 at 2:24am
+`at 4PM + 4 days` = schedule a job at 4pm four days from now
+`at now +5 hours` = schedule a job to run five hours from now
+`at 8:00 AM Sun` = schedule a job to 8am on coming Sunday
+`at 10:00 AM next month` = schedule a job to 10am next month
+
+---
+## Additional Cron Jobs
+
+- By default there are 4 different types of cronjobs
+	- Hourly
+	- Daily
+	- Weekly
+	- Monthly
+- All the above crons are setup in `/etc/cron.___(directory)`
+- The timing for each are set in `/etc/anacrontab --` except hourly
+- For hourly `/etc/cron.d/0hour
 
 
 ---
