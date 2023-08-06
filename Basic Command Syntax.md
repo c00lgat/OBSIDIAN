@@ -1421,11 +1421,15 @@ Become root (`su -`)
 `BOOTPROTO=____` change from dhcp to static
 
 - Network commands
-	- ping
-	- ifconfig
-	- ifup or ifdown
-	- netstat
-	- tcpdump
+	- `ping`
+	- `ifconfig`
+	- `ifup` or `ifdown`
+	- `netstat`
+	- `tcpdump` - traces every single transaction that is leaving your machine and coming into our machine
+
+---
+## NIC
+Network Interface 
 
 
 
