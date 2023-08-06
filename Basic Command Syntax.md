@@ -1700,5 +1700,7 @@ Default FTP Port = 21
 A server has to be running a listening service to receive the protocol, we have to make sure its running `ftpd` (FTP daemon), it will run on the 21 port by default.
 
 
+---
+## rsync - Remote Synchronization
 
- 
+ ![[Pasted image 20230806231826.png]]
