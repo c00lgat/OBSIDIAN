@@ -1298,6 +1298,15 @@ Lets us schedule a job or a process to run at a specific time.
 `crontab -e`
 `schedule`
 
+MINUTE HOUR DAY OF THE MONTH(* FOR EVERY DAY) 10(OCTOBER) \*(EVERYDAY OF THE WEEK) and then the command we want to run. we can output it to a file crontab-entry
+
+---
+## `at` command
+Like crontab, lets you schedule jobs but only once.
+When the command is run it will enter interactive mode and you can get out by pressing `CTRL+D`
+
+Usage:
+
 
 ---
 ## Process management
