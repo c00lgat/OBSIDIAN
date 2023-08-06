@@ -1130,6 +1130,15 @@ usermod -aG wheel anan
 adds user anan to the wheel group that has all permissions to run all commands
 
 ---
+## Monitor Users
+- `who` - how many people are logged in, user ID, terminal ID and how long have they been logged in.
+- `last` - every user that has log i
+- `w`
+- `finger`
+- `id.`
+
+
+---
 ## Process management
 Background =Ctrl + z, runs in the bg
 Foreground = fg 
