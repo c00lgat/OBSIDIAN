@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -159,11 +158,12 @@
   },
   "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
+    "AWK.md",
+    "Extra curriculum.md",
     "Basic Command Syntax.md",
     "Python Essentials 1.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
-    "AWK.md",
     "SED.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "Python.md",
@@ -184,7 +184,6 @@
     "Fantasy Books.md",
     "Hexadecimal Numbers.md",
     "Important Links.md",
-    "Learning resources.md",
     "IMAGES/Pasted image 20230803115633.png",
     "IMAGES/Pasted image 20230803101514.png",
     "IMAGES/Pasted image 20230803100716.png",

@@ -74,3 +74,7 @@ https://blackwells.co.uk/bookshop/product/The-Book-of-Five-Rings-by-Musashi-Miya
 
 http://www.vulnweb.com/
 WIRESHARK
+
+
+https://ctftime.org/
+https://www.hackthebox.com/
