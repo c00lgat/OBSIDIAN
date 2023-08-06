@@ -1221,5 +1221,40 @@ Key combos have special effect on the terminal.
 
 - `CTRL + c` stop/kill a command. Force stop.
 - `CTRL + z` stop/kills a command, politely
-- `CTRL + u`  erase eveything you;ve typed on the command line
-- `CTRL + d` excist from an interactive program (signals end of data)
+- `CTRL + u`  erase everything you've typed on the command line
+- `CTRL + d` exits from an interactive program (signals end of data)
+---
+## Terminal commands
+
+- `clear` - clears the screen
+- `exit` exit out of the shell, terminal or a user session
+- `script` stores terminal activities in a log file.
+  Records everything we do in our session.
+  `script logfile-activity.log` creates a log file that will store all terminal activity. All commands and all output is recorded. `exit` command will stop it from recording any further. The terminal will display a message that the logging has stopped.
+---
+## Recover Root Password
+
+- Restart the computer
+- Edit the grub file
+- Change password
+- reboot
+
+We can force reset using our VM. Select the right boot, and then press `E`, and then edit the grub file.
+delete `ro`
+
+>If on centos or redhat, simply go to the last of the line and write `rd.break`
+
+Change the `ro` to `rw` and then add `init=/sysroot/bin/sh`
+`ctrl+x`
+`chroot /sysroot`
+`passwd root`
+`exit`
+`reboot`
+
+Before exiting, update SELinux info by running `touch /.autorelabel`
+
+---
+## SOS Report
+
+Redhat created SOS as a command, collects and packages diagnostic and support data. 
+`sos-version` gives us the SOS version
