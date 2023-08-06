@@ -1207,3 +1207,19 @@ ___
 
 ---
 ## System Architecture
+Two types:
+- 32 bits
+- 64 bits
+
+Main difference is the number of calculations per second they can perform.
+There is backward compatibility, 32 bit apps can run on 64 bit computers but not the other way around.
+
+- `arch` - displays the CPU architecture of your machine.
+---
+## Terminal control keys
+Key combos have special effect on the terminal.
+
+- `CTRL + c` stop/kill a command. Force stop.
+- `CTRL + z` stop/kills a command, politely
+- `CTRL + u`  erase eveything you;ve typed on the command line
+- `CTRL + d` excist from an interactive program (signals end of data)
