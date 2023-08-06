@@ -1314,12 +1314,24 @@ sticky bit is a bit set on files/directories that allows only the owner or root 
 	  chmod u-s xyz.sh
 	  chmod g-s xyz.sh
 
-To find all executables in Linux with `setuid` and `setgid`
-find / -perm /6000 -type f
+<mark style="background: #FF5582A6;">To find all executables in Linux with `setuid` and `setgid`
+find / -perm /6000 -type f</mark>
+
+Note: Only works on .exe files (files that are written in C or CPP)(?)
+
+>Note: 2000/4000/6000 are incomplete permissions, so you should replace 000 with the appropriate permissions, e.g. 4755.
 
 https://www.sobyte.net/post/2022-04/linux-suid/
 
 `Sticky bit`
 - It is assigned to the last bit of permission
-  \-r w x  r w x  r w t
-  
+  \-r w x  r w x  r w <mark style="background: #FFB86CA6;">t</mark>
+  The highlighted bit is the sticky bit, Why?
+  If we have a t, it means that although the user has read write permissions, he cannot delete the file.
+
+become root and create dir mkdir \/allinone
+assign all rwx to the dir chmod 777 \/allinone
+become user and create dir inside of \/allineone: mkdir imrandir
+give all rwx perms to the dir: chmod 777 imrandir
+create 3 files in that dir: touch a b c
+Logging as another user and trying to delete the imrandir directory will result in deleting it.
