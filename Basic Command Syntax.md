@@ -1671,6 +1671,13 @@ After restarting and running `ifconfig`, we should be able to see two network in
 
 `wget "insertlink"`
 
-If a certain app does not exist in the default repository 
+If a certain app does not exist in the default repository, we can just use a download link through the browser and then use the `wget` command to download the installation package.
 
+---
 
+## curl and ping Commands
+
+`curl http://website.com/filename` brings the content of the page/file. Most likely html source code etc.
+`curl -O http://website.com/filename`
+
+`ping www.google.com`
