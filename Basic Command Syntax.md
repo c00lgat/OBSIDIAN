@@ -1697,6 +1697,8 @@ Protocol = Set of rules used by computers to communicate.
 
 Default FTP Port = 21
 
-A server has to be running a listening service to receive the protocol, we have to make sure its running FTP daemon
+A server has to be running a listening service to receive the protocol, we have to make sure its running `ftpd` (FTP daemon), it will run on the 21 port by default.
+
+
 
  
