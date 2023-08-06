@@ -1180,13 +1180,43 @@ LDAP is a protocol that is used for any OS, to authenticate a directory.
 ## System Utility Commands
 
 - `date` - tells the date, time and year. Can be used in a script.
-- `uptime` - tells us how long the system has been up for, load average
-- `hostname`
-- `uname`
-- `which`
-- `cal`
-- `bc`
+- `uptime` - tells us how long the system has been up for, load average etc:
+  ![[Pasted image 20230806200028.png]]
+- `hostname` - tells us the hostname. Running it is recommended each time we log into a system.
+- `uname` - `uname -a` gives us information about the system, what its running etc.
+- `which` - `which pwd` looks for the commands shows us where its located in the system
+- `cal` - short for calendar. gives us a calendar. `cal 9 1977` will show us september 1977
+- `bc` - opens a calculator in the terminal
+---
+## Processes and Jobs
+- Application = Service
+- Script
+- Process - When we run an application, it runs a process. Could be a single process, could be multiple processes.
+- Daemon - keeps running in the background and keeps listening to incoming or outgoing traffic.
+- Threads 
+- Job - Created by a scheduler
 
+### Process/Services Commands
+- systemctl
+- ps - shows us what processes are running in the system
+- top - shows processes in the system showing based on the load, showing memory and cpu usage
+- kill - stops processes 
+- crontab - schedules processes or applications 
+- at. - one time basis, same as crontab
+---
+## `systemctl` command
+
+It is used to start an application.
+Is a tool to control system services. Replaced the old command `service`.
+
+Example:
+- `systemctl start|stop|status servicename.service (firewalld)`
+- `systemctl enable servicename.service`
+- `systemctl restart|reload servicename.service`
+- `systemctl list-units --all`
+- 
+
+  
 ---
 ## Process management
 Background =Ctrl + z, runs in the bg
