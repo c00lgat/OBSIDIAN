@@ -1240,6 +1240,39 @@ TIME = amount of CPU in minutes and seconds that the process has been running
 CMD = name of the command
 
 - `ps -e` = shows all running processes
+- `ps aux` = shows all running processes in BSD format
+- `ps -ef` = shows all running processes in full format listing
+- `ps -u username` = shows all processes by username
+
+---
+## `top` Command
+
+- top is used to show the Linux processes and it provides a real-time view of the running system
+- This command shows the summary information of the system and the list of processes or threads which are currently managed by the Linux Kernel
+- When the top command is executed then it foes into interactive mode and you can exit by hitting `q`
+![[Pasted image 20230806202354.png]]
+Zombie process is a process whose parent process is dead and is still running in the background. The child process becomes a zombie process.
+
+- `top -u user` - shows tasks/processes by user
+- `top + c` - shows commands absolute path
+- `top + k` - after pressing k, we are prompted to enter a process ID.
+- `top + M and P` - to sort all Linux running processes by memory usage
+
+> top command refreshes every 3 seconds.
+
+---
+## `kill` Command
+
+Used to terminate processes manually
+Sends a signal which ultimately terminates or kills a particular process or group of processes.
+
+`kill [OPTION] [PID]`
+OPTION = Signal name or signal number/ID
+PID = process ID
+
+`kill -l` = to get a list of all signal names or signal number
+
+`kill PID` = kill a process with 
 
 
   
