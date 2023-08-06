@@ -1157,12 +1157,35 @@ If a user joined the company and we have to make an account for the user for eve
 Types of accounts:
 - Local accounts
 - Domain/Directory accounts
+ ![[Pasted image 20230806195024.png]]
+
 ![[Pasted image 20230806194938.png]]
 Windows = Microsoft Active Directory
 
+LDAP is a protocol that is used for any OS, to authenticate a directory.
 
+---
+## Difference between Active Directory, LDAP, IDM, WinBIND, OpenLDAP etc.
 
+- Active Directory = Windows
+- IDM = Identity Manager. Created by RedHat. 
+- WinBIND = Used in Linux to communicate with Windows (Samba). Allows Windows users to connect to Linux machines using WinBIND.
+- OpenLDAP (open source)  
+  LDAP is a directory service
+- IBM Directory Server. Proprietary product.
+- JumpCloud 
+- LDAP = Lightweight Directory Access Protocol
 
+---
+## System Utility Commands
+
+- `date` - tells the date, time and year. Can be used in a script.
+- `uptime` - tells us how long the system has been up for, load average
+- `hostname`
+- `uname`
+- `which`
+- `cal`
+- `bc`
 
 ---
 ## Process management
