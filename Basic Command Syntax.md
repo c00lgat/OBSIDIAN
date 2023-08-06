@@ -1375,4 +1375,28 @@ Global = `/etc/bashrc`
 ---
 ## Shell History
 
-Every comm
+Every command that we run in the terminal is recorded in the command history.
+
+`history` gives us a comprehensive list of all commands that have been run in the terminal. 
+Records since we have logged into the system.
+
+
+If we want to run command 406 from `history` as example, we can run the following command: `!406`
+
+The history of the shell commands are saved in `/home/user/.bash_history`
+
+To view other users history of shell commands:
+Become root (`su -`)
+`cat /home/user/.bash_history`
+
+---
+
+
+
+
+
+
+
+
+
+
