@@ -1415,6 +1415,18 @@ Become root (`su -`)
 	- /etc/sysconfig/network-scripts
 	- /etc/resolv.conf
 
+`enp0s3` is our name of the interface
+
+`cd /etc/sysconfig/network-scripts`
+`BOOTPROTO=____` change from dhcp to static
+
+- Network commands
+	- ping
+	- ifconfig
+	- ifup or ifdown
+	- netstat
+	- tcpdump
+
 
 
 
