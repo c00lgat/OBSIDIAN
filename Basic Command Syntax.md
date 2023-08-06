@@ -1294,8 +1294,9 @@ Lets us schedule a job or a process to run at a specific time.
 `systemctl status crond` = to manage the crond service
 ![[Pasted image 20230806203742.png]]
 
+
 `crontab -e`
-`schedule,
+`schedule`
 
 
 ---
