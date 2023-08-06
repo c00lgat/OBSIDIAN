@@ -1163,11 +1163,33 @@ This gives the sleep command a priority of 5.
 ---
 ## Log Monitoring
 Log Directory = /var/log - Directory that stores all the logs
-
+ll -more /var/log 
+We get a comprehensive list of all logs
+more boot log - gives us all boot logs, errors and or checks
+rebooting will generate a new boot file
 - boot - booting up logs
-- chronyd = NTP -
-- cron
-- maillog
-- secure
-- messages
-- httpd
+- chronyd = NTP - 
+- cron - daemon to execute scheduled commands.
+- maillog - all information about our emails
+- secure - records all logging in and log out information. 
+- messages - every time there is an issue with our machine, we usually go to the messages log. Has all kinds of information, app information, processes information, system information etc.
+  What is going on with our system, what failed and when it failed.
+- httpd 
+
+---
+## System Maintenance Commands
+
+- `shutdown` - `shutdown -H` is the same as `halt`
+- `init 0-6`
+- `reboot` - reboots our computer, shuts it down and then powers it back on.
+- `halt` - shuts down right away. As if we are pressing a long press on the physical system to shut it down. Doesn't care about the processes running. Force shuts.
+
+---
+## Changing system Hostname
+In case our machine is being used to something else, decommissioned or just used for another purpose and now we want to change the hostname. 
+
+- `hostnamectl` - First, have to become root. /etc/hostname is the file that stores our hostname details.
+  `hostnamectl set-hostname nychost1`
+  running the command will change the /etc/hostname file and now your hostname has been changed. 
+- Version
+- Version
