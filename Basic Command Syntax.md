@@ -1399,8 +1399,21 @@ Become root (`su -`)
 ![[Pasted image 20230806153633.png]]
 ![[Pasted image 20230806153850.png]]
 
+- Gateway
+- Static vs. DHCP
+- Interface
+- Interface MAC
+---
+## Network Files and Commands
 
-
+- Interface Detection
+- Assigning an IP address
+- Interface configuration files
+	- /etc/nsswitch.conf
+	- /etc/hosts
+	- /etc/sysconfig/network
+	- /etc/sysconfig/network-scripts
+	- /etc/resolv.conf
 
 
 
