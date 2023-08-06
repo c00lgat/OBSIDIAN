@@ -1688,4 +1688,15 @@ To download something from the internet using the `curl` command:
 `curl -O link_goes_here`
 Where does it download it? Usually downloads it in whichever directory we are currently at.
 
-`ping -t 3`
+---
+## FTP - File Transfer Protocol
+
+FTP is a standard network protocol used fort the transfer of computer files between a client and a server on a computer network.
+
+Protocol = Set of rules used by computers to communicate. 
+
+Default FTP Port = 21
+
+A server has to be running a listening service to receive the protocol, we have to make sure its running FTP daemon
+
+ 
