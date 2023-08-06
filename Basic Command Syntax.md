@@ -1333,7 +1333,7 @@ Other future scheduling format:
 	- Monthly
 - All the above crons are setup in `/etc/cron.___(directory)`
 - The timing for each are set in `/etc/anacrontab --` except hourly
-- For hourly `/etc/cron.d/0hour
+- For hourly `/etc/cron.d/0hourly.`
 
 
 ---
