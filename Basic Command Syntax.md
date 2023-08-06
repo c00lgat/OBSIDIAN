@@ -1677,7 +1677,15 @@ If a certain app does not exist in the default repository, we can just use a dow
 
 ## curl and ping Commands
 
-`curl http://website.com/filename` brings the content of the page/file. Most likely html source code etc.
+`curl http://website.com/filename` brings the content of the page/file. Most likely html source code etc. If it returns something, it means that the website is up which is good.
 `curl -O http://website.com/filename`
 
 `ping www.google.com`
+
+`nslookup`
+
+To download something from the internet using the `curl` command:
+`curl -O link_goes_here`
+Where does it download it? Usually downloads it in whichever directory we are currently at.
+
+`ping -t 3`
