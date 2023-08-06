@@ -1211,10 +1211,36 @@ Is a tool to control system services. Replaced the old command `service`.
 
 Example:
 - `systemctl start|stop|status servicename.service (firewalld)`
+  `systemctl status firewalld.service` - Checks if the service is running and is enabled or not.
+  `systemctl stop firewalld.service` 
+  `systemctl disable firewalld` - disables at boot time.
 - `systemctl enable servicename.service`
 - `systemctl restart|reload servicename.service`
-- `systemctl list-units --all`
-- 
+- `systemctl list-units --all` - gives us all services that are running and ones that are inactive.
+  ![[Pasted image 20230806201254.png]]
+  
+### To add a service under systemctl management:
+Create a unit file in /etc/systemd/system/servicename.service
+
+Can also be used to power off, halt and reboot our machine:
+`systemctl poweroff`
+`systemctl halt`
+`systemctl reboot`
+
+----
+## `ps` Command
+
+`ps` command stands for process status and it displays all the currently running processes in the Linux system
+
+ps = shows the processes of the current shell
+
+PID = the unique process ID
+TTY = terminal type that the user logged-in to
+TIME = amount of CPU in minutes and seconds that the process has been running
+CMD = name of the command
+
+- `ps -e` = shows all running processes
+
 
   
 ---
