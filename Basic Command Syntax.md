@@ -1464,6 +1464,6 @@ After restarting and running `ifconfig`, we should be able to see two network in
 
 `wget "insertlink"`
 
-
+If a certain app does not exist in the default repository 
 
 
