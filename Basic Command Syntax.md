@@ -1314,8 +1314,10 @@ sticky bit is a bit set on files/directories that allows only the owner or root 
 	  chmod u-s xyz.sh
 	  chmod g-s xyz.sh
 
-To find all exercutables in Linux with setuid and setgid
+To find all executables in Linux with `setuid` and `setgid`
 find / -perm /6000 -type f
+
+https://www.sobyte.net/post/2022-04/linux-suid/
 
 `Sticky bit`
 - It is assigned to the last bit of permission
