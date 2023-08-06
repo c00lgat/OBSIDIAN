@@ -1451,8 +1451,19 @@ We can also aggregate ports for a higher bandwidth. Link aggregation.
 
 ### NIC Bonding Procedure
 
-- modprobe bonding
-- modinfo bonding
+- `modprobe bonding`
+- `modinfo bonding`
 - Create /etc/sysconfig/network-scripts/ifcfg-bond0
+- Edit /etc/sysconfig/network-scripts/eth0
+- Edit /etc/sysconfig/network-scripts/eth1
+
+After restarting and running `ifconfig`, we should be able to see two network interfaces.
+
+---
+## Download Files or Apps
+
+`wget "insertlink"`
+
+
 
 
