@@ -1270,12 +1270,34 @@ Sends a signal which ultimately terminates or kills a particular process or grou
 OPTION = Signal name or signal number/ID
 PID = process ID
 
-`kill -l` = to get a list of all signal names or signal number
+`kill -l` = to get a list of all signal names or signal number. Signals tell the kill command what to do.
 
-`kill PID` = kill a process with 
+`kill PID` = kill a process with default signal
+`kill -1` = Restart process
+`kill -2` = interrupt from the keyboard just like `CTRL + C`
+`kill -9` = forcefully kill a process
+`kill -15` = kill a process gracefully
+
+`killall` - kills the process and all related processes
+`pkill` - kills process by process name and not by process ID
+
+---
+## `crontab` Command
+
+`crontab` is used to schedule tasks
+Lets us schedule a job or a process to run at a specific time.
+
+`crontab -e` = edit the crontab
+`crontab -l` = list the crontab entries
+`crontab -r` = remove the crontab
+`crond` = crontab daemon/service that manages scheduling
+`systemctl status crond` = to manage the crond service
+![[Pasted image 20230806203742.png]]
+
+`crontab -e`
+`schedule,
 
 
-  
 ---
 ## Process management
 Background =Ctrl + z, runs in the bg
