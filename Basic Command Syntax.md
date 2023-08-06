@@ -1422,15 +1422,37 @@ Become root (`su -`)
 
 - Network commands
 	- `ping`
-	- `ifconfig`
+	- `ifconfig` - 
 	- `ifup` or `ifdown`
 	- `netstat`
 	- `tcpdump` - traces every single transaction that is leaving your machine and coming into our machine
 
 ---
 ## NIC
-Network Interface 
+Network Interface Card
+
+lo = loopback device, special interface that the machine uses to communicate with itself. Used for diagnostics and troubleshooting and to connect to servers running on the local machine.
+
+virb0 = "Virtual Bridge 0" used for NAT (Network Address Translation). Virtual environments sometimes use it to connect to outside networks.
+
+`ethtool virb0` - will tell us that device is connected
+
+`ethtool ens33` to check if its a duplex connection, connection speeds etc.
 
 
+---
+## NIC Bonding
+NIC = Network Interface Card (PC or Laptop)
+
+NIC Bonding, also known as Network bonding. Can be defined as the aggregation or combination of multiple NIC into a single bond interface. It's main purpose is to provide high availability and redundancy.
+
+![[Pasted image 20230806161819.png]]
+We can also aggregate ports for a higher bandwidth. Link aggregation.
+
+### NIC Bonding Procedure
+
+- modprobe bonding
+- modinfo bonding
+- Create /etc/sysconfig/network-scripts/ifcfg-bond0
 
 
