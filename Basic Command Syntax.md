@@ -1299,6 +1299,9 @@ To set global environment permanently. Meaning, setting the environment variable
 
 >`echo $HOME` will return our home directory
 
+https://bash.cyberciti.biz/guide/Unset
+The `unset` command unsets variables in our current session. Can remove both functions and shell variables.
+
 ---
 ## Special Permissions with `setuid`, `setgid` and `sticky bit`
 
@@ -1349,3 +1352,4 @@ We wont be able to delete the directory.
 <mark style="background: #FF5582A6;">When we see a capital letter T as the sticky bit then it means that the others do not have an execute permission.</mark>
 
 ---
+## Alias
