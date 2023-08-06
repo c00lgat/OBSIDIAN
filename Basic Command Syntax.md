@@ -1144,5 +1144,30 @@ List process = ps
 Every time we run a process, it attaches itself to that terminal. Closing the terminal will stop the process.
 There is a workaround that lets us run commands with no regards to whether the terminal is running or has been terminated: we use `nohup`.
 
-nice -n (set priority)
-nice 
+`nice -n (set priority)`
+`nice -n 5 sleep 10`
+This gives the sleep command a priority of 5.
+
+---
+## System Monitoring
+
+- top - lists all processes running, similar to task manager on windows.
+- df - report file system space usage. `df -h` makes the output more human readable. 
+- du - estimate file space usage 
+- dmesg - Show
+- iostat - input output statistics
+- netstat - prints network connection, all things internet connectivity
+- free - displays the amount of free and used memory in the system
+- cat \/proc/cpuinfo - proc stores info about the system cpu
+- cat \/proc/meminfo - shows us information about the system memory
+---
+## Log Monitoring
+Log Directory = /var/log - Directory that stores all the logs
+
+- boot - booting up logs
+- chronyd = NTP -
+- cron
+- maillog
+- secure
+- messages
+- httpd
