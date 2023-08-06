@@ -1355,3 +1355,6 @@ We wont be able to delete the directory.
 ## Alias
 `alias 'lsd'='ls -l -a'
 `unalias ''
+
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.finedininglovers.com%2Farticle%2Ftypes-of-olives-characteristics&psig=AOvVaw3VJ8qV-YcH6CNBV8vrj4kP&ust=1691401830835000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNisoP7gx4ADFQAAAAAdAAAAABAE
