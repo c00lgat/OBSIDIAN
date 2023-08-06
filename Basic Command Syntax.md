@@ -1187,9 +1187,20 @@ rebooting will generate a new boot file
 ---
 ## Changing system Hostname
 In case our machine is being used to something else, decommissioned or just used for another purpose and now we want to change the hostname. 
-
+`hostname` - displays the hostname.
 - `hostnamectl` - First, have to become root. /etc/hostname is the file that stores our hostname details.
   `hostnamectl set-hostname nychost1`
-  running the command will change the /etc/hostname file and now your hostname has been changed. 
+  Running the command will change the /etc/hostname file and now your hostname has been changed. 
+  We have to restart the machine in order to see the changes in our terminal.
+  Alternatively, we can directly change the contents of /etc/hostname 
+  Reboot, and then get the new hostname
 - Version
 - Version
+
+___
+## Finding System Information
+
+- `cat /etc/redhat-release` - a file that tells us what Linux we are running
+- `uname -a` - tells us date and time, hostname, Linux kernel and all kinds of information about the machine
+- `dmidecode` - `dmidecode | more` to see information one page at a time. Tells us information about the machine such as the manufacturer, hardware information and more. 
+- `hostname` - tells us what hostname we using
