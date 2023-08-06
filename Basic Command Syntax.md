@@ -1391,8 +1391,13 @@ Become root (`su -`)
 
 ---
 
+## Network Components
 
+- IP = Internet protocol
+- Subnet mask
 
+![[Pasted image 20230806153633.png]]
+![[Pasted image 20230806153850.png]]
 
 
 
