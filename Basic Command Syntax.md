@@ -1258,3 +1258,41 @@ Before exiting, update SELinux info by running `touch /.autorelabel`
 
 Redhat created SOS as a command, collects and packages diagnostic and support data. 
 `sos-version` gives us the SOS version
+
+`sudo apt-get install sosreport`
+
+`sos-report`
+Will automatically collect the data, package it and save it in a tar file. Once completed, the terminal will ask us to share the package file.
+
+---
+## Environment variables
+
+Dynamic-named value that can affect the way running processes will behave on a computer. 
+In simple words: set of defined rules and values to build an environment.
+
+To view all environment variables:
+- `printevn` OR `env`
+
+To view ONE environment variable:
+`echo $SHELL`
+
+To set the environment variables:
+`export TEST=1`
+`echo $TEST`
+
+To set environment variable permanently
+It is recommended to backup our .bashrc file in case of a failure or unwanted behavior:
+`cp .bashrc bashrc.orig`
+
+`vi .bashrc`
+`TEST='123'`
+`export TEST`
+
+To set global environment permanently. Meaning, setting 
+`vi /etc/profile`
+`TEST='123'`
+`export TEST`
+
+>`echo $MAIL` will return the mail directory where the mail is defined
+
+>`echo $HOME` will return our home directory
