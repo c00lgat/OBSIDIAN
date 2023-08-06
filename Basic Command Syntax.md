@@ -1288,11 +1288,36 @@ It is recommended to backup our .bashrc file in case of a failure or unwanted be
 `TEST='123'`
 `export TEST`
 
-To set global environment permanently. Meaning, setting 
-`vi /etc/profile`
+To set global environment permanently. Meaning, setting the environment variable to anyone that logs into the machine and not just to a single user.
+`vi /etc/profile or /etc/bashrc`
 `TEST='123'`
 `export TEST`
 
 >`echo $MAIL` will return the mail directory where the mail is defined
 
 >`echo $HOME` will return our home directory
+
+---
+## Special Permissions with `setuid`, `setgid` and `sticky bit`
+
+`setuid` tells linux to run a pprogram with the effectivbe user id of the owner instead of the executor
+
+setgid tells linux to run a program with the effective group id of the owner instead of the executor 
+
+sticky bit is a bit set on files/directories that allows only the owner or root to delete the files
+
+- to assign special permissions at the user level:
+  chmod u+s xys.sh
+- to assign special permissions at the group level:
+  chmod g+s xyz.sh
+- To remove special permissions at the user or group level:
+	  chmod u-s xyz.sh
+	  chmod g-s xyz.sh
+
+To find all exercutables in Linux with setuid and setgid
+find / -perm /6000 -type f
+
+`Sticky bit`
+- It is assigned to the last bit of permission
+  \-r w x  r w x  r w t
+  
