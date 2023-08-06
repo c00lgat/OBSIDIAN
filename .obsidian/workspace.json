@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -157,14 +156,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "6a9433a94f3f821b",
   "lastOpenFiles": [
+    "Basic Command Syntax.md",
     "Python Essentials 1.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
     "AWK.md",
     "SED.md",
-    "Basic Command Syntax.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "Python.md",
     "Python playground.md",

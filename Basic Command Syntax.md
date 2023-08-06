@@ -1204,3 +1204,6 @@ ___
 - `uname -a` - tells us date and time, hostname, Linux kernel and all kinds of information about the machine
 - `dmidecode` - `dmidecode | more` to see information one page at a time. Tells us information about the machine such as the manufacturer, hardware information and more. 
 - `hostname` - tells us what hostname we using
+
+---
+## System Architecture
