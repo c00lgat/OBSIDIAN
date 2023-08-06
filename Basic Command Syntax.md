@@ -1129,3 +1129,20 @@ File = /etc/login.defs
 usermod -aG wheel anan 
 adds user anan to the wheel group that has all permissions to run all commands
 
+---
+## Process management
+Background =Ctrl + z, runs in the bg
+Foreground = fg 
+Run process even after exit = nohup process &
+	OR = nohup process > /dev/null 2>&1 &
+Kill a process by name = pkill
+Process priority = nice (nice -n 5 process)
+	Goes from -20 to 19. The lower the number the more priority a task gets
+Process monitoring = top
+List process = ps
+
+Every time we run a process, it attaches itself to that terminal. Closing the terminal will stop the process.
+There is a workaround that lets us run commands with no regards to whether the terminal is running or has been terminated: we use `nohup`.
+
+nice -n (set priority)
+nice 
