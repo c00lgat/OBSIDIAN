@@ -1513,9 +1513,9 @@ The `unset` command unsets variables in our current session. Can remove both fun
 ---
 ## Special Permissions with `setuid`, `setgid` and `sticky bit`
 
-`setuid` tells linux to run a pprogram with the effectivbe user id of the owner instead of the executor
+`setuid` tells Linux to run a program with the effective user id of the owner instead of the executor
 
-setgid tells linux to run a program with the effective group id of the owner instead of the executor 
+setgid tells Linux to run a program with the effective group id of the owner instead of the executor 
 
 sticky bit is a bit set on files/directories that allows only the owner or root to delete the files
 
