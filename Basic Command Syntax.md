@@ -1135,7 +1135,33 @@ adds user anan to the wheel group that has all permissions to run all commands
 - `last` - every user that has logged in.
 - `w` - works the same as who, just gives more information.
 - `finger` - does the trace of a user where its coming from and what kind of protocol is using.
-- `id.`
+	  CentOS 8 and newer, finger was replaced with pinky.
+- `id.` - `id username` displays info about a user.
+
+---
+## Talking to Users
+Communicating with all users connected to a certain server or application.
+- `users` - shows all users that are currently logged in.
+- `wall` - broadcasts a message to everyone that's logged into the Linux system.
+- `write` - dedicated to one single user.
+
+`wall` then double enter, write a message and then `CTRL + D` to broadcast the message. Directed to anyone that is logged in.
+
+Writing a message to a specific user: `write username`, press enter and then write your message, press enter and it will be broadcasted to the specific user. The user who got the message can also message back using the same command in the same syntax to the administrator that sent the message.
+
+---
+## Linux Account Authentication
+
+If a user joined the company and we have to make an account for the user for every service there is. We are not going to make tens of accounts for all the different services or servers, and for that, we use Linux Account Authentication.
+
+Types of accounts:
+- Local accounts
+- Domain/Directory accounts
+![[Pasted image 20230806194938.png]]
+Windows = Microsoft Active Directory
+
+
+
 
 
 ---
