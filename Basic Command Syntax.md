@@ -1132,9 +1132,9 @@ adds user anan to the wheel group that has all permissions to run all commands
 ---
 ## Monitor Users
 - `who` - how many people are logged in, user ID, terminal ID and how long have they been logged in.
-- `last` - every user that has log i
-- `w`
-- `finger`
+- `last` - every user that has logged in.
+- `w` - works the same as who, just gives more information.
+- `finger` - does the trace of a user where its coming from and what kind of protocol is using.
 - `id.`
 
 
