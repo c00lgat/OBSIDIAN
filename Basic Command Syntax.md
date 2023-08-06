@@ -1344,4 +1344,6 @@ Create 3 files in that dir: touch a b c
 Become another user again and try to delete that dir
 We wont be able to delete the directory.
 
+<mark style="background: #FF5582A6;">When we see a capital letter T as the sticky bit then it means that the others do not have an execute permission.</mark>
+
 ---
