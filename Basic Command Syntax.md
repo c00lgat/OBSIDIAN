@@ -2128,7 +2128,45 @@ If we get a  `0` once the code finishes running, it means that it found no error
 After checking, we need to mount our disk back:
 `mount /dev/sdbl /data`
 
-This is good for when our system is corrupted. We then 
+This is good for when our system is corrupted. We then use `xfs_repair` to fix it up and bring it back online.
+
+---
+## System Backup (`dd` Command)
+
+One of the ways to do a system backup is using the `dd` command.
+
+There are 5 different ways of backups:
+1. System backup (entire image using tools such as acronis, veeam, commvault etc.)
+2. Application backup (third party application backup solution)
+3. Database backup (Oracle dataguard, SQL backup etc.) - backups only the data.
+4. Filesystem backup (tar, gzip directories etc.) backups the files and directories etc.
+5. Disk backup or disk cloning (`dd` command). Can clone an entire disk and creates an image and then put it on another disk.
+
+`dd` is a command-line utility for Unix and Unix-like
+
+
+To backup or clone an entire hard disk to another hard disk connected to the same system execute the `dd` command as shown:
+
+\# dd if=\<source file name> of=\<target file name> \[Options]
+
+\# `dd` if=/dev/sda of=/dev/sdb
+
+To backup/copy the disk partition
+\#`dd` if =/dev/sdal
+
+
+`df -h` to determine which partition we want to copy
+`dd if=/dev/sda1 of=/data/boot.img`
+copies partition to filesystem
+To verify, we can `cd` to the directory and check if the  `boot.img` is there.
+
+If we wanted to copy a partition to a partition we can do the following:
+`dd if=/dev/sda1 of=/dev/sdb1`
+
+
+
+
+
 
 
 
