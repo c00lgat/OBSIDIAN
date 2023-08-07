@@ -1830,5 +1830,18 @@ Useful when we want to add new partitions and add more storage to our system
 Purpose? Out of space. Or additional space for apps etc.
 
 Commands for disk partitioning:
-- df
-- fdisk
+- `df`
+- `fdisk`
+
+`fdisk /dev/sdb` we run this on the newly added disk
+- we press `n` for new
+- `p` for primary
+- K,M,G 2 partitions +1G for two partitions each being 1G (?) but we go with default
+- Once we proceed, we press `w` to write the changes
+
+`mkfs.xfs` (to create filesystem) `/dev/sdb`
+then we have to `mount` `/dev/sdb1` `/data` (/data is the name of the partition in the filesystem)
+
+But in order to have it mounted on every bootup, then we go to `/etc/fstab`
+And then add the newly created disk: add the following line: `/dev/sdb1 /data xfs defaults 0 0`
+
