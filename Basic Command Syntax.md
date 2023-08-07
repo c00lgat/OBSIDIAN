@@ -1833,6 +1833,7 @@ Commands for disk partitioning:
 - `df`
 - `fdisk`
 
+`fdisk -l` So that we can see the newly added disk
 `fdisk /dev/sdb` we run this on the newly added disk
 - we press `n` for new
 - `p` for primary
@@ -1844,4 +1845,14 @@ then we have to `mount` `/dev/sdb1` `/data` (/data is the name of the partition 
 
 But in order to have it mounted on every bootup, then we go to `/etc/fstab`
 And then add the newly created disk: add the following line: `/dev/sdb1 /data xfs defaults 0 0`
+
+---
+## Logical Volume Management (LVM)
+
+- LVM allows disks to be combined together
+![[Pasted image 20230807112450.png]]
+
+---
+
+## LVM Configuration During Install
 
