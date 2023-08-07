@@ -1715,7 +1715,17 @@ Then, we have to uncomment (remove the hashtags) from the following lines:
 `ascii_upload_enable=YES`
 `ascii_download_enable=YES`
 
-Then, uncomment (remove the hashtag at the beginning of the line) 
+Then, uncomment (remove the hashtag at the beginning of the line) `ftpd_banner`
+
+And then add the following line to the end of the file:
+`user_localtime=YES`
+
+Then, we have to run the following commands:
+`systemctl start vsftpd`
+`systemctl enable vsftpd`
+`systemctl stop firewalld`
+`systemctl disable firewalld`
+
 
 
 
