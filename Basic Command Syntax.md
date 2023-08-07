@@ -360,7 +360,7 @@ The **`passwd`** command is used to update a user’s password. Users can only c
 >passwd [OPTIONS [USER]
 
 <br>
-For example, since we are logged in as the *`sysadmin`* user we can change the password for that account. Execute the **`passwd`** command. You will be prompted to enter the existing password once and the new password twice. For security reasons, no output is displayed while the password is being typed. The output is shown as follows:
+For example, since we are logged in as the `sysadmin` user we can change the password for that account. Execute the `passwd` command. You will be prompted to enter the existing password once and the new password twice. For security reasons, no output is displayed while the password is being typed. The output is shown as follows:
 
 ![[Pasted image 20230718222322.png]]
 <br>
