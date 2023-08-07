@@ -1934,5 +1934,45 @@ We want to add a new disk to the same group which the full disk belongs to.
 `resize2fs /dev/mapper/oracle_vg-oracle_lv`
 `xfs_growfs /dev/mapper/oracle_vg-oracle_lv`
 
-And then we need to verify with `df -h
-`
+And then we need to verify with `df -h`
+
+---
+## Add/Extend Swap Space
+
+Used when our RAM is full. The system uses the slower storage to store the things it needed to write into the RAM. Also called Virtual Memory.
+
+Recommended Swap size is usually twice as big as the RAM.
+
+Commands:
+- `dd`
+- `mkswap`
+- `swapon` or `swapoff`
+
+`free -m` To see physical memory and the Swap memory
+
+How can we extend the Swap space?
+We can slice some of the disk drive and use it for Swap.
+
+Say we already have 1Gig of Swap and we want to extend it to 2Gig. We also want to take a slice of the data drive and turn it into Swap memory.
+
+`# dd if=/dev/zero of=newswap bs=1M count=1024`
+if - read from file
+of - output to file
+Creates a file the size of 1Gig
+
+Why not use a touch command. dd command is used since we can control how big the file is going to be.
+
+chmod to the swap file: `chmod go-r swapFile`
+
+Then we use `mkswap` to turn our swapFile into a swap:
+`mkswap /newswap`
+
+`free -m` to check 
+
+`swapon /newswap`
+
+Extends the existing swap by adding the swapfile we created to the currently used swap.
+
+To verify, run `free -m`
+
+In order to have the swap file automatically extended using the swapfile we created, we have to edit the `/etc/fstab`
