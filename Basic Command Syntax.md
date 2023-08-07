@@ -1765,4 +1765,20 @@ GRUB@ = Grand Unified Boot Loader v2
 
 
 Kernel = Core of Operating System
-Loads required drivers from 
+Loads required drivers from initrd.img
+Starts the first OS process (systemd)
+
+
+Systemd = System Daemon (PID #1)
+It then starts all the required processes
+Reads = /etc/systemd/system/default.target to bring the system, to the run-level total of 7 run-levels (0 through 6).
+
+---
+## Message of the Day
+
+A message that shows up on the screen every time you power on the machine. 
+For example, when connecting to a remote server usually we are prompted with a security warning.
+
+- `/etc/motd`
+
+---
