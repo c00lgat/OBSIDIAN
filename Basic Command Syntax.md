@@ -1711,12 +1711,22 @@ A server has to be running a listening service to receive the protocol, we have 
 
 ## System Run Level
 
-Main Run Level
+### Main Run Level
 - 0 Shut down (or halt the system)
-- 1 Single-user mode; usually aliased as s or S
+- 1 Single-user mode; usually aliased as s or S - to troubleshoot issues
 - 6 reboot the system
 
-Other run levels
+### Other run levels
 - 2 multiuser mode without networking
-- 3 multiuser mode with 
-- 5 multiuser mode with networking
+- 3 multiuser mode with networking
+- 5 multiuser mode with networking and GUI
+- 4 is user-definable
+
+`init 0`
+`who -r` tells us what run level we are currently at
+
+---
+## Computer Boot Process
+
+Power goes through the socket, to the power supply unit and then to the motherboard which in turn powers on the CPU and the BIOS.
+The BIOS is a software on a little chip on the motherboard which is only readable.
