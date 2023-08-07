@@ -1705,3 +1705,6 @@ A server has to be running a listening service to receive the protocol, we have 
 ## rsync - Remote Synchronization
 
  ![[Pasted image 20230806231826.png]]
+
+---
+# Module 8
