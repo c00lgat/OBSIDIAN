@@ -2225,7 +2225,6 @@ Start `rpcbind` service once installed the packages: `systemctl enable rpcbind`
 
 Make sure the `firewalld` service is disabled: `ps -ef | grep "firewall|iptable"`
 
-f
 ![[Pasted image 20230807155345.png]]
 
 >`ip addr` to check a machine's ip address, `ifconfig` alternative
@@ -2259,20 +2258,21 @@ Another protocol used to share Samba is through CFIS
 - Additional instructions on creating secure
 
 ![[Pasted image 20230807170629.png]]
-### Samba download, install and configuration
- • Samba is a Linux tool or utility that allows sharing for Linux resources such as files and printers to with other operating systems.
+### Samba download, install and configuration (Taken directly from the Udemy course)
+
+ - Samba is a Linux tool or utility that allows sharing for Linux resources such as files and printers to with other operating systems.
  
- • It works exactly like NFS but the difference is NFS shares within Linux or Unix like system whereas Samba shares with other OS (e.g. Windows, MAC etc.).
+ - It works exactly like NFS but the difference is NFS shares within Linux or Unix like system whereas Samba shares with other OS (e.g. Windows, MAC etc.).
 
  For example, computer “A” shares its filesystem with computer “B” using Samba then computer “B” will see that shared filesystem as if it is mounted as the local filesystem.
 
- • Samba shares its filesystem through a protocol called SMB (Server Message Block) which was invented by IBM.
+ - Samba shares its filesystem through a protocol called SMB (Server Message Block) which was invented by IBM.
  
- • Another protocol used to share Samba is through CIFS (Common Internet File System) invented by Microsoft and also NMB (NetBios Name server).
+ - Another protocol used to share Samba is through CIFS (Common Internet File System) invented by Microsoft and also NMB (NetBios Name server).
  
- • CIFS became the extension of SMB and now Microsoft has introduced newer version of SMB v2 and v3 that are mostly used in the industry.
+ - CIFS became the extension of SMB and now Microsoft has introduced newer version of SMB v2 and v3 that are mostly used in the industry.
 
- • Most people, when they use either SMB or CIFS, are talking about the same exact thing. The two are interchangeable not only in discussion, but also in application – i.e., a client speaking CIFS can talk to a server speaking SMB and vice versa. Why? Because CIFS is a form of SMB.
+ - Most people, when they use either SMB or CIFS, are talking about the same exact thing. The two are interchangeable not only in discussion, but also in application – i.e., a client speaking CIFS can talk to a server speaking SMB and vice versa. Why? Because CIFS is a form of SMB.
  
 ### Step by steps installation instructions
 
@@ -2323,28 +2323,32 @@ First please make sure to take a snapshot of your VM
 		`guest ok = yes`
 		`guest only = yes`
 		`read only = no`
- 
 
 - Verify the setting
 	`testparm`
-• Once the packages are installed, enable and start Samba services
-# systemctl enable smb
-# systemctl enable nmb
-# systemctl start smb
-# systemctl start nmb
-• Mount on Windows client
-o Go to start
-o Go to search bar
-o Type \\192.168.1.95 (This is my server IP, you can check your Linux
-CentOS IP by running the command ifconfig)
-• Mount on Linux client
-Become root
-# yum -y install cifs-utils samba-client
-Create a mount point directory
-# mkdir /mnt/sambashare
-Mount the samba share
-# mount -t cifs //192.168.1.95/Anonymous /mnt/sambashare/
-# Entry without password
+
+- Once the packages are installed, enable and start Samba services
+	`systemctl enable smb`
+	`systemctl enable nmb`
+	`systemctl start smb`
+	`systemctl start nmb`
+
+- Mount on Windows client
+	Go to the start menu on Windows
+	Go to search bar
+	Type `\\192.168.1.95` (This is my server IP, you can check your Linux IP by running the command ifconfig)
+
+- Mount on Linux client
+	*Become root*
+	`yum -y install cifs-utils samba-client`
+	Create a mount point directory: `mkdir /mnt/sambashare`
+
+- Mount the samba share
+	`mount -t cifs //192.168.1.95/Anonymous /mnt/sambashare/`
+	`Entry without password`
+
+
+
 Secure Samba Server
 • Create a group smbgrp & user larry to access the samba server with proper
 authentication
