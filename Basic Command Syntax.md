@@ -1,5 +1,5 @@
 
-file:///C:/Users/Anan/Downloads/Linux%20Command%20Line%20for%20You%20and%20Me.pdf
+https://drive.google.com/file/d/1pTQcpezfBGbRSj2Yab-IiSu_BSD8V0dh/view?usp=drive_link
 
 CLI - Command Line Interface.
 
@@ -7,13 +7,13 @@ Most commands follow a simple pattern of syntax:
 command (options...) (arguments...)
 
 
-echo -n > kovitz.txt 
+`echo -n > kovitz.txt`
 >deletes all content from a text file in linux
 
-**`ls`** - Listing of information about files. 
-ls -> listing/list of files
+`ls` - Listing of information about files. 
+`ls` -> listing/list of files
 
-Example: **`ls Documents`** 
+Example: `ls Documents` 
 It will list the contents of said directory. 
 
 ![[Pasted image 20230703160535.png]]
@@ -22,15 +22,15 @@ The resulting output is a list of files contained with the `Documents` directory
 
 
 Options
-**`ls -l`** - results in a "long display". Meaning, gives more information about each of the files listed. 
-**`-l`** stands for long.
+`ls -l` - results in a "long display". Meaning, gives more information about each of the files listed. 
+`-l` stands for long.
 ![[Pasted image 20230703161717.png]]
 
-**`ls -r`** - prints the results in reverse alphabetical order. *Default* is alphabetical order.
-**`-r`** stands for reverse.
+`ls -r` - prints the results in reverse alphabetical order. *Default* is alphabetical order.
+`-r` stands for reverse.
 
 options can be given separately or combined.
-**`ls -l -r`, `ls -lr`, `ls -rl`**; they all will output the same. 
+`ls -l -r`, `ls -lr`, `ls -rl`; they all will output the same. 
 
 <font color ="green">Executables are usually in green after ls -l prompt or just ls</font>
 
@@ -40,34 +40,34 @@ CTRL - makes font smaller
 
 ---
 
-**`aptitude`** command is a package management tool available on some Linux distributions. 
+`aptitude` command is a package management tool available on some Linux distributions. 
 
 ___
 Printing Working Directory
 
-**`pwd`** command can be used to discover where you are currently located within the filesystem.
-**`pwd`** *[OPTIONS]*
+`pwd` command can be used to discover where you are currently located within the filesystem.
+`pwd [OPTIONS]`
 
 ![[Pasted image 20230703162358.png]]
 ![[Pasted image 20230703162421.png]]
 *The output indicates that the user is currently in their home folder.*
 
-**`~`** is equivalent to **`/home/sysadmin/`**
+`~` is equivalent to `/home/sysadmin/`
 
 ---
 
 Changing Directories
 ---
-**`cd`** (change directory) is a command that changes directories.
+`cd` (change directory) is a command that changes directories.
 
-**`cd [options] [path]`**
+`cd [options] [path]`
 
-**`cd Documents`** will lead us to the Documents directory (as we are already in the sysadmin directory and Documents is located within).
+`cd Documents` will lead us to the Documents directory (as we are already in the sysadmin directory and Documents is located within).
 ![[Pasted image 20230703163125.png]]
 
 
-*Main directory in Linux is called the root directory and is represented by **`/`**
-To move to the **`/`** directory, use the **`/`** character as the argument to the **`cd`** command.
+*Main directory in Linux is called the root directory and is represented by `/`
+To move to the `/` directory, use the `/` character as the argument to the `cd` command.
 ![[Pasted image 20230703163405.png]]
 ![[Pasted image 20230703163428.png]]
 
@@ -75,7 +75,7 @@ Paths are a step by step direction.
 *`Absolute paths`* start at the root of the filesystem.
 **/home/sysadmin** is an absolute path.
 ![[Pasted image 20230703163747.png]]
-we can confirm that we have reached the desired directory by using the **`pwd`** command:
+we can confirm that we have reached the desired directory by using the `pwd` command:
 ![[Pasted image 20230703163837.png]]
 
 *`Relative paths`* start from your current location.
@@ -90,81 +90,82 @@ In the following diagram, we are trying to reach the art directory using a *Rela
 A relative path starts from the current directory, however you dont include it in the path. 
 First step would be to enter the *School* directory and then entering the *Art* directory.
 
-**`cd School/Art`** as we are using a relative path.
+`cd School/Art` as we are using a relative path.
 ![[Pasted image 20230703164413.png]]
 ![[Pasted image 20230703164358.png]]
 
-Using the **`pwd`** command to confirm the change:
+Using the `pwd` command to confirm the change:
 ![[Pasted image 20230703164451.png]]
 ![[Pasted image 20230703233241.png]]
 
 ---
 Shortcuts
 ---
-The **`..`** character: takes you back to the parent directory.
+The `..` character: takes you back to the parent directory.
 ![[Pasted image 20230703233547.png]]
 
 
-The **`.`** character: represents your current directory. Not as useful for the **`cd`** command.
+The `.` character: represents your current directory. Not as useful for the `cd` command.
 
 
-The **`~`** character: the **`~`** symbol represents the home directory of the current user. Home directory is located at */home/sysadmin*. To return to home directory we have to execute the following command: 
+The `~` character: the `~` symbol represents the home directory of the current user. Home directory is located at */home/sysadmin*. To return to home directory we have to execute the following command: 
 ![[Pasted image 20230703234345.png]]
 
 ---
 ## Changing file Ownership
 *chown* command is used to change the ownership of files and directories.
 
-chown *OPTIONS* *OWNER* FILE
+`chown *OPTIONS* *OWNER* FILE`
 
-sudo chown root hello.sh: changes ownership to the root user.
+`sudo chown root hello.sh`: changes ownership to the root user.
 
 ---
 ## Viewing Files
 
-cat *OPTIONS* *FILE*
+`cat [OPTIONS] [FILE]`
 cat animals.txt: displays the content of animals.txt
 
-head *OPTIONS* *FILE*
-tail *OPTIONS* *FILE*
+`head [OPTIONS] [FILE]`
+`tail [OPTIONS] [FILE]`
 These commands are used to view a select number of lines from the top or bottom of a file. Taking a look at a few lines of a file can sometimes be helpful to ensure that the file is the one you want to use.
 
-head -n *number_of_lines* *FILENAME*
+`head -n [number_of_lines] [FILENAME]`
 The `-n` option with the `head` and `tail` commands can be used to specify the amount of lines to display.
 
 Delimiter
-cat file.txt | cut " " -f1 *(first field)* -d " "*(delimiter, once finds a space, stops looking at the rest of the words in the same row).*
+`cat file.txt | cut " " -f1 (first field) -d " "`*(delimiter, once finds a space, stops looking at the rest of the words in the same row).*
 
->ls -l >> list2.txt; cat list2.txt
+>`ls -l >> list2.txt; cat list2.txt`
 >We could use piping in order to save an output of a command onto a file.
 
->cat file.txt; echo " "; cat kovitz.txt
-prints contents and puts newline between the two outputs
+>`cat file.txt; echo " "; cat kovitz.txt`
+>prints contents and puts newline between the two outputs
 
->tac reads file from the opposite end
+>`tac` reads file from the opposite end
+
 ---
 ## Copying Files
-cp *OPTIONS* SOURCE_DESTINATION
+`cp [OPTIONS] [SOURCE_DESTINATION]`
 - f a copy of a file is created before changes are made, then it is possible to revert back to the original.
 - A copy of a file can be used to transfer a file to removable media devices.
 - A copy of an existing document can be used as a template for a new document.
 
 The `dd` command is a utility for copying files or entire partitions at the bit level.
-dd *OPTIONS* OPERARND
+`dd [OPTIONS] [OPERARND]`
 - It can be used to clone or delete (wipe) entire disks or partitions.
 - It can be used to copy raw data to removable devices, such as USB drives and CDROMs.
 - It can backup and restore the MBR (Master Boot Record).
 - It can be used to create a file of a specific size that is filled with binary zeros, which can then be used as a swap file (virtual memory).
 
 Let's examine the following example. The `dd` command creates a file named `/tmp/swapex` with 50 blocks of zeros that are one megabyte in size:
-*dd if=/dev/zero of=/tmp/swapex bs=1M count=50*
+`dd if=/dev/zero of=/tmp/swapex bs=1M count=50`
 
 ![[Pasted image 20230718213538.png]]
 
 ---
 ## Removing Files
 
-rm *OPTIONS* FILE
+`rm [OPTIONS] FILE`
 
 The `rm` command will ignore directories that it's asked to remove; to delete a directory, use a recursive option, either the `-r` or `-R` options. Just be careful since these options are "recursive", this will delete all files and all subdirectories.
 
@@ -316,10 +317,10 @@ sysadmin    95    79  0 19:43 pts/0        00:00:00 ps -ef
 ---
 ## Package Management
 
-At the lowest level of the Debian package management system is the `dpkg` command. This command can be tricky for novice Linux users, so the Advanced Package Tool, **`apt-get`**, a front-end program to the `dpkg` tool, makes management of packages even easier.
+At the lowest level of the Debian package management system is the `dpkg` command. This command can be tricky for novice Linux users, so the Advanced Package Tool, `apt-get`, a front-end program to the `dpkg` tool, makes management of packages even easier.
 
 ### Installing Packages
-Package files are commonly installed by downloading them directly from repositories located on Internet servers. The Debian repositories contain more than 65,000 different packages of software. Before installing a package, it is good practice to refresh the list of available packages using the **`apt-get update`** command.
+Package files are commonly installed by downloading them directly from repositories located on Internet servers. The Debian repositories contain more than 65,000 different packages of software. Before installing a package, it is good practice to refresh the list of available packages using the `apt-get update` command.
 <br>
 *sudo apt-get update*
 >**sysadmin@localhost:~$** sudo apt-get update                                       
@@ -339,15 +340,15 @@ Once you've found the package that you want to install, you can install it with 
 ![[Pasted image 20230718221953.png]]
 <br>
 ### Updating packages
-The **`apt-get install`** command can also update a package, if that package is installed and a newer version is available. If the package is not already on the system, it would be installed; if it is on the system, it would be updated.
+The `apt-get install` command can also update a package, if that package is installed and a newer version is available. If the package is not already on the system, it would be installed; if it is on the system, it would be updated.
 <br>
-Updating all packages of the system should be done in two steps. First, update the cache of all packages available with **`apt-get update`**. Second, execute the **`apt-get upgrade`** command and all packages and dependencies will be updated.
+Updating all packages of the system should be done in two steps. First, update the cache of all packages available with `apt-get update`. Second, execute the `apt-get upgrade` command and all packages and dependencies will be updated.
 ![[Pasted image 20230718222059.png]]
 <br>
 ### Removing Packages
 The `apt-get` command is able to either remove or purge a package. The difference between the two is that purging deletes all package files, while removing deletes all but the configuration files for the package.
 
-An administrator can execute the **`apt-get remove`** command to remove a package or the **`apt-get purge`** command to purge a package completely from the system.
+An administrator can execute the `apt-get remove` command to remove a package or the `apt-get purge` command to purge a package completely from the system.
 
 >apt-get remove [package]
 
@@ -355,7 +356,7 @@ An administrator can execute the **`apt-get remove`** command to remove a packag
 
 ---
 ## Updating User Passwords
-The **`passwd`** command is used to update a user’s password. Users can only change their own passwords, whereas the root user can update the password for any user.
+The `passwd` command is used to update a user’s password. Users can only change their own passwords, whereas the root user can update the password for any user.
 
 >passwd [OPTIONS [USER]
 
@@ -2163,10 +2164,10 @@ To backup or clone an entire hard disk to another hard disk connected to the sam
 **\#** `dd if=/dev/sda of=/dev/sdb`
 
 To backup/copy the disk partition
-**\#**`dd if =/dev/sda1 of=/root/sda1.img`
+**\#`dd if =/dev/sda1 of=/root/sda1.img`
 
 Restoring this image file to other machine after copying the .img
-**\#**`dd if =/dev/sda1.img of=/dev/sdb3`
+**\#`dd if =/dev/sda1.img of=/dev/sdb3`
 
 `df -h` to determine which partition we want to copy
 `dd if=/dev/sda1 of=/data/boot.img`
