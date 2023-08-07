@@ -1704,6 +1704,20 @@ Default FTP Port = 21
 
 A server has to be running a listening service to receive the protocol, we have to make sure its running `ftpd` (FTP daemon), it will run on the 21 port by default.
 
+When we need to connect to our FTP server, we have to run systemctl status vsftpd in order to make sure that the service is running.
+
+Once that has been established, look for /etc/vsftpd.conf and edit the file. 
+If you cannot find the file, first you have to stop vsftpd before configuring by running /etc/init.d/vsftpd stop
+
+Once you have the config file opened, go to `anonymous_enable` and write NO, so the line should look like `anonymous_enable=NO` without the hashtag at the beginning.
+
+Then, we have to uncomment (remove the hashtags) from the following lines:
+`ascii_upload_enable=YES`
+`ascii_download_enable=YES`
+
+Then, uncomment (remove the hashtag at the beginning of the line) 
+
+
 
 ---
 ## rsync - Remote Synchronization
