@@ -1975,4 +1975,12 @@ Extends the existing swap by adding the swapfile we created to the currently use
 
 To verify, run `free -m`
 
-In order to have the swap file automatically extended using the swapfile we created, we have to edit the `/etc/fstab`
+In order to have the swap file automatically extended using the swapfile we created, we have to edit the `/etc/fstab` and add the following line: `/newswap swap swap defaults 0 0 ` and save it so that it is automatically added on boot.
+
+Reboot the system to verify that the swap has been added on boot-up.
+
+`swapoff /newswap`
+`rm /newswap`
+
+---
+
