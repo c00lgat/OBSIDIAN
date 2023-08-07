@@ -1708,3 +1708,15 @@ A server has to be running a listening service to receive the protocol, we have 
 
 ---
 # Module 8
+
+## System Run Level
+
+Main Run Level
+- 0 Shut down (or halt the system)
+- 1 Single-user mode; usually aliased as s or S
+- 6 reboot the system
+
+Other run levels
+- 2 multiuser mode without networking
+- 3 multiuser mode with 
+- 5 multiuser mode with networking
