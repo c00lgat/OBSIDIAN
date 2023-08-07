@@ -1985,13 +1985,13 @@ Reboot the system to verify that the swap has been added on boot-up.
 ---
 
 ## Implement Advanced Storage Features
-Next Gen volume management solution called Stratis
+Next Gen volume management solution called Stratis:
 
-Uses thin provisioning by default
+1. Uses thin provisioning by default.
 
-Combines the process of creating logical volume management and creation of filesystems into one management 
+2. Combines the process of creating logical volume management and creation of filesystems into one management .
 
-In LVM if a filesystem system gets full you will have to extend it manually whereas Stratis extends the filesystem automatically if it has available space in its pool
+3. In LVM if a filesystem system gets full you will have to extend it manually whereas Stratis extends the filesystem automatically if it has available space in its pool.
 
 
 In LVM:
@@ -2003,10 +2003,38 @@ In Stratis:
 
 - Install Stratis package
 - Enable and start Stratis service `systemctl enable|start stratisd`
--  Add new disks from virtualization software
+-  Add new disks from virtualization software: Add a new VDI.
+- Run `lsblk` in order to see that the disks have been added.
 - Create a new Stratis pool and verify
   `stratis pool create pool /dev/sdc`
-  `stratis pool list`
+  `stratis pool list` *to verify*
 - Extend the pool 
   `stratis pool add-data pool1 /dev/sdc`
-  `stratis pool list`
+  `stratis pool list` *to verify*
+
+- Create a new filesystem using Stratis:
+	`stratis filesystem create pool1 fs1` *(we can give the filesystem whichever name we want, fs1 in this case)*
+	`stratis filesystem list` *to verify*
+
+- Create a directory for mount point and mount filesystem
+	- `mkdir /bigdata`
+	- `mount /stratis/pool1/fs1 /bigdata`
+	- `lsblk`
+
+- Create a snapshot of your filesystem
+	- `stratis filesystem snapshot pool1 fs1 fs1-snap`
+	- `stratis filesystem list` *to verify*
+
+- Add the entry to /etc/fstab to mount at boot
+	- `UUID="asf-0887afgdja-" /bigdata xfs defaults, x- systemd.requires-stratisd.service 0 0`
+
+---
+## RAID 
+
+RAID (Redundant Array of Independent Disks).
+
+Types of RAID:
+- RAID0
+- RAID1
+- RAID5
+
