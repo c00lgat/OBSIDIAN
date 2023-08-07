@@ -504,15 +504,15 @@ If we want to give only read and write permissions, we can add 6 (4+2).
 
 `mkdir dir1 dir2` Also works the same way
 
-`mkdir -p dir dir/dd dir/cc` Makes a new folder with new subfolders inside it.
+`mkdir dir dir/dd dir/cc` Makes a new folder with new subfolders inside it.
 
 `mkdir dir/dd dir/cc` wouldn't work, throws exception that dir does not exist.
 
-`mkdir -p dir/dd dir/cc does work. 
+`mkdir -p dir/dd dir/cc` does work. 
 
-mkdir -p zoo/{predatory/{table,leopard}/,birds/{parrot,chair}}
+`mkdir -p zoo/{predatory/{table,leopard}/,birds/{parrot,chair}}`
 
-mkdir -p grocery/{bakery/cakes/{minirolls,bars}/,home/cleaning/{wipes,polish}}
+`mkdir -p grocery/{bakery/cakes/{minirolls,bars}/,home/cleaning/{wipes,polish}}`
 
 ![[Pasted image 20230723141548.png]]
 
@@ -521,19 +521,20 @@ mkdir -p grocery/{bakery/cakes/{minirolls,bars}/,home/cleaning/{wipes,polish}}
 # The find command
 
 https://www.baeldung.com/linux/find-files-lacking-permissions
-find . -type d (only shows the type, d is for directory)
 
-find . -type d -empty
+`find . -type d` (only shows the type, d is for directory)
 
-find zoo/
-find zoo/ -type f
+`find . -type d -empty`
 
-To find all non-empty files in the same directory, simply add ! before -size 0: 
-$ find -L /home/peter -maxdepth 1  -type f ! -size 0
+`find zoo/`
 
-find . -empty (looks for empty files)
+`find zoo/ -type f`
 
-$ find . -type f -empty -print -delete (looks for empty files, prints them and deletes them in one go)
+To find all non-empty files in the same directory, simply add `!` before `-size 0`:  `find -L /home/peter -maxdepth 1  -type f ! -size 0`
+
+`find . -empty (looks for empty files)`
+
+`find . -type f -empty -print -delete` (looks for empty files, prints them and deletes them in one go)
 
  [Copy the content/file to all subdirectory in a directory using terminal](https://askubuntu.com/questions/300744/copy-the-content-file-to-all-subdirectory-in-a-directory-using-terminal)
 `find <target-dir> -type d -exec cp <the file> {} \;`
@@ -552,59 +553,45 @@ Remove occurrences of string in text
 AWK
 https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
 https://www.gnu.org/software/gawk/manual/gawk.html
-$ awk '{print $1,$4}' employee.txt (prints first and fourth field in every line in file)
-
 https://exercism.org/tracks/awk
 
+`awk '{print $1,$4}' employee.txt` (prints first and fourth field in every line in file)
 
 ---
 # File compression
-gzip 
-zcat lets us read compressed files
+`gzip` 
+`zcat` lets us read compressed files
 
 ---
-double tab while doing cd ../ will show us directories that are in the back directory
+Random notes
 
+double tab while doing `cd ..`/ will show us directories that are in the back directory
 
-CTRL+a goes back to the beginning of the row 
-CTRL+e goes back to the end of the row
+`CTRL+a` goes back to the beginning of the row 
+`CTRL+e` goes back to the end of the row
 
+`echo "" | cat file.txt - kovitz.txt` (The - is standard input, first is cats the file.txt, waits for standard input which is the "" that we entered and then goes on to display the kovitz.txt)
 
-echo "" | cat file.txt - kovitz.txt (The - is standard input, first is cats the file.txt, waits for standard input which is the "" that we entered and then goes on to display the kovitz.txt)
+`uptime` - shows the uptime of the machine
 
+`whoami` = Prints out the name of the user. 
 
-uptime - shows the uptime of the machine
-uptime --help 
+`history` displays all commands that were entered in the console.
 
+`who | tee who_output.txt` (prints and saves in txt file in one go)
 
-whoami
-Prints out the name of the user. 
+`gedit [file]` opens the text file in a GUI text editor (have to install gedit)
 
+`mv {Croatia,Wales}/* Poland/` (moves all the files from Croatia and wales directories into the Poland directory)
 
-history displays all commands that were entered in the console.
+`touch Croatia/{abc,file.txt,file.doc}` (touches 3 different files at once)
 
-
-who | tee who_output.txt (prints and saves in txt file in one go)
-
-
-gedit opens the text file in an actual notepad 
-
-
-hello (first field) lmao (second field) 
-Each word is a field, spaces 
-
-mv {Croatia,Wales}/* Poland/ (moves all the files from croatia and wales directories into the poland directory)
-
-touch Croatia/{abc,file.txt,file.doc} (touches 3 different files at once)
-
-
-
-mv {Croatia,Wales}/{\*.txt, \*.doc} Poland/ (moves all the files from croatia and wales directories into the poland directory)
+`mv {Croatia,Wales}/{\*.txt, \*.doc} Poland/` (moves all the files from Croatia and wales directories into the Poland directory)
 
 ---
 # Basic Linux Keystrokes
 
-Esc: Escaping out of editing mode - get out of any of the pressed keys
+`Esc` = Escaping out of editing mode - get out of any of the pressed keys
 
 Tilde: used for cd, backtick is used 
 
@@ -678,8 +665,9 @@ Remote access: connecting to your machine remotely through the internet.
 For example, if we wanted to connect to a remote Linux machine using windows, we use the PuTTY client. If you have windows 10 and later, you can use the CMD to connect to a remote machine with SSH as it comes with the operating system by default and thus there is no need to download software in order to SSH into a remote machine.
 
 ---
-if <code>ifconfig</code> does not work, we could use <code>ip addr</code>
-or we can install net-tools and then run <code>ifconfig</code>
+
+If `ifconfig` does not work, we could use `ip addr`
+or we can install net-tools and then run `ifconfig`
 
 ---
 ## Command prompt
@@ -691,28 +679,30 @@ To get your prompt back: *CTRL + C*. If you get stuck, you can press *CTRL + C* 
 ## File system structure and its description
 Files used for the bootloader, every time our machine boots up, it will
 go to the /boot folder and looks into it. 
-/root root user home directory. Not the same as /
-/dev System devices (keyboards, speakers, etc.)
-/etc config files. If we have any apps on the system, all of their config files reside in the /etc folder. Remember to do a backup to the config file before modifying it.
-/bin -> /usr/bin every day user commands
-/sbin -> /usr/sbin System/filesystem commands
-/opt optional add-on applications, apps that do not come with the OS.
-/proc Running processes (only exist in Memory)
-/lib -> /usr/lib C programming library files needed by commands and apps
-strace -e open pwd to
-/tmp stores temporary files. 
-/home for regular users. 
-/var System logs
-/run stores temporary runtime files.
-/mnt To mount external filesystem. 
-/media For cd-rom medias. if we use a cd drive it will appear there.
+`/root` root user home directory. Not the same as /
+`/dev` System devices (keyboards, speakers, etc.)
+`/etc` config files. If we have any apps on the system, all of their config files reside in the /etc folder. Remember to do a backup to the config file before modifying it.
+`/bin` -> /usr/bin every day user commands
+`/sbin` -> /usr/sbin System/filesystem commands
+`/opt` optional add-on applications, apps that do not come with the OS.
+`/proc` Running processes (only exist in Memory)
+`/lib` -> /usr/lib C programming library files needed by commands and apps
+`strace -e` 
+`/tmp` stores temporary files. 
+`/home` for regular users. 
+`/var` System logs
+`/run` stores temporary runtime files.
+`/mnt` To mount external filesystem. 
+`/media` For cd-rom medias. if we use a cd drive it will appear there.
+
 ![[Pasted image 20230731115246.png]]
+
 
 ---
 ## Navigating File System
-<code>cd</code> - stands for change directory
-<code>pwd</code> - stands for print working directory
-<code>ls</code> - stands for list
+`cd` - stands for change directory
+`pwd` - stands for print working directory
+`ls` - stands for list
 
 ---
 ## Linux File or Directory Properties
@@ -730,7 +720,7 @@ Root home directory: the root user account has a directory located in /root whic
 ---
 ## Changing password
 Should change your initial password as soon as you login.
-Command is: <code>passwd userid</code>
+Command is: `passwd userid`
 Old password: enter your old password 
 New password: enter the desired password
 Retype new password: retype the new password
@@ -739,54 +729,50 @@ Retype new password: retype the new password
 
 ---
 
-
 If we want to make a script, 
-the first line should say <code>#! /bin/bash</code> which tells the system to run the code using the bash interpreter.
+the first line should say `#! /bin/bash` which tells the system to run the code using the bash interpreter.
 
 ---
 ## Creating files and Directories
-touch
-cp
-vi
+- `touch`
+- `cp`
+- `vi`
 
 ### Creating Directories
-mkdir
+`mkdir`
 
-ls -ltr
-Shows files from last to latest created
+`ls -ltr` = Shows files from last to latest created
 
----
-cp -R copies all files and subfolders inside a directory
+`cp -R` = copies all files and subfolders inside a directory
 
 ---
 ## Find files and directories
 Two main commands to find files/directories:
- >find
- 
- >locate
+ - `find`
+ - `locate`
 
-find . (current directory) -name "filename"
-locate ""
+`find . (current directory) -name [filename]`
+`locate ""`
 
-find / -name "ifcfg-enp0s3(filename)" *RUN AS SUDO*
+`find / -name "ifcfg-enp0s3(filename)"` *RUN AS SUDO*
 
 ### Difference between find and locate commands
-<code>locate</code> is much faster because it looks for specific files that are cached. locate uses a prebuilt database.
+`locate` is much faster because it looks for specific files that are cached. locate uses a prebuilt database.
 
-To update locate database run <code>updatedb</code>
+To update locate database run `updatedb`
 
-<code>find</code> runs over all the directories in real time thus taking more time and compute power.
+`find` runs over all the directories in real time thus taking more time and compute power.
 
 ---
 ## Wild cards
 
 A character that can be used as a substitute of a class of characters in a search
 
-\* - represents zero or more characters.
-\? - represents a single character.
-\[] - represents a range of characters.
+`*` - represents zero or more characters.
+`?` - represents a single character.
+`[]` - represents a range of characters.
 
-<code>touch file{1..9}.txt</code> creates 9 files, from 1 to 9 in one go. So file1.txt, file2.txt on and on until file9.txt
+`touch file{1..9}.txt` creates 9 files, from 1 to 9 in one go. So file1.txt, file2.txt on and on until file9.txt
 
 ![[Pasted image 20230731152419.png]]
 
@@ -803,7 +789,7 @@ Hard Link = Deleting or renaming or moving the original file, will not affect th
 
 ![[Pasted image 20230731155305.png]]
 
-<code>ls -i</code> shows the inode numbers of the files/directories.
+`ls -i` shows the inode numbers of the files/directories.
 
 ![[Pasted image 20230731160021.png]]
 
@@ -881,22 +867,22 @@ echo > or >>
 
 Named after the T-splitter used in plumbing. Both displays and saves into a file. Simultaneously.
 
-<code>echo "David Puddy is Elaine's boyfriend"</code>
-<code>echo "David Puddy is Elaine's boyfriend" > elaine-david</code>
+`echo "David Puddy is Elaine's boyfriend"`
+`echo "David Puddy is Elaine's boyfriend" > elaine-david`
 Does not throw the output to the screen.
 
-<code>echo "David Puddy is Elaine's boyfriend" | tee elaine-david</code>
+`echo "David Puddy is Elaine's boyfriend" | tee elaine-david`
 Does throw the output to the screen while also saving it to the elaine-david file.
 The tee commands overrides the contents of a file by default.
 
-<code>echo "David Puddy is Elaine's boyfriend" | tee -a elaine-david</code>
+`echo "David Puddy is Elaine's boyfriend" | tee -a elaine-david`
 By using the *-a* option, it appends the input instead of having it override the current content of a file.
 
 ---
 ## Pipes
 Used by the shell to connect the output of one command directly to the input of another command.
 
-<code>ls -ltr | more</code> piping our output into the more command, which shows content one page at a time when there is too many results showing on the page.
+`ls -ltr | more` piping our output into the more command, which shows content one page at a time when there is too many results showing on the page.
 
 ---
 ## File Maintenance Commands
@@ -908,7 +894,7 @@ Used by the shell to connect the output of one command directly to the input of 
 6. chgrp
 7. chown
 
-<code>rm -Rf</code> will forcefully remove sub-directories and their contents as well.
+`rm -Rf` will forcefully remove sub-directories and their contents as well.
 
 ---
 ## File display commands
@@ -1038,7 +1024,7 @@ Can be used to make the file bigger as well. Adds empty letters to fill up the f
 - cat file1 file2 file3 > file4
 - split file4
 
-for example: <code>split -l 300 file.txt childfile.txt</code> = Split file.txt into 300 line per file and output to chidlfileaa childfileab childfileac
+for example: `split -l 300 file.txt childfile.txt` = Split file.txt into 300 line per file and output to chidlfileaa childfileab childfileac
 
 ---
 ## Linux vs Windows commands
