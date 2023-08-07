@@ -2301,30 +2301,32 @@ First please make sure to take a snapshot of your VM
 	- `chcon -t samba_share_t /samba/morepretzels`
 
 - If you want to disable SELinux, follow these instructions
-	- `sestatus` (To check the SELinux status)
-	- `vi /etc/selinux/config`
-		- *Change* `SELINUX=enforcing` To `SELINUX=disabled`
-	- and then `reboot`
+	 `sestatus` (To check the SELinux status)
+	 `vi /etc/selinux/config`
+		 *Change* `SELINUX=enforcing` To `SELINUX=disabled`
+	 and then `reboot`
 
 
-• Modify /etc/samba/smb.conf file to add new shared filesystem (Make sure to
-create a copy of smb.conf file)
-Delete everything from smb.conf file and add the following parameters
-[global]
-workgroup = WORKGROUP
-netbios name = centos
-security = user
-map to guest = bad user
-dns proxy = no
-[Anonymous]
-path = /samba/morepretzels
-browsable = yes
-writable = yes
-guest ok = yes
-guest only = yes
-read only = no
-• Verify the setting
-# testparm
+- Modify `/etc/samba/smb.conf` file to add new shared filesystem (**Make sure to create a copy of `smb.conf` file**).
+  Delete everything from `smb.conf` file and add the following parameters:
+`[global]`
+		`workgroup = WORKGROUP`
+		`netbios name = centos`
+		`security = user`
+		`map to guest = bad user`
+		`dns proxy = no`
+
+`[Anonymous]`
+		`path = /samba/morepretzels`
+		`browsable = yes`
+		`writable = yes`
+		`guest ok = yes`
+		`guest only = yes`
+		`read only = no`
+ 
+
+- Verify the setting
+	`testparm`
 • Once the packages are installed, enable and start Samba services
 # systemctl enable smb
 # systemctl enable nmb
