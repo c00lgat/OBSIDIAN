@@ -2106,4 +2106,4 @@ Make sure to execute the `fsck` on an unmounted file systems to avoid any data c
 
 What if we wanted to run it on `/root`? The only way to do that is in single user mode or in recovery mode
 
-- Force a filesystem check even if its cleanm using `option -f`
+- Force a filesystem check even if its clean using `option -f`
