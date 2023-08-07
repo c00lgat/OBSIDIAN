@@ -2038,3 +2038,39 @@ Types of RAID:
 - RAID1
 - RAID5
 
+![[Pasted image 20230807132052.png]]
+Usually used for data warehousing. If one of them fails then we lose the data. Used also for backups. 
+
+
+
+![[Pasted image 20230807132158.png]]
+Mirrors hard disks together. RAID1 is slow!
+
+
+
+![[Pasted image 20230807132238.png]]
+Some information of DISK1 to DISK2. Some information of DISK2 to DISK3 etc. 
+We are not going to have 15 Gigs though. Since some of the information is copied from one disk to another.
+
+RAID mostly configured on the physical disks.
+
+LVM mostly configured on virtual disks.
+
+---
+
+## File System Check (`fsck` and `xfs_repair`)
+
+`fsck` utility is used to check and repair Linux filesystems (ext2, ext3, ext4, etc)
+
+`xfs_repair` utility is used to check and repair Linux filesystems for *xfs* filesystem type
+
+Depending on when was the last time a file system was checked, the system runs the `fsck` during boot time to check whether the filesystem is in consistent state
+
+System admin could also run it manually when there is a problem with the filesystems.
+
+Make sure to execute the `fsck` on an unmounted file systems to avoid any data corruption issues
+
+
+What if we wanted to run it on `/root`? The only way to do that is in single user mode or in recovery mode
+
+- Force a filesystem check even if its cleanm using `option -f`
