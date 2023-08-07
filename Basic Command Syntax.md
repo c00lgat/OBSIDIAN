@@ -2234,7 +2234,7 @@ f
 ---
 ## Samba
 
-Samba is a Linux tool or utility that allows sharing for Linux resourves such as files and printers to with other operating systems
+Samba is a Linux tool or utility that allows sharing for Linux resources such as files and printers to with other operating systems
 
 It works exactly like NFS but the difference is NFS shares within Linux or UNIX like system whereas Samba shares with other OS (Windows, MAC etc)
 
@@ -2258,8 +2258,18 @@ Another protocol used to share Samba is through CFIS
 - Mount Samba share on Windows client
 - Additional instructions on creating secure
 
+![[Pasted image 20230807170629.png]]
 
 
+---
+
+## NAS Device for NFS or Samba
+
+A storage can be carved on a Linux server and it can be shared with another Linux machine through NGS or to a Windows machine through Samba service
+![[Pasted image 20230807170846.png]]
+
+NFS/Samba or any NAS service can be setup through a dedicated NAS device.
+![[Pasted image 20230807170915.png]]
 
 
 
