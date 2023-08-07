@@ -2347,35 +2347,35 @@ First please make sure to take a snapshot of your VM
 	`mount -t cifs //192.168.1.95/Anonymous /mnt/sambashare/`
 	`Entry without password`
 
+- Secure Samba Server
+  Create a group `smbgrp` & user `larry` to access the samba server with proper authentication:
+	`useradd larry`
+	`groupadd smbgrp`
+	`usermod -a -G smbgrp larry`
+	`smbpasswd -a larry`
+	*New SMB password: YOUR SAMBA PASS
+	Retype new SMB password: REPEAT YOUR SAMBA PASS
+	Added user larry*
 
+- Create a new share, set the permission on the share:
+	`mkdir /samba/securepretzels`
+	`chown -R larry:smbgrp /samba/securepretzels`
+	`chmod -R 0770 /samba/securepretzels`
+	`chcon -t samba_share_t /samba/securepretzels`
 
-Secure Samba Server
-• Create a group smbgrp & user larry to access the samba server with proper
-authentication
-# useradd larry
-# groupadd smbgrp
-# usermod -a -G smbgrp larry
-# smbpasswd -a larry
-New SMB password: YOUR SAMBA PASS
-Retype new SMB password: REPEAT YOUR SAMBA PASS
-Added user larry
-• Create a new share, set the permission on the share:
-# mkdir /samba/securepretzels
-# chown -R larry:smbgrp /samba/securepretzels
-# chmod -R 0770 /samba/securepretzels
-# chcon -t samba_share_t /samba/securepretzels
-• Edit the configuration file /etc/samba/smb.conf (Create a backup copy first)
-# vi /etc/samba/smb.conf
-Add the following lines
-[Secure]
-path = /samba/securepretzels
-valid users = @smbgrp
-guest ok = no
-writable = yes
-browsable = yes
-• Restart the services
-# systemctl restart smb
-# systemctl restart nmb
+- Edit the configuration file `/etc/samba/smb.conf` (Create a backup copy first)
+	`vi /etc/samba/smb.conf`
+	*Add the following lines*
+		`[Secure]`
+		`path = /samba/securepretzels`
+		`valid users = @smbgrp`
+		`guest ok = no`
+		`writable = yes`
+		`browsable = yes`
+
+- Restart the services
+	`systemctl restart smb`
+	`systemctl restart nmb`
 
 ---
 
@@ -2407,6 +2407,10 @@ Why divide the wires between 2 cables?
 ## Difference between Linux 5, 6 and 7
 
 Enhanced feats, better feats and patched bugs are the reason why there are multiple versions of Linux usually.
+
+https://drive.google.com/file/d/1vGKroJy3cDKhiRppIs-9fI31tWs3vHbx/view?usp=drive_link
+
+---
 
 
 
