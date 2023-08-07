@@ -1337,6 +1337,7 @@ This gives the sleep command a priority of 5.
 
 - `top` - lists all processes running, similar to task manager on windows.
 - `df` - report file system space usage. `df -h` makes the output more human readable. 
+  https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html#df-invocation
 - `du` - estimate file space usage 
 - `dmesg` - Show
 - `iostat` - input output statistics
