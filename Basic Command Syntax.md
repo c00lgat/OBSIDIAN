@@ -1899,4 +1899,40 @@ If we already have a disk and its full. We need to extend it.
 
 Few options:
 - Delete older files to free up disk space
-- Add new physical disk mount to 
+- Add new physical disk mount to /oracle2 but we don't always have a free physical slot to do that
+- Create a new virtual disk and mount to /oracle2 
+- Or extend /oracle through LVM
+
+Go to settings -> Storage -> Create Virtual Hard Disk -> give it a different name -> give it the desired size
+
+Start your virtual machine.
+Login as root
+
+`df -h` to see our disk info
+`fdisk -l` to find our newly added disk
+
+In this case, our newly added disk is called `/dev/sdd`
+
+`fdisk /dev/sdd`
+
+Continue using the same steps as before
+Reboot the system
+
+run `fdisk -l` again to check our newly created disk
+
+
+Now we want to extend our full disk.
+
+`pvdisplay` to find which volume group our full disk belongs to.
+We want to add a new disk to the same group which the full disk belongs to.
+
+`pvcreate /dev/sdd1/`
+`vgextend oracle_vg /dev/sdd1`
+
+`lvextend -L+1024MB /dev/mapper/oracle_vg-oracle_lv
+
+`resize2fs /dev/mapper/oracle_vg-oracle_lv`
+`xfs_growfs /dev/mapper/oracle_vg-oracle_lv`
+
+And then we need to verify with `df -h
+`
