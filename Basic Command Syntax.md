@@ -1855,10 +1855,40 @@ And then add the newly created disk: add the following line: `/dev/sdb1 /data xf
 ---
 
 ## LVM Configuration During Install
+187 in the Udemy course
 
 ---
 
 ## Add Disk and Create LVM Partition
-
+188
 ![[Pasted image 20230807113858.png]]
 
+`fdisk -l` So that we can see the newly added disk
+
+**Partitions:**
+`fdisk /dev/sdb` we run this on the newly added disk
+- we press `n` for new
+- `p` for primary
+- K,M,G 2 partitions +1G for two partitions each being 1G (?) but we go with default
+- Once we proceed, we press `t` to change type of partition from 'Linux' to 'Linux LVM'
+
+Then `w` to write the changes and to write the physical volume.
+
+Next, we need to create the volume group: `vgcreate (name of volumegroup) /dev/sdcl`
+
+To verify, run `vgdisplay (name of volumegroup)`
+
+`lvcreate -n (name of logical volume) --size 1G (name of volumegroup)`
+
+To verify, run `lvdisplay`
+
+And then we run the `mkfs.xfs` on the logical volume:
+`mkfs.xfs /dev/oracle_vg/oracle_lv`
+Make a directory in the logical volume: `/oracle`
+
+And then we finally mount the disk and directory:
+`mount /dev/oracle_vg/oracle_lv /oracle`
+
+
+
+And that is how we create LVM new partition.
