@@ -122,11 +122,11 @@ The `~` character: the `~` symbol represents the home directory of the current u
 ---
 ## Viewing Files
 
-`cat [OPTIONS] [FILE]`
+`cat [OPTIONS] [FILE_NAME]`
 cat animals.txt: displays the content of animals.txt
 
-`head [OPTIONS] [FILE]`
-`tail [OPTIONS] [FILE]`
+`head [OPTIONS] [FILE_NAME]`
+`tail [OPTIONS] [FILE_NAME]`
 These commands are used to view a select number of lines from the top or bottom of a file. Taking a look at a few lines of a file can sometimes be helpful to ensure that the file is the one you want to use.
 
 `head -n [number_of_lines] [FILENAME]`
@@ -165,7 +165,7 @@ Let's examine the following example. The `dd` command creates a file named `/tmp
 ---
 ## Removing Files
 
-`rm [OPTIONS] [FILE]`
+`rm [OPTIONS] [FILE_NAME]`
 
 The `rm` command will ignore directories that it's asked to remove; to delete a directory, use a recursive option, either the `-r` or `-R` options. Just be careful since these options are "recursive", this will delete all files and all subdirectories.
 
@@ -580,7 +580,7 @@ double tab while doing `cd ..`/ will show us directories that are in the back di
 
 `who | tee who_output.txt` (prints and saves in txt file in one go)
 
-`gedit [file]` opens the text file in a GUI text editor (have to install gedit)
+`gedit [FILE_NAME]` opens the text file in a GUI text editor (have to install gedit)
 
 `mv {Croatia,Wales}/* Poland/` (moves all the files from Croatia and wales directories into the Poland directory)
 
@@ -797,18 +797,7 @@ Hard Link = Deleting or renaming or moving the original file, will not affect th
 https://www.makeuseof.com/linux-command-line-chaining-operators/
 
 
-su demo 
-whoami -> demo
-pwd -> /home/anan
-exit
-whoami -> anan
-su - demo
-whoami -> demo
-pwd -> /home/demo
-
 ---
-man ls
-ls manual
 
 ## File permissions with numeric values
 ![[Pasted image 20230801093707.png]]
@@ -820,36 +809,32 @@ ls manual
 ---
 ## ACL
 ![[Pasted image 20230801100303.png]]
-To add permission for user
-setfacl -m u:user:rwx /path/to/file
 
-add permissions for a group
-setfacl -m g:group:rw /path/to/file
+`setfacl -m u:user:rwx /path/to/file` = To add permission for user
 
-to allow all files or directories to inherit ACL entries from the directory it is within
-setfacl -Rm "entry" /path/to/file
+`setfacl -m g:group:rw /path/to/file` = add permissions for a group
 
-remove a specific entry
-setfacl -x u:user /path/
+`setfacl -Rm "entry" /path/to/file` = To allow all files or directories to inherit ACL entries from the directory it is within
 
-to remove all entries -b /path/
+`setfacl -x u:user /path/` = remove a specific entry
 
-getfacl /path 
-shows all accesses to groups and users
+ `-b /path/` = to remove all entries
+
+`getfacl /path` = shows all accesses to groups and users
 
 ---
 ## Help commands
-*what is* command
-command *--help*
-*man* command (manual)
+`what is` command
+`[command] --help`
+`man [command]` (manual)
 
 ---
 ## Adding text to files
 
 ### 3 simple ways:
-vi
-Redirect command output > or >>
-echo > or >>
+- `vi`
+- Redirect command output `>` or `>>`
+- `echo >` or `>>`
 
 ---
 ## Input and output redirects
@@ -858,12 +843,12 @@ echo > or >>
 2. Standard output
 3. Standard error
 
--- Output (stdout)
+`-- Output (stdout)`
 
 ---
 ## Standard output to a File (tee)
 
-"tee" command is used to store and view (at the same time) the output of any command
+`tee` command is used to store and view (at the same time) the output of any command.
 
 Named after the T-splitter used in plumbing. Both displays and saves into a file. Simultaneously.
 
@@ -886,60 +871,60 @@ Used by the shell to connect the output of one command directly to the input of 
 
 ---
 ## File Maintenance Commands
-1. cp
-2. rm
-3. mv
-4. mkdir
-5. rmdir or rm -r
-6. chgrp
-7. chown
+1. `cp`
+2. `rm`
+3. `mv`
+4. `mkdir`
+5. `rmdir or rm -r`
+6. `chgrp`
+7. `chown`
 
 `rm -Rf` will forcefully remove sub-directories and their contents as well.
 
 ---
 ## File display commands
-- cat
-- more
-- less
-- head
-- tail
+- `cat`
+- `more`
+- `less`
+- `head`
+- `tail`
 
 ---
 ## Filters / Text processors commands
-- cut
-- awk
-- grep and egrep
-- sort
-- uniq
-- wc
+- `cut`
+- `awk`
+- `grep` and `egrep`
+- `sort`
+- `uniq`
+- `wc`
 ---
 ## Cut
 Allows you to cut parts of lines from specified files.
 
-- cut filename = does not work
-- cut --version = check version
-- cut -cl filename = list one character
-- cut -c1,2,4 = pick and choose character
-- cut -c1-3,6-8 filename = list range of characters
-- cut -b1-3 filename = list by byte size
-- cut -d: -f 6 /etc/passwd = list the first 6th column separated by ":"
-- cut -d: -f 6-7 /etc/passwd = list the first 6 and 7th columns separated by ":"
+- `cut [filename]` = does not work
+- `cut --version` = checks version
+- `cut -cl [filename]` = list one character
+- `cut -c1,2,4` = pick and choose character
+- `cut -c1-3,6-8 [filename]` = list range of characters
+- `cut -b1-3 [filename]` = list by byte size
+- `cut -d: -f 6 /etc/passwd` = list the first 6th column separated by ":"
+- `cut -d: -f 6-7 /etc/passwd` = list the first 6 and 7th columns separated by ":"
 
 ---
 ## AWK
 Utility/language designed for data extraction. Used for files or from an ouitput
 
-- awk --version = check version
-- awk '{print $1}' file = shows only the first field from a file
-- ls -l | awk '{print $1,$3}' = list the first and third columns from ls -l
-- ls -l | awk '{print $NF}' = last field of the output
-- awk '/Jerry/ {print}' file = search for a specific word
-- awk -F: '{print $1}' /etc/passwd = output only the first field of /etc/passwd
-- echo "Hello Tom" | awk '{$2="Adam" ; print $0}' = replace words field words
-- cat file | awk '{$2="Imran" ; print $0} = replace words field words
-- awk 'length($0) > 15' filename = displays all lines that have a length greater than 15
-- ls -l | awk '{if($9 == "seinfeld") print $0;}' = 
-- ls -l | awk '{print NF}' = 
+- `awk --version` = check version
+- `awk '{print $1}' [FILE_NAME]` = shows only the first field from a file
+- `ls -l | awk '{print $1,$3}'` = list the first and third columns from ls -l
+- `ls -l | awk '{print $NF}'` = last field of the output
+- `awk '/Jerry/ {print}' [FILE_NAME]` = search for a specific word
+- `awk -F: '{print $1}' /etc/passwd` = output only the first field of /etc/passwd
+- `echo "Hello Tom" | awk '{$2="Adam" ; print $0}'` = replace words field words
+- `cat file | awk '{$2="Imran" ; print $0}` = replace words field words
+- `awk 'length($0) > 15' filename` = displays all lines that have a length greater than 15
+- `ls -l | awk '{if($9 == "seinfeld") print $0;}'` 
+- `ls -l | awk '{print NF}'` 
 
 https://www.ibm.com/docs/zh/aix/7.2?topic=awk-command
 https://www.cs.unibo.it/~renzo/doc/awk/nawkA4.pdf
@@ -948,61 +933,60 @@ https://www.cs.unibo.it/~renzo/doc/awk/nawkA4.pdf
 ## grep/egrep
 Stands for "global regular expression print", processes line by line and prints any lines that match a specified pattern.
 
-- grep --version OR grep --help
-- grep keyword file = looks for the word in the file
-- grep -c keyword file = counts words that match the pattern
-- grep -i keyword file = ignores case sensitivity 
-- grep -n keyword file = display the matched lines and their matched word
-- grep -v keyword file = shows lines that DO NOT contain the word
-- grep keyword file | awk '{print $1}' = search for a keyword and only give the first field
-- ls -l | grep Desktop 
-- egrep -i "keyword|keyword2" file = look for fields that contain either the first keyword or the second keyword
+- `grep --version` OR `grep --help`
+- `grep [keyword] [FILE_NAME]` = looks for the word in the file
+- `grep -c [keyword] [FILE_NAME]` = counts words that matches the pattern
+- `grep -i [keyword] [FILE_NAME]` = ignores case sensitivity 
+- `grep -n [keyword] [FILE_NAME]` = display the matched lines and their matched word
+- `grep -v [keyword] [FILE_NAME]` = shows lines that DO NOT contain the word
+- `grep [keyword] [FILE_NAME] | awk '{print $1}'` = search for a keyword and only give the first field
+- `ls -l | grep Desktop`
+- `grep -e -i "keyword|keyword2" [FILE_NAME]` = look for fields that contain either the first keyword or the second keyword
 https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
 
 ---
 ## Sort and uniq commands
 
-1. Sort command sorts in alphabetical 
-2. Uniq commands filters out
+1. `sort` command sorts in alphabetical 
+2. `uniq` commands filters out
 
 commands:
-- sort --version OR sort --help
-- sort file = sorts the file alphabetically
-- sort -r file = sort in reverse alphabetical order
-- sort -k2 file = sort by the second column 
-
-- uniq file = remove duplicates
-- sort file | uniq = sort first then uniq
-- sort file | uniq -e = sort first and then uniq, while showing the amount of duplicates
-- sort file | uniq -d = only shows repeated lines
+- `sort --version` OR `sort --help`
+- `sort [FILE_NAME]` = sorts the file alphabetically
+- `sort -r [FILE_NAME]` = sort in reverse alphabetical order
+- `sort -k2 [FILE_NAME]` = sort by the second column 
+- `uniq [FILE_NAME]` = remove duplicates
+- `sort [FILE_NAME] | uniq` = sort first then uniq
+- `sort [FILE_NAME] | uniq -e` = sort first and then uniq, while showing the amount of duplicates
+- `sort [FILE_NAME] | uniq -d` = only shows repeated lines
 ---
 ## wc
 The command reads either standard input or from a list of files and generates 
 
-- wc --version OR wc --help
-- wc file = check file line count, word count and byte count
-- wc -l file = get the number of lines in a file
-- wc -w file = get the number of words in a file
-- wc -b file = get the number of byes in a file
-- wc -c file = counts characters in file
-- wc DIRECTORY = NOT ALLOWED
-- ls -l | wc -l = runs ls first and then counts how many lines there are, counts the amount of folders. Keep in mind that it also counts the total row so we should count minus 1 from the output we get from the wc. Number of files
-- grep keyword | wc -l = looks for a word in a file and then counts how many lines there are that matched. Number of keyword lines.
+- `wc --version` OR `wc --help`
+- `wc [file]` = check file line count, word count and byte count
+- `wc -l [file]` = get the number of lines in a file
+- `wc -w [file]` = get the number of words in a file
+- `wc -b [file]` = get the number of byes in a file
+- `wc -c [file]` = counts characters in file
+- `wc [DIRECTORY]` = NOT ALLOWED
+- `ls -l | wc -l` = runs ls first and then counts how many lines there are, counts the amount of folders. Keep in mind that it also counts the total row so we should count minus 1 from the output we get from the wc. Number of files
+- `grep [keyword] | wc -l` = looks for a word in a file and then counts how many lines there are that matched. Number of keyword lines.
 
 ---
 ## Compare 
 
-- diff = compares line by line
-- cmp = compares byte by byte
+- `diff` = compares line by line
+- `cmp` = compares byte by byte
 
 ---
 ## Compress and decompress files
 
-- tar = zips files together
-- gzip = compresses a file
-- gzip -d OR gunzip = decompresses a file
+- `tar` = zips files together
+- `gzip` = compresses a file
+- `gzip -d` OR `gunzip` = decompresses a file
 
-tar cvf . = copy everything 
+`tar cvf .` = copy everything 
 tar xvf . = extract everything 
 
 https://www.freecodecamp.org/news/tar-command-linux-tar-cvf-tar-xvf/
