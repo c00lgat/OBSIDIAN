@@ -2142,18 +2142,20 @@ There are 5 different ways of backups:
 4. Filesystem backup (tar, gzip directories etc.) backups the files and directories etc.
 5. Disk backup or disk cloning (`dd` command). Can clone an entire disk and creates an image and then put it on another disk.
 
-`dd` is a command-line utility for Unix and Unix-like
-
+`dd` is a command-line utility for Unix and Unix-like OS with the purpose to convert and copy files and partitions.
+As a result, `dd` can be used for tasks such as backing up the boot sector of a hard drive and obtaining a fixed amount of random data.
 
 To backup or clone an entire hard disk to another hard disk connected to the same system execute the `dd` command as shown:
 
-\# dd if=\<source file name> of=\<target file name> \[Options]
+**\#** `dd if=\<source file name> of=\<target file name> \[Options]`
 
-\# `dd` if=/dev/sda of=/dev/sdb
+**\#** `dd if=/dev/sda of=/dev/sdb`
 
 To backup/copy the disk partition
-\#`dd` if =/dev/sdal
+**\#**`dd if =/dev/sda1 of=/root/sda1.img`
 
+Restoring this image file to other machine after copying the .img
+**\#**`dd if =/dev/sda1.img of=/dev/sdb3`
 
 `df -h` to determine which partition we want to copy
 `dd if=/dev/sda1 of=/data/boot.img`
@@ -2163,8 +2165,24 @@ To verify, we can `cd` to the directory and check if the  `boot.img` is there.
 If we wanted to copy a partition to a partition we can do the following:
 `dd if=/dev/sda1 of=/dev/sdb1`
 
+---
+## Network File System (NFS)
+
+Sharing your files with other computers and users.
+It is not local to your computer.
+
+It is a client/server system that allows users to access files across a network and treat them as if they resided in a local file directory.
+
+For example, if you were using a computer linked to a second computer via NFS, you could access files on the second computer as if they resided in a directory on the first computer. This is accomplished through the processes of exporting (the process of which an NDS server provides remote clients with access to its files) and mounting (the process by which client map NFS shared filesystem).
 
 
+![[Pasted image 20230807154134.png]]
+Once server approves the NFS Request, then the server approves:
+
+![[Pasted image 20230807154209.png]]
+
+
+**Steps for NFS Server Configuration**
 
 
 
