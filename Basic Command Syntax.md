@@ -1107,6 +1107,8 @@ automatically adds spiderman to spiderman group when creating useradd spiderman
 
 useradd babubutt -m(Create home dir) -s /bin/bash(set bash to be the default shell command interpreter)
 
+chsh -s /bin/bash
+
 ---
 ## Password Aging - chage
 chage \[-m min days\] \[-M max days\] \[-d last day\] \[-I inactive\] \[-E expire date\] \[-W warn days\] user
@@ -1778,10 +1780,23 @@ Reads = /etc/systemd/system/default.target to bring the system, to the run-level
 ---
 ## Message of the Day
 
-A message that shows up on the screen every time you connect to a remote machine. 
+A message that shows up on the screen every time a user is connected to the Linux machine machine. 
 For example, when connecting to a remote server usually we are prompted with a security warning.
 
 - `/etc/motd`
 
 ---
 ## Customize message of the day
+
+Instead of manually going to `/etc/motd/` we can do:
+Create a new file in `/etc/profile.d/motd.sh`
+Add desired commands in `motd.sh` file
+Modify the `etc/ssh/sshd_config` to edit `#PrintMotd yes`
+to `PrintMotd no`
+Restart sshd service -> `systemctl restart sshd.service`
+
+
+In the script itself, we can simply use `hostname` and `whoami` 
+"You are logged in as `whoami`"
+And the script will automatically show the relevant hostname and username to each user that connects to the Linux machine.
+
