@@ -165,11 +165,11 @@ Let's examine the following example. The `dd` command creates a file named `/tmp
 ---
 ## Removing Files
 
-`rm [OPTIONS] FILE`
+`rm [OPTIONS] [FILE]`
 
 The `rm` command will ignore directories that it's asked to remove; to delete a directory, use a recursive option, either the `-r` or `-R` options. Just be careful since these options are "recursive", this will delete all files and all subdirectories.
 
-rmdir * (asterisk is all). Removes all directories.
+`rmdir *` (asterisk is all). Removes all directories.
 
 
 ---
@@ -190,11 +190,11 @@ https://unix.stackexchange.com/questions/185116/how-to-find-with-grep-lines-that
 ```
 grep 'ing$' soi
 ```
-grep -i (ignore) ignores case sensitivity
-grep -v (--invert-match) selects non-matching lines
+`grep -i` = (ignore) ignores case sensitivity
+`grep -v` = (--invert-match) selects non-matching lines
 
 
-history | grep "mkdir -p" (finds past commands that include the specified string)
+`history | grep "mkdir -p"` = (finds past commands that include the specified string)
 ![[Pasted image 20230718215652.png]]
 <br>
 ![[Pasted image 20230718215705.png]]
@@ -248,17 +248,17 @@ The `shutdown` command arranges for the system to be brought down in a safe way.
 ## Network Configuration
 
 The `ifconfig` command stands for "interface configuration" and is used to display network configuration information.
-<br>
-ifconfig *OPTIONS*
+
+`ifconfig [*]OPTIONS]`
 <br>
 >**Note**
-The `iwconfig` command is similar to the `ifconfig` command, but it is dedicated to wireless network interfaces.
-<br>
+>The `iwconfig` command is similar to the `ifconfig` command, but it is dedicated to wireless network interfaces.
+
 ![[Pasted image 20230718221142.png]]
 <br>
 >**Consider This**
-The `lo` device is referred to as the loopback device. It is a special network device used by the system when sending network-based data to itself.
-<br>
+>The `lo` device is referred to as the loopback device. It is a special network device used by the system when sending network-based data to itself.
+
 ![[Pasted image 20230718221243.png]]
 <br>
 ![[Pasted image 20230718221257.png]]
@@ -270,8 +270,8 @@ Running a command results in something called a process. In the Linux operating 
 <br>
 Although there are exceptions, generally the operating system will differentiate users based upon whether they are the administrator. Typically regular users, like the `sysadmin` user, cannot control another user's processes. Users who have administrative privileges, like the `root` account, can control any user processes, including stopping any user process.
 <br>
->The `ps` command can be used to list processes.
-ps *OPTIONS*
+The `ps` command can be used to list processes.
+`ps [OPTIONS]`
 <br>
 **sysadmin@localhost:~$** ps
   PID TTY          TIME CMD
@@ -301,7 +301,7 @@ Instead of viewing just the processes running in the current terminal, users may
    69 pts/0        00:00:00 login                                                   
    79 pts/0        00:00:00 bash                                                    
    94 pts/0        00:00:00 ps
-<br>
+
 Typically, the `-f` option is also used as it provides more detail in the output of the command, including options and arguments. Look for the `ps` command on the last line, the `CMD` column now includes the options used:
 
 >**sysadmin@localhost:~$** ps -ef
@@ -322,21 +322,21 @@ At the lowest level of the Debian package management system is the `dpkg` comman
 ### Installing Packages
 Package files are commonly installed by downloading them directly from repositories located on Internet servers. The Debian repositories contain more than 65,000 different packages of software. Before installing a package, it is good practice to refresh the list of available packages using the `apt-get update` command.
 <br>
-*sudo apt-get update*
->**sysadmin@localhost:~$** sudo apt-get update                                       
-[sudo] password for sysadmin:                                                   
-Ign file: amd64/ InRelease                                                      
-Ign file: amd64/ Release.gpg                                                    
-Ign file: amd64/ Release                                                        
-Reading package lists... Done
-<Br>
+`sudo apt-get update`
+>**sysadmin@localhost:~$** sudo apt-get update                             
+>\[sudo] password for sysadmin:                                                   
+>Ign file: amd64/ InRelease                                                      
+>Ign file: amd64/ Release.gpg                                                    
+>Ign file: amd64/ Release                                                        
+>Reading package lists... Done
+
 To search for keywords within these packages, you can use the `apt-cache search` command.
 
-apt-cache search *keyword*
+`apt-cache search [keyword]`
 <br>
 Once you've found the package that you want to install, you can install it with the `apt-get install` command:
 
-*sudo apt-get install (PACKAGE)*
+`sudo apt-get install [PACKAGE]`
 ![[Pasted image 20230718221953.png]]
 <br>
 ### Updating packages
@@ -350,15 +350,15 @@ The `apt-get` command is able to either remove or purge a package. The differenc
 
 An administrator can execute the `apt-get remove` command to remove a package or the `apt-get purge` command to purge a package completely from the system.
 
->apt-get remove [package]
+`apt-get remove [package]`
 
->apt-get purge [package]
+`apt-get purge [package]`
 
 ---
 ## Updating User Passwords
 The `passwd` command is used to update a user’s password. Users can only change their own passwords, whereas the root user can update the password for any user.
 
->passwd [OPTIONS [USER]
+`passwd [OPTIONS] [USER]`
 
 <br>
 For example, since we are logged in as the `sysadmin` user we can change the password for that account. Execute the `passwd` command. You will be prompted to enter the existing password once and the new password twice. For security reasons, no output is displayed while the password is being typed. The output is shown as follows:
@@ -386,8 +386,8 @@ passwd: password updated successfully
 
 Use the `>` character to redirect the STDOUT of the `cat food.txt` command above to a new file called `newfile1.txt`:
 
->**sysadmin@localhost:~/Documents$** cat food.txt > newfile1.txt
-**sysadmin@localhost:~/Documents$**
+`cat food.txt > newfile1.txt`
+
 This is useful if you need to copy content from an important file to another file in order to edit the contents without modifying the original file.
 
 ---
@@ -396,8 +396,7 @@ This is useful if you need to copy content from an important file to another fil
     
 - The `vi` editor can be executed both in a CLI (command line interface) and a GUI (graphical user interface).
 <br>
-There are three modes used in `vi`: command mode, insert mode, and ex mode.
-<br>
+There are three modes used in `vi`: *command mode*, insert mode, and ex mode.
 
 ### Command Mode Movement
 Initially, the program starts in command mode. Command mode is used to type commands, such as those used to move around a document, manipulate text, and access the other two modes. To return to command mode at any time, press the **Esc** key.
