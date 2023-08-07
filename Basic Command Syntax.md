@@ -1824,3 +1824,11 @@ Commands for disk partitioning:
 
 Useful when we want to add new partitions and add more storage to our system
 
+---
+## Adding Disk and Creating Partition
+
+Purpose? Out of space. Or additional space for apps etc.
+
+Commands for disk partitioning:
+- df
+- fdisk
