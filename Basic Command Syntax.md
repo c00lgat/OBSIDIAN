@@ -1739,4 +1739,30 @@ The entire process of booting up is called Bootstrap
 ## Linux Boot Process
 
 ![[Pasted image 20230807100826.png]]
-After pressing power on, the computer looks to BIOS to look for 
+After pressing power on, the computer looks into the BIOS which in turn looks at the MBR (Master Boot Record) which is usually a really small code that executes GRUB (Grand Unified Bootloader) which in turn executes the Kernel. The Kernel then executes`/sbin/init/`. Init executes run level programs; Runlevel programs are executed from `etc/rc.d/rc*.d` 
+
+![[Pasted image 20230807101050.png]]
+![[Pasted image 20230807101443.png]]
+
+---
+## Linux Boot Process
+
+`systemd` is the new service manager in CentOS/RHEL 7 that manages the boot sequence.
+
+Backward compatible with SysV init script used by previous versions.
+
+BIOS = Basic Input and Output Setting (firmware interface)
+POST = Power-On Self_Test started; asks all devices if they are okay and working properly
+
+
+MBR = Master Boot Record
+Information saved in the first sector of a hard disk that indicates where the GRUB2 is located so it can be loaded in computer RAM
+
+
+GRUB@ = Grand Unified Boot Loader v2
+*Loads Linux Kernel*
+`/boot/grub2/grub.cfg`
+
+
+Kernel = Core of Operating System
+Loads required drivers from 
