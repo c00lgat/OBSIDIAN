@@ -1728,5 +1728,15 @@ A server has to be running a listening service to receive the protocol, we have 
 ---
 ## Computer Boot Process
 
-Power goes through the socket, to the power supply unit and then to the motherboard which in turn powers on the CPU and the BIOS.
-The BIOS is a software on a little chip on the motherboard which is only readable.
+Power goes through the socket, to the power supply unit and then to the motherboard which in turn powers on the CPU and the BIOS. The CPU starts and pulls instructions from the BIOS.
+The BIOS is a software on a little chip on the motherboard which is only readable. The BIOS code is saved on ROM  (Read only memory).
+The BIOS settings such as time, date etc is saved on the CMOS. The CMOS runs on a battery that is located on the motherboard.
+POST - power on self test. The CPU goes through every device that is attached to the PC and checks if its running properly.
+Once the computer posts, the BIOS goes to the MBR (Master boot record) located in the HDD and the OS is then loaded onto the computer memory (RAM). 
+The entire process of booting up is called Bootstrap
+
+---
+## Linux Boot Process
+
+![[Pasted image 20230807100826.png]]
+After pressing power on, the computer looks to BIOS to look for 
