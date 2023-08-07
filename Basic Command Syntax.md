@@ -1518,18 +1518,18 @@ https://www.sobyte.net/post/2022-04/linux-suid/
   The highlighted bit is the sticky bit, Why?
   If we have a t, it means that although the user has read write permissions, he cannot delete the file.
 
-become root and create `dir mkdir /allinone`
-assign all rwx to the dir: `chmod 777 \/allinone`
-become user and create dir inside of \/allineone: mkdir imrandir
-give all rwx perms to the dir: chmod 777 imrandir
-create 3 files in that dir: touch a b c
-Logging as another user and trying to delete the imrandir directory will result in deleting it.
+- Become root and create `dir mkdir /allinone`
+assign all `rwx` to the dir: `chmod 777 /allinone`
+- Become user and create dir inside of `/allineone`: `mkdir imrandir`
+- Give all rwx perms to the dir: chmod 777 imrandir
+- create 3 files in that dir: `touch a b c`
+- Logging as another user and trying to delete the imrandir directory will result in deleting it.
 
-Now, becoming root and assigning sticky bit permission to \/allinone dir: `chmod +t /allinone`
+Now, becoming root and assigning sticky bit permission to `/allinone` dir: `chmod +t /allinone`
 
-Become user and create a dir inside of \/allinone
-Give all rwx perms to that dir
-Create 3 files in that dir: touch a b c
+Become user and create a dir inside of `/allinone`
+Give all `rwx` perms to that dir
+Create 3 files in that dir: `touch a b c`
 Become another user again and try to delete that dir
 We wont be able to delete the directory.
 
@@ -1615,9 +1615,9 @@ Become root (`su -`)
 ## NIC
 Network Interface Card
 
-lo = loopback device, special interface that the machine uses to communicate with itself. Used for diagnostics and troubleshooting and to connect to servers running on the local machine.
+`lo` = loopback device, special interface that the machine uses to communicate with itself. Used for diagnostics and troubleshooting and to connect to servers running on the local machine.
 
-virb0 = "Virtual Bridge 0" used for NAT (Network Address Translation). Virtual environments sometimes use it to connect to outside networks.
+`virb0` = "Virtual Bridge 0" used for NAT (Network Address Translation). Virtual environments sometimes use it to connect to outside networks.
 
 `ethtool virb0` - will tell us that device is connected
 
@@ -1662,7 +1662,7 @@ If a certain app does not exist in the default repository, we can just use a dow
 `nslookup`
 
 To download something from the internet using the `curl` command:
-`curl -O link_goes_here`
+`curl -O [link_goes_here]`
 Where does it download it? Usually downloads it in whichever directory we are currently at.
 
 ---
@@ -1706,10 +1706,6 @@ Then, in the client side, enter `bi` and run it in order to switch to Binary mod
 
 Then run `hash` so that we get to see the upload/download progress.
 
-
-
-
-
 ---
 ## rsync - Remote Synchronization
 
@@ -1721,15 +1717,15 @@ Then run `hash` so that we get to see the upload/download progress.
 ## System Run Level
 
 ### Main Run Level
-- 0 Shut down (or halt the system)
-- 1 Single-user mode; usually aliased as s or S - to troubleshoot issues
-- 6 reboot the system
+- `0` Shut down (or halt the system)
+- `1` Single-user mode; usually aliased as s or S - to troubleshoot issues
+- `6` reboot the system
 
 ### Other run levels
-- 2 multiuser mode without networking
-- 3 multiuser mode with networking
-- 5 multiuser mode with networking and GUI
-- 4 is user-definable
+- `2` multiuser mode without networking
+- `3` multiuser mode with networking
+- `5` multiuser mode with networking and GUI
+- `4` is user-definable
 
 `init 0`
 `who -r` tells us what run level we are currently at
@@ -1758,29 +1754,29 @@ After pressing power on, the computer looks into the BIOS which in turn looks at
 
 `systemd` is the new service manager in CentOS/RHEL 7 that manages the boot sequence.
 
-Backward compatible with SysV init script used by previous versions.
+Backward compatible with `SysV init script` used by previous versions.
 
-BIOS = Basic Input and Output Setting (firmware interface)
+`BIOS` = Basic Input and Output Setting (firmware interface)
 POST = Power-On Self_Test started; asks all devices if they are okay and working properly
 
 
-MBR = Master Boot Record
+`MBR` = Master Boot Record
 Information saved in the first sector of a hard disk that indicates where the GRUB2 is located so it can be loaded in computer RAM
 
 
-GRUB@ = Grand Unified Boot Loader v2
+`GRUB2` = Grand Unified Boot Loader v2
 *Loads Linux Kernel*
 `/boot/grub2/grub.cfg`
 
 
-Kernel = Core of Operating System
-Loads required drivers from initrd.img
-Starts the first OS process (systemd)
+`Kernel` = Core of Operating System
+Loads required drivers from `initrd.img`
+Starts the first OS process (`systemd`)
 
 
-Systemd = System Daemon (PID #1)
+`Systemd` = System Daemon (PID #1)
 It then starts all the required processes
-Reads = /etc/systemd/system/default.target to bring the system, to the run-level total of 7 run-levels (0 through 6).
+Reads = `/etc/systemd/system/default.target` to bring the system, to the run-level total of 7 run-levels (0 through 6).
 
 ---
 ## Message of the Day
@@ -2119,15 +2115,15 @@ As a result, `dd` can be used for tasks such as backing up the boot sector of a 
 
 To backup or clone an entire hard disk to another hard disk connected to the same system execute the `dd` command as shown:
 
-**\#** `dd if=\<source file name> of=\<target file name> \[Options]`
+ `dd if=\<source file name> of=\<target file name> \[Options]`
 
-**\#** `dd if=/dev/sda of=/dev/sdb`
+ `dd if=/dev/sda of=/dev/sdb`
 
 To backup/copy the disk partition
-**\#`dd if =/dev/sda1 of=/root/sda1.img`
+`dd if =/dev/sda1 of=/root/sda1.img`
 
 Restoring this image file to other machine after copying the .img
-**\#`dd if =/dev/sda1.img of=/dev/sdb3`
+`dd if =/dev/sda1.img of=/dev/sdb3`
 
 `df -h` to determine which partition we want to copy
 `dd if=/dev/sda1 of=/data/boot.img`
