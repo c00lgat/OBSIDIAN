@@ -1726,6 +1726,15 @@ Then, we have to run the following commands:
 `systemctl stop firewalld`
 `systemctl disable firewalld`
 
+Now, once we have all those steps done, go to your client machine and run `ftp 192.168.136.x` (the ip is taken from `ifconfig` from the server side)
+Once you run that, you can specify as what user you are connecting to the server (if it says none on the console then just type your name and press enter).
+Enter password and afterwards you should be connected to the server.
+
+Then, in the client side, enter `bi` and run it in order to switch to Binary mode.
+
+Then run `hash` so that we get to see the upload/download progress.
+
+
 
 
 
