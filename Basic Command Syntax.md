@@ -1856,3 +1856,9 @@ And then add the newly created disk: add the following line: `/dev/sdb1 /data xf
 
 ## LVM Configuration During Install
 
+---
+
+## Add Disk and Create LVM Partition
+
+![[Pasted image 20230807113858.png]]
+
