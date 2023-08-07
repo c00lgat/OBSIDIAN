@@ -361,12 +361,15 @@ The **`passwd`** command is used to update a user’s password. Users can only c
 
 <br>
 For example, since we are logged in as the *`sysadmin`* user we can change the password for that account. Execute the **`passwd`** command. You will be prompted to enter the existing password once and the new password twice. For security reasons, no output is displayed while the password is being typed. The output is shown as follows:
+
 ![[Pasted image 20230718222322.png]]
 <br>
 If the user wants to view status information about their password, they can use the *`-S`* option:
+
 ![[Pasted image 20230718222346.png]]
 <br>
 Output fields are explained below:
+
 ![[Pasted image 20230718222416.png]]
 
 
@@ -412,6 +415,7 @@ To move the cursor to a specific line number, type that line number followed by 
 <br>
 ### Command Mode Actions
 The standard convention for editing content with word processors is to use copy, cut, and paste. The `vi` program has none of these. Instead, `vi` uses the following three commands:
+
 ![[Pasted image 20230718223759.png]]
 The motions learned from the previous page are used to specify where the action is to take place, always beginning with the present cursor location. Either of the following general formats for action commands is acceptable:
 
@@ -422,18 +426,22 @@ The motions learned from the previous page are used to specify where the action 
 <br>
 ### Delete
 Delete removes the indicated text from the page and saves it into the buffer, the buffer being the equivalent of the "clipboard" used in Windows or Mac OSX. The following table provides some common usage examples:
+
 ![[Pasted image 20230718223905.png]]
 <br>
 ### Change
 Change is very similar to delete; the text is removed and saved into the buffer, however, the program is switched to insert mode to allow immediate changes to the text. The following table provides some common usage examples:
+
 ![[Pasted image 20230718223953.png]]
 <br>
 ### Yank
 Yank places content into the buffer without deleting it. The following table provides some common usage examples:
+
 ![[Pasted image 20230718224035.png]]
 <br>
 ### Put
 Put places the text saved in the buffer either before or after the cursor position. Notice that these are the only two options, put does not use the motions like the previous action commands.
+
 ![[Pasted image 20230718224053.png]]
 <br>
 ### Searching in vi
@@ -447,10 +455,12 @@ To start searching backwards from the cursor position, start by typing `?`, then
 <br>
 ### Insert Mode
 Insert mode is used to add text to the document. There a few ways to enter insert mode from command mode, each differentiated by where the text insertion will begin. The following table covers the most common:
+
 ![[Pasted image 20230718224240.png]]
 <br>
 ### Ex Mode
 When the ex mode of the `vi` editor is being used, it is possible to view or change settings, as well as carry out file-related commands like opening, saving or aborting changes to a file. In order to get to the ex mode, type a `:` character in command mode. The following table lists some common actions performed in ex mode:
+
 ![[Pasted image 20230718224412.png]]
 A quick analysis of the table above reveals that if an exclamation mark, `!`, is added to a command, it then attempts to force the operation. For example, imagine you make changes to a file in the `vi` editor and then try to quit with `:q`, only to discover that the command fails. The `vi` editor doesn't want to quit without saving the changes you made to a file, but you can force it to quit with the ex command `:q!`.
 <br>
@@ -510,6 +520,7 @@ mkdir -p dir/dd dir/cc does work.
 mkdir -p zoo/{predatory/{table,leopard}/,birds/{parrot,chair}}
 
 mkdir -p grocery/{bakery/cakes/{minirolls,bars}/,home/cleaning/{wipes,polish}}
+
 ![[Pasted image 20230723141548.png]]
 
 
