@@ -396,7 +396,7 @@ This is useful if you need to copy content from an important file to another fil
     
 - The `vi` editor can be executed both in a CLI (command line interface) and a GUI (graphical user interface).
 <br>
-There are three modes used in `vi`: *command mode*, insert mode, and ex mode.
+There are three modes used in `vi`: *command mode*, *insert mode*, and *ex mode*.
 
 ### Command Mode Movement
 Initially, the program starts in command mode. Command mode is used to type commands, such as those used to move around a document, manipulate text, and access the other two modes. To return to command mode at any time, press the **Esc** key.
@@ -407,87 +407,83 @@ Movement commands in `vi` have two aspects, a motion and an optional number pref
 
 >[count] motion
 ![[Pasted image 20230718223534.png]]
-**Note**
-Since the upgrade to `vim` it is also possible to use the arrow keys `←``↓``↑``→` instead of `h``j``k``l` respectively.
 
-<br>
+Note
+Since the upgrade to `vim` it is also possible to use the arrow keys `← ↓ ↑ →` instead of `h j k l` respectively.
+
 To move the cursor to a specific line number, type that line number followed by the `G` character. For example, to get to the fifth line of the file type `5G`. `1G` or `gg` can be used to go to the first line of the file, while a lone `G` will take you to the last line. To find out which line the cursor is currently on, use **CTRL+G**.
-<br>
+
 ### Command Mode Actions
 The standard convention for editing content with word processors is to use copy, cut, and paste. The `vi` program has none of these. Instead, `vi` uses the following three commands:
 
 ![[Pasted image 20230718223759.png]]
 The motions learned from the previous page are used to specify where the action is to take place, always beginning with the present cursor location. Either of the following general formats for action commands is acceptable:
 
->action [count] motion
+`[action] [count] [motion]`
 
->[count] action motion
+`[count] [action] [motion]`
 
-<br>
 ### Delete
 Delete removes the indicated text from the page and saves it into the buffer, the buffer being the equivalent of the "clipboard" used in Windows or Mac OSX. The following table provides some common usage examples:
 
 ![[Pasted image 20230718223905.png]]
-<br>
 ### Change
 Change is very similar to delete; the text is removed and saved into the buffer, however, the program is switched to insert mode to allow immediate changes to the text. The following table provides some common usage examples:
 
 ![[Pasted image 20230718223953.png]]
-<br>
 ### Yank
 Yank places content into the buffer without deleting it. The following table provides some common usage examples:
 
 ![[Pasted image 20230718224035.png]]
-<br>
 ### Put
 Put places the text saved in the buffer either before or after the cursor position. Notice that these are the only two options, put does not use the motions like the previous action commands.
 
 ![[Pasted image 20230718224053.png]]
-<br>
+
 ### Searching in vi
 Another standard function that word processors offer is find. Often, people use **CTRL+F** or look under the edit menu. The `vi` program uses search. Search is more powerful than find because it supports both literal text patterns and regular expressions.
 
 To search forward from the current position of the cursor, use the `/` to start the search, type a search term, and then press the **Enter** key to begin the search. The cursor will move to the first match that is found.
 
 To proceed to the next match using the same pattern, press the `n` key. To go back to a previous match, press the `N` key. If the end or the beginning of the document is reached, the search will automatically wrap around to the other side of the document.
-<br>
+
 To start searching backwards from the cursor position, start by typing `?`, then type the pattern to search for matches and press the **Enter** key.
-<br>
+
 ### Insert Mode
 Insert mode is used to add text to the document. There a few ways to enter insert mode from command mode, each differentiated by where the text insertion will begin. The following table covers the most common:
 
 ![[Pasted image 20230718224240.png]]
-<br>
 ### Ex Mode
 When the ex mode of the `vi` editor is being used, it is possible to view or change settings, as well as carry out file-related commands like opening, saving or aborting changes to a file. In order to get to the ex mode, type a `:` character in command mode. The following table lists some common actions performed in ex mode:
 
 ![[Pasted image 20230718224412.png]]
 A quick analysis of the table above reveals that if an exclamation mark, `!`, is added to a command, it then attempts to force the operation. For example, imagine you make changes to a file in the `vi` editor and then try to quit with `:q`, only to discover that the command fails. The `vi` editor doesn't want to quit without saving the changes you made to a file, but you can force it to quit with the ex command `:q!`.
-<br>
->**Consider This**
+
+**Consider This**
 Although the ex mode offers several ways to save and quit, there's also `ZZ` that is available in command mode; this is the equivalent of `:wq`. There are many more overlapping functions between ex mode and command mode. For example, ex mode can be used to navigate to any line in the document by typing `:` followed by the line number, while the `G` can be used in command mode as previously demonstrated.
 
 ---
 
 ## Wildcards - power of ? and *
-rm * - removes all files in directory.
-rm month/* - removes all files in month directory.
+`rm *` - removes all files in directory.
 
-touch file{3..5}.txt - creates files file3.txt, file4.txt and file5.txt
+`rm month/*` - removes all files in month directory.
 
-touch file{1..10..2}.txt - creates files with only odd numbers in the name.
+`touch file{3..5}.txt` - creates files file3.txt, file4.txt and file5.txt
 
-ls -l * .sh - lists all files that have a .sh format
+`touch file{1..10..2}.txt` - creates files with only odd numbers in the name.
 
-find . -type f -name "f*"
+`ls -l * .sh` - lists all files that have a .sh format
 
-ls -l * e * - finds all files with the letter e in them
+`find . -type f -name "f*"`
 
-ls -l ? - the question mark is substituted with only one letter, shows all files that only have one letter in the name. f.txt does not count
+`ls -l * e * - finds all files with the letter e in them`
 
-rm alpha* (removes all files that start with the word alpha in the beginning)
+`ls -l ?` - the question mark is substituted with only one letter, shows all files that only have one letter in the name. f.txt does not count
 
-When using a ? as a wildcard, it does not match up with words that dont have any letters to fill out the ?
+`rm alpha*` (removes all files that start with the word alpha in the beginning)
+
+When using a `?` as a wildcard, it does not match up with words that dont have any letters to fill out the `?`
 
 
 ---
@@ -499,23 +495,20 @@ Execute - e=1
 
 If we want to give only read and write permissions, we can add 6 (4+2).
 
-chmod 751 aa.txt
-
-which means, we gave the USER 7 permission points, meaning rwe
-we gave the group read and execute permissions, 5 permission points as read is 4 and execute is 1
-and for others we only gave execute permissions because we only gave the third digit only 1 permission points, which is execute
+`chmod 751 aa.txt`
 
 ---
 ## mkdir essentials
 
-mkdir {dir1,dir2} Makes two directories with the names of dir1 and dir2
-mkdir dir1 dir2 Also works the same way
+`mkdir {dir1,dir2}` Makes two directories with the names of dir1 and dir2.
 
-mkdir dir dir/dd dir/cc Makes a new folder with new subfolders inside it.
+`mkdir dir1 dir2` Also works the same way
 
-mkdir dir/dd dir/cc wouldnt work, throws exception that dir does not exist.
+`mkdir -p dir dir/dd dir/cc` Makes a new folder with new subfolders inside it.
 
-mkdir -p dir/dd dir/cc does work. 
+`mkdir dir/dd dir/cc` wouldn't work, throws exception that dir does not exist.
+
+`mkdir -p dir/dd dir/cc does work. 
 
 mkdir -p zoo/{predatory/{table,leopard}/,birds/{parrot,chair}}
 
