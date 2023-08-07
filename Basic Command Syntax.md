@@ -1984,3 +1984,29 @@ Reboot the system to verify that the swap has been added on boot-up.
 
 ---
 
+## Implement Advanced Storage Features
+Next Gen volume management solution called Stratis
+
+Uses thin provisioning by default
+
+Combines the process of creating logical volume management and creation of filesystems into one management 
+
+In LVM if a filesystem system gets full you will have to extend it manually whereas Stratis extends the filesystem automatically if it has available space in its pool
+
+
+In LVM:
+![[Pasted image 20230807130738.png]]
+
+In Stratis:
+![[Pasted image 20230807130826.png]]
+
+
+- Install Stratis package
+- Enable and start Stratis service `systemctl enable|start stratisd`
+-  Add new disks from virtualization software
+- Create a new Stratis pool and verify
+  `stratis pool create pool /dev/sdc`
+  `stratis pool list`
+- Extend the pool 
+  `stratis pool add-data pool1 /dev/sdc`
+  `stratis pool list`
