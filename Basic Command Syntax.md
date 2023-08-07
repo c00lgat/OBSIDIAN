@@ -1105,6 +1105,8 @@ automatically adds spiderman to spiderman group when creating useradd spiderman
 
 -m to create home directory for the user
 
+useradd babubutt -m(Create home dir) -s /bin/bash(set bash to be the default shell command interpreter)
+
 ---
 ## Password Aging - chage
 chage \[-m min days\] \[-M max days\] \[-d last day\] \[-I inactive\] \[-E expire date\] \[-W warn days\] user
@@ -1776,9 +1778,10 @@ Reads = /etc/systemd/system/default.target to bring the system, to the run-level
 ---
 ## Message of the Day
 
-A message that shows up on the screen every time you power on the machine. 
+A message that shows up on the screen every time you connect to a remote machine. 
 For example, when connecting to a remote server usually we are prompted with a security warning.
 
 - `/etc/motd`
 
 ---
+## Customize message of the day
