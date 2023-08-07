@@ -2096,14 +2096,42 @@ LVM mostly configured on virtual disks.
 `fsck` utility is used to check and repair Linux filesystems (ext2, ext3, ext4, etc)
 
 `xfs_repair` utility is used to check and repair Linux filesystems for *xfs* filesystem type
+>`df -T` to check what filesystem the Linux is running
 
-Depending on when was the last time a file system was checked, the system runs the `fsck` during boot time to check whether the filesystem is in consistent state
+Depending on when was the last time a file system was checked, the system runs the `fsck` during boot time to check whether the filesystem is in consistent state by default.
 
 System admin could also run it manually when there is a problem with the filesystems.
 
-Make sure to execute the `fsck` on an unmounted file systems to avoid any data corruption issues
+Make sure to execute the `fsck` on an unmounted file systems to avoid any data corruption issues. Not mounted to any mount points
 
 
-What if we wanted to run it on `/root`? The only way to do that is in single user mode or in recovery mode
+What if we wanted to run it on `/root`? The only way to do that is in single user mode or in recovery mode and mount it on the disk.
 
-- Force a filesystem check even if its clean using `option -f`
+- Force a filesystem check even if its clean using option `-f`. Instead of going back and forth to check which partitions are clean, we can just use `-f` tp force check all partitions
+- Attempt to fix detected problems automatically using option `-y`
+- `xfs_repair` is highly scalable. For larger partitions like terabytes. We don't want to wait each time we run the system and that is why it doesn't run automatically on bootup.
+
+Possible exit codes for `fsck` command:
+![[Pasted image 20230807151807.png]]
+
+Older versions of RedHat, we are going to see ext\* Filesystems.
+
+When we try to `xfs_repair` a filesystem, the terminal will throw an error since the filesystem is currently mounted.
+
+Thus, we need to unmount first: `unmount /mountpoint`
+Once we do that, it will no longer show when we run `df -T` and for that, it is advised to save the path to the said disk.
+
+And then we can run the `xfs_repair` on the relevant disk.
+
+If we get a  `0` once the code finishes running, it means that it found no errors.
+
+After checking, we need to mount our disk back:
+`mount /dev/sdbl /data`
+
+This is good for when our system is corrupted. We then 
+
+
+
+
+
+
