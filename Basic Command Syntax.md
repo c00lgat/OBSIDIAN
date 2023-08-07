@@ -2271,5 +2271,28 @@ A storage can be carved on a Linux server and it can be shared with another Linu
 NFS/Samba or any NAS service can be setup through a dedicated NAS device.
 ![[Pasted image 20230807170915.png]]
 
+---
+## SATA and SAS
+
+- **SATA** stands for Serial Advanced Technology Attachment and **SAS** stands for Serial Attached SCSI (SCSI Stands for Small Computer System Interface, typically pronounced as "scuzzy").
+- Both
+
+The main difference is that SAS drives are faster and more reliable than SATA drives.
+
+SAS is generally more expensive and better suited for use in servers or in processing heavy computer workstations. SATA is less expensive and is better suited for desktop file storage
+
+In a SATA cable all 4 wires are placed within the same cable. In a SAS cable, the 4 wires are separated into 2 different cables.
+
+Why divide the wires between 2 cables?
+- So you can connect more devices to one another,. With a SATA cable you can only link the motherboard and the storage drive. You could  hook up an expansion device but that takes up valuable room inside your computer
+- With a SAS cable, you can hookup the motherboard to both a storage drive and another piece of hardware that has SAS connectors
+
+---
+## Difference between Linux 5, 6 and 7
+
+Enhanced feats, better feats and patched bugs are the reason why there are multiple versions of Linux usually.
+
+
+
 
 
