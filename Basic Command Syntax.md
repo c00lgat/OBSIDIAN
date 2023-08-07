@@ -2260,19 +2260,17 @@ Another protocol used to share Samba is through CFIS
 
 ![[Pasted image 20230807170629.png]]
 ### Samba download, install and configuration
-• Samba is a Linux tool or utility that allows sharing for Linux resources such as files
-and printers to with other operating systems
-• It works exactly like NFS but the difference is NFS shares within Linux or Unix like
-system whereas Samba shares with other OS (e.g. Windows, MAC etc.)
-For example, computer “A” shares its filesystem with computer “B” using Samba
-then computer “B” will see that shared filesystem as if it is mounted as the local
-filesystem
-• Samba shares its filesystem through a protocol called SMB (Server Message Block)
-which was invented by IBM
-• Another protocol used to share Samba is through CIFS (Common Internet File
-System) invented by Microsoft and also NMB (NetBios Name server)
-• CIFS became the extension of SMB and now Microsoft has introduced newer version
-of SMB v2 and v3 that are mostly used in the industry
+ • Samba is a Linux tool or utility that allows sharing for Linux resources such as files and printers to with other operating systems.
+ 
+ • It works exactly like NFS but the difference is NFS shares within Linux or Unix like system whereas Samba shares with other OS (e.g. Windows, MAC etc.).
+
+For example, computer “A” shares its filesystem with computer “B” using Samba then computer “B” will see that shared filesystem as if it is mounted as the local filesystem.
+
+ • Samba shares its filesystem through a protocol called SMB (Server Message Block) which was invented by IBM.
+ 
+ • Another protocol used to share Samba is through CIFS (Common Internet File System) invented by Microsoft and also NMB (NetBios Name server).
+ 
+ • CIFS became the extension of SMB and now Microsoft has introduced newer version of SMB v2 and v3 that are mostly used in the industry.
 • Most people, when they use either SMB or CIFS, are talking about the same exact
 thing. The two are interchangeable not only in discussion, but also in application –
 i.e., a client speaking CIFS can talk to a server speaking SMB and vice versa. Why?
