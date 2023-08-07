@@ -2183,11 +2183,32 @@ Once server approves the NFS Request, then the server approves:
 
 
 **Steps for NFS Server Configuration**
+On server side which is trying to share its filesystem:
+- Install NFS packages: `nfs-utils`, `libnfsidmap`
+Once installed, enable and start NFS services
+`systemctl enable rpcbind`
+`systemctl enable nfs-server`
+`systemctl start rcpbind`
+`systemctl start nfs-server`
+`systemctl start rpc-statd`
+`systemctl start nfs-idmapd`
 
+Create NFS share directory and assign permissions
+`mkdir /mypretzels`
+`chmod a+rwx /mypretzels`
 
+Modify `/etc/exports` to add new shared filesystem
+`/mypretzels (IP ADDRESS OF CLIENT MACHINE) (rw,sync,no_root_squash)` = for only 1 host
 
+`/mypretzels *(rw,sync,no_root_squash)` = for everyone
 
+`exportfs -rv`
 
+![[Pasted image 20230807154738.png]]
 
+**Steps for NFS Client Configuration**
+
+Install same packages as above.
+Start rpcbind service once installed the packages: `systemctl start rpcbind`
 
 
