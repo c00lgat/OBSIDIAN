@@ -1865,23 +1865,26 @@ And then add the newly created disk: add the following line: `/dev/sdb1 /data xf
 
 `fdisk -l` So that we can see the newly added disk
 
-**Partitions:**
+**Partitions and Physical Volume creation:**
 `fdisk /dev/sdb` we run this on the newly added disk
 - we press `n` for new
 - `p` for primary
 - K,M,G 2 partitions +1G for two partitions each being 1G (?) but we go with default
 - Once we proceed, we press `t` to change type of partition from 'Linux' to 'Linux LVM'
+- Then `w` to write the changes and to write the physical volume.
 
-Then `w` to write the changes and to write the physical volume.
 
+**Volume Groups:**
 Next, we need to create the volume group: `vgcreate (name of volumegroup) /dev/sdcl`
 
-To verify, run `vgdisplay (name of volumegroup)`
+>To verify, run `vgdisplay (name of volumegroup)`
 
+**Logical Volumes:**
 `lvcreate -n (name of logical volume) --size 1G (name of volumegroup)`
 
-To verify, run `lvdisplay`
+>To verify, run `lvdisplay`
 
+**File System Creation:**
 And then we run the `mkfs.xfs` on the logical volume:
 `mkfs.xfs /dev/oracle_vg/oracle_lv`
 Make a directory in the logical volume: `/oracle`
@@ -1889,6 +1892,11 @@ Make a directory in the logical volume: `/oracle`
 And then we finally mount the disk and directory:
 `mount /dev/oracle_vg/oracle_lv /oracle`
 
+---
+## Add and extending disk using LVM
 
+If we already have a disk and its full. We need to extend it. 
 
-And that is how we create LVM new partition.
+Few options:
+- Delete older files to free up disk space
+- Add new physical disk mount to 
