@@ -2212,7 +2212,43 @@ Install same packages as above.
 Start `rpcbind` service once installed the packages: `systemctl enable rpcbind`
 `systemctl start rpcbind`
 
+Make sure the `firewalld` service is disabled: `ps -ef | grep "firewall|iptable"`
+
+f
 ![[Pasted image 20230807155345.png]]
 
 >`ip addr` to check a machine's ip address, `ifconfig` alternative
+
+
+---
+## Samba
+
+Samba is a Linux tool or utility that allows sharing for Linux resourves such as files and printers to with other operating systems
+
+It works exactly like NFS but the difference is NFS shares within Linux or UNIX like system whereas Samba shares with other OS (Windows, MAC etc)
+
+
+Samba
+Samba shares its filesystem through a protocol called SMB (Server Message Block) which was invented by IBM
+
+Another protocol used to share Samba is through CFIS
+
+
+- Take a snapshot of your VM
+- Install samba packages
+- Enable samba to be allowed through firewall (only if you have a firewall running)
+- Disable firewall
+- Create Samba share directory and assign permissions
+- Also change the SELinux security context for the samba shared directory
+- Or disable SELinux
+- Modify `/etc/samba/smb.conf` file to add new shared filesystem
+- Verify the setting
+- Once the packages are installed, enable and start Samba services (`smb` and `nmb`)
+- Mount Samba share on Windows client
+- Additional instructions on creating secure
+
+
+
+
+
 
