@@ -2264,45 +2264,49 @@ Another protocol used to share Samba is through CFIS
  
  • It works exactly like NFS but the difference is NFS shares within Linux or Unix like system whereas Samba shares with other OS (e.g. Windows, MAC etc.).
 
-For example, computer “A” shares its filesystem with computer “B” using Samba then computer “B” will see that shared filesystem as if it is mounted as the local filesystem.
+ For example, computer “A” shares its filesystem with computer “B” using Samba then computer “B” will see that shared filesystem as if it is mounted as the local filesystem.
 
  • Samba shares its filesystem through a protocol called SMB (Server Message Block) which was invented by IBM.
  
  • Another protocol used to share Samba is through CIFS (Common Internet File System) invented by Microsoft and also NMB (NetBios Name server).
  
  • CIFS became the extension of SMB and now Microsoft has introduced newer version of SMB v2 and v3 that are mostly used in the industry.
-• Most people, when they use either SMB or CIFS, are talking about the same exact
-thing. The two are interchangeable not only in discussion, but also in application –
-i.e., a client speaking CIFS can talk to a server speaking SMB and vice versa. Why?
-Because CIFS is a form of SMB
-Step by steps installation instructions
+
+ • Most people, when they use either SMB or CIFS, are talking about the same exact thing. The two are interchangeable not only in discussion, but also in application – i.e., a client speaking CIFS can talk to a server speaking SMB and vice versa. Why? Because CIFS is a form of SMB.
+ 
+### Step by steps installation instructions
+
 First please make sure to take a snapshot of your VM
-• Install samba packages
-# Become root user
-# yum install samba samba-client samba-common
-• Enable samba to be allowed through firewall (Only if you have firewall running)
-# firewall-cmd --permanent --zone=public --add-service=samba
-# firewall-cmd –reload
-• To stop and disable firewall or iptables
-# systemctl stop firewalld
-# systemctl stop iptables
-# systemctl disable firewalld
-# systemctl disable iptables
-• Create Samba share directory and assign permissions
-# mkdir -p /samba/morepretzels
-# chmod a+rwx /samba/morepretzels
-# chown -R nobody:nobody /samba
-• Also, you need to change the SELinux security context for the samba shared
-directory as follows: (Only if you have SELinux enabled)
-# chcon -t samba_share_t /samba/morepretzels
-• If you want to disable SELinux, follow these instructions
-# sestatus To check the SELinux status)
-# vi /etc/selinux/config
-Change
-SELINUX=enforcing
-To
-SELINUX=disabled
-# reboot
+
+- Install samba packages:
+	- Become root user
+	- `yum install samba samba-client samba-common`
+
+- Enable samba to be allowed through firewall (Only if you have firewall running):
+	- `firewall-cmd --permanent --zone=public --add-service=samba`
+	- `firewall-cmd –reload`
+
+- To stop and disable firewall or iptables:
+	- `systemctl stop firewalld`
+	- `systemctl stop iptables`
+	- `systemctl disable firewalld`
+	- `systemctl disable iptables`
+
+- Create Samba share directory and assign permissions
+	- `mkdir -p /samba/morepretzels`
+	- `chmod a+rwx /samba/morepretzels`
+	- `chown -R nobody:nobody /samba`
+
+- Also, you need to change the SELinux security context for the samba shared directory as follows: (Only if you have SELinux enabled)
+	- `chcon -t samba_share_t /samba/morepretzels`
+
+- If you want to disable SELinux, follow these instructions
+	- `sestatus` (To check the SELinux status)
+	- `vi /etc/selinux/config`
+		- *Change* `SELINUX=enforcing` To `SELINUX=disabled`
+	- and then `reboot`
+
+
 • Modify /etc/samba/smb.conf file to add new shared filesystem (Make sure to
 create a copy of smb.conf file)
 Delete everything from smb.conf file and add the following parameters
