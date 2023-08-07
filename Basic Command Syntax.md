@@ -2209,6 +2209,10 @@ Modify `/etc/exports` to add new shared filesystem
 **Steps for NFS Client Configuration**
 
 Install same packages as above.
-Start rpcbind service once installed the packages: `systemctl start rpcbind`
+Start `rpcbind` service once installed the packages: `systemctl enable rpcbind`
+`systemctl start rpcbind`
 
+![[Pasted image 20230807155345.png]]
+
+>`ip addr` to check a machine's ip address, `ifconfig` alternative
 
