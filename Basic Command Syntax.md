@@ -964,11 +964,11 @@ commands:
 The command reads either standard input or from a list of files and generates 
 
 - `wc --version` OR `wc --help`
-- `wc [file]` = check file line count, word count and byte count
-- `wc -l [file]` = get the number of lines in a file
-- `wc -w [file]` = get the number of words in a file
-- `wc -b [file]` = get the number of byes in a file
-- `wc -c [file]` = counts characters in file
+- `wc [FILE_NAME]` = check file line count, word count and byte count
+- `wc -l [FILE_NAME]` = get the number of lines in a file
+- `wc -w [FILE_NAME]` = get the number of words in a file
+- `wc -b [FILE_NAME]` = get the number of byes in a file
+- `wc -c [FILE_NAME]` = counts characters in file
 - `wc [DIRECTORY]` = NOT ALLOWED
 - `ls -l | wc -l` = runs ls first and then counts how many lines there are, counts the amount of folders. Keep in mind that it also counts the total row so we should count minus 1 from the output we get from the wc. Number of files
 - `grep [keyword] | wc -l` = looks for a word in a file and then counts how many lines there are that matched. Number of keyword lines.
@@ -987,7 +987,7 @@ The command reads either standard input or from a list of files and generates
 - `gzip -d` OR `gunzip` = decompresses a file
 
 `tar cvf .` = copy everything 
-tar xvf . = extract everything 
+`tar xvf .` = extract everything 
 
 https://www.freecodecamp.org/news/tar-command-linux-tar-cvf-tar-xvf/
 
@@ -996,7 +996,7 @@ https://www.freecodecamp.org/news/tar-command-linux-tar-cvf-tar-xvf/
 Used to shrink of extend the size of a file to the specified size
 Will actually chop the file and **lose** the content of the file. 
 
-- truncate -s 10 filename = shrinks the file to 10 bytes
+- `truncate -s 10 [FILE_NAME]` = shrinks the file to 10 bytes
 
 Can be used to make the file bigger as well. Adds empty letters to fill up the file and make it bigger. Looks something like "^@^@^@^@^@^@".
 
@@ -1005,8 +1005,8 @@ Can be used to make the file bigger as well. Adds empty letters to fill up the f
 - Multiple files can be combined into one 
 - One file can be split into multiple files
 
-- cat file1 file2 file3 > file4
-- split file4
+- `cat file1 file2 file3 > file4`
+- `split file4`
 
 for example: `split -l 300 file.txt childfile.txt` = Split file.txt into 300 line per file and output to chidlfileaa childfileab childfileac
 
@@ -1022,76 +1022,74 @@ The **tr** command is a UNIX command-line utility for translating or deleting ch
 \[:upper:\], \[:lower:\], \[:alnum:\] are called character classes.
 https://www.gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
 
-echo "Hello hello World world" | tr \[:upper:\] \[:lower\]
+`echo "Hello hello World world" | tr [:upper:] [:lower]`
 translates all upper case characters to lowercase characters
-output: hello hello world world
+**output:** hello hello world world
 
-echo "Hello hello World world" | tr \[:lower:\] \[:upper\]
-output: HELLO HELLO WORLD WORLD
+`echo "Hello hello World world" | tr [:lower:][:upper]`
+**output:** HELLO HELLO WORLD WORLD
 
 
-alnum: numbers and letters
-echo "Hello hello World world" | tr \[:upper:\] \[:lower\] | tr '\[:alnum\]' 'n'
+*alnum*: numbers and letters
+`echo "Hello hello World world" | tr [:upper:] [:lower] | tr '[:alnum]' 'n'`
 substitutes all alphanumerical characters into the letter n.
-output: nnnnn nnnnn nnnnn nnnnn
+**output:** nnnnn nnnnn nnnnn nnnnn
 
 Instead, we want to enter a new line. And instead of substituting the words that we want to count, we need to substitute the non alphanumerical spaces into new lines. 
 
-echo "Hello hello World world" | tr \[:upper:\] \[:lower\] | tr -c '\[:alnum\]' '\\n'
--c is the compliment. 
+`echo "Hello hello World world" | tr [:upper:] [:lower] | tr -c '[:alnum]' '\n`
+`-c` is the compliment. (המשלים)
 
 ![[Pasted image 20230803095145.png]]
 
 But that results in unnecessary new lines. 
 
-echo "Hello hello World world" | tr \[:upper:\] \[:lower\] | tr -sc '\[:alnum\]' '\\n'
--s is for squeeze   .
+`echo "Hello hello World world" | tr [:upper:] [:lower] | tr -sc '[:alnum]' '\n'`
+`-s` is for squeeze   .
 ![[Pasted image 20230803095703.png]]
 
 
 ![[Pasted image 20230803100716.png]]
-curl -s
--s is for silent mode
+`curl -s`
+`-s` is for silent mode
 
 ![[Pasted image 20230803101514.png]]
--c in uniq is for count
+`-c` in `uniq` is for count
 
 ---
- 
  ## User Account Management
-- useradd
-- groupadd
-- userdel
-- groupdel
-- usermod - modify a user
+- `useradd`
+- `groupadd`
+- `userdel`
+- `groupdel`
+- `usermod` - modify a user
 
 Files:
-- /etc/passwd
-- /etc/group
-- /etc/shadow
+- `/etc/passwd`
+- `/etc/group`
+- `/etc/shadow`
 
+`id username` to verify that we created user
 
-id username to verify that we created user
-
-cat /etc/group to verify that the new group was created
+`cat /etc/group` to verify that the new group was created
 
 automatically adds spiderman to spiderman group when creating useradd spiderman
 
--m to create home directory for the user
+`-m` to create home directory for the user
 
-useradd babubutt -m(Create home dir) -s /bin/bash(set bash to be the default shell command interpreter)
+`useradd babubutt -m(Create home dir) -s /bin/bash`(set bash to be the default shell command interpreter)
 
-chsh -s /bin/bash
+`chsh -s /bin/bash`
 
 ---
 ## Password Aging - chage
-chage \[-m min days\] \[-M max days\] \[-d last day\] \[-I inactive\] \[-E expire date\] \[-W warn days\] user
+`chage [-m min days] [-M max days] [-d last day] [-I inactive] [-E expire date] [-W warn days] user`
 
-File = /etc/login.defs
-- PASS_MAX_DAYS 99999
-- PASS_MIN_DAYS 0
-- PASS_MIN_LEN 5
-- PASS_WARM_AGE 7
+File = `/etc/login.defs`
+- `PASS_MAX_DAYS 99999`
+- `PASS_MIN_DAYS 0`
+- `PASS_MIN_LEN 5`
+- `PASS_WARM_AGE 7`
 
 ![[Pasted image 20230803115633.png]]
 
@@ -1099,13 +1097,13 @@ File = /etc/login.defs
 ## Switch Users and sudo Access
 
 #### Commands:
-- su - username
-- sudo command
-- visudo - /etc/sudoers - used to configure user permissions
+- `su - [USERNAME]`
+- `sudo [command]`
+- `visudo - /etc/sudoers` - used to configure user permissions
 
 %wheel allows people in group wheel to run all commands
 
-usermod -aG wheel anan 
+`usermod -aG wheel anan` 
 adds user anan to the wheel group that has all permissions to run all commands
 
 ---
@@ -1176,12 +1174,12 @@ LDAP is a protocol that is used for any OS, to authenticate a directory.
 - Job - Created by a scheduler
 
 ### Process/Services Commands
-- systemctl
-- ps - shows us what processes are running in the system
-- top - shows processes in the system showing based on the load, showing memory and cpu usage
-- kill - stops processes 
-- crontab - schedules processes or applications 
-- at. - one time basis, same as crontab
+- `systemctl`
+- `ps` - shows us what processes are running in the system
+- `top` - shows processes in the system showing based on the load, showing memory and cpu usage
+- `kill` - stops processes 
+- `crontab` - schedules processes or applications 
+- `at.` - one time basis, same as crontab
 ---
 ## `systemctl` command
 
@@ -1211,12 +1209,12 @@ Can also be used to power off, halt and reboot our machine:
 
 `ps` command stands for process status and it displays all the currently running processes in the Linux system
 
-ps = shows the processes of the current shell
+`ps` = shows the processes of the current shell
 
-PID = the unique process ID
-TTY = terminal type that the user logged-in to
-TIME = amount of CPU in minutes and seconds that the process has been running
-CMD = name of the command
+*PID* = the unique process ID
+*TTY* = terminal type that the user logged-in to
+*TIME* = amount of CPU in minutes and seconds that the process has been running
+*CMD* = name of the command
 
 - `ps -e` = shows all running processes
 - `ps aux` = shows all running processes in BSD format
@@ -1226,7 +1224,7 @@ CMD = name of the command
 ---
 ## `top` Command
 
-- top is used to show the Linux processes and it provides a real-time view of the running system
+- `top` is used to show the Linux processes and it provides a real-time view of the running system
 - This command shows the summary information of the system and the list of processes or threads which are currently managed by the Linux Kernel
 - When the top command is executed then it foes into interactive mode and you can exit by hitting `q`
 ![[Pasted image 20230806202354.png]]
@@ -1246,8 +1244,8 @@ Used to terminate processes manually
 Sends a signal which ultimately terminates or kills a particular process or group of processes.
 
 `kill [OPTION] [PID]`
-OPTION = Signal name or signal number/ID
-PID = process ID
+*OPTION* = Signal name or signal number/ID
+*PID* = process ID
 
 `kill -l` = to get a list of all signal names or signal number. Signals tell the kill command what to do.
 
@@ -1317,15 +1315,15 @@ Other future scheduling format:
 
 ---
 ## Process management
-Background =Ctrl + z, runs in the bg
-Foreground = fg 
-Run process even after exit = nohup process &
-	OR = nohup process > /dev/null 2>&1 &
-Kill a process by name = pkill
-Process priority = nice (nice -n 5 process)
+Background =`Ctrl + z`, runs in the bg
+Foreground = `fg` 
+Run process even after exit = `nohup [process] &`
+	OR = `nohup process > /dev/null 2>&1 &`
+Kill a process by name = `pkill`
+Process priority = `nice (nice -n 5 [process])`
 	Goes from -20 to 19. The lower the number the more priority a task gets
-Process monitoring = top
-List process = ps
+Process monitoring = `top`
+List process = `ps`
 
 Every time we run a process, it attaches itself to that terminal. Closing the terminal will stop the process.
 There is a workaround that lets us run commands with no regards to whether the terminal is running or has been terminated: we use `nohup`.
@@ -1337,30 +1335,30 @@ This gives the sleep command a priority of 5.
 ---
 ## System Monitoring
 
-- top - lists all processes running, similar to task manager on windows.
-- df - report file system space usage. `df -h` makes the output more human readable. 
-- du - estimate file space usage 
-- dmesg - Show
-- iostat - input output statistics
-- netstat - prints network connection, all things internet connectivity
-- free - displays the amount of free and used memory in the system
-- cat \/proc/cpuinfo - proc stores info about the system cpu
-- cat \/proc/meminfo - shows us information about the system memory
+- `top` - lists all processes running, similar to task manager on windows.
+- `df` - report file system space usage. `df -h` makes the output more human readable. 
+- `du` - estimate file space usage 
+- `dmesg` - Show
+- `iostat` - input output statistics
+- `netstat` - prints network connection, all things internet connectivity
+- `free` - displays the amount of free and used memory in the system
+- `cat /proc/cpuinfo` - proc stores info about the system cpu
+- `cat /proc/meminfo` - shows us information about the system memory
 ---
 ## Log Monitoring
-Log Directory = /var/log - Directory that stores all the logs
-ll -more /var/log 
+Log Directory = `/var/log` - Directory that stores all the logs
+`ls -more /var/log`
 We get a comprehensive list of all logs
 more boot log - gives us all boot logs, errors and or checks
 rebooting will generate a new boot file
-- boot - booting up logs
-- chronyd = NTP - 
-- cron - daemon to execute scheduled commands.
-- maillog - all information about our emails
-- secure - records all logging in and log out information. 
-- messages - every time there is an issue with our machine, we usually go to the messages log. Has all kinds of information, app information, processes information, system information etc.
+- `boot` - booting up logs
+- `chronyd`  
+- `cron` - daemon to execute scheduled commands.
+- `maillog` - all information about our emails
+- `secure` - records all logging in and log out information. 
+- `messages` - every time there is an issue with our machine, we usually go to the messages log. Has all kinds of information, app information, processes information, system information etc.
   What is going on with our system, what failed and when it failed.
-- httpd 
+- `httpd`
 
 ---
 ## System Maintenance Commands
@@ -1493,17 +1491,17 @@ The `unset` command unsets variables in our current session. Can remove both fun
 
 `setuid` tells Linux to run a program with the effective user id of the owner instead of the executor
 
-setgid tells Linux to run a program with the effective group id of the owner instead of the executor 
+`setgid` tells Linux to run a program with the effective group id of the owner instead of the executor 
 
-sticky bit is a bit set on files/directories that allows only the owner or root to delete the files
+`sticky bit` is a bit set on files/directories that allows only the owner or root to delete the files
 
 - to assign special permissions at the user level:
-  chmod u+s xys.sh
+  `chmod u+s xys.sh`
 - to assign special permissions at the group level:
-  chmod g+s xyz.sh
+  `chmod g+s xyz.sh`
 - To remove special permissions at the user or group level:
-	  chmod u-s xyz.sh
-	  chmod g-s xyz.sh
+	  `chmod u-s xyz.sh`
+	  `chmod g-s xyz.sh`
 
 <mark style="background: #FF5582A6;">To find all executables in Linux with `setuid` and `setgid`
 find / -perm /6000 -type f</mark>
@@ -1516,12 +1514,12 @@ https://www.sobyte.net/post/2022-04/linux-suid/
 
 `Sticky bit`
 - It is assigned to the last bit of permission
-  \-r w x  r w x  r w <mark style="background: #FFB86CA6;">t</mark>
+  `-r w x  r w x  r w` <mark style="background: #FFB86CA6;">t</mark>
   The highlighted bit is the sticky bit, Why?
   If we have a t, it means that although the user has read write permissions, he cannot delete the file.
 
-become root and create dir mkdir \/allinone
-assign all rwx to the dir chmod 777 \/allinone
+become root and create `dir mkdir /allinone`
+assign all rwx to the dir: `chmod 777 \/allinone`
 become user and create dir inside of \/allineone: mkdir imrandir
 give all rwx perms to the dir: chmod 777 imrandir
 create 3 files in that dir: touch a b c
