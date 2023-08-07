@@ -1789,7 +1789,7 @@ For example, when connecting to a remote server usually we are prompted with a s
 ## Customize message of the day
 
 Instead of manually going to `/etc/motd/` we can do:
-Create a new file in `/etc/profile.d/motd.sh`
+Create a new file `/etc/profile.d/motd.sh`
 Add desired commands in `motd.sh` file
 Modify the `etc/ssh/sshd_config` to edit `#PrintMotd yes`
 to `PrintMotd no`
@@ -1799,4 +1799,28 @@ Restart sshd service -> `systemctl restart sshd.service`
 In the script itself, we can simply use `hostname` and `whoami` 
 "You are logged in as `whoami`"
 And the script will automatically show the relevant hostname and username to each user that connects to the Linux machine.
+
+`uname -r` to display the kernel version
+
+---
+## Computer Storage
+
+- Local Storage 
+	- RAM, HDD, SSD, etc.
+- DAS (Direct Attached Storage)
+	- CD/DVD, USB flash drive, external directly attached with USB or other cables
+- SAN (Storage Area Network)
+	- Storage attached through iSCSI or fiber cable
+- NAS (Network Attached Storage)
+	- Storage attached over network (TCP/IP)
+	- E.g. Samba, NFS etc.
+
+---
+## Disk Partition
+
+Commands for disk partitioning:
+- `df` - `df -h` will give us human readable output
+- `fdisk` - `fdisk -l` we will see the disk size. And the disk partitions
+
+Useful when we want to add new partitions and add more storage to our system
 
