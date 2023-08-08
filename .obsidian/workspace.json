@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Extra curriculum.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Extra curriculum.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Extra curriculum.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Extra curriculum.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -158,21 +159,22 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "Pasted image 20230808232516.png",
+    "Pasted image 20230808232358.png",
+    "Pasted image 20230808232257.png",
+    "Pasted image 20230808232250.png",
+    "Extra curriculum.md",
     "Basic Command Syntax.md",
-    "Pasted image 20230808133019.png",
-    "Pasted image 20230808132756.png",
-    "Pasted image 20230808121909.png",
-    "Pasted image 20230808121847.png",
-    "Pasted image 20230808121839.png",
-    "Pasted image 20230808121449.png",
-    "Pasted image 20230808121238.png",
-    "Pasted image 20230808121235.png",
-    "Pasted image 20230808121226.png",
-    "Pasted image 20230808121213.png",
+    "IMAGES/Pasted image 20230808133019.png",
+    "IMAGES/Pasted image 20230808132756.png",
+    "IMAGES/Pasted image 20230808121909.png",
+    "IMAGES/Pasted image 20230808121847.png",
+    "IMAGES/Pasted image 20230808121839.png",
+    "IMAGES/Pasted image 20230808121449.png",
+    "IMAGES/Pasted image 20230808121238.png",
     "Python Essentials 1.md",
     "Python.md",
     "AWK.md",
-    "Extra curriculum.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
     "SED.md",

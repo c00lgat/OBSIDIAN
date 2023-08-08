@@ -2403,6 +2403,40 @@ https://drive.google.com/file/d/1vGKroJy3cDKhiRppIs-9fI31tWs3vHbx/view?usp=drive
 
 ---
 
+## The `hash` Command
+
+- Displays a list of recently run programs, their location and the number of times they have run.
+- Information is maintained by the command in a hash table
+- Can be used to reset or modify the hash table
+- Location information includes the program's full path name
+- Syntax: `hash [OPTIONS] [-p PATHNAME] [OPTIONS] [COMMANDNAME]`
+
+Option examples:
+- `-d` = Deletes the location for `commandName` from the hash table
+- `-l` = Displays output in a format that can be used as input to another command
+- `-p` = Sets `pathName` as the full path location for `commandName`
+- `-r` = Empties the hash table
+- `-t` = Displays the location of `commandName`
+
+![[Pasted image 20230808232250.png]]
+
+---
+## The `cksum` Command
+
+- This command generates a checksum value for a file or stream of data
+- It is used to see whether the file was corrupted during transfer
+- The `cksum` command displays a cyclic redundancy check (*CRC*) value and the byte count for a file
+- If the file's CRC value is the same before and after a transfer, the file was not corrupted.
+- Syntax: `cksum [FileName]`
+
+![[Pasted image 20230808232516.png]]
+
+---
+
+
+
+
+
 
 
 
