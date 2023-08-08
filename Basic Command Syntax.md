@@ -1065,10 +1065,12 @@ But that results in unnecessary new lines.
 ---
  ## User Account Management
 - `useradd`
+  ![[Pasted image 20230808112647.png]]
 - `groupadd`
-- `userdel`
+- `userdel`, `userdel -r` to also delete the user's home directory.
 - `groupdel`
 - `usermod` - modify a user
+  ![[Pasted image 20230808112744.png]]
 
 Files:
 - `/etc/passwd`
