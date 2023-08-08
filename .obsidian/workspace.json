@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "438fa91b0078037b",
+        "id": "08d124b8043303de",
         "type": "tabs",
         "children": [
           {
-            "id": "2d6354debd426154",
+            "id": "afd0bc142cba1e07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Extra curriculum.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Extra curriculum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Extra curriculum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "Extra curriculum.md"
               }
             }
           },
@@ -157,8 +156,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2d6354debd426154",
+  "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "Basic Command Syntax.md",
     "Pasted image 20230808133019.png",
     "Pasted image 20230808132756.png",
     "Pasted image 20230808121909.png",
@@ -169,9 +169,7 @@
     "Pasted image 20230808121235.png",
     "Pasted image 20230808121226.png",
     "Pasted image 20230808121213.png",
-    "Pasted image 20230808121011.png",
     "Python Essentials 1.md",
-    "Basic Command Syntax.md",
     "Python.md",
     "AWK.md",
     "Extra curriculum.md",
