@@ -1019,12 +1019,25 @@ The command reads either standard input or from a list of files and generates
 ---
 ## Compress and decompress files
 
-- `tar` = zips files together
+
 - `gzip` = compresses a file
 - `gzip -d` OR `gunzip` = decompresses a file
 
-`tar cvf .` = copy everything 
-`tar xvf .` = extract everything 
+
+- `tar` = zips files together for easier copying or downloading. Created bundle is called a *tarball*.
+	`tar cvf .` = copy everything 
+		To bundle and compress file1, file2 and file3 into a file called tarball.tar: `tar -cvf tarball.tar file1 file2 file3`
+	`tar xvf .` = extract everything 
+		To unbundle or extract files from the tarball:
+		`tar -xf tarball.tar`
+	`tar` options:
+		`-x` = Extracts the contents of a tarball
+		`-z` = Compresses the contents of a tarball by using the `gzip` utility.
+		`-f` = Specifies the name of the tarball
+		`-v` = Produces verbose output by showing file names while the tarball is processed
+
+
+
 
 https://www.freecodecamp.org/news/tar-command-linux-tar-cvf-tar-xvf/
 
