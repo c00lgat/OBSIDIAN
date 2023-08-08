@@ -118,6 +118,9 @@ The `~` character: the `~` symbol represents the home directory of the current u
 `chown *OPTIONS* *OWNER* FILE`
 
 `sudo chown root hello.sh`: changes ownership to the root user.
+![[Pasted image 20230809001525.png]]
+
+
 
 ---
 ## Viewing Files
