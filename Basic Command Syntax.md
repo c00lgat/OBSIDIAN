@@ -542,6 +542,9 @@ To find all non-empty files in the same directory, simply add `!` before `-size 
  [Copy the content/file to all subdirectory in a directory using terminal](https://askubuntu.com/questions/300744/copy-the-content-file-to-all-subdirectory-in-a-directory-using-terminal)
 `find <target-dir> -type d -exec cp <the file> {} \;`
 
+- `exec commandName` = Runs the specified command on the returned file or files.
+
+`find /etc -iname "*.conf" -mtime 7` = Shows how to search for files with a file name extension of `.conf` that start in the `/etc/` directory. The search should be case insensitive and return only those matching files that were modified exactly 168 (7 x 24) hours ago.
 
 ---
 ## SED
@@ -782,7 +785,8 @@ A character that can be used as a substitute of a class of characters in a searc
 
 ---
 ## Soft and Hard links
-Every time you create a file, the operating system gives said file a number. The number is called an *inode*. Pointer or number of a file on the hard disk
+
+Every time you create a file, the operating system gives said file a number. The number is called an *inode*. Pointer or number of a file on the hard disk.
 
 Soft Link = link will be removed if file is removed or renamed.
 
@@ -795,6 +799,16 @@ Hard Link = Deleting or renaming or moving the original file, will not affect th
 `ls -i` shows the inode numbers of the files/directories.
 
 ![[Pasted image 20230731160021.png]]
+
+
+
+
+![[Pasted image 20230808233259.png]]
+*Taken from the AWS restart course.*
+
+- Hard link: Every file has an object that is called inode, which stores the file's disk block locations and attributes. An inode is identified with a unique number. A hard link is a pointer to a file's inode.
+- Symbolic link: Also known as a soft link or symlink, a symbolic link points to the original file name or a hard link.
+
 
 ---
 https://www.makeuseof.com/linux-command-line-chaining-operators/
@@ -985,7 +999,10 @@ The command reads either standard input or from a list of files and generates
 ---
 ## Compare 
 
-- `diff` = compares line by line
+- `diff` = compares line by line and displays the differences
+	  Valuable for comparing two files
+	  Output is called a *diff*
+	  Syntax = `diff [OPTIONS] File1 File2`
 - `cmp` = compares byte by byte
 
 ---
