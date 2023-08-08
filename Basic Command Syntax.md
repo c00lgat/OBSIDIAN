@@ -417,6 +417,9 @@ To move the cursor to a specific line number, type that line number followed by 
 The standard convention for editing content with word processors is to use copy, cut, and paste. The `vi` program has none of these. Instead, `vi` uses the following three commands:
 
 ![[Pasted image 20230718223759.png]]
+![[Pasted image 20230808132756.png]]
+![[Pasted image 20230808133019.png]]
+
 The motions learned from the previous page are used to specify where the action is to take place, always beginning with the present cursor location. Either of the following general formats for action commands is acceptable:
 
 `[action] [count] [motion]`
