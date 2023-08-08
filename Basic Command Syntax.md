@@ -842,10 +842,13 @@ https://www.makeuseof.com/linux-command-line-chaining-operators/
 1. Standard input (stdin)
    ![[Pasted image 20230808103713.png]]
    Standard input is the file handle that your process reads to get information from you. It can be from the user who provides the information or from a file.
+   
 2. Standard output (stdout)
    ![[Pasted image 20230808104151.png]]
-3. Standard error
 
+3. Standard error (stderr)
+   ![[Pasted image 20230808104446.png]]
+ 
 `-- Output (stdout)`
 
 ---
