@@ -1072,6 +1072,8 @@ But that results in unnecessary new lines.
 
 Files:
 - `/etc/passwd`
+  ![[Pasted image 20230808112218.png]]
+  
 - `/etc/group`
 - `/etc/shadow`
 
