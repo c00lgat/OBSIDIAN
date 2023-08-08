@@ -1066,11 +1066,19 @@ But that results in unnecessary new lines.
  ## User Account Management
 - `useradd`
   ![[Pasted image 20230808112647.png]]
-- `groupadd`
+- `groupadd`, located in `/etc/group
+  ![[Pasted image 20230808115325.png]]`
 - `userdel`, `userdel -r` to also delete the user's home directory.
+  
 - `groupdel`
+  ![[Pasted image 20230808115429.png]]`
 - `usermod` - modify a user
   ![[Pasted image 20230808112744.png]]
+  ![[Pasted image 20230808115754.png]]
+  - `gpasswd` - Is used to administer the `/etc/group` file
+    `gpasswd [option] [GROUP]`
+    ![[Pasted image 20230808120026.png]]
+    
 
 Files:
 - `/etc/passwd`
