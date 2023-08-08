@@ -2409,3 +2409,4 @@ https://drive.google.com/file/d/1vGKroJy3cDKhiRppIs-9fI31tWs3vHbx/view?usp=drive
 
 people close cameras and just do their own thing 
 with the cmaera open and all going through the material together
+
