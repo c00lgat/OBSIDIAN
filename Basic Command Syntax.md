@@ -572,11 +572,11 @@ double tab while doing `cd ..`/ will show us directories that are in the back di
 
 `echo "" | cat file.txt - kovitz.txt` (The - is standard input, first is cats the file.txt, waits for standard input which is the "" that we entered and then goes on to display the kovitz.txt)
 
-`uptime` - shows the uptime of the machine
+`uptime` - shows the uptime of the machine or in other words, how long the system has been up since the last boot.
 
 `whoami` = Prints out the name of the user. 
 
-`history` displays all commands that were entered in the console.
+`history` displays all commands that were entered in the console. History is stored in `/home/[USERNAME]/.bash_history`
 
 `who | tee who_output.txt` (prints and saves in txt file in one go)
 
@@ -839,8 +839,11 @@ https://www.makeuseof.com/linux-command-line-chaining-operators/
 ---
 ## Input and output redirects
 3 Redirects in Linux
-1. Standard input
-2. Standard output
+1. Standard input (stdin)
+   ![[Pasted image 20230808103713.png]]
+   Standard input is the file handle that your process reads to get information from you. It can be from the user who provides the information or from a file.
+2. Standard output (stdout)
+   ![[Pasted image 20230808104151.png]]
 3. Standard error
 
 `-- Output (stdout)`
