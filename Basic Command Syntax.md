@@ -1118,14 +1118,23 @@ File = `/etc/login.defs`
 - `su - [USERNAME]`
 - `sudo [command]`
 - `visudo - /etc/sudoers` - used to configure user permissions
+  ![[Pasted image 20230808121238.png]]
 ![[Pasted image 20230808121011.png]]
 
 %wheel allows people in group wheel to run all commands
 
 ![[Pasted image 20230808121226.png]]
+![[Pasted image 20230808121449.png]]
+
+`sudo` requires the password of the current user whereas `su` requires the password of the substitute account.
+![[Pasted image 20230808121847.png]]
+
+`sudo` is a safer method to run commands because it does not require a password exchange (student01 does not need to know the password of adminuser).
+
 
 `usermod -aG wheel anan` 
 adds user anan to the wheel group that has all permissions to run all commands
+
 
 ---
 ## Monitor Users
