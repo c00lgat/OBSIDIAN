@@ -770,7 +770,7 @@ A character that can be used as a substitute of a class of characters in a searc
 
 `*` - represents zero or more characters.
 `?` - represents a single character.
-`[]` - represents a range of characters.
+`[]` - represents a ra nge of characters.
 
 `touch file{1..9}.txt` creates 9 files, from 1 to 9 in one go. So file1.txt, file2.txt on and on until file9.txt
 
