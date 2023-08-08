@@ -572,7 +572,7 @@ double tab while doing `cd ..`/ will show us directories that are in the back di
 
 `echo "" | cat file.txt - kovitz.txt` (The - is standard input, first is cats the file.txt, waits for standard input which is the "" that we entered and then goes on to display the kovitz.txt)
 
-`uptime` - shows the uptime of the machine or in other words, how long the system has been up since the last boot.
+`uptime` - shows the uptime of the machine or in other words, how long the system has been up since the last boot. `uptime -p to display the uptime of the system in an easily readable format.
 
 `whoami` = Prints out the name of the user. 
 
@@ -1114,7 +1114,7 @@ adds user anan to the wheel group that has all permissions to run all commands
 
 ---
 ## Monitor Users
-- `who` - how many people are logged in, user ID, terminal ID and how long have they been logged in.
+- `who` - how many people are logged in, user ID, terminal ID and how long have they been logged in. `who -H -a` to display information about the users who are logged in and some additional information.
 - `last` - every user that has logged in.
 - `w` - works the same as who, just gives more information.
 - `finger` - does the trace of a user where its coming from and what kind of protocol is using.
@@ -1165,10 +1165,10 @@ LDAP is a protocol that is used for any OS, to authenticate a directory.
 - `date` - tells the date, time and year. Can be used in a script.
 - `uptime` - tells us how long the system has been up for, load average etc:
   ![[Pasted image 20230806200028.png]]
-- `hostname` - tells us the hostname. Running it is recommended each time we log into a system.
+- `hostname` - tells us the hostname. Running it is recommended each time we log into a system. `hostname -s` to display a shortened version of a computer's host name.
 - `uname` - `uname -a` gives us information about the system, what its running etc.
 - `which` - `which pwd` looks for the commands shows us where its located in the system
-- `cal` - short for calendar. gives us a calendar. `cal 9 1977` will show us september 1977
+- `cal` - short for calendar. gives us a calendar. `cal 9 1977` will show us september 1977. `cal -j` to see the Julian dates for your current month. `cal -s` or `cal -m` to see alternative views of the calendar.
 - `bc` - opens a calculator in the terminal
 ---
 ## Processes and Jobs
