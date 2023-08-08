@@ -1036,7 +1036,12 @@ The command reads either standard input or from a list of files and generates
 		`-f` = Specifies the name of the tarball
 		`-v` = Produces verbose output by showing file names while the tarball is processed
 
+- `zip` used as a compression tool
+	Syntax: `zip -r [FolderName]`
+	The `-r` option is used to include the contents of a directories' subdirectories.
 
+- `unzip` command is used as an extraction tool
+	Syntax: `unzip [FolderName].zip` 
 
 
 https://www.freecodecamp.org/news/tar-command-linux-tar-cvf-tar-xvf/
