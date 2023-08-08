@@ -1118,8 +1118,11 @@ File = `/etc/login.defs`
 - `su - [USERNAME]`
 - `sudo [command]`
 - `visudo - /etc/sudoers` - used to configure user permissions
+![[Pasted image 20230808121011.png]]
 
 %wheel allows people in group wheel to run all commands
+
+![[Pasted image 20230808121226.png]]
 
 `usermod -aG wheel anan` 
 adds user anan to the wheel group that has all permissions to run all commands
