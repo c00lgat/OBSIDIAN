@@ -807,8 +807,19 @@ Hard Link = Deleting or renaming or moving the original file, will not affect th
 *Taken from the AWS restart course.*
 
 - Hard link: Every file has an object that is called inode, which stores the file's disk block locations and attributes. An inode is identified with a unique number. A hard link is a pointer to a file's inode.
-- Symbolic link: Also known as a soft link or symlink, a symbolic link points to the original file name or a hard link.
+	A hard node **cannot** reference a directory.
+		If the original file is deleted, its data still exists until the hard link is deleted.
+	Syntax: `ln [OPTIONS] [ORIGINAL_FILE_NAME] [LINK_NAME]`
 
+
+
+- Symbolic link: Also known as a soft link or symlink, a symbolic link points to the original file name or a hard link.
+	Points to an original file name or a hard link.
+	**Can** point to a directory.
+	If the original file is deleted, the soft link is broken until you create a new file with the original name.
+		Syntax: `ln -s [OPTIONS] [ORIGINAL_FILE_NAME] [LINK_NAME]` 
+![[Pasted image 20230808233942.png]]
+The screenshot shows that we can tell when a file is in fact a soft link that is pointing to another file/directory/hard link.
 
 ---
 https://www.makeuseof.com/linux-command-line-chaining-operators/
