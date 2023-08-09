@@ -1260,7 +1260,8 @@ LDAP is a protocol that is used for any OS, to authenticate a directory.
 ### Process/Services Commands
 - `systemctl`
 - `ps` - shows us what processes are running in the system
-- `top` - shows processes in the system showing based on the load, showing memory and cpu usage
+- `pstree` - the same as ps, except it shows the results in a tree format
+- `top` - shows processes in the system showing based on the load, showing memory and CPU usage
 - `kill` - stops processes 
 - `crontab` - schedules processes or applications 
 - `at.` - one time basis, same as crontab
@@ -1300,10 +1301,14 @@ Can also be used to power off, halt and reboot our machine:
 *TIME* = amount of CPU in minutes and seconds that the process has been running
 *CMD* = name of the command
 
+`pidof [OPTIONS] programName`
+This command displays the `process ID ()
+
 - `ps -e` = shows all running processes
 - `ps aux` = shows all running processes in BSD format
 - `ps -ef` = shows all running processes in full format listing
 - `ps -u username` = shows all processes by username
+![[Pasted image 20230810002022.png]]
 
 ---
 ## `top` Command
@@ -1313,6 +1318,7 @@ Can also be used to power off, halt and reboot our machine:
 - When the top command is executed then it foes into interactive mode and you can exit by hitting `q`
 ![[Pasted image 20230806202354.png]]
 Zombie process is a process whose parent process is dead and is still running in the background. The child process becomes a zombie process.
+![[Pasted image 20230810001808.png]]
 
 - `top -u user` - shows tasks/processes by user
 - `top + c` - shows commands absolute path
