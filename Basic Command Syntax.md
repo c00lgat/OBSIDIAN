@@ -2571,3 +2571,18 @@ Can be called from the current directory.
 - If then statement:
 	If this happens: do this
 	Otherwise: do that 
+
+---
+## For Loop Scripts
+
+Keep running until specified number of variable
+e.g: `variable = 10` then run the script 10 times 
+OR
+variable = green
+
+---
+## do-while Scripts
+
+`do while`
+
+The while statements 
