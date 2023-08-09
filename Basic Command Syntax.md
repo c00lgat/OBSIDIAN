@@ -1362,18 +1362,37 @@ Sends a signal which ultimately terminates or kills a particular process or grou
 `crontab` is used to schedule tasks
 Lets us schedule a job or a process to run at a specific time.
 
-`crontab -e` = edit the crontab
-`crontab -l` = list the crontab entries
-`crontab -r` = remove the crontab
-`crond` = crontab daemon/service that manages scheduling
-`systemctl status crond` = to manage the crond service
-![[Pasted image 20230806203742.png]]
+There is the `cron` daemon and then there's the `crontab`. The difference is that the `crontab` specifies commands or scripts to be run at a specific time, which the user can modify. The commands and steps are stored in the `crontab` file that holds the 
+Whereas the `cron` daemon can check the file each minute for scheduled tasks, and then then the `cron` daemon will run these tasks.
 
+
+
+- `crontab -a fileName` = creates the `crontab` file that holds the commands and steps that the `cron` daemon will run
+- `crontab -e` = edit the crontab
+- `crontab -l` = list the crontab entries
+- `crontab -r` = remove the crontab
+- `crond` = crontab daemon/service that manages scheduling
+- `systemctl status crond` = to manage the crond service
+![[Pasted image 20230806203742.png]]
+The `crontab` file format has six fields:
+- `MIN`: Minutes - any value from 0 to 59
+- `HOUR`: Hour - any value from 0 to 23
+- `DOM`: Day of month - any value from 1-31
+- `MON`: Month - any value from 1-12
+- `DOW`: Day of week - any value from 0-6
+- `CMD`: Command - any command or path
 
 `crontab -e`
 `schedule`
 
 MINUTE HOUR DAY OF THE MONTH(* FOR EVERY DAY) 10(OCTOBER) \*(EVERYDAY OF THE WEEK) and then the command we want to run. we can output it to a file crontab-entry
+
+There are `cron` directories that are precreated and prescheduled directories that administrators can use to store scripts that will run at specified times:
+- `/etc/cron.daily`
+- `/etc/cron.hourly`
+- `/etc/cron.monthly`
+- `/etc/cron.weekly`
+
 
 ---
 ## `at` command
