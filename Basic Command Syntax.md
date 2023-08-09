@@ -2607,3 +2607,5 @@ e.g: Run a script until 2pm
 ---
 ## Check Other Servers Connectivity
 
+A script to check the status of remote hosts
+
