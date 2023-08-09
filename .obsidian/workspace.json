@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWK.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "AWK.md"
               }
             }
           },
@@ -159,6 +158,7 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "Basic Command Syntax.md",
     "Pasted image 20230810010412.png",
     "Pasted image 20230810002848.png",
     "Pasted image 20230810002638.png",
@@ -168,10 +168,8 @@
     "Pasted image 20230809205001.png",
     "Pasted image 20230809094222.png",
     "GIT & Github.md",
-    "Basic Command Syntax.md",
     "Pasted image 20230809001525.png",
     "Pasted image 20230808235132.png",
-    "Pasted image 20230808233942.png",
     "Extra curriculum.md",
     "Python Essentials 1.md",
     "Python.md",
