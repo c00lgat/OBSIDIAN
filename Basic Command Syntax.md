@@ -2534,7 +2534,20 @@ Can be called from the current directory.
 - Creating tasks
 	- Telling your id, location, your files/dirs, system info
 	- Creating files or directories
-	- 
+	- Output to a file using `>`
+
+- Filters/Text processors through scripts (`cut`,`awk`,`grep`,`sort`,`uniq`, `wc`)
+---
+## Input/Output
+
+- Create a script that takes an input from the user
+`read`
+`echo`
 
 
+`#!/bin/bash`
+`echo hello, my name is motty`
+`echo`
+`echo What is your name?`
+`read name` - waits for user input. We need to assign a variable. 
 
