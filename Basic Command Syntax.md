@@ -2483,11 +2483,58 @@ Option examples:
 ---
 ## Linux Kernel
 
-Shell sends 
+Shell sends commands to the kernel upon boot-up
+Shell + Kernel = Operating system
 
+![[Pasted image 20230809094222.png]]
 
+---
+## Introduction to Shell
 
+- Shell is like a container
+- Interfaces between users and Kernel/OS
+- CLI is a Shell
 
+#### Find your Shell:
+- echo $0
+- Available shells: `cat etc/shells`
+- Your Shell? `/etc/passwd/`
+
+---
+## Types of Linux Shells
+
+- Gnome - graphical environment in Linux. 
+- KDE - another Linux desktop environment.
+- sh - one of the original shells. The bourne shell.
+- bash - stands for born again shell.
+- csh and tcsh - CShell and TCShell. TShell does not run scripts.
+- ksh - Korn Shell compatible with sh and bash, adds floating points and more to the shells.
+
+`cat /etc/shells` to see all the type of shells installed in your system.
+
+---
+## Shell Scripting
+
+### What is a Shell Script?
+A shell script is an executable file containing multiple shell commands that are executed sequentially. The file can contain:
+- Shell (#!/bin/bash)
+- Comments (# comments)
+- Commands (echo, cp, grep, etc)
+- Statements (if, while, for etc)
+
+Shell should have executable permissions.
+Has to be called from absolute path (`/home/userdir/script.bash`)
+Can be called from the current directory.
+
+---
+## Shell Script - Basic Scripts
+
+- Outputting to the screen using `echo`
+
+- Creating tasks
+	- Telling your id, location, your files/dirs, system info
+	- Creating files or directories
+	- 
 
 
 
