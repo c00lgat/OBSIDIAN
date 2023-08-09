@@ -2538,6 +2538,24 @@ Can be called from the current directory.
 
 - Filters/Text processors through scripts (`cut`,`awk`,`grep`,`sort`,`uniq`, `wc`)
 ---
+## Bash metacharacters
+
+| Metacharacter     | Description                                                                 |
+| ----------------- | --------------------------------------------------------------------------- |
+| `*` (asterisk)    | Any number of any character (wildcard)                                      |
+| `?` (hook)        | Any one character (wildcard)                                                |
+| `[characters]`    | Any matching characters between brackets (wildcard)                         |
+| \`cmd\` or `$cmd` | Command substitution - uses backticks (\`), not single quotation marks ('') |
+| `;`               | Chain commands together                                                     |
+| `~`               | Represents the home directory of the user                                   |
+| `-`               | Represents the previous working directory                                   |
+
+
+
+
+
+
+---
 ## Input/Output
 
 - Create a script that takes an input from the user
