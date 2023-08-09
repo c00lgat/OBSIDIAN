@@ -9,5 +9,10 @@ file:///C:/Users/Anan/Downloads/Raju%20Gandhi%20-%20Head%20First%20Git%20(2022,%
 Learn Git with Bitbucket Cloud
 https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
 
+
+Creating a branch in git
+https://www.atlassian.com/git/tutorials/using-branches/git-checkout
+
+
 ---
 
