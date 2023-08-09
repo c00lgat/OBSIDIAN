@@ -2549,5 +2549,25 @@ Can be called from the current directory.
 `echo hello, my name is motty`
 `echo`
 `echo What is your name?`
-`read name` - waits for user input. We need to assign a variable. 
+`read namecont` - waits for user input. We need to assign a variable. The variable name is `namecont`
+`echo`
+`echo Hello, $namecont`
 
+
+`#!/bin/bash`
+`a=hostname`
+`echo hello, my name is $a`
+`echo`
+`echo What is your name?`
+`read b`
+`echo`
+`echo Hello, $b`
+
+<mark style="background: #FF5582A6;">Note: if we wanted to use a variable that we initialized in an echo command, then we need to use a backtick (`)</mark>
+
+---
+## `if-then` Scripts
+
+- If then statement:
+	If this happens: do this
+	Otherwise: do that 
