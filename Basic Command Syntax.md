@@ -1347,11 +1347,12 @@ Sends a signal which ultimately terminates or kills a particular process or grou
 
 `kill -l` = to get a list of all signal names or signal number. Signals tell the kill command what to do.
 
-`kill PID` = kill a process with default signal
-`kill -1` = Restart process
-`kill -2` = interrupt from the keyboard just like `CTRL + C`
-`kill -9` = forcefully kill a process
-`kill -15` = kill a process gracefully
+- `kill PID` = kill a process with default signal
+- `kill -1` = Restart process
+- `kill -2` = interrupt from the keyboard just like `CTRL + C`
+- `kill -9` = forcefully kill a process (SIGKILL)
+- `kill -15` = kill a process gracefully (SIGTERM)
+- `kill -19` = Pauses the process and can use the command line (SIGSTOP)
 
 `killall` - kills the process and all related processes
 `pkill` - kills process by process name and not by process ID
@@ -1362,13 +1363,13 @@ Sends a signal which ultimately terminates or kills a particular process or grou
 `crontab` is used to schedule tasks
 Lets us schedule a job or a process to run at a specific time.
 
-There is the `cron` daemon and then there's the `crontab`. The difference is that the `crontab` specifies commands or scripts to be run at a specific time, which the user can modify. The commands and steps are stored in the `crontab` file that holds the 
-Whereas the `cron` daemon can check the file each minute for scheduled tasks, and then then the `cron` daemon will run these tasks.
+There is the `cron` daemon and then there's the `crontab`. The difference is that the `crontab` specifies commands or scripts to be run at a specific time, which the user can modify. The commands and steps are stored in the `crontab` file that holds the commands and steps that the `cron` daemon will run.
+The `cron` daemon can check the file each minute for scheduled tasks, and then then the `cron` daemon will run these tasks.
 
 
 
 - `crontab -a fileName` = creates the `crontab` file that holds the commands and steps that the `cron` daemon will run
-- `crontab -e` = edit the crontab
+- `crontab -e` = edit the crontab (copy the original crontab text to a new file for backup)
 - `crontab -l` = list the crontab entries
 - `crontab -r` = remove the crontab
 - `crond` = crontab daemon/service that manages scheduling
@@ -1382,8 +1383,12 @@ The `crontab` file format has six fields:
 - `DOW`: Day of week - any value from 0-6
 - `CMD`: Command - any command or path
 
-`crontab -e`
-`schedule`
+
+> Note: There is a system `crontab` and user `crontab`:
+> 	- System wide scheduled tasks are managed by root at `/etc/crontab`
+> 	- Each user manages user-specific tasks at `/var/spool/cron/crontabs/$USERNAME`
+> 	- `crontab -e` should always be used to edit the scheduled tasks. 
+
 
 MINUTE HOUR DAY OF THE MONTH(* FOR EVERY DAY) 10(OCTOBER) \*(EVERYDAY OF THE WEEK) and then the command we want to run. we can output it to a file crontab-entry
 
