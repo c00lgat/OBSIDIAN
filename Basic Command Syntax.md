@@ -1271,6 +1271,9 @@ LDAP is a protocol that is used for any OS, to authenticate a directory.
 It is used to start an application.
 Is a tool to control system services. Replaced the old command `service`.
 
+Syntax: `systemctl <subcommand> <service name>`
+	Subcommands include `status`, `start`, `stop`, `restart`, `enable` and `disable`
+
 Example:
 - `systemctl start|stop|status servicename.service (firewalld)`
   `systemctl status firewalld.service` - Checks if the service is running and is enabled or not.
@@ -1279,6 +1282,7 @@ Example:
 - `systemctl enable servicename.service`
 - `systemctl restart|reload servicename.service`
 - `systemctl list-units --all` - gives us all services that are running and ones that are inactive.
+- `systemctl list-units --type=service --state=active` - lists all active services
   ![[Pasted image 20230806201254.png]]
   
 ### To add a service under systemctl management:
@@ -1466,16 +1470,20 @@ This gives the sleep command a priority of 5.
 ---
 ## System Monitoring
 
+- `lscpu` - list CPU information
+- `lshw` - List hardware
 - `top` - lists all processes running, similar to task manager on windows.
-- `df` - report file system space usage. `df -h` makes the output more human readable. 
-  https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html#df-invocation
-- `du` - estimate file space usage 
+- `df` - display disk size and free space. `df -h` makes the output more human readable. 
+	  https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html#df-invocation
+- `vmstat` - Indicate use of virtual memory
+- `du` - check file and directory sizes
 - `dmesg` - Show
 - `iostat` - input output statistics
 - `netstat` - prints network connection, all things internet connectivity
 - `free` - displays the amount of free and used memory in the system
-- `cat /proc/cpuinfo` - proc stores info about the system cpu
+- `cat /proc/cpuinfo` - proc stores info about the system CPU
 - `cat /proc/meminfo` - shows us information about the system memory
+- `uptime` Indicate the amount of time that the system has been up, number of users, and CPU wait time.
 ---
 ## Log Monitoring
 Log Directory = `/var/log` - Directory that stores all the logs
@@ -2684,3 +2692,4 @@ e.g: Run a script until 2pm
 
 A script to check the status of remote hosts
 
+---
