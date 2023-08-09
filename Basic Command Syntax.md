@@ -2585,4 +2585,25 @@ variable = green
 
 `do while`
 
-The while statements 
+The while statements continually executes a block of statements while a particular condition is true or met.
+
+e.g: Run a script until 2pm
+
+`while [condition]`
+	`do`
+		`echo task`
+		`echo task`
+		`do task`
+`done`
+
+---
+## Case Statement Scripts
+
+- Case
+	If option a is selected = do this
+	If option b is selected = do this
+	If option c is  selected = do this
+
+---
+## Check Other Servers Connectivity
+
