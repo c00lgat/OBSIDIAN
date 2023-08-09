@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GIT & Github.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GIT & Github.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GIT & Github.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GIT & Github.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -158,6 +159,7 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "GIT & Github.md",
     "Basic Command Syntax.md",
     "Pasted image 20230809001525.png",
     "Pasted image 20230808235132.png",

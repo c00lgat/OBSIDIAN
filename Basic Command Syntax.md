@@ -1468,7 +1468,7 @@ ___
 ## Finding System Information
 
 - `cat /etc/redhat-release` - a file that tells us what Linux we are running
-- `uname -a` - tells us date and time, hostname, Linux kernel and all kinds of information about the machine
+- `uname -a` - tells us date and time, hostname, Linux kernel and all kinds of information about the machine.
 - `dmidecode` - `dmidecode | more` to see information one page at a time. Tells us information about the machine such as the manufacturer, hardware information and more. 
 - `hostname` - tells us what hostname we using
 
@@ -2481,7 +2481,9 @@ Option examples:
 ![[Pasted image 20230808232516.png]]
 
 ---
+## Linux Kernel
 
+Shell sends 
 
 
 
