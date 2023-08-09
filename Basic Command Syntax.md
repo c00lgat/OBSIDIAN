@@ -1302,8 +1302,9 @@ Can also be used to power off, halt and reboot our machine:
 *CMD* = name of the command
 
 `pidof [OPTIONS] programName`
-This command displays the `process ID ()
+This command displays the `process ID` (PID) of a running program.
 
+- `pstree` - the same as ps, except it shows the results in a tree format
 - `ps -e` = shows all running processes
 - `ps aux` = shows all running processes in BSD format
 - `ps -ef` = shows all running processes in full format listing
@@ -1324,6 +1325,13 @@ Zombie process is a process whose parent process is dead and is still running in
 - `top + c` - shows commands absolute path
 - `top + k` - after pressing k, we are prompted to enter a process ID.
 - `top + M and P` - to sort all Linux running processes by memory usage
+![[Pasted image 20230810002638.png]]
+
+
+
+
+
+
 
 > top command refreshes every 3 seconds.
 
@@ -1405,15 +1413,24 @@ Other future scheduling format:
 
 ---
 ## Process management
-Background =`Ctrl + z`, runs in the bg
-Foreground = `fg` 
-Run process even after exit = `nohup [process] &`
-	OR = `nohup process > /dev/null 2>&1 &`
-Kill a process by name = `pkill`
-Process priority = `nice (nice -n 5 [process])`
-	Goes from -20 to 19. The lower the number the more priority a task gets
-Process monitoring = `top`
-List process = `ps`
+- Background =`Ctrl + z`, runs in the bg
+	  `bg [job process number or name]` to run in the bg
+
+- Foreground = `fg [job process number or name` to run in the foreground 
+
+- Run process even after exit = `nohup [process] &`
+		OR = `nohup process > /dev/null 2>&1 &`
+
+- Kill a process by name = `pkill`
+
+- Process priority = `nice (nice -n 5 [process])`
+		Goes from -20 to 19. The lower the number the more priority a task gets
+
+- `renice` - Adjusts the priority of a process. Used for running processes.
+
+- Process monitoring = `top`
+
+- List process = `ps`
 
 Every time we run a process, it attaches itself to that terminal. Closing the terminal will stop the process.
 There is a workaround that lets us run commands with no regards to whether the terminal is running or has been terminated: we use `nohup`.
