@@ -1687,6 +1687,14 @@ To set the environment variables:
 `export TEST=1`
 `echo $TEST`
 
+Meanings to some of the environment variables:
+- `XDG_VTNR` - specifies the virtual terminal number
+- `XDG_SESSION_ID` - specifies the session ID
+- `HOSTNAME` - specifies the name of the computer
+- `SHELL` - specifies the shell path
+- `TERM` - defines terminal handling
+
+
 To set environment variable permanently
 It is recommended to backup our .bashrc file in case of a failure or unwanted behavior:
 `cp .bashrc bashrc.orig`
@@ -1706,6 +1714,8 @@ To set global environment permanently. Meaning, setting the environment variable
 
 https://bash.cyberciti.biz/guide/Unset
 The `unset` command unsets variables in our current session. Can remove both functions and shell variables.
+
+![[Pasted image 20230810214616.png]]
 
 ---
 ## Special Permissions with `setuid`, `setgid` and `sticky bit`
@@ -1758,6 +1768,13 @@ We wont be able to delete the directory.
 
 ---
 ## Aliases
+
+`alias alias_name='command'`
+
+By using aliases, you can define new commands by substituting a long command with a short one.
+Can be set temporarily in the current shell. 
+Can be set permanent by adding them to the user's `.bashrc` file.
+
 `alias 'lsd'='ls -l -a'
 `unalias ''
 
@@ -2666,7 +2683,6 @@ What is a shell?
 - ksh - Korn Shell compatible with sh and bash, adds floating points and more to the shells.
 
 `cat /etc/shells` to see all the type of shells installed in your system.
-
 
 ---
 ## Shell Scripting
