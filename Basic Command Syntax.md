@@ -371,6 +371,15 @@ An administrator can execute the `apt-get remove` command to remove a package or
 
 `yum [OPTIONS] [command] [list of package names]`
 
+- Install software: `yum -y install <package name>`
+	`-y` = Assume that yes is the answer to any conformation prompt
+
+- Update software: `yum update <package name>`
+
+- Inventory installed software: `yum list installed`
+
+- Uninstall software: `yum remove <package name>`
+
 ---
 ## Updating User Passwords
 The `passwd` command is used to update a user’s password. Users can only change their own passwords, whereas the root user can update the password for any user.
