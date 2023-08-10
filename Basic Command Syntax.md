@@ -322,6 +322,15 @@ sysadmin    95    79  0 19:43 pts/0        00:00:00 ps -ef
 
 At the lowest level of the Debian package management system is the `dpkg` command. This command can be tricky for novice Linux users, so the Advanced Package Tool, `apt-get`, a front-end program to the `dpkg` tool, makes management of packages even easier.
 
+<mark style="background: #FF5582A6;">Note:</mark> the `dpkg` or the `apt` tool is used in Debian based systems. 
+For RedHat based systems such as REHL, CentOS and Amazon Linux 2, the package manager is the `YUM` package manager (Yellow dog updater, modified). `YUM` is the front end for the `RPM` (RedHat package manager) tool.
+
+Repositories available to a package manager are typically defined in a configuration file.
+
+The following are examples of Amazon Linux 2 repositories managed by AWS:
+- `amzn2-core`
+- `amzn2extra-docker`
+
 ### Installing Packages
 Package files are commonly installed by downloading them directly from repositories located on Internet servers. The Debian repositories contain more than 65,000 different packages of software. Before installing a package, it is good practice to refresh the list of available packages using the `apt-get update` command.
 <br>
@@ -356,6 +365,11 @@ An administrator can execute the `apt-get remove` command to remove a package or
 `apt-get remove [package]`
 
 `apt-get purge [package]`
+
+---
+## Using the YUM package manager
+
+`yum [OPTIONS] [command] [list of package names]`
 
 ---
 ## Updating User Passwords
