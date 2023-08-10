@@ -379,7 +379,10 @@ An administrator can execute the `apt-get remove` command to remove a package or
 - Inventory installed software: `yum list installed`
 
 - Uninstall software: `yum remove <package name>`
-- ddfdf
+
+- Display installed packages: `yum list installed`
+	  Can be used with grep in the following way:
+		  `yum list installed | grep ssh`
 
 ---
 ## Updating User Passwords
@@ -1808,7 +1811,11 @@ We can also aggregate ports for a higher bandwidth. Link aggregation.
 After restarting and running `ifconfig`, we should be able to see two network interfaces.
 
 ---
-## Download Files or Apps
+## Download Files or Apps (`wget`)
+
+- Can do a recursive download
+- Supports HTTP, HTTPS, and FTP protocols
+- Performs retries over an unreliable connection
 
 `wget "insertlink"`
 
@@ -1816,7 +1823,11 @@ If a certain app does not exist in the default repository, we can just use a dow
 
 ---
 
-## curl and ping Commands
+## `curl` and `ping` Commands
+
+- Downloads a single resource only
+- Supports HTTP, HTTPS, FTP and many other additional protocols (such as FTPS and FILE)
+- Runs on more platforms than `wget`
 
 `curl http://website.com/filename` brings the content of the page/file. Most likely html source code etc. If it returns something, it means that the website is up which is good.
 `curl -O http://website.com/filename`
