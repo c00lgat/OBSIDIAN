@@ -2693,3 +2693,11 @@ e.g: Run a script until 2pm
 A script to check the status of remote hosts
 
 ---
+
+#! /bin/bash
+letter=a
+
+if \[\[ $letter = "a"\]\]
+then
+
+fi

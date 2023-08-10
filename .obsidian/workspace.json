@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWK.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWK.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWK.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWK.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -158,7 +158,13 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "AWK.md",
+    "AppleSeeds MOODLE.md",
     "Basic Command Syntax.md",
+    "2023-07-18.md",
+    "2023-07-20.md",
+    "2023-07-26.md",
+    "Bash.md",
     "Pasted image 20230810010412.png",
     "Pasted image 20230810002848.png",
     "Pasted image 20230810002638.png",
@@ -173,7 +179,6 @@
     "Extra curriculum.md",
     "Python Essentials 1.md",
     "Python.md",
-    "AWK.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
     "SED.md",
@@ -185,12 +190,7 @@
     "AWS resources.md",
     "Untitled 1.md",
     "This is a test for Github.md",
-    "AppleSeeds MOODLE.md",
-    "2023-07-26.md",
-    "2023-07-20.md",
-    "2023-07-18.md",
     "AWS AGENDA.md",
-    "Bash.md",
     "Docker.md",
     "Fantasy Books.md",
     "Presentations",
