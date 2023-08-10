@@ -1557,14 +1557,29 @@ The Linux operating system offers logging levels that indicate the Severity Leve
 
 ### Important log files:
 
-| Log File            | Description                                                         |
-| ------------------- | ------------------------------------------------------------------- |
-| `/var/log/syslog`   | Stores system information                                           |
-| `/var/log/secure`   | Stores authentication information for Red Hat-derived distributions |
-| `/var/log/kern`     | Stores Linux kernel information                                     |
-| `/var/log/boot.log` | Stores startup messages                                             |
-| `/var/log/maillog`  | Stores mail messages                                                |
-| `/var/log/daemon.                    |                                                                     |
+| Log File                      | Description                                                               |
+| ----------------------------- | ------------------------------------------------------------------------- |
+| `/var/log/syslog`             | Stores system information                                                 |
+| `/var/log/secure`             | Stores authentication information for Red Hat-derived distributions       |
+| `/var/log/kern`               | Stores Linux kernel information                                           |
+| `/var/log/boot.log`           | Stores startup messages                                                   |
+| `/var/log/maillog`            | Stores mail messages                                                      |
+| `/var/log/daemon.log`         | Stores information about running background services                      |
+| `/var/log/auth.log`           | Stores authentication information for Debian-derived distributions        |
+| `/var/log/cron.log`           | Stores cron messages for scheduled tasks                                  |
+| `/var/log/httpd`              | Stores Apache information for Red Hat-derived distributions               |
+| `/var/log/YUM`                | Stores YUM installer information for Red Hat-derived distributions        |
+| `/var/log/apache2/access.log` | Stores Apache authentication information for Debian-derived distributions |
+| `/var/log/lastlog`            | Stores information about successful logins to the host                    |
+
+#### `lastlog` command
+Retrieves user information from the `/var/log/lastlog` file and outputs it in the console.
+
+- `lastlog -u ec2-user` displays information of the ec2-user only.
+- `lastlog -t 1` displays login information more recent than 1 day ago.
+- run `man lastlog` for more options
+
+
 
 ---
 ## System Maintenance Commands
