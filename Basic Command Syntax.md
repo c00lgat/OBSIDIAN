@@ -1518,19 +1518,53 @@ This gives the sleep command a priority of 5.
 - `uptime` Indicate the amount of time that the system has been up, number of users, and CPU wait time.
 ---
 ## Log Monitoring
-Log Directory = `/var/log` - Directory that stores all the logs
-`ls -more /var/log`
-We get a comprehensive list of all logs
-more boot log - gives us all boot logs, errors and or checks
-rebooting will generate a new boot file
+
+There are different types of logs:
+- System logs (system startup information and system shutdown times)
+- Events logs (user login and logout events)
+- Applications logs (startup time, actions and errors)
+- Services logs
+
+Usually used to trace which applicated triggered an error, which user made a wrong action or which outside host accessed the server.
+
+Logs are key to security audits (gathering information about the system) and service-level agreements (troubleshooting must start within x hours after an issue occurs).
+
+![[Pasted image 20230810203156.png]]
+
+
+- Log Directory = `/var/log` - Directory that stores all the logs
+	 `ls -more /var/log`: We get a comprehensive list of all logs
+
+- `more boot log` - gives us all boot logs, errors and or checks
+	Rebooting will generate a new boot file 
+
 - `boot` - booting up logs
+
 - `chronyd`  
+
 - `cron` - daemon to execute scheduled commands.
+
 - `maillog` - all information about our emails
+
 - `secure` - records all logging in and log out information. 
+
 - `messages` - every time there is an issue with our machine, we usually go to the messages log. Has all kinds of information, app information, processes information, system information etc.
   What is going on with our system, what failed and when it failed.
 - `httpd`
+
+The Linux operating system offers logging levels that indicate the Severity Level and identification:
+![[Pasted image 20230810203425.png]]
+
+### Important log files:
+
+| Log File            | Description                                                         |
+| ------------------- | ------------------------------------------------------------------- |
+| `/var/log/syslog`   | Stores system information                                           |
+| `/var/log/secure`   | Stores authentication information for Red Hat-derived distributions |
+| `/var/log/kern`     | Stores Linux kernel information                                     |
+| `/var/log/boot.log` | Stores startup messages                                             |
+| `/var/log/maillog`  | Stores mail messages                                                |
+| `/var/log/daemon.                    |                                                                     |
 
 ---
 ## System Maintenance Commands
