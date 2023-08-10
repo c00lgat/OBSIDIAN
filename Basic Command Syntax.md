@@ -379,6 +379,7 @@ An administrator can execute the `apt-get remove` command to remove a package or
 - Inventory installed software: `yum list installed`
 
 - Uninstall software: `yum remove <package name>`
+- ddfdf
 
 ---
 ## Updating User Passwords
