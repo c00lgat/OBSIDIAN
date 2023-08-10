@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -159,16 +158,16 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "Bash.md",
+    "Basic Command Syntax.md",
     "Pasted image 20230810203544.png",
     "Pasted image 20230810203425.png",
     "Pasted image 20230810203156.png",
     "AWK.md",
     "AppleSeeds MOODLE.md",
-    "Basic Command Syntax.md",
     "2023-07-18.md",
     "2023-07-20.md",
     "2023-07-26.md",
-    "Bash.md",
     "Pasted image 20230810010412.png",
     "Pasted image 20230810002848.png",
     "Pasted image 20230810002638.png",
@@ -176,7 +175,6 @@
     "Pasted image 20230810002022.png",
     "Pasted image 20230810001808.png",
     "Pasted image 20230809205001.png",
-    "Pasted image 20230809094222.png",
     "GIT & Github.md",
     "Extra curriculum.md",
     "Python Essentials 1.md",

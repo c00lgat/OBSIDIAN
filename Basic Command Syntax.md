@@ -2637,6 +2637,11 @@ Shell + Kernel = Operating system
 ---
 ## Introduction to Shell
 
+What is a shell?
+- A shell accepts and interprets commands.
+- A shell is an environment in which commands, programs, and shell scripts are run.
+- There are many types of Linux shells available. Bash is one of them.
+
 - Shell is like a container
 - Interfaces between users and Kernel/OS
 - CLI is a Shell
@@ -2646,17 +2651,22 @@ Shell + Kernel = Operating system
 - Available shells: `cat etc/shells`
 - Your Shell? `/etc/passwd/`
 
+### Bourne Again Shell: Bash
+- Bash is the default shell in Linux.
+- It offers an efficient environment for interacting with the operating system and scripting.
+
 ---
 ## Types of Linux Shells
 
 - Gnome - graphical environment in Linux. 
 - KDE - another Linux desktop environment.
 - sh - one of the original shells. The bourne shell.
-- bash - stands for born again shell.
+- bash - stands for Bourne Again Shell.
 - csh and tcsh - CShell and TCShell. TShell does not run scripts.
 - ksh - Korn Shell compatible with sh and bash, adds floating points and more to the shells.
 
 `cat /etc/shells` to see all the type of shells installed in your system.
+
 
 ---
 ## Shell Scripting
