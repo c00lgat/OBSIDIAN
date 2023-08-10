@@ -388,8 +388,6 @@ An administrator can execute the `apt-get remove` command to remove a package or
 
 - To display more info about a certain update, use: `sudo yum history info <#>` (replace the `<#>` with the history list number after running `sudo yum history list`)
 
-
-
 ---
 ## Updating User Passwords
 The `passwd` command is used to update a user’s password. Users can only change their own passwords, whereas the root user can update the password for any user.
@@ -719,6 +717,7 @@ To get your prompt back: *CTRL + C*. If you get stuck, you can press *CTRL + C* 
 
 ---
 ## File system structure and its description
+
 Files used for the bootloader, every time our machine boots up, it will
 go to the /boot folder and looks into it. 
 `/root` root user home directory. Not the same as /
