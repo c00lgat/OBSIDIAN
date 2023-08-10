@@ -384,6 +384,12 @@ An administrator can execute the `apt-get remove` command to remove a package or
 	  Can be used with grep in the following way:
 		  `yum list installed | grep ssh`
 
+- Display the history of updates: `sudo yum history list`
+
+- To display more info about a certain update, use: `sudo yum history info <#>` (replace the `<#>` with the history list number after running `sudo yum history list`)
+
+
+
 ---
 ## Updating User Passwords
 The `passwd` command is used to update a user’s password. Users can only change their own passwords, whereas the root user can update the password for any user.
