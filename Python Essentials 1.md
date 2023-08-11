@@ -403,5 +403,10 @@ while there is something to do
 while conditional_expression:
 	instruction
 ```
-An indentation is a must inside the `while` loop, much like the `if` 
+An indentation is a must inside the `while` loop, much like the `if` conditional.
+
+---
+## Looping your code with `for`
+
+
 
