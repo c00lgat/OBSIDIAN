@@ -372,4 +372,20 @@ print(str(hour) + ":" + str(mins))
 
 ## Conditions and conditional execution 
 
-The first form of a conditional statement 
+`if statement` example:
+```python
+if the_weather_is_good:
+	go_for_a_walk()
+```
+
+`if-else` example:
+```python
+if true_or_false_condition:
+	perform_if_condition_true
+else:
+	perform_if_condition_false
+```
+- If the condition evaluates to `True` (value is not equal to zero) the `perform_if_condition_true` statement is executed and the conditional statement comes to an end.
+
+- If the condition evaluates to `False` (equal to zero), then the `perform_if_condition_false` statement is executed, and the conditional statement comes to an end. 
+
