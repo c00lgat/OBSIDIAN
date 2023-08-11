@@ -408,5 +408,19 @@ An indentation is a must inside the `while` loop, much like the `if` conditional
 ---
 ## Looping your code with `for`
 
+Syntax:
+```python
+for i in range(100):
+	# do_something()
+	pass
+```
 
 
+```python
+for i in range(2,8):
+	print("The value of i is currently ",i)
+```
+Iterates starting from `i=2` all the way to `i=7`.
+
+The `range()` function can also take 3 arguments.
+The third argument is an **increment**, its a value added to control the variable at every loop turn. The default value of the increments is 1.
