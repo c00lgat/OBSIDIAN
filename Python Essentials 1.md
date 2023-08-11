@@ -457,3 +457,31 @@ for i in range(1, 6):
 print("Outside the loop.")
 
 ```
+
+---
+## Loops and `else`
+
+Loops, like the `if` statements, also have the `else` branch too.
+The loop's `else` branch is always executed once, regardless of whether the loop has entered its body or not.
+
+Example:
+```python
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("else:", i)
+
+```
+
+
+`for` loops behave a bit differently:
+Unlike the `while` loop like the one above, in the `for` loops, the `i` variable retains its last value.
+```python
+for i in range(5):
+    print(i)
+else:
+    print("else:", i)
+
+```
