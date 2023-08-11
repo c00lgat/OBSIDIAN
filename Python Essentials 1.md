@@ -368,3 +368,8 @@ print(mins)
 print(str(hour) + ":" + str(mins))
 ```
 
+---
+
+## Conditions and conditional execution 
+
+The first form of a conditional statement 
