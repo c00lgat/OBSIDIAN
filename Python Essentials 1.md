@@ -389,3 +389,19 @@ else:
 
 - If the condition evaluates to `False` (equal to zero), then the `perform_if_condition_false` statement is executed, and the conditional statement comes to an end. 
 
+---
+## Looping your code with `while`
+
+
+```
+while there is something to do
+	do it
+```
+
+### Syntax:
+```
+while conditional_expression:
+	instruction
+```
+An indentation is a must inside the `while` loop, much like the `if` 
+
