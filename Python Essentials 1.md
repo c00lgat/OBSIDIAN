@@ -424,3 +424,36 @@ Iterates starting from `i=2` all the way to `i=7`.
 
 The `range()` function can also take 3 arguments.
 The third argument is an **increment**, its a value added to control the variable at every loop turn. The default value of the increments is 1.
+
+---
+## The `break` and `continue` statements
+
+Can be used in the following cases:
+- Unnecessary to continue the loop as a whole
+
+- Need to start the next turn of the loop without completing the execution of the current turn
+
+`break`: exits the loop immediately, and unconditionally ends the loop's operation.
+
+`continue`: behaves as if the program has suddenly reached the end of the body of the loop and skips to the next iteration of the loop.
+
+Syntax:
+```python
+# break - example
+print("The break instruction:")
+for i in range(1, 6):
+    if i == 3:
+        break
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+
+# continue - example
+print("\nThe continue instruction:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+```
