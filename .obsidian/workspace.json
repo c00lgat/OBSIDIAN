@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS resources.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS resources.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS resources.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS resources.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -158,10 +158,10 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "AWS resources.md",
     "Untitled.md",
     "Untitled 1.md",
     "Untitled 2.md",
-    "AWS resources.md",
     "AWS AGENDA.md",
     "AWK.md",
     "Basic Command Syntax.md",
