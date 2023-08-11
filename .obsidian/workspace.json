@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWS resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWS resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWS resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "AWS resources.md"
               }
             }
           },
@@ -158,14 +158,16 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
+    "AWS AGENDA.md",
+    "AWK.md",
+    "Basic Command Syntax.md",
+    "Untitled 2.md",
     "Pasted image 20230810214639.png",
     "Pasted image 20230810214616.png",
     "Bash.md",
-    "Basic Command Syntax.md",
     "Pasted image 20230810203544.png",
     "Pasted image 20230810203425.png",
     "Pasted image 20230810203156.png",
-    "AWK.md",
     "AppleSeeds MOODLE.md",
     "2023-07-18.md",
     "2023-07-20.md",
@@ -175,7 +177,6 @@
     "Pasted image 20230810002638.png",
     "Pasted image 20230810002132.png",
     "Pasted image 20230810002022.png",
-    "Pasted image 20230810001808.png",
     "GIT & Github.md",
     "Extra curriculum.md",
     "Python Essentials 1.md",
@@ -191,7 +192,6 @@
     "AWS resources.md",
     "Untitled 1.md",
     "This is a test for Github.md",
-    "AWS AGENDA.md",
     "Docker.md",
     "Fantasy Books.md",
     "Presentations",
