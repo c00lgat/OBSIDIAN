@@ -485,3 +485,32 @@ else:
     print("else:", i)
 
 ```
+
+---
+## Bitwise operators
+
+Lets us manipulate single bits of data. 
+
+- `&` (ampersand) - bitwise conjunction;
+- `|` (bar) - bitwise disjunction;
+- `~` (tilde) - bitwise negation;
+- `^` (caret) - bitwise exclusive or (xor).
+
+| Argument `A` | Argument `B` | `A & B` | `A` \| `B` | `A ^ B` |
+| ------------ | ------------ | ------- | ------- | ------- |
+| `0`          | `0`          | `0`     | `0`     | `0`     |
+| `0`          | `1`          | `0`     | `1`     | `1`     |
+| `1`          | `0`          | `0`     | `1`     | `1`     |
+| `1`          | `1`          | `1`     | `1`     | `0`     |
+
+|Argument|`~` Argument|
+|---|---|
+|`0`|`1`|
+|`1`|`0`|
+
+- `&` requires exactly two `1`s to provide `1` as the result;
+- `|` requires at least one `1` to provide `1` as the result;
+- `^` requires exactly one `1` to provide `1` as the result.
+
+<mark style="background: #FF5582A6;">Note</mark>: the arguments of these operators **must be integers**; we must not use floats here.
+

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Python Essentials 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "afd0bc142cba1e07",
   "lastOpenFiles": [
-    "Python Essentials 1.md",
     "Basic Command Syntax.md",
+    "Python Essentials 1.md",
     "AWS resources.md",
     "Untitled.md",
     "Untitled 1.md",
