@@ -568,6 +568,45 @@ Multiplying 12345 by 10 shifts the number to the left, filling the resulting gap
 
 And then there is also division by ten: `12340 ÷ 10 = 1234`. Dividing by ten is nothing but shifting the digits to the right.
 
-The same kind of shifting is performed by our computers. But with one difference: computers multiply and divide by  `2` instead of by 
+The same kind of shifting is performed by our computers. But with one difference: computers multiply and divide by  `2` instead of by `10`.
+Shifting a value one bit to the left is done by multiplying it by two; and shifting one bit to the right is like dividing by two.
+
+#### Syntax:
+```python
+value << bits
+value >> bits
+```
+The left argument of these operators is an integer value whose bits are shifted. The right argument determines the size of the shift.
+
+#### Example:
+```python
+var = 17
+var_right = var >> 1
+var_left = var << 2
+print(var, var_left, var_right)
+```
+
+#### Output:
+`17 68 8`
+
+#### Explanation:
+- `17 >> 1` → `17 // 2` (**17** floor-divided by **2 to the power of 1**) → `8` (shifting to the right by one bit is the same as integer division by two).
+- `17 << 2` → `17 * 4` (**17** multiplied by **2 to the power of 2**) → `68` (shifting to the left by two bits is the same as integer multiplication by four).
+
+`>>` is **division**.
+`<<` is **multiplication**.
 
 
+### Updated priority table:
+| Priority | Operator                                                           |        |
+| -------- | ------------------------------------------------------------------ | ------ |
+| 1        | `~`, `+`, `-`                                                      | unary  |
+| 2        | `**`                                                               |        |
+| 3        | `*`, `/`, `//`, `%`                                                |        |
+| 4        | `+`, `-`                                                           | binary |
+| 5        | `<<`, `>>`                                                         |        |
+| 6        | `<`, `<=`, `>`, `>=`                                               |        |
+| 7        | `==`, `!=`                                                         |        |
+| 8        | `&`                                                                |        |
+| 9        | \|                                                               |        |
+| 10       | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `^=`, \|`=`, `>>=`, `<<=` |        |
