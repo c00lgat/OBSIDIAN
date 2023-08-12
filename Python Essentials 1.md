@@ -514,3 +514,54 @@ Lets us manipulate single bits of data.
 
 <mark style="background: #FF5582A6;">Note</mark>: the arguments of these operators **must be integers**; we must not use floats here.
 
+---
+## Logical vs. bit operations: continued
+
+Using logical operation:
+```python
+i = 15
+j = 22
+
+log = i and j
+```
+
+``` Output:
+log: True
+```
+
+Using logical operation:
+```python
+i = 15
+j = 22
+
+log = i & j
+```
+The `&` operator will operate with each pair of corresponding bits separately, producing the values of the relevant bits of the result. Therefore, the result will be as follows:
+
+| `i`           | `00000000000000000000000000001111` |
+| ------------- | -------------------------------------- |
+| `j`           | `00000000000000000000000000010110` |
+| `bit = i & j` | `00000000000000000000000000000110` |
+These bits correspond to the integer value of six.
+
+
+Let's look at the negation operators now. First the *logical* one:
+- `logneg = not i`
+
+The `logneg` variable will be set to `False` - nothing more needs to be done.
+
+The *bitwise* negation goes like this:
+- `bitneg = ~i`
+
+
+Each of these two-argument operators can be used in **abbreviated form**. These are the examples of their equivalent notations:
+
+| `x = x & y`  | `x ==&=== y`  |
+| ------------ | ------------- |
+| `x = x` \| `y` | `x ==\|=== y` |
+| `x = x ^ y`  | `x ==^=== y`  |
+
+
+
+
+
