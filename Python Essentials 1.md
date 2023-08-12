@@ -561,5 +561,13 @@ Each of these two-argument operators can be used in **abbreviated form**. These 
 | `x = x` \| `y` | `x `\|`= y` |
 | `x = x ^ y`  | `x ^= y`  |
 
+---
+## Shift operators
+
+Multiplying 12345 by 10 shifts the number to the left, filling the resulting gap with a zero: `12345 x 10 = 123450`.
+
+And then there is also division by ten: `12340 ÷ 10 = 1234`. Dividing by ten is nothing but shifting the digits to the right.
+
+The same kind of shifting is performed by our computers. But with one difference: computers multiply and divide by  `2` instead of by 
 
 
