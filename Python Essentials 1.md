@@ -563,5 +563,3 @@ Each of these two-argument operators can be used in **abbreviated form**. These 
 
 
 
-
-
