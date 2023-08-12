@@ -556,10 +556,10 @@ The *bitwise* negation goes like this:
 
 Each of these two-argument operators can be used in **abbreviated form**. These are the examples of their equivalent notations:
 
-| `x = x & y`  | `x ==&=== y`  |
+| `x = x & y`  | `x &= y`  |
 | ------------ | ------------- |
-| `x = x` \| `y` | `x ==\|=== y` |
-| `x = x ^ y`  | `x ==^=== y`  |
+| `x = x` \| `y` | `x `\|`= y` |
+| `x = x ^ y`  | `x ^= y`  |
 
 
 
