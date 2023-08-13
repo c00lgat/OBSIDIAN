@@ -5,8 +5,7 @@ https://www.linux.com/topic/desktop/all-about-curly-braces-bash/
 https://exercism.org/tracks/bash
 
 Shell Scripting - Jason Cannon
-file:///C:/Users/Anan/Downloads/shell-scripting-how-to-automate-command-line-tasks--annas-archive.pdf
+https://drive.google.com/file/d/1PaDRmqqMnrp8DGhUz-EnwZCgHtoPufoT/view?usp=drive_link
 
 Linux Shell Scripting Cookbook - Third Edition
-file:///C:/Users/Anan/Downloads/Clif%20Flynt,_%20Sarath%20Lakshman,_%20Shantanu%20Tushar%20-%20Linux%20Shell%20Scripting%20Cookbook%20(2017,%20Packt%20Publishing)%20-%20libgen.li.pdf
-
+https://drive.google.com/file/d/16uk9fHcT2sUMIRIjm3gZ3QZtUr_8X4vA/view?usp=drive_link
