@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "690a814bcb647cfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ocaml.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Regex.md",
+                "file": "Ocaml.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Regex.md",
+                "file": "Ocaml.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Regex.md"
+                "file": "Ocaml.md"
               }
             }
           },
@@ -156,15 +169,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "afd0bc142cba1e07",
+  "active": "690a814bcb647cfd",
   "lastOpenFiles": [
+    "Regex.md",
+    "Ocaml.md",
     "SED.md",
     "Basic Command Syntax.md",
     "Bash.md",
     "Downloading books.md",
     "Python Essentials 1.md",
     "AWS resources.md",
-    "Untitled.md",
     "Untitled 1.md",
     "Untitled 2.md",
     "AWS AGENDA.md",
@@ -187,7 +201,6 @@
     "Extra curriculum.md",
     "Python.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
-    "Regex.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "Python playground.md",
     "Nat service restart windows.md",
