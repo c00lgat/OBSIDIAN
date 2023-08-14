@@ -26,4 +26,9 @@ Not a type cast!
 *Toplevel* is Ocaml's command-line interface. Similar to Python's IDLE, JShell for Java and LISP.
 In a terminal, type `utop` to start the toplevel. `CTRL+D` to exit the toplevel. You can also type `#quit;;` and press enter.
 
-
+### 2.1.1. Types and values
+We can enter expressions into OCaml toplevel. End an expression with `;;` and press the enter key. OCaml will then evaluate the expression, tell you the resulting value and the value's type. For example:
+``` toplevel
+# 42;;
+output: - : int = 42
+```
