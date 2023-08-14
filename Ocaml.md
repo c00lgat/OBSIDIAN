@@ -20,3 +20,5 @@ OCaml supports the following features:
 - **Garbage collection**: Automatic memory management. No need to manually allocate and deallocate like in C.
 - **Modules**: Modules help structuring large systems. They are used to encapsulate implementations begind interfaces. 
 
+Manual annotation in OCaml: (3110 : int);;
+Not a type cast! 
