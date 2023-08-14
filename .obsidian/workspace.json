@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "123cf319ed396650",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OCaml.md",
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OCaml.md",
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OCaml.md"
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
               }
             }
           },
@@ -166,13 +176,16 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "690a814bcb647cfd",
+  "active": "123cf319ed396650",
   "lastOpenFiles": [
-    "Basic Command Syntax.md",
     "OCaml.md",
+    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+    "Excalidraw",
+    "Basic Command Syntax.md",
     "Regex.md",
     "SED.md",
     "Bash.md",
@@ -206,7 +219,6 @@
     "Nat service restart windows.md",
     "Markup Guide.md",
     "Learning the vi and Vim Editors.md",
-    "This is a test for Github.md",
     "Presentations",
     "AGILE",
     "Google Search",
