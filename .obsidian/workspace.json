@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ocaml.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ocaml.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ocaml.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ocaml.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -172,8 +171,8 @@
   },
   "active": "690a814bcb647cfd",
   "lastOpenFiles": [
-    "Basic Command Syntax.md",
     "Ocaml.md",
+    "Basic Command Syntax.md",
     "Regex.md",
     "SED.md",
     "Bash.md",
