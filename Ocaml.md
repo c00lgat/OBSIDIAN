@@ -18,7 +18,12 @@ OCaml supports the following features:
 - **Type inference**: Do not have to type information down everywhere. Compiler automatically figures out most types. Can make code easier to read and maintain.
 - **Parametric polymorphism**: Functions and data structures can be parameterized over types. Allows to reuse code.
 - **Garbage collection**: Automatic memory management. No need to manually allocate and deallocate like in C.
-- **Modules**: Modules help structuring large systems. They are used to encapsulate implementations begind interfaces. 
+- **Modules**: Modules help structuring large systems. They are used to encapsulate implementations behind interfaces. 
 
 Manual annotation in OCaml: (3110 : int);;
 Not a type cast! 
+
+*Toplevel* is Ocaml's command-line interface. Similar to Python's IDLE, JShell for Java and LISP.
+In a terminal, type `utop` to start the toplevel. `CTRL+D` to exit the toplevel. You can also type `#quit;;` and press enter.
+
+
