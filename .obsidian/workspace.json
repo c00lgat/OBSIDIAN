@@ -35,9 +35,11 @@
             "id": "123cf319ed396650",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
+                "file": "Basic Command Syntax.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -182,8 +184,8 @@
   },
   "active": "123cf319ed396650",
   "lastOpenFiles": [
-    "OCaml.md",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+    "OCaml.md",
     "Excalidraw",
     "Basic Command Syntax.md",
     "Regex.md",
