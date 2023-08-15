@@ -1483,6 +1483,9 @@ Other future scheduling format:
 
 - Kill a process by name = `pkill`
 
+`man 7 signal`
+To read more about the rest of the signals
+
 - Process priority = `nice (nice -n 5 [process])`
 		Goes from -20 to 19. The lower the number the more priority a task gets
 
