@@ -258,3 +258,15 @@ Both `&&` and `||` must be enclosed within `[[ ]]`
 
 ---
 ## Using the `!` operator
+
+
+---
+echo -n bla
+prints without skipping to new line
+
+echo -n "\*"
+echo -n " "
+echo
+only while
+only let
+![[Pasted image 20230816133948.png]]
