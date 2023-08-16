@@ -163,9 +163,87 @@ This code simply echoes the value of the positional argument `$1` which is `tim`
 As we can see, we have an extensive set of tools that we can use to achieve a certain goal using the different functions that bash allows us to use.
 
 ---
-
 ## `if` Statement
 
 ### Syntax:
 ```bash
+if [[ command ]]
+then
+	code
+	code
+	code
+fi
+```
+The code is executed only if the `command` succeeds.
 
+---
+## `test` Command
+
+`test` evaluates an expression and returns true or false:
+```bash
+if test -w "$1"
+then
+	echo "file $1 is writeable"
+fi
+```
+As we can see above, we used the `test` keyword to evaluate the boolean result of `-w "$1"` which checks if a certain file has the write permissions or not. 
+
+Instead of using the `test` keyword, we can simply use the brackets that we are more familiar with. So, alternatively:
+```bash
+if [[ -w "$1" ]]
+then
+	echo "file $1 is writable"
+fi
+```
+The code above does the exact same thing as the first example. 
+
+Another way of writing the above code is the following: 
+```bash
+if [[ -w "$1" ]]; then
+	echo "file $1 is writable"
+fi
+```
+
+---
+## `if-then-else` Statement
+
+### Syntax
+```bash
+if [[ condition ]]; then
+	statements-1
+else
+	statements-2
+fi
+```
+The code above runs the `statements-1` if the condition returned true.
+`statements-2` are ran if the condition returned false.
+
+### `elif`
+#### Syntax:
+```bash
+if [[ condition ]]; then
+	statements
+elif [[ condition ]]; then
+	statements
+else
+	statements
+fi
+```
+
+`elif` stands for "else if".
+
+---
+## Relational operators
+
+| Meaning                            | Numeric | String |
+| ---------------------------------- | ------- | ------ |
+| Greater than                       | -gt     | -      |
+| Greater than or equal              | -ge     | -      |
+| Less than                          | -lt     |        |
+| Less than or equal                 | -le     |        |
+| Equal                              |         |        |
+| Not equal                          |         |        |
+| str1 is less than str2             |         |        |
+| str1 is greater than str2          |         |        |
+| String length is greater than zero |         |        |
+| String length is zero              |         |        |
