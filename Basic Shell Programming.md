@@ -30,8 +30,24 @@ We can pass arguments to our little, precious bash script in two ways:
 
 - `for`
 	The for loop allows us to run and repeat code according to the amount of times we tell it to run. 
-	For example, we can tell for to run and iterate over and over on code until `i` hits 10, for example. 
+	For example, we can tell for to run and iterate over and over on code until `i` hits 10, for example. `for i in {1..10}` Or `for (( i=0; i<5; i++ ))`
 	
 	The `for` in bash is quite smart. We can also ask it to iterate over all the files that are currently present in the same directory, until we run out of files to check/iterate over. It does that automatically, we just have to tell it to iterate over the current directory (`for i in  *`)
 	
-	`for` can also run on a list of names
+	`for` can also run on a list of names. Example:
+	`for i in anan oleg ofir inga rio`
+	
+	Or even on bash commands:
+	`for i in pwd ls date`. for knows to run over the commands and execute them one after the other.
+
+- `select`
+	The select loop can be used to prompt a user to pick an option out of the multiple different choices that we set for the select loop. For example:
+		`select name in anan inga rio oleg ofir`
+		`do`
+			`echo "$name selected"
+		`done`
+	The script above produces a text that lets the user see all the possible options and lets them pick one out of the available options. Once the user picks one option, then the code between the `do` and `done` is executed.
+	The `select` loop does not end until the user decides to. It will keep asking the user to pick 
+	
+	
+	The `select` loop is especially effective and useful when a `case` statement is used inside of it. 
