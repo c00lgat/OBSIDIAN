@@ -11,17 +11,21 @@ First, we need to give the script we just wrote execution permissions:
 Then we run the script in the terminal via:
 - `./script.sh`
 
+### Input:
 We can pass arguments to our little, precious bash script in two ways:
 - By prompting the user. Example:
 	`read -p "Please enter argument" argument `
+
 - Second way is by using external arguments. Also called command line arguments. Basically, instead of explicitly asking the user to enter arguments as seen above, we use the `$1, $2` and etc notation. For example:
 	`./script.sh firstArgument secondArgument`
 	And then inside the script, we call these external arguments via the dollar sign and then a number that represents the number of the argument. `firstArgument` is notated as `$1` inside our code.
+
 
 ### Decision:
 - In our bash scripts, we sometimes have to decide between two or more options/things.
 - Example: We decide to print the number if its divided by 2. If so, print. If not, do not print. In this case we use an `if-then-else` statement.
 	Other cases/examples include using the `case` statement.
+
 
 ### Repetition:
 - `do-while, repeat-until`
@@ -51,4 +55,64 @@ We can pass arguments to our little, precious bash script in two ways:
 	
 	
 	The `select` loop is especially effective and useful when a `case` statement is used inside of it. Example:
-```ba
+```bash
+select name in anan inga rio oleg ofir
+do
+	case $name in
+	anan)
+		echo "sleeping"
+		;;
+	inga)
+		echo "studying until 3am"
+		;;
+	rio)
+		echo "playing mortal kombat"
+		;;
+	oleg)
+		echo "teaching us how to connect vscode to github"
+		;;
+	ofir)
+		echo "misses the monkies he used to work with"
+		;;
+	*)
+		echo "Invalid input"
+		;;
+	esac
+done
+```
+
+The Bash Shell also allows us to create Functions and Traps.
+
+---
+## User input
+Shell allows to prompt for user input:
+```bash
+read varname [more vars]
+```
+As we can see, bash allows us to read multiple variables at the same time.
+
+Or:
+```bash
+read -p "prompt" varname [more vars]
+```
+We can echo and read variables in one line using the `read -p` command. 
+
+Example:
+```bash
+#! /bin/bash
+
+read -p "enter your name: " first last
+echo "First name: $first"
+echo "Last name: $last"
+```
+
+---
+
+Special Shell variables: 
+| Parameter | Meaning                                       |
+| --------- | --------------------------------------------- |
+| `$0`      | Name of the current shell script              |
+| `$1-$9`   | Positional parameters 1 through 9             |
+| `$#`      | The number of positional parameters           |
+| `$*`      | All positional parameters, `$*` is one string |
+| `$@`      | All positional parameters, `$@` is a                                              |
