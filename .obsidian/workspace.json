@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "b6e78ee90fca0187",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Shell Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "254ccce3562ec01a",
             "type": "leaf",
             "state": {
@@ -54,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -120,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Basic Shell Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Basic Shell Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "Basic Shell Programming.md"
               }
             }
           },
@@ -192,8 +204,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "123cf319ed396650",
+  "active": "b6e78ee90fca0187",
   "lastOpenFiles": [
+    "Basic Command Syntax.md",
+    "Basic Shell Programming.md",
     "Networks and Subnetting.md",
     "Pasted image 20230816101626.png",
     "AWS resources.md",
@@ -204,7 +218,6 @@
     "Pasted image 20230816100829.png",
     "Pasted image 20230816100643.png",
     "AWK.md",
-    "Basic Command Syntax.md",
     "Presentations/XAMPP Presentation.md",
     "Udemy Courses/Problem solving techniques.md",
     "Udemy Courses/Becoming a Learning Machine.md",
