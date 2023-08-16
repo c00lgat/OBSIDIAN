@@ -108,11 +108,64 @@ echo "Last name: $last"
 
 ---
 
-Special Shell variables: 
-| Parameter | Meaning                                       |
-| --------- | --------------------------------------------- |
-| `$0`      | Name of the current shell script              |
-| `$1-$9`   | Positional parameters 1 through 9             |
-| `$#`      | The number of positional parameters           |
-| `$*`      | All positional parameters, `$*` is one string |
-| `$@`      | All positional parameters, `$@` is a                                              |
+## Special Shell variables: 
+
+ | Parameter | Meaning |
+ | --------- | ------- |
+ | `$0`      |   Name of the current shell script      |
+ | `$1-$9`   |    Positional parameters 1 through 9      |
+ | `$#`      |   The number of positional parameters         |
+ | `$*`      |     All positional parameters, `$*` is one string     |
+ | `$@`      |      All positional parameters, `$@` is a set of strings   |
+ | `$?`      | Return status of most recently executed command         |
+ |   `$$`        |Process ID of current process           |
+
+---
+## Set command
+
+The `set` command can be used to assign values to positional parameters.
+
+```bash
+set tim bill ann fred
+```
+The example above allows us to assign `tim` to `$1`, `bill` to `$2`, `ann` to `$3` and `fred` to `$4`
+
+
+```bash
+echo $*
+```
+The output to the above code would be `tim bill ann fred`. `$*` prints all of our positional arguments.
+
+
+```bash
+echo $#
+```
+The output to the above code will give us 4. `$#` is the number of positional arguments we have in our code. 
+
+
+```bash
+echo $1
+```
+This code simply echoes the value of the positional argument `$1` which is `tim`
+
+---
+
+## Bash built in functions
+
+- `if-then-else`
+- `case`
+- `loops`
+	- `for`
+	- `while`
+	- `until`
+	- `select`
+
+As we can see, we have an extensive set of tools that we can use to achieve a certain goal using the different functions that bash allows us to use.
+
+---
+
+## `if` Statement
+
+### Syntax:
+```bash
+
