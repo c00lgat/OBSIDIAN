@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "להגיש דוח סוף שנה.md",
+                "file": "Basic Shell Programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "להגיש דוח סוף שנה.md",
+                "file": "Basic Shell Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "להגיש דוח סוף שנה.md",
+                "file": "Basic Shell Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "להגיש דוח סוף שנה.md"
+                "file": "Basic Shell Programming.md"
               }
             }
           },
@@ -234,14 +234,16 @@
   },
   "active": "b6e78ee90fca0187",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
-    "Basic Shell Programming.md",
     "Pasted image 20230816141136.png",
+    "Basic Shell Programming.md",
+    "Basic Command Syntax.md",
+    "Bash.md",
+    "להגיש דוח סוף שנה.md",
+    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "Pasted image 20230816135935.png",
     "Pasted image 20230816134857.png",
     "Pasted image 20230816133948.png",
     "IMAGES/Pasted image 20230816114150.png",
-    "Basic Command Syntax.md",
     "Networks and Subnetting.md",
     "IMAGES/Pasted image 20230816101626.png",
     "AWS resources.md",
@@ -255,7 +257,6 @@
     "Udemy Courses/Becoming a Learning Machine.md",
     "AppleSeeds MOODLE.md",
     "AWS AGENDA.md",
-    "Bash.md",
     "Docker.md",
     "Downloading books.md",
     "Fantasy Books.md",
@@ -268,7 +269,6 @@
     "LISP LANG.md",
     "Markup Guide.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
-    "Microservices.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
