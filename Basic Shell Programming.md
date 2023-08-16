@@ -235,15 +235,25 @@ fi
 ---
 ## Relational operators
 
-| Meaning                            | Numeric | String |
-| ---------------------------------- | ------- | ------ |
-| Greater than                       | -gt     | -      |
-| Greater than or equal              | -ge     | -      |
-| Less than                          | -lt     |        |
-| Less than or equal                 | -le     |        |
-| Equal                              |         |        |
-| Not equal                          |         |        |
-| str1 is less than str2             |         |        |
-| str1 is greater than str2          |         |        |
-| String length is greater than zero |         |        |
-| String length is zero              |         |        |
+| Meaning                            | Numeric | String        |
+| ---------------------------------- | ------- | ------------- |
+| Greater than                       | `-gt`   | -             |
+| Greater than or equal              | `-ge`   | -             |
+| Less than                          | `-lt`   |               |
+| Less than or equal                 | `-le`   |               |
+| Equal                              | `-eq`   | `=` or `==`   |
+| Not equal                          | `-ne`   | `!=`          |
+| str1 is less than str2             | -       | `str1 < str2` |
+| str1 is greater than str2          | -       | `str1 > str2` |
+| String length is greater than zero | -       | `-n str`      |
+| String length is zero              | -       | `-z str`              |
+
+---
+## Compound logical expressions
+
+`!` = `not`
+`&&` = `and`
+`||` = `or`
+Both `&&` and `||` must be enclosed within `[[ ]]`
+
+---
