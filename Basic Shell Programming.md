@@ -257,3 +257,4 @@ fi
 Both `&&` and `||` must be enclosed within `[[ ]]`
 
 ---
+## Using the `!` operator
