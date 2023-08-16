@@ -2821,7 +2821,9 @@ then
 fi
 
 ---
-## Customizing Bash Prompt
+## Customizing Bash Prompt And Internal Bash variables
 
 https://www.baeldung.com/linux/customize-bash-prompt
-https://www.baeldung.com/linux/customize-bash-prompt
+https://ss64.com/bash/syntax-prompt.html
+https://tldp.org/LDP/abs/html/internalvariables.html
+
