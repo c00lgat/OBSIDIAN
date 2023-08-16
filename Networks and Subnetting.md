@@ -34,3 +34,5 @@ We could see that every set of numbers in an IP address matches up with a set of
 ![[Pasted image 20230816101626.png]]
 Each section that is separated by a dot in IP addresses
 When we see a 255
+
+
