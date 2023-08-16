@@ -31,3 +31,6 @@ As we pointed out earlier, Mr. Subnet Mask is also known as netmask.
 `192.168.1.204`
 `255.255.255.0`
 We could see that every set of numbers in an IP address matches up with a set of numbers in the netmask.
+![[Pasted image 20230816101626.png]]
+Each section that is separated by a dot in IP addresses
+When we see a 255
