@@ -2819,3 +2819,9 @@ if \[\[ $letter = "a"\]\]
 then
 
 fi
+
+---
+## Customizing Bash Prompt
+
+https://www.baeldung.com/linux/customize-bash-prompt
+https://www.baeldung.com/linux/customize-bash-prompt

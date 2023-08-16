@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks and Subnetting.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -194,10 +194,10 @@
   },
   "active": "123cf319ed396650",
   "lastOpenFiles": [
+    "Networks and Subnetting.md",
     "Pasted image 20230816101626.png",
     "AWS resources.md",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
-    "Networks and Subnetting.md",
     "Pasted image 20230816101247.png",
     "Pasted image 20230816101215.png",
     "Pasted image 20230816101148.png",
@@ -230,7 +230,6 @@
     "IMAGES/Pasted image 20230810214616.png",
     "IMAGES/Pasted image 20230810203544.png",
     "IMAGES/Pasted image 20230810203425.png",
-    "IMAGES/Pasted image 20230810203156.png",
     "Presentations",
     "AGILE",
     "Google Search",
