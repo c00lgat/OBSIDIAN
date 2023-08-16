@@ -47,7 +47,8 @@ We can pass arguments to our little, precious bash script in two ways:
 			`echo "$name selected"
 		`done`
 	The script above produces a text that lets the user see all the possible options and lets them pick one out of the available options. Once the user picks one option, then the code between the `do` and `done` is executed.
-	The `select` loop does not end until the user decides to. It will keep asking the user to pick 
+	The `select` loop does not end until the user decides to. It will keep asking the user to pick an option until the user decides to stop it via `CTRL+C`.
 	
 	
-	The `select` loop is especially effective and useful when a `case` statement is used inside of it. 
+	The `select` loop is especially effective and useful when a `case` statement is used inside of it. Example:
+```ba
