@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OCaml.md",
+                "file": "Nat service restart windows.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OCaml.md",
+                "file": "Nat service restart windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OCaml.md",
+                "file": "Nat service restart windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OCaml.md"
+                "file": "Nat service restart windows.md"
               }
             }
           },
@@ -184,15 +184,25 @@
   },
   "active": "123cf319ed396650",
   "lastOpenFiles": [
-    "Basic Command Syntax.md",
-    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+    "Netacad.md",
     "OCaml.md",
-    "Excalidraw",
+    "Online Courses.md",
+    "Podcasts.md",
+    "Practical Vim Edit Text at the Speed of Thought.md",
+    "Python Essentials 1.md",
     "Regex.md",
     "SED.md",
+    "SSH.md",
+    "Tutorial websites.md",
+    "This is a test for Github.md",
+    "VIM.md",
+    "Website Project.md",
+    "להגיש דוח סוף שנה.md",
+    "Basic Command Syntax.md",
+    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+    "Excalidraw",
     "Bash.md",
     "Downloading books.md",
-    "Python Essentials 1.md",
     "AWS resources.md",
     "Untitled 1.md",
     "Untitled 2.md",
@@ -206,21 +216,11 @@
     "AppleSeeds MOODLE.md",
     "2023-07-18.md",
     "2023-07-20.md",
-    "2023-07-26.md",
     "IMAGES/Pasted image 20230810010412.png",
     "IMAGES/Pasted image 20230810002848.png",
     "IMAGES/Pasted image 20230810002638.png",
     "IMAGES/Pasted image 20230810002132.png",
     "IMAGES/Pasted image 20230810002022.png",
-    "GIT & Github.md",
-    "Extra curriculum.md",
-    "Python.md",
-    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
-    "Practical Vim Edit Text at the Speed of Thought.md",
-    "Python playground.md",
-    "Nat service restart windows.md",
-    "Markup Guide.md",
-    "Learning the vi and Vim Editors.md",
     "Presentations",
     "AGILE",
     "Google Search",
