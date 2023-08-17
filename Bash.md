@@ -14,3 +14,7 @@ https://drive.google.com/file/d/1-7o4BVbUF_3yEq0_s4TAD2c_BV0TagFW/view?usp=drive
 
 
 ans=$()
+
+![[Pasted image 20230817115242.png]]
+
+![[Pasted image 20230817115251.png]]
