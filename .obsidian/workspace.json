@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "53252627e36c8a97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CV.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "01572dd102199889",
             "type": "leaf",
             "state": {
@@ -94,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -160,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "CV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "CV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Shell Programming.md"
+                "file": "CV.md"
               }
             }
           },
@@ -232,10 +244,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b6e78ee90fca0187",
+  "active": "53252627e36c8a97",
   "lastOpenFiles": [
-    "Pasted image 20230816141136.png",
+    "Pasted image 20230817094101.png",
+    "Pasted image 20230817093515.png",
     "Basic Shell Programming.md",
+    "CV.md",
+    "Pasted image 20230816141136.png",
     "Basic Command Syntax.md",
     "Bash.md",
     "להגיש דוח סוף שנה.md",
@@ -250,7 +265,6 @@
     "IMAGES/Pasted image 20230816101247.png",
     "IMAGES/Pasted image 20230816101215.png",
     "IMAGES/Pasted image 20230816101148.png",
-    "IMAGES/Pasted image 20230816100829.png",
     "AWK.md",
     "Presentations/XAMPP Presentation.md",
     "Udemy Courses/Problem solving techniques.md",
@@ -268,7 +282,6 @@
     "Learning the vi and Vim Editors.md",
     "LISP LANG.md",
     "Markup Guide.md",
-    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
