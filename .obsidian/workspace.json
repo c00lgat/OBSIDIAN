@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CV.md",
+                "file": "Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CV.md",
+                "file": "Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CV.md",
+                "file": "Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CV.md"
+                "file": "Bash.md"
               }
             }
           },
@@ -246,11 +246,11 @@
   },
   "active": "53252627e36c8a97",
   "lastOpenFiles": [
+    "CV.md",
     "Pasted image 20230817103100.png",
     "Pasted image 20230817094101.png",
     "Pasted image 20230817093515.png",
     "Basic Shell Programming.md",
-    "CV.md",
     "Pasted image 20230816141136.png",
     "Basic Command Syntax.md",
     "Bash.md",
@@ -264,7 +264,6 @@
     "IMAGES/Pasted image 20230816101626.png",
     "AWS resources.md",
     "IMAGES/Pasted image 20230816101247.png",
-    "IMAGES/Pasted image 20230816101215.png",
     "AWK.md",
     "Presentations/XAMPP Presentation.md",
     "Udemy Courses/Problem solving techniques.md",
