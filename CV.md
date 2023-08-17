@@ -22,3 +22,6 @@ or technologies
 ### languages
 
 ![[Pasted image 20230817094101.png]]
+adin@appleseeds.org.il
+
+![[Pasted image 20230817103100.png]]
