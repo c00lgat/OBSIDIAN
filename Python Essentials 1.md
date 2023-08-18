@@ -612,3 +612,13 @@ print(var, var_left, var_right)
 | 10       | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `^=`, \|`=`, `>>=`, `<<=` |        |
 
 ---
+## Collections of data
+
+# Lists
+```python
+numbers = [10, 5, 7, 2, 1]
+```
+
+The above statement creates a list with a length of 5.
+The elements in a list may have different types.
+
