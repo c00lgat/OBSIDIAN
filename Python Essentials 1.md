@@ -705,4 +705,39 @@ A new element may be glued to the end of the existing list:
 ```python
 list.append(value)
 ```
-It takes its argum
+It takes its argument's value and puts it at the end of the list which owns the method. 
+The list's length then increases by one.
+
+
+The `insert()` method is a bit smarter - it can add a new element at any place in the list, not only at the end:
+```python
+list.insert(location, value)
+```
+It takes two arguments:
+- First argument shows the location in which we want to enter the new element. All elements that are on the right side to the new element (including the element which resided in the place where we want to enter the new element) are shifted to the right in order to make place for the new element.
+
+- The second is the element that we want to insert.
+
+We can initialize a list by making it empty: `my_list = []`
+
+```python
+my_list = []  # Creating an empty list.
+
+for i in range(5):
+    my_list.append(i + 1)
+
+print(my_list)
+```
+```output
+[1, 2, 3, 4, 5]
+```
+
+If we wanted to do the same but in the reverse order, we use the `insert()` method:
+```python
+my_list = []  # Creating an empty list.
+
+for i in range(5):
+    my_list.insert(0, i + 1)
+
+print(my_list)
+```
