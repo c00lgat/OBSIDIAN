@@ -829,4 +829,14 @@ list_1[0] = 2
 print(list_2)
 ```
 The output will now be `1` instead of `2` as seen above. 
-The default s
+The default syntax of the slice is `my_list [start:end]`
+The `slice` usually does not copy the `end` index, but rather the `end - 1` index: 
+```python
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:3]
+print(new_list)
+```
+The `new_list` list will have `end - start` (3 - 1 = 2) elements - the ones with indices equal to `1` and `2` (but not `3`).
+
+The snippet's output is: `[8, 6]`
+
