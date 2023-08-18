@@ -850,3 +850,10 @@ print(new_list)
 ```output
 [8, 6, 4]
 ```
+
+If the `start` is omitted from the slice, the slice will assume that we want to get a slice from the beginning or from index `0`.
+
+`my_list[:end]` is the same as `my_list[0:end]`
+
+Similarly, if the `end` is omitted, then the slice will assume that we meant to slice until the last index:
+`my_list[start:]` is the same as `my_list[start:len(my_list)]`
