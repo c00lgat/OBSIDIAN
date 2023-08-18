@@ -857,3 +857,44 @@ If the `start` is omitted from the slice, the slice will assume that we want to 
 
 Similarly, if the `end` is omitted, then the slice will assume that we meant to slice until the last index:
 `my_list[start:]` is the same as `my_list[start:len(my_list)]`
+
+We can use `del` to delete slices as well! 
+```python
+my_list = [10, 8, 6, 4, 2] 
+del my_list[1:3]
+print(my_list)
+```
+```output
+[10, 4, 2]
+```
+
+
+```python
+my_list = [10, 8, 6, 4, 2]
+del my_list[:]
+print(my_list)
+```
+That will delete all elements at once, leaving the array completely empty.
+Whereas:
+```python
+my_list = [10, 8, 6, 4, 2]
+del my_list
+print(my_list)
+```
+Will completely delete the array and it will no longer exist.
+
+
+Python can check whether an element exists in an array or not: `in` and `not in`:
+```python
+elem in my_list
+elem not in my_list
+```
+For example:
+```python
+my_list = [0, 3, 12, 8, 2]
+
+print(5 in my_list)
+print(5 not in my_list)
+print(12 in my_list)
+```
+The `in` and `not in` will return `True` and `False` values.
