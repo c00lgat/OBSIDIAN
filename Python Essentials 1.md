@@ -840,3 +840,13 @@ The `new_list` list will have `end - start` (3 - 1 = 2) elements - the ones with
 
 The snippet's output is: `[8, 6]`
 
+### Negative indices and slice
+This is how they work:
+```python
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:-1]
+print(new_list)
+```
+```output
+[8, 6, 4]
+```
