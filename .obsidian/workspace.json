@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Python Essentials 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -156,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -172,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -246,21 +247,21 @@
   },
   "active": "53252627e36c8a97",
   "lastOpenFiles": [
-    "Bash.md",
-    "Pasted image 20230817115251.png",
-    "Pasted image 20230817115242.png",
-    "CV.md",
-    "Pasted image 20230817103100.png",
-    "Pasted image 20230817094101.png",
-    "Pasted image 20230817093515.png",
-    "Basic Shell Programming.md",
-    "Pasted image 20230816141136.png",
     "Basic Command Syntax.md",
+    "Bash.md",
+    "IMAGES/Pasted image 20230817115251.png",
+    "IMAGES/Pasted image 20230817115242.png",
+    "CV.md",
+    "IMAGES/Pasted image 20230817103100.png",
+    "IMAGES/Pasted image 20230817094101.png",
+    "IMAGES/Pasted image 20230817093515.png",
+    "Basic Shell Programming.md",
+    "IMAGES/Pasted image 20230816141136.png",
     "להגיש דוח סוף שנה.md",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
-    "Pasted image 20230816135935.png",
-    "Pasted image 20230816134857.png",
-    "Pasted image 20230816133948.png",
+    "IMAGES/Pasted image 20230816135935.png",
+    "IMAGES/Pasted image 20230816134857.png",
+    "IMAGES/Pasted image 20230816133948.png",
     "IMAGES/Pasted image 20230816114150.png",
     "Networks and Subnetting.md",
     "AWS resources.md",
