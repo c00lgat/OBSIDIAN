@@ -898,3 +898,93 @@ print(5 not in my_list)
 print(12 in my_list)
 ```
 The `in` and `not in` will return `True` and `False` values.
+
+---
+## LAB 3.6.1.9
+Imagine a list - not very long, not very complicated, just a simple list containing some integer numbers. Some of these numbers may be repeated, and this is the clue. We don't want any repetitions. We want them to be removed.
+
+Your task is to write a program which removes all the number repetitions from the list. The goal is to have a list in which all the numbers appear not more than once.
+
+```python
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+# Write your code here.
+
+print("The list with unique elements only:")
+print(my_list)
+```
+
+Solution:
+```python
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+temp = []
+
+# Write your code here.
+i=0
+while i < len(my_list):
+
+    if my_list[i] in my_list[i+1:]:
+
+        del my_list[i]
+
+        i=0
+
+    else:
+
+        i=i+1
+
+print("The list with unique elements only:")
+
+print(my_list)
+```
+
+---
+## List in lists
+
+Python has special syntax that is used to fill huge lists:
+```python
+row = []  for i in range(8):  row.append(WHITE_PAWN)
+```
+
+That is not the syntax, that was an example of what we are trying to do with the special syntax that is listed below:
+```python
+row = [WHITE_PAWN for i in range(8)]
+```
+The part of the code placed inside the brackets specifies:
+- the data to be used to fill the list (`WHITE_PAWN`)
+- the clause specifying how many times the data occurs inside the list (`for i in range(8)`)
+
+The special syntax is called `list comprehension`
+
+More `list comprehension` examples:
+```python
+squares = [x ** 2 for x in range(10)]
+```
+The snippet produces a ten-element list filled with squares of ten integer numbers starting from zero (0, 1, 4, 9, 16, 25, 36, 49, 64, 81)
+
+Example two:
+```python
+twos = [2 ** i for i in range(8)]
+```
+The snippet creates an eight-element array containing the first eight powers of two (1, 2, 4, 8, 16, 32, 64, 128)
+
+Example three:
+```python
+odds = [x for x in squares if x % 2 != 0 ]
+```
+The snippet makes a list with only the odd elements of the `squares` list.
+
+---
+## Two dimensional arrays
+Example:
+```python
+board = []  
+for i in range(8):
+row = [EMPTY for i in range(8)]  board.append(row)
+```
+- the inner part of the loop creates a row consisting of eight elements (each of them equal to `EMPTY`) and appends it to the `board` list;
+- the outer part repeats it eight times;
+- in total, the `board` list consists of 64 elements (all equal to `EMPTY`)
+
+
