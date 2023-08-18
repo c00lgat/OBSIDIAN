@@ -622,3 +622,46 @@ numbers = [10, 5, 7, 2, 1]
 The above statement creates a list with a length of 5.
 The elements in a list may have different types.
 
+If we wanted to print the list, we do it in the following way:
+```python
+numbers = [10, 5, 7, 2, 1]
+print("This is our list printed: ", numbers)
+```
+
+What if we wanted to change the value of the first element in the list?
+```python
+numbers[0] = 111
+numbers[1] = numbers[4]  # Copying value of the fifth element to the second.
+```
+Our list has now changed: 
+```python
+numbers = [111, 5, 7, 2, 1]
+```
+
+To print the first element of a list, we do the following:
+```python
+print(numbers[0]) #prints the first number
+```
+
+If we wanted to print the entire list then we run the following code:
+```python
+print(numbers) #prints the entire list
+```
+```output 
+[111, 1, 7, 2, 1]
+```
+
+If we wanted to check the list's current length, we can use the `len()` function. 
+The function takes the list's name as an argument and returns the number of elements currently stored inside the list.
+```python
+print("List length: ", len(numbers))# Printing the list's length.
+```
+
+We can also remove elements from a list. 
+When we remove an element from a list, it will vanish from the list and the list's length will be reduced by one. Example:
+```python
+del numbers[1]
+print(len(numbers))#Now we should see that the length is 4 instead of 5 since we deleted an element
+print(numbers)
+```
+
