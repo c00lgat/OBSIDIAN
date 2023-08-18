@@ -987,4 +987,14 @@ row = [EMPTY for i in range(8)]  board.append(row)
 - the outer part repeats it eight times;
 - in total, the `board` list consists of 64 elements (all equal to `EMPTY`)
 
+- the elements of the rows are fields, eight of them per row;
+- the elements of the chessboard are rows, eight of them per chessboard.
 
+The `board` variable is now a **two-dimensional array**. It's also called, by analogy to algebraic terms, a **matrix**.
+
+
+We can shorten the board creation in the following way:
+```python
+board = [[EMPTY for i in range(8)] for j in range(8)]
+```
+The inner part creates a row, and the outer part builds a list of rows.
