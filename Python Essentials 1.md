@@ -665,3 +665,23 @@ print(len(numbers))#Now we should see that the length is 4 instead of 5 since we
 print(numbers)
 ```
 
+Negative indices are legal. Can be very useful.
+An element with an index equal to `-1` is the last one in the list.
+```python
+numbers = [111, 7, 2, 1]
+
+print(numbers[-1])
+print(numbers[-2])
+```
+```output
+1
+2
+```
+Although legal, we cannot go any lower than `numbers[-4]` as we will get an error! Meaning, if we write `numbers[-5]` we will get the following error:
+```Error
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+    print(numbers[-5])
+IndexError: list index out of range
+```
+
