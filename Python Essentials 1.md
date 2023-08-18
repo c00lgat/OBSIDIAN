@@ -620,7 +620,10 @@ numbers = [10, 5, 7, 2, 1]
 ```
 
 The above statement creates a list with a length of 5.
-The elements in a list may have different types.
+The elements in a list may have different types:
+```python
+`my_list = [1, None, True, "I am a string", 256, 0]`
+```
 
 If we wanted to print the list, we do it in the following way:
 ```python
@@ -769,3 +772,6 @@ my_list = [10, 1, 8, 3, 5]
 for i in range(length // 2):
 my_list[i],my_list[length - i - 1] = my_list[length - i - 1],my_list[i]
 ```
+
+---
+## Bubble Sort
