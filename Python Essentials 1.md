@@ -741,3 +741,32 @@ for i in range(5):
 
 print(my_list)
 ```
+
+### Swapping values in Python:
+Instead of a temp variable, python lets us do the following:
+```python
+variable_1 = 1
+variable_2 = 2
+
+variable_1, variable_2 = variable_2, variable_1
+```
+
+We can use that to reverse an array's order:
+```python
+my_list = [10, 1, 8, 3, 5]  
+
+my_list[0],my_list[4] = my_list[4],my_list[0]  my_list[1],my_list[3] = my_list[3],my_list[1]
+
+print(my_list)   
+```
+```output
+[5, 3, 8, 1, 10]
+```
+We can do the same for a 100 long array with a `for` loop:
+```python
+my_list = [10, 1, 8, 3, 5]
+
+for i in range(length // 2):
+my_list[i],my_list[length - i - 1] = my_list[length - i - 1],my_list[i]
+	
+```
