@@ -685,3 +685,24 @@ Traceback (most recent call last):
 IndexError: list index out of range
 ```
 
+### Functions vs methods
+In general, a typical function invocation may look like this:
+```python
+result = function(arg)
+#The function takes an argument, does something and returns a result
+```
+
+A typical method invocation on the other hand, looks like this:
+```python
+result = data.method(arg)
+#Note: the name of the method is preceded by the name of the data which owns the method. Next, you add a dot, followed by the method name, and a pair of parenthesis enclosing the arguments.
+#The method will behave like a function, but can do something more - it can change the internal state of the data from which it has been invoked.
+```
+
+---
+## Adding elements to a list: `append()` and `insert()`
+A new element may be glued to the end of the existing list: 
+```python
+list.append(value)
+```
+It takes its argum
