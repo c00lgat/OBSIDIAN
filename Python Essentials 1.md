@@ -775,3 +775,58 @@ my_list[i],my_list[length - i - 1] = my_list[length - i - 1],my_list[i]
 
 ---
 ## Bubble Sort
+
+```python
+my_list = [8, 10, 6, 2, 4] # list to sort
+swapped = True # It's a little fake, we need it to enter the while loop.
+while swapped:
+	swapped = False # no swaps so far
+	for i in range(len(my_list) - 1):
+		if my_list[i] > my_list[i + 1]:
+			swapped = True # a swap occurred!
+			my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i] 
+
+print(my_list)   
+```
+
+Python has its own sorting algorithms built in:
+```python
+my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)
+```
+
+Python also has its own `reverse()` method as well:
+```python
+lst = [5, 3, 1, 2, 4]
+print(lst)
+
+lst.reverse()
+
+print(lst) # outputs: [4, 2, 1, 3, 5]
+```
+
+The name of a list is the name of a **memory location where the list is stored**. Meaning:
+```python
+list_1 = [1]
+list_2 = list_1
+list_1[0] = 2
+print(list_2)
+```
+Will print out `2` and not `1`!
+
+The assignment: `list_2 = list_1` copies the name of the array, not its contents. In effect, the two names (`list_1` and `list_2`) identify the same location in the computer memory. Modifying one of them affects the other, and vice versa.
+
+
+How do we cope with that behavior? The `slice` syntax.
+A slice is an element of Python syntax that allows you to **make a brand new copy of a list, or parts of a list**.
+It actually copies the list's contents, not the list's name.
+
+```python
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
+```
+The output will now be `1` instead of `2` as seen above. 
+The default s
