@@ -59,11 +59,9 @@
             "id": "53252627e36c8a97",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Python Essentials 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
               }
             }
           }
@@ -134,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
               }
             }
           },
