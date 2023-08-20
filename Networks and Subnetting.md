@@ -8,6 +8,7 @@ https://gaia.cs.umass.edu/kurose_ross/lectures.php
 
 https://www.youtube.com/playlist?list=PLLFIgriuZPAcCkmSTfcq7oaHcVy3rzEtc
 
+https://drive.google.com/file/d/14q9nN-f1W8TMooRQVgAPH9gAn1AGvMOR/view?usp=sharing
 
 
 Subnetting series on YouTube
