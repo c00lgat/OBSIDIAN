@@ -10,6 +10,57 @@ https://www.youtube.com/playlist?list=PLLFIgriuZPAcCkmSTfcq7oaHcVy3rzEtc
 
 https://drive.google.com/file/d/14q9nN-f1W8TMooRQVgAPH9gAn1AGvMOR/view?usp=sharing
 
+---
+## Network devices
+
+- Hosts are any devices which send or receive traffic
+	- PC, phones, laptops, servers, printers, cloud servers
+	- Any IoT devices
+- Anything that sends or receives traffic
+
+Two kinds of hosts: 
+- Clients and Servers
+Client initiates requests, Servers respond
+	Relative to specific communication, meaning that A server can become the client in some instances, such as if a server were to update its files, it has to connect to a File Server and ask for the updated files. In this instance, the server becomes the client.
+
+Servers are simply computers with software installed which responds to specific requests.
+
+---
+## IP Addresses 
+We can think of it as a phone number, we need a phone number before we make a call to the said phone. 
+IP Addresses allow for communication between a client and a server.
+
+SRC = source
+DST = destination
+
+Every IP address out there is really just a combination of binary numbers:
+![[Pasted image 20230820110055.png]]
+
+ACME corporation: 10.x.x.x
+New York - 10.20.x.x
+	Sales: 10.20.55.x
+	Engineering: 10.20.
+London - 10.30.x.x
+Tokyo - 10.40.x.x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Subnetting series on YouTube
 https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF
