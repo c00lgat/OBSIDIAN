@@ -66,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c1c952f77d29ad07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks and Subnetting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Networks and Subnetting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Networks and Subnetting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Networks and Subnetting.md"
               }
             }
           },
@@ -206,10 +218,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "53252627e36c8a97",
+  "active": "c1c952f77d29ad07",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+    "Networks.md",
+    "Networks and Subnetting.md",
+    "Netacad.md",
+    "Motivation.md",
+    "Microservices.md",
+    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+    "Markup Guide.md",
+    "LISP LANG.md",
+    "Learning the vi and Vim Editors.md",
+    "Learning resources.md",
+    "Important Links.md",
+    "Downloading books.md",
     "Python Essentials 1.md",
+    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "Basic Command Syntax.md",
     "Bash.md",
     "IMAGES/Pasted image 20230817115251.png",
@@ -225,7 +249,6 @@
     "IMAGES/Pasted image 20230816134857.png",
     "IMAGES/Pasted image 20230816133948.png",
     "IMAGES/Pasted image 20230816114150.png",
-    "Networks and Subnetting.md",
     "AWS resources.md",
     "AWK.md",
     "Presentations/XAMPP Presentation.md",
@@ -233,17 +256,6 @@
     "Udemy Courses/Becoming a Learning Machine.md",
     "AppleSeeds MOODLE.md",
     "AWS AGENDA.md",
-    "Docker.md",
-    "Downloading books.md",
-    "Fantasy Books.md",
-    "Extra curriculum.md",
-    "GIT & Github.md",
-    "Hexadecimal Numbers.md",
-    "Important Links.md",
-    "Learning resources.md",
-    "Learning the vi and Vim Editors.md",
-    "LISP LANG.md",
-    "Markup Guide.md",
     "Excalidraw",
     "Presentations",
     "AGILE",

@@ -1,4 +1,15 @@
 
+Resources:
+https://book.systemsapproach.org/index.html
+
+https://school.kotar.cet.ac.il/KotarApp/Viewer.aspx?nBookID=97613613#24.8046.6.default
+
+https://gaia.cs.umass.edu/kurose_ross/lectures.php
+
+https://www.youtube.com/playlist?list=PLLFIgriuZPAcCkmSTfcq7oaHcVy3rzEtc
+
+
+
 Subnetting series on YouTube
 https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF
 
