@@ -36,14 +36,49 @@ DST = destination
 Every IP address out there is really just a combination of binary numbers:
 ![[Pasted image 20230820110055.png]]
 
+### IP Hierarchy 
 ACME corporation: 10.x.x.x
-New York - 10.20.x.x
+3  Branches for example:
+- New York - 10.20.x.x
 	Sales: 10.20.55.x
-	Engineering: 10.20.
-London - 10.30.x.x
-Tokyo - 10.40.x.x
+	Engineering: 10.20.66.x
+	Marketing: 10.20.77.x
 
+- London - 10.30.x.x
+	Sales: 10.30.55.x
+	Engineering: 10.30.66.x
+	etc. 
 
+- Tokyo - 10.40.x.x
+
+---
+## Network
+
+Before networks, we had to physically interact with the PC, copy the files to a CD And then extract the data to the desired computer, also physically.
+
+A Network is what transports traffic between Hosts. 
+
+Networks can contain other networks. Also called sub-Networks or Subnets.
+- For example:
+	A school has many classrooms. And each classroom has its own sub-networks.
+
+How is a Coffee Shop connected to Home WIFI connected to School network? There exists a point which connects them all, usually an ISP(?)
+
+---
+## Repeater
+
+Data crossing a wire decays as it travels. 
+Signal can decay the bigger and longer the distances. 
+
+A repeater regenerates signals.
+
+Connecting hosts directly does not scale. 
+Instead of connecting 5 computers to each other, we could connect them to a single point called a Hub.
+![[Pasted image 20230820111120.png]]
+
+A computer could simply send a single signal instead of 3 different signals to 3 different computers, the computer could send the signal to a hub, which in turn it sends the signal to the rest of the computers.
+
+The problem is that a hub sends the signal to all computers. What if we wanted 
 
 
 
