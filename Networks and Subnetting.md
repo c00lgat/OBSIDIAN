@@ -124,12 +124,8 @@ Main takeaways:
 ![[Pasted image 20230820112329.png]]
 
 ---
+## OSI Model
 
-
-
-
-
-![[Pasted image 20230820114129.png]]
 
 
 
@@ -139,6 +135,8 @@ Main takeaways:
 
 
 
+
+---
 
 Subnetting series on YouTube
 https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF
