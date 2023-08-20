@@ -113,11 +113,17 @@ A router can connect between multiple routers.
 
 The internet is nothing more than different routers connected together.
 
-Routing is the process of moving data between networks. 
-A Router is a device whose primary purpose is routing
+Note:
+<mark style="background: #FFF3A3A6;">Routing is the process of moving data between networks. 
+A Router is a device whose primary purpose is routing</mark>
 
+<mark style="background: #FFF3A3A6;">Switching is the process of moving data within networks. A switch is a device who's primary purpose is Switching.
+</mark>
 
-Switching is the process of moving data within networks. A switch is a device who's pr
+Main takeaways:
+![[Pasted image 20230820112329.png]]
+
+---
 
 
 
