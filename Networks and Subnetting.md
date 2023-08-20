@@ -72,15 +72,52 @@ Signal can decay the bigger and longer the distances.
 
 A repeater regenerates signals.
 
+### Hubs
 Connecting hosts directly does not scale. 
 Instead of connecting 5 computers to each other, we could connect them to a single point called a Hub.
 ![[Pasted image 20230820111120.png]]
 
 A computer could simply send a single signal instead of 3 different signals to 3 different computers, the computer could send the signal to a hub, which in turn it sends the signal to the rest of the computers.
 
-The problem is that a hub sends the signal to all computers. What if we wanted 
+The problem is that a hub sends the signal to all computers. What if we wanted to send the signal to one specific computer?
+
+### Bridges
+![[Pasted image 20230820111242.png]]
+Bridges can isolate between different hubs.
+
+A bridge can be asked to send certain information to the rest of the hubs if needed.
 
 
+### Switch
+A switch is able to send a signal to a specific computer from one to another. And is not limited like a Hub is. 
+Multiple computers connected to the same switch are considered a single network.
+![[Pasted image 20230820111509.png]]
+Each computer/device has its own IP, with the first 3 slots in the IP representing the entire network and the last slot is reserved for the specific device within the network.
+
+![[Pasted image 20230820111631.png]]
+Since the two classrooms have different needs and different kind of connectivity and belong to a different class then it is a good idea to isolate the two networks making them a different network each of its own. 
+
+We can let the two networks communicate using a Router:
+![[Pasted image 20230820111738.png]]
+If .11 computer were to talk to computer .44, the signal is sent through the router and to the computer .44.
+
+Routers learn which networks they are attached to. It knows which two or more networks it routes between.
+A routing table contains all the networks a router should know of.
+
+A router has a different IP in each network.
+![[Pasted image 20230820111944.png]]
+Default gateway is the IP of the router that connects one network to another.
+
+A router can connect between multiple routers. 
+![[Pasted image 20230820112106.png]]
+
+The internet is nothing more than different routers connected together.
+
+Routing is the process of moving data between networks. 
+A Router is a device whose primary purpose is routing
+
+
+Switching is the process of moving data within networks. A switch is a device who's pr
 
 
 
