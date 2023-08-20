@@ -129,7 +129,7 @@ Main takeaways:
 
 
 
-
+![[Pasted image 20230820114129.png]]
 
 
 
