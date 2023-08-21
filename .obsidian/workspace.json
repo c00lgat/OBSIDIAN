@@ -78,9 +78,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d0b478e26d78f6f5",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -146,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md"
               }
             }
           },
@@ -218,8 +228,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c1c952f77d29ad07",
+  "active": "d0b478e26d78f6f5",
   "lastOpenFiles": [
+    "9.md",
+    "Python Essentials 1.md",
     "Networks and Subnetting.md",
     "IMAGES/Pasted image 20230820114129.png",
     "IMAGES/Pasted image 20230820112329.png",
@@ -243,7 +255,6 @@
     "Learning resources.md",
     "Important Links.md",
     "Downloading books.md",
-    "Python Essentials 1.md",
     "Basic Command Syntax.md",
     "Bash.md",
     "CV.md",
