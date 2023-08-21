@@ -140,7 +140,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -228,7 +229,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d0b478e26d78f6f5",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
     "9.md",
     "Python Essentials 1.md",
