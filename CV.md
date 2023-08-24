@@ -25,3 +25,9 @@ or technologies
 adin@appleseeds.org.il
 
 ![[Pasted image 20230817103100.png]]
+
+ animals
+ coffee
+ netflix
+ cornflakes
+ 
