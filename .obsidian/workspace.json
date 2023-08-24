@@ -78,9 +78,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9d48a37a1c136b89",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -147,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CV.md",
+                "file": "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CV.md",
+                "file": "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CV.md"
+                "file": "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md"
               }
             }
           },
@@ -219,15 +229,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "9d48a37a1c136b89",
   "lastOpenFiles": [
+    "Python Essentials 1.md",
+    "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",
+    "CV.md",
     "Regex.md",
     "Basic Command Syntax.md",
     "Bash.md",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "Pasted Image 20230821191027_753.png",
     "9.md",
-    "Python Essentials 1.md",
     "Networks and Subnetting.md",
     "IMAGES/Pasted image 20230820114129.png",
     "IMAGES/Pasted image 20230820112329.png",
@@ -249,14 +261,12 @@
     "Learning resources.md",
     "Important Links.md",
     "Downloading books.md",
-    "CV.md",
     "Basic Shell Programming.md",
     "להגיש דוח סוף שנה.md",
     "AWS resources.md",
     "AWK.md",
     "Presentations/XAMPP Presentation.md",
     "Udemy Courses/Problem solving techniques.md",
-    "Udemy Courses/Becoming a Learning Machine.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
