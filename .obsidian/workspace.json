@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Shell Programming.md"
+                "file": "Bash.md"
               }
             }
           },
@@ -232,6 +232,7 @@
   },
   "active": "9d48a37a1c136b89",
   "lastOpenFiles": [
+    "Basic Shell Programming.md",
     "Basic Command Syntax.md",
     "SED.md",
     "AWK.md",
@@ -264,7 +265,6 @@
     "Learning resources.md",
     "Important Links.md",
     "Downloading books.md",
-    "Basic Shell Programming.md",
     "להגיש דוח סוף שנה.md",
     "AWS resources.md",
     "Presentations/XAMPP Presentation.md",
