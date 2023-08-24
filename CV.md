@@ -31,3 +31,12 @@ adin@appleseeds.org.il
  netflix
  cornflakes
 
+---
+החכם
+
+
+המטפל
+הורים 
+
+
+ה
