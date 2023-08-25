@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWK.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWK.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWK.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWK.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -232,11 +232,11 @@
   },
   "active": "9d48a37a1c136b89",
   "lastOpenFiles": [
+    "AWK.md",
     "SED.md",
     "Basic Command Syntax.md",
     "AWS resources.md",
     "AWS AGENDA.md",
-    "AWK.md",
     "AppleSeeds MOODLE.md",
     "Regex.md",
     "Bash.md",
