@@ -1,4 +1,11 @@
+Finds bugs in shell scripts
+https://www.shellcheck.net/
 
+various bash projects for inspiration
+https://www.basher.it/package/
+
+Creating a GUI for your bash script
+https://medium.com/swlh/how-to-modernize-your-bash-scripts-by-adding-gui-cba613a34cb7
 
 Bash exercises
 https://exercism.org/tracks/bash
