@@ -244,3 +244,37 @@ The following is an example of a customer scenario where you can use the `telnet
 telnet www.google.com 80
 ```
 
+The telnet command confirms the TCP connection to a web server. It makes the HTTP request using telnet.
+
+The telnet command confirms the TCP connection to a web server making an HTTP request if using port 80 to telnet. You can also use this command at layer 7. If you can successfully connect to the web server, then there is nothing blocking you or the server from connecting. If the connection fails with a message like "connection refused," then something is likely blocking the connection, such as a firewall or security group. If the connection fails with a message like "connection timed out," then then issue may be no network route or connectivity.
+
+#### Layer 7 (application): The curl command
+
+The following is an exmaple of a customer scenario where you can use the `curl` command:
+>The customer has an Apache server running, and they want to test if they are getting a successful request (200 OK), which indicates that their website is running successfully. You run a curl request to see if the customer's Apache server returns a 200 OK.
+
+```bash
+curl -vLo /dev/null https://aws.com
+```
+
+This is the `curl` command. You can use the following command options:
+
+-I: This option provides header information and specifies that the request method is Head.
+
+-i: This option specifies that the request method is GET.
+
+-k: This option tells the command to ignore SSL errors.
+
+-v: This option is verbose. It shows what the computer is doing or what the software is loading during startup.
+
+-o /dev/null: This option will send HTML and CSS in response to null.
+
+_The results of the curl command: the output tests the connection to a web service, such as AWS, and submits the HTTP request._
+
+We can use the `curl` command to transfer data between you and the server. the `curl` command can use many different protocols but the most common are HTTP and HTTPS. We can use the `curl` command to troubleshoot communication from your local device to a server.
+
+---
+## Troubleshooting a Network Issue
+Lab
+
+![[aym6iug9.bmp]]
