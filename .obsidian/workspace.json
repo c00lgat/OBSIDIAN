@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -171,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks and Subnetting.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -245,6 +244,7 @@
   },
   "active": "3928f11ad6b1139f",
   "lastOpenFiles": [
+    "Networks and Subnetting.md",
     "Pasted image 20230829095031.png",
     "Pasted image 20230829094947.png",
     "Pasted image 20230829094917.png",
@@ -254,7 +254,6 @@
     "Basic Command Syntax.md",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "CANVAS 261.md",
-    "Networks and Subnetting.md",
     "Basic Shell Programming.md",
     "Bash.md",
     "AWK.md",
@@ -271,7 +270,6 @@
     "IMAGES/Pasted image 20230820114129.png",
     "IMAGES/Pasted image 20230820112329.png",
     "IMAGES/Pasted image 20230820112106.png",
-    "IMAGES/Pasted image 20230820111944.png",
     "Networks.md",
     "Netacad.md",
     "Motivation.md",
