@@ -196,7 +196,7 @@ hping3 packet assembler and analyzer measures end to end packet loss
 ![[Pasted image 20230829095031.png]]
 
 ![[Pasted image 20230829103050.png]]
-
+#### Layer 3 (network): The ping and traceroute commands
 `ping -c 5` - the -c options stands for count, meaning, the command requests a total of 5 pings to the host
 Usually, ping is used to test connectivity to something such as a server. 
 Since the ping command uses the ICMP protocol, it sends ICMP echo requests from our machine to the server that you are trying to reach.
@@ -213,9 +213,34 @@ Here is a scenario in which a customer is having latency issues.
 
 The `traceroute` command shows the path taken to the webserver and the latency taken to it.
 Packet loss can be seen with the `traceroute` command as percentage and can occur at each hop. Usually occurs because of an issue with the user's local area network or ISP.
-However, 
-
+However, if the packet loss occurs towards the end of the route, then the issue is more than likely the server connection. We can pinpoint an issue or error when hostnames and IP addresses on either side of a failed jump.
 
 
 If an issue or error occurs, we should see that as three asterisks (\*\*\*) which indicate a failed hop.
+
+
+#### Layer 4 (transport): The netstat and telnet commands
+Here is a following customer scenario in which we could use the `netstat` command:
+>Your company is running a routine security scan and found that one of the ports on a certain subnet is compromised. To confirm, you run the netstat command on a local host on that subnet to confirm if the port is listening when it shouldn't be.
+
+```bash
+netstat -tp
+```
+
+`netstat -tp`: confirms established connections
+
+`netstat -tlp`: outputs listening services
+`netstat -ntlp` outputs listening services but does not resolve port numbers
+
+The `netstat` command shows the current established TCP connections from which the host is listening. 
+When troubleshooting networking issues starting with the host machine and working outward, we can run this command to understand which ports are listening and which are not.
+Because this command gives you a snapshot of your layer 4 connectivity, using this command will help you save time when trying to narrow down a large networking issue.
+
+
+The following is an example of a customer scenario where you can use the `telnet` command:
+>The customer has a secure web server and has custom security group rules and network ACL rules configured. However, they are concerned that port 80 is open even though it shows their security settings indicate that their security group is blocking this port, you can run telnet 192.168.10.5 80 to ensure that the connection is refused.
+
+```bash
+telnet www.google.com 80
+```
 
