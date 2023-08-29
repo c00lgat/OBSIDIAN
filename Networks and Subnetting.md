@@ -275,6 +275,36 @@ We can use the `curl` command to transfer data between you and the server. the `
 
 ---
 ## Troubleshooting a Network Issue
-Lab
+Lab 266 - amazon canvas
+
+Email from Customer:
+> Hello, Cloud Support!
+> 
+> When I create an Apache server through the command line, I cannot ping it. I also get an error when I enter the IP address in the browser. Can you please help figure out what is blocking my connection?
+> 
+> Thanks!
+> 
+> Ana Contractor
 
 ![[aym6iug9.bmp]]
+_Figure: The customer's virtual private cloud (VPC) architecture._
+
+In the scenario, Ana, the customer requesting assistance, cannot reach her Apache server or get it to successfully load on a webpage from her virtual private cloud (VPC).
+
+```bash
+sudo systemctl status httpd.service
+```
+![[qc5uecqg.bmp]]
+_Figure: The status shows that the httpd service is inactive because it has not been started yet. This output indicates that the httpd service is loaded (already installed) but is currently inactive._
+
+```bash
+sudo systemctl start httpd.service
+```
+```bash
+sudo systemctl status httpd.service
+```
+![[obatqql3.bmp]]
+_Figure: The Apache HTTP Server should be in the Active status._
+The httpd service is now running. 
+
+
