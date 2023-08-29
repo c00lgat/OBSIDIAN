@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CANVAS 261.md",
+                "file": "Networks and Subnetting.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -170,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CANVAS 261.md",
+                "file": "Networks and Subnetting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CANVAS 261.md",
+                "file": "Networks and Subnetting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CANVAS 261.md"
+                "file": "Networks and Subnetting.md"
               }
             }
           },
@@ -244,32 +245,33 @@
   },
   "active": "3928f11ad6b1139f",
   "lastOpenFiles": [
-    "Bash.md",
-    "CANVAS 261.md",
+    "Pasted image 20230829094947.png",
+    "Pasted image 20230829094917.png",
+    "Pasted image 20230829094830.png",
+    "Pasted image 20230829094752.png",
+    "Pasted image 20230829094526.png",
     "Basic Command Syntax.md",
+    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
+    "CANVAS 261.md",
+    "Networks and Subnetting.md",
+    "Basic Shell Programming.md",
+    "Bash.md",
     "AWK.md",
     "SED.md",
     "AWS resources.md",
     "AWS AGENDA.md",
     "AppleSeeds MOODLE.md",
     "Regex.md",
-    "Basic Shell Programming.md",
     "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",
     "Python Essentials 1.md",
     "CV.md",
-    "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "Pasted Image 20230821191027_753.png",
     "9.md",
-    "Networks and Subnetting.md",
     "IMAGES/Pasted image 20230820114129.png",
     "IMAGES/Pasted image 20230820112329.png",
     "IMAGES/Pasted image 20230820112106.png",
     "IMAGES/Pasted image 20230820111944.png",
     "IMAGES/Pasted image 20230820111738.png",
-    "IMAGES/Pasted image 20230820111631.png",
-    "IMAGES/Pasted image 20230820111509.png",
-    "IMAGES/Pasted image 20230820111242.png",
-    "IMAGES/Pasted image 20230820111120.png",
     "Networks.md",
     "Netacad.md",
     "Motivation.md",
@@ -279,7 +281,6 @@
     "LISP LANG.md",
     "Learning the vi and Vim Editors.md",
     "Learning resources.md",
-    "Important Links.md",
     "Excalidraw",
     "Presentations",
     "AGILE",

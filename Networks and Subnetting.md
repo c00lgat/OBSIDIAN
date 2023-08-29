@@ -175,3 +175,21 @@ Each section that is separated by a dot in IP addresses
 When we see a 255
 
 
+---
+Enhanced networking on our instance
+
+hping3 packet assembler and analyzer measures end to end packet loss
+
+![[Pasted image 20230829094526.png]]
+
+`traceroute` shows the path that the connection took in order to arrive to the destination node.
+![[Pasted image 20230829094752.png]]
+
+`mtr` provides continual updated output which we can use to analyze network performance
+![[Pasted image 20230829094917.png]]
+
+`telnet` to check whether a port is open or not
+![[Pasted image 20230829094947.png]]
+
+
+
