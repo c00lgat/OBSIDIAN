@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -243,10 +242,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3928f11ad6b1139f",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
-    "obatqql3.bmp",
-    "qc5uecqg.bmp",
+    "IMAGES/obatqql3.bmp",
+    "IMAGES/qc5uecqg.bmp",
     "aym6iug9.bmp",
     "IMAGES/Pasted image 20230829103050.png",
     "Basic Command Syntax.md",
