@@ -313,5 +313,6 @@ Once we made sure the httpd is up and running, we have to make sure that:
 - Internet Gateway - Is there an Internet Gateway and is it attached?
 - Security Groups and network ACLs - Are the correct rules configured?
 In this specific lab, the security group was not allowing any HTTP traffic in the inbound table, meaning port 80 was not whitelisted.
-Once we allow HTTP traffic
+Once we allow HTTP traffic, we are then able to connect to our EC2 through the browser by entering the EC2 IP into the URL textbox in the browser.
+
 
