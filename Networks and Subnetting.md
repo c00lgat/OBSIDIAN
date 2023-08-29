@@ -192,4 +192,8 @@ hping3 packet assembler and analyzer measures end to end packet loss
 ![[Pasted image 20230829094947.png]]
 
 
+`nslookup` for querying the DNS to obtain the mapping between domain name and IP address or other DNS records
+![[Pasted image 20230829095031.png]]
+
+
 
