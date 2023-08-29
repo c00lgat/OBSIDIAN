@@ -195,5 +195,27 @@ hping3 packet assembler and analyzer measures end to end packet loss
 `nslookup` for querying the DNS to obtain the mapping between domain name and IP address or other DNS records
 ![[Pasted image 20230829095031.png]]
 
+![[Pasted image 20230829103050.png]]
 
+`ping -c 5` - the -c options stands for count, meaning, the command requests a total of 5 pings to the host
+Usually, ping is used to test connectivity to something such as a server. 
+Since the ping command uses the ICMP protocol, it sends ICMP echo requests from our machine to the server that you are trying to reach.
+Then, the server sends an echo reply back with a round-trip time. 
+Used mostly to troubleshoot connectivity issues and reachability to a specific target.
+Can also be used to bring a specific network up if traffic needs to continuously flow through a network. 
+We can also send a continuous ping.
+
+
+
+Here is a scenario in which a customer is having latency issues. 
+
+> The customer is having latency issues. They say that their connection is taking a long time, and they are having packet loss. They aren't sure if it is related to AWS or their internet service provider (ISP). To investigate, you can run the traceroute command from their AWS resource to the server that they are trying to reach. If the loss happens toward the server, the issue is most likely the ISP. If the loss is toward AWS, you might need to investigate other factors that might limiting networking connectivity.
+
+The `traceroute` command shows the path taken to the webserver and the latency taken to it.
+Packet loss can be seen with the `traceroute` command as percentage and can occur at each hop. Usually occurs because of an issue with the user's local area network or ISP.
+However, 
+
+
+
+If an issue or error occurs, we should see that as three asterisks (\*\*\*) which indicate a failed hop.
 
