@@ -307,4 +307,11 @@ sudo systemctl status httpd.service
 _Figure: The Apache HTTP Server should be in the Active status._
 The httpd service is now running. 
 
+Once we made sure the httpd is up and running, we have to make sure that:
+- Subnets - Are the route tables associated to the correct subnets?
+- Route Tables - Do the route tables have the correct routes?
+- Internet Gateway - Is there an Internet Gateway and is it attached?
+- Security Groups and network ACLs - Are the correct rules configured?
+In this specific lab, the security group was not allowing any HTTP traffic in the inbound table, meaning port 80 was not whitelisted.
+Once we allow HTTP traffic
 
