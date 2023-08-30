@@ -4,107 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "08d124b8043303de",
+        "id": "2f8dcb672f6325bc",
         "type": "tabs",
         "children": [
           {
-            "id": "afd0bc142cba1e07",
+            "id": "8fce36414bbd7480",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Regex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "690a814bcb647cfd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OCaml.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "123cf319ed396650",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Command Syntax.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6e78ee90fca0187",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Shell Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53252627e36c8a97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python Essentials 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c1c952f77d29ad07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python Essentials 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9d48a37a1c136b89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3928f11ad6b1139f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Networks and Subnetting.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Networks and Subnetting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "Networks and Subnetting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "Networks and Subnetting.md"
               }
             }
           },
@@ -242,14 +157,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3928f11ad6b1139f",
+  "active": "8fce36414bbd7480",
   "lastOpenFiles": [
+    "qb48ajdh.bmp",
+    "Regex.md",
+    "OCaml.md",
+    "Basic Command Syntax.md",
+    "Basic Shell Programming.md",
+    "Python Essentials 1.md",
+    "Bash.md",
     "Networks and Subnetting.md",
     "IMAGES/obatqql3.bmp",
     "IMAGES/qc5uecqg.bmp",
     "IMAGES/aym6iug9.bmp",
     "IMAGES/Pasted image 20230829103050.png",
-    "Basic Command Syntax.md",
     "IMAGES/Pasted image 20230829095031.png",
     "IMAGES/Pasted image 20230829094947.png",
     "IMAGES/Pasted image 20230829094917.png",
@@ -258,16 +179,12 @@
     "IMAGES/Pasted image 20230829094526.png",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "CANVAS 261.md",
-    "Basic Shell Programming.md",
-    "Bash.md",
     "AWK.md",
     "SED.md",
     "AWS resources.md",
     "AWS AGENDA.md",
     "AppleSeeds MOODLE.md",
-    "Regex.md",
     "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",
-    "Python Essentials 1.md",
     "CV.md",
     "9.md",
     "Networks.md",
@@ -278,7 +195,6 @@
     "Markup Guide.md",
     "LISP LANG.md",
     "Learning the vi and Vim Editors.md",
-    "Learning resources.md",
     "Excalidraw",
     "Presentations",
     "AGILE",

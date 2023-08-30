@@ -315,4 +315,20 @@ Once we made sure the httpd is up and running, we have to make sure that:
 In this specific lab, the security group was not allowing any HTTP traffic in the inbound table, meaning port 80 was not whitelisted.
 Once we allow HTTP traffic, we are then able to connect to our EC2 through the browser by entering the EC2 IP into the URL textbox in the browser.
 
+---
+## Build Your VPC and Launch a Web Server - Lab 267
 
+In this lab, you use Amazon Virtual Private Cloud (VPC) to create your own VPC and add additional components to produce a customized network for a Fortune 100 customer. You also create security groups for your EC2 instance. You then configure and customize an EC2 instance to run a web server and launch it into the VPC that looks like the following customer diagram:
+![[qb48ajdh.bmp]]
+_Figure: The customer is requesting the build of this architecture to launch their web server successfully._
+
+We use the VPC wizard to start a VPC. 
+An internet gateway and two subnets. An internet gateway is a CPV component that allows communication between instances in your VPC and internet.
+
+After creating a VPC, we can add subnets. Each subnet resides entirely within one Availability Zone and cannot span zones. 
+
+A subnet is a public subnet if it has an internet 
+gateway that routes traffic to the internet.
+Otherwise, its a private subnet.
+
+We are also going to be creating a NAT. The NAT is used to connect an EC2 that resides inside a private subnet to the internet.
