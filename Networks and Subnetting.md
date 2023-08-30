@@ -332,3 +332,10 @@ gateway that routes traffic to the internet.
 Otherwise, its a private subnet.
 
 We are also going to be creating a NAT. The NAT is used to connect an EC2 that resides inside a private subnet to the internet.
+
+
+We set up route tables for the private subnets to route internet-bound traffic to the NAT gateway so that resources in the private subnet are able to connect to the internet while still keeping the resources private.
+
+A route table contains a set of rules, called routes, that are used to determine where network traffic is directed. Each subnet in a VPC must be associated with a route table; the route table controls routing for the subnet.
+
+**Destination 0.0.0.0/0** is set to **Target nat-xxxxxxxx**. This means that traffic destined for the internet (0.0.0.0/0) will be sent to the NAT gateway. The NAT gateway will then forward the traffic to the internet.
