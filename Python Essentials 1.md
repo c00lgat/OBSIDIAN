@@ -998,3 +998,46 @@ We can shorten the board creation in the following way:
 board = [[EMPTY for i in range(8)] for j in range(8)]
 ```
 The inner part creates a row, and the outer part builds a list of rows.
+
+---
+
+## Functions and scopes
+A scope is the part of a code where a variable is properly recognizable. 
+
+For example:
+```python
+def scope_test():
+    x = 123
+
+scope_test()
+print(x)
+```
+In the example above, we will get the following error:
+> `NameError: name 'x' is not defined`
+
+
+Can a function recognize a variable that resides outside the function? Lets test that out:
+```python
+def my_function():
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+```
+```Output
+Do I know that variable? 1
+1
+```
+
+The answer to that is, yes: **a variable existing outside a function has a scope inside the functions' bodies**.
+
+This rule has a very important exception. Let's try to find it.
+```python
+def my_function():
+	var = 2
+	print("Do I know that variable?", var)
+	
+var = 1
+=my_function() print(var)`
+```

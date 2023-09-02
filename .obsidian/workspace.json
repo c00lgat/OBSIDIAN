@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Python Essentials 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash.md",
+                "file": "Podcasts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bash.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bash.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bash.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -170,16 +169,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6815d1f8bce13813",
+  "active": "8fce36414bbd7480",
   "lastOpenFiles": [
+    "Networks and Subnetting.md",
+    "Podcasts.md",
+    "Python Essentials 1.md",
+    "IMAGES/qb48ajdh.bmp",
+    "Bash.md",
     "Basic Command Syntax.md",
     "Basic Shell Programming.md",
-    "qb48ajdh.bmp",
     "Regex.md",
     "OCaml.md",
-    "Python Essentials 1.md",
-    "Bash.md",
-    "Networks and Subnetting.md",
     "IMAGES/obatqql3.bmp",
     "IMAGES/qc5uecqg.bmp",
     "IMAGES/aym6iug9.bmp",
