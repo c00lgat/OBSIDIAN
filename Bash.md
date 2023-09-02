@@ -1,6 +1,8 @@
 Finds bugs in shell scripts
 https://www.shellcheck.net/
 
+https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php
+
 various bash projects for inspiration
 https://www.basher.it/package/
 
