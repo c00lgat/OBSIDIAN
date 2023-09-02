@@ -1039,5 +1039,60 @@ def my_function():
 	print("Do I know that variable?", var)
 	
 var = 1
-=my_function() print(var)`
+my_function()
+print(var)
+```
+The result has changed, too - the code produces a slightly different output now:
+```Output
+Do I know that variable? 2
+1
+```
+- the `var` variable created inside the function is not the same as when defined outside it - it seems that there two different variables of the same name;
+- moreover, the function's variable shadows the variable coming from the outside world.
+
+**A variable existing outside a function has a scope inside the functions' bodies, excluding those of them which define a variable of the same name.**
+
+It also means that the **scope of a variable existing outside a function is supported only when getting its value** (reading). Assigning a value forces the creation of the function's own variable.
+
+---
+## The `global` keyword
+There's a special Python method which can **extend a variable's scope in a way which includes the functions' bodies** (even if you want not only to read the values, but also to modify them).
+Such an effect is caused by a keyword named `global`:
+```python
+global name
+global name1, name2, ...  
+```
+
+Using this keyword inside a function with the name (or names separated with commas) of a variable(s), forces Python to refrain from creating a new variable inside the function - the one accessible from outside will be used instead.
+
+In other words, this name becomes global (it has a **global scope**, and it doesn't matter whether it's the subject of read or assign).
+
+```python
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+
+
+var = 1
+my_function()
+print(var)
+ 
+```
+The code now outputs:
+```Output
+Do I know that variable? 2
+2
+```
+
+This should be sufficient evidence to show that the `global` keyword does what it promises.
+
+---
+## Behavior of lists inside functions
+- if the argument is a list, then changing the value of the corresponding parameter doesn't affect the list (remember: variables containing lists are stored in a different way than scalars),
+- but if you change a list identified by the parameter (note: the list, not the parameter!), the list will reflect the change. ie. deletion of an index.
+
+---
+```python
+def ft_and_inch_to_m(==ft, inch = 0.0==): return ft * 0.3048 + inch * 0.0254 print(ft_and_inch_to_m(6))`
 ```
