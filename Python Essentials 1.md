@@ -1093,6 +1093,89 @@ This should be sufficient evidence to show that the `global` keyword does what i
 - but if you change a list identified by the parameter (note: the list, not the parameter!), the list will reflect the change. ie. deletion of an index.
 
 ---
+## BMI calculation function
+
 ```python
-def ft_and_inch_to_m(==ft, inch = 0.0==): return ft * 0.3048 + inch * 0.0254 print(ft_and_inch_to_m(6))`
+def ft_and_inch_to_m(ft, inch = 0.0):
+	 return ft * 0.3048 + inch * 0.0254
+	
+print(ft_and_inch_to_m(6))
 ```
+
+```python
+def ft_and_inch_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+
+
+def lb_to_kg(lb):
+    return lb * 0.45359237
+
+
+def bmi(weight, height):
+    if height < 1.0 or height > 2.5 or weight < 20 or weight > 200:
+        return None
+    
+    return weight / height ** 2
+
+
+print(bmi(weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7)))
+
+
+```
+---
+## Fibonacci numbers
+```python
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+
+    elem_1 = elem_2 = 1
+    the_sum = 0
+    for i in range(3, n + 1):
+        the_sum = elem_1 + elem_2
+        elem_1, elem_2 = elem_2, the_sum
+    return the_sum
+
+
+for n in range(1, 10):  # testing
+    print(n, "->", fib(n))
+
+
+```
+
+```Output
+1 -> 1
+2 -> 1
+3 -> 2
+4 -> 3
+5 -> 5
+6 -> 8
+7 -> 13
+8 -> 21
+9 -> 34
+```
+
+---
+## Recursion
+Recursion is a **technique where a function invokes itself**.
+
+**The Fibonacci numbers definition is a clear example of recursion**. We already told you that:
+**Fib(i) = Fib(i-1) + Fib(i-2)**
+
+The definition of the ith number refers to the i-1 number, and so on, till you reach the first two.
+
+Can it be used in the code? Yes, it can. It can also make the code shorter and clearer.
+
+The second version of our `fib()` function makes direct use of this definition:
+```python
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+```
+
+Yes, there is a little risk indeed. **If you forget to consider the conditions which can stop the chain of recursive invocations, the program may enter an infinite loop**. You have to be careful.
