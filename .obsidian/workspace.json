@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6815d1f8bce13813",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Command Syntax.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks and Subnetting.md",
+                "file": "Basic Command Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks and Subnetting.md"
+                "file": "Basic Command Syntax.md"
               }
             }
           },
@@ -157,13 +170,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8fce36414bbd7480",
+  "active": "6815d1f8bce13813",
   "lastOpenFiles": [
+    "Basic Shell Programming.md",
     "qb48ajdh.bmp",
     "Regex.md",
     "OCaml.md",
     "Basic Command Syntax.md",
-    "Basic Shell Programming.md",
     "Python Essentials 1.md",
     "Bash.md",
     "Networks and Subnetting.md",
@@ -176,7 +189,6 @@
     "IMAGES/Pasted image 20230829094917.png",
     "IMAGES/Pasted image 20230829094830.png",
     "IMAGES/Pasted image 20230829094752.png",
-    "IMAGES/Pasted image 20230829094526.png",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "CANVAS 261.md",
     "AWK.md",
