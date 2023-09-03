@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "2023-09-03.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "2023-09-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "2023-09-03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "2023-09-03.md"
               }
             }
           },
@@ -171,9 +171,13 @@
   },
   "active": "8fce36414bbd7480",
   "lastOpenFiles": [
+    "Pasted image 20230903161108.png",
+    "Pasted image 20230903161046.png",
+    "Pasted image 20230903160816.png",
+    "Python Essentials 1.md",
+    "2023-09-03.md",
     "Networks and Subnetting.md",
     "Podcasts.md",
-    "Python Essentials 1.md",
     "IMAGES/qb48ajdh.bmp",
     "Bash.md",
     "Basic Command Syntax.md",
@@ -187,8 +191,6 @@
     "IMAGES/Pasted image 20230829095031.png",
     "IMAGES/Pasted image 20230829094947.png",
     "IMAGES/Pasted image 20230829094917.png",
-    "IMAGES/Pasted image 20230829094830.png",
-    "IMAGES/Pasted image 20230829094752.png",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "CANVAS 261.md",
     "AWK.md",
@@ -205,8 +207,6 @@
     "Microservices.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Markup Guide.md",
-    "LISP LANG.md",
-    "Learning the vi and Vim Editors.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
