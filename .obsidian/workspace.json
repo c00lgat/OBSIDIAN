@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-09-03.md",
+                "file": "Networks and Subnetting, AWS.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-09-03.md",
+                "file": "Networks and Subnetting, AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-09-03.md",
+                "file": "Networks and Subnetting, AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-09-03.md"
+                "file": "Networks and Subnetting, AWS.md"
               }
             }
           },
@@ -171,12 +171,13 @@
   },
   "active": "8fce36414bbd7480",
   "lastOpenFiles": [
-    "Pasted image 20230903161108.png",
-    "Pasted image 20230903161046.png",
-    "Pasted image 20230903160816.png",
-    "Python Essentials 1.md",
+    "AWS resources.md",
     "2023-09-03.md",
-    "Networks and Subnetting.md",
+    "IMAGES/Pasted image 20230903161108.png",
+    "IMAGES/Pasted image 20230903161046.png",
+    "IMAGES/Pasted image 20230903160816.png",
+    "Python Essentials 1.md",
+    "Networks and Subnetting, AWS.md",
     "Podcasts.md",
     "IMAGES/qb48ajdh.bmp",
     "Bash.md",
@@ -190,12 +191,10 @@
     "IMAGES/Pasted image 20230829103050.png",
     "IMAGES/Pasted image 20230829095031.png",
     "IMAGES/Pasted image 20230829094947.png",
-    "IMAGES/Pasted image 20230829094917.png",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
     "CANVAS 261.md",
     "AWK.md",
     "SED.md",
-    "AWS resources.md",
     "AWS AGENDA.md",
     "AppleSeeds MOODLE.md",
     "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",

@@ -346,3 +346,23 @@ A route table contains a set of rules, called routes, that are used to determine
 
 From Amazon Inspector, you will use the **network reachability package** to analyze your network configurations to find security vulnerabilities in your EC2 instances. The findings that Amazon Inspector generates also provide guidance about restricting access that is not secure.
 
+---
+
+**IAM**
+
+IAM can be used for the following:
+
+- **Manage IAM users and their access:** You can create users and assign them individual security credentials (access keys, passwords, and multi-factor authentication devices). You can manage permissions to control which operations a user can perform.
+- **Manage IAM roles and their permissions:** An IAM role is similar to a user in that a role is an AWS identity with permission policies that determine what the identity can and cannot do in Amazon Web Services (AWS). However, instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.
+- **Manage federated users and their permissions:** You can activate identity federation to allow existing users in your enterprise to access the AWS Management Console, to call AWS application programming interfaces (APIs), and to access resources without the need to create an IAM user for each identity.
+
+>A user group consists of several users who need access to the same data. Privileges can be distributed to the entire group of users rather than to each individual. This option is much more efficient when applying permissions and provides greater overall control of access to resources than applying permissions to individuals.
+
+Managed policies are pre-built policies (built either by AWS or by your administrators) that can be attached to IAM users and user groups. When the policy is updated, the changes to the policy are immediately applied to all users and user groups that are attached to the policy.
+
+- **Effect** indicates whether to **Allow** or **Deny** the permissions.
+- **Action** specifies the API calls that can be made against an AWS service (for example, _cloudwatch:ListMetrics_).
+- **Resource** defines the scope of entities covered by the policy rule (for example, a specific Amazon Simple Storage Service [Amazon S3] bucket, EC2 instance, or * which means _any resource_).
+
+Instead of a managed policy, it has a **Customer inline** policy, which is a policy assigned to only one user or group. Inline policies are typically used to apply permissions for one-off situations.
+Inline policies are typically used to apply permissions for one-off situations.
