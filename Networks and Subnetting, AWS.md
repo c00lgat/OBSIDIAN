@@ -366,3 +366,7 @@ Managed policies are pre-built policies (built either by AWS or by your administ
 
 Instead of a managed policy, it has a **Customer inline** policy, which is a policy assigned to only one user or group. Inline policies are typically used to apply permissions for one-off situations.
 Inline policies are typically used to apply permissions for one-off situations.
+
+---
+## [280-[SF]-Lab - Firewall Malware](https://mdl.appleseeds.org.il/mod/assign/view.php?id=92257)
+
