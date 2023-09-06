@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2f8dcb672f6325bc",
+        "id": "5178ff798e5e5b0d",
         "type": "tabs",
         "children": [
           {
-            "id": "8fce36414bbd7480",
+            "id": "31a356c4c57a3275",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks and Subnetting, AWS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6815d1f8bce13813",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Podcasts.md",
+                "file": "Python Essentials 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks and Subnetting, AWS.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks and Subnetting, AWS.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks and Subnetting, AWS.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -169,21 +157,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8fce36414bbd7480",
+  "active": "31a356c4c57a3275",
   "lastOpenFiles": [
+    "Regex.md",
+    "Podcasts.md",
+    "Important Links.md",
+    "Python Essentials 1.md",
+    "Networks and Subnetting, AWS.md",
     "AWS resources.md",
     "2023-09-03.md",
     "IMAGES/Pasted image 20230903161108.png",
     "IMAGES/Pasted image 20230903161046.png",
     "IMAGES/Pasted image 20230903160816.png",
-    "Python Essentials 1.md",
-    "Networks and Subnetting, AWS.md",
-    "Podcasts.md",
     "IMAGES/qb48ajdh.bmp",
     "Bash.md",
     "Basic Command Syntax.md",
     "Basic Shell Programming.md",
-    "Regex.md",
     "OCaml.md",
     "IMAGES/obatqql3.bmp",
     "IMAGES/qc5uecqg.bmp",
