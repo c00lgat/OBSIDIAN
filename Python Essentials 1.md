@@ -7,6 +7,16 @@ https://books.goalkicker.com/PythonBook/
 https://cs50.harvard.edu/python/2022/
 https://exercism.org/tracks/python
 
+###### Python book in Hebrew
+https://data.cyber.org.il/python/python_book.pdf
+
+###### 20 guidelines for the design of the Python language
+https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/
+
+###### What is clean code
+https://testdriven.io/blog/clean-code-python/
+
+
 Python blog: https://www.bitecode.dev/
 
 Function invocation in Python:
