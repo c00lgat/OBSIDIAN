@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "39668a4c84140678",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python Learning Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Python Learning Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Python Learning Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Python Learning Resources.md"
               }
             }
           },
@@ -157,12 +170,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "31a356c4c57a3275",
+  "active": "39668a4c84140678",
   "lastOpenFiles": [
+    "Python Essentials 1.md",
+    "Python Learning Resources.md",
     "Regex.md",
     "Podcasts.md",
     "Important Links.md",
-    "Python Essentials 1.md",
     "Networks and Subnetting, AWS.md",
     "AWS resources.md",
     "2023-09-03.md",
@@ -194,7 +208,6 @@
     "Motivation.md",
     "Microservices.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
-    "Markup Guide.md",
     "Excalidraw",
     "Presentations",
     "AGILE",

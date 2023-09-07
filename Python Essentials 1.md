@@ -1,23 +1,4 @@
-https://realpython.com/
-[[Important Links]]
-file:///C:/Users/Anan/Downloads/Learn%20Python%20the%20right%20way.pdf
-https://pymbook.readthedocs.io/en/latest/
-https://www.guru99.com/python-tutorials.html
-https://books.goalkicker.com/PythonBook/
-https://cs50.harvard.edu/python/2022/
-https://exercism.org/tracks/python
-
-###### Python book in Hebrew
-https://data.cyber.org.il/python/python_book.pdf
-
-###### 20 guidelines for the design of the Python language
-https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/
-
-###### What is clean code
-https://testdriven.io/blog/clean-code-python/
-
-
-Python blog: https://www.bitecode.dev/
+[[Python Learning Resources]]
 
 Function invocation in Python:
 1. Python checks if the name of the function is legal, in other words, it browses its internal data in order to find an existing function of the name. If this search fails, Python aborts the code.
