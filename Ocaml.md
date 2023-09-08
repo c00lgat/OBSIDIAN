@@ -1,3 +1,6 @@
+###### Video explaining Functional programming paradigm
+https://www.youtube.com/watch?v=HlgG395PQWw
+
 https://o1-labs.github.io/ocamlbyexample/
 https://cs3110.github.io/textbook/cover.html
 
