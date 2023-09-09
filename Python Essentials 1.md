@@ -736,6 +736,16 @@ for i in range(5):
 print(my_list)
 ```
 
+###### List.count(`value`)
+Counts how many times a value exists inside a list.
+
+###### List.index(`value`)
+Returns the index in which a value is located inside a list.
+
+What if a list contains more than one of the same value? The function returns the first occurrence of the value inside the list.
+
+`list.index(90, 5)` tells the index function to start looking for the value "90" starting from the fifth index.
+
 ### Swapping values in Python:
 Instead of a temp variable, python lets us do the following:
 ```python
@@ -786,6 +796,8 @@ my_list = [8, 10, 6, 2, 4]
 my_list.sort()
 print(my_list)
 ```
+We can also run the following code, sorting and then reversing the list simultaneously:
+`my_list.sort(reverse=True)`
 
 Python also has its own `reverse()` method as well:
 ```python

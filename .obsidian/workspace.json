@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python Essentials 1.md",
-                "mode": "preview",
+                "file": "Python Learning Resources.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Python Learning Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Python Learning Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Python Learning Resources.md"
               }
             }
           },
@@ -172,9 +172,9 @@
   },
   "active": "39668a4c84140678",
   "lastOpenFiles": [
-    "OCaml.md",
-    "Python Learning Resources.md",
     "Python Essentials 1.md",
+    "Python Learning Resources.md",
+    "OCaml.md",
     "Regex.md",
     "Podcasts.md",
     "Important Links.md",
