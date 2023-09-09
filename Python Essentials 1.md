@@ -911,6 +911,13 @@ del my_list
 print(my_list)
 ```
 Will completely delete the array and it will no longer exist.
+`clear` on the other hand, deletes all the values inside a list but does not delete the list itself.
+
+`del` can also be used to delete one index at a time:
+```python
+del my_list[5]
+```
+Deletes the value that is stored in the fifth index inside the list.
 
 
 Python can check whether an element exists in an array or not: `in` and `not in`:
@@ -967,6 +974,23 @@ print("The list with unique elements only:")
 
 print(my_list)
 ```
+
+> alternatively, we could have iterated over the list by using a for in the following way:
+> 
+> `for i in range(my_list.count(value))` as it lets us know how many times a certain value exists in the list.
+
+---
+### Pop
+Pop method "pops out" a value, or in other words, removes it, but also it returns the value that was removed. Pop removes the last value in a list.
+
+One useful way we could use pop is to store the numbers that we have removed so far from a list:
+```Python
+nums = [1,4,656,768,2,5,78,34,894,12]
+removed_number = nums.pop()
+print(removed_number)
+```
+
+Not only we could store it in an int type variable, but we could also store the removed numbers inside another list if we wanted to keep the values around and not lose them forever. Maybe useful while manipulating lists in specific ways that require us to remove values but also store the values that were removed.
 
 ---
 ## List in lists
