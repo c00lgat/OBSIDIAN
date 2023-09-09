@@ -1102,6 +1102,21 @@ The inner part creates a row, and the outer part builds a list of rows.
 
 ---
 ## Tuples
+Tuples and lists are similar in the way we initialize them:
+```Python
+my_list = []
+my_tuple = ()
+
+my_list = [1,2,3]
+my_tuple = (1,2,3) 
+```
+
+We can also turn any list into a tuple:
+```Python
+my_tuple = tuple([1,2,3])
+```
+
+The main difference between tuples and lists is that we cannot change values in tuples.
 
 
 
