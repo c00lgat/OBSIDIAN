@@ -827,6 +827,14 @@ lst.reverse()
 
 print(lst) # outputs: [4, 2, 1, 3, 5]
 ```
+---
+### Copy lists
+
+```Python
+list1 = [1,2,3,4,5]
+list2 = list1.copy()
+```
+Copies the content of a pre-existing list to a new list that we just created. list1 and list2 in this case are not pointing at the same list object in memory.
 
 The name of a list is the name of a **memory location where the list is stored**. Meaning:
 ```python
@@ -862,6 +870,9 @@ The `new_list` list will have `end - start` (3 - 1 = 2) elements - the ones with
 
 The snippet's output is: `[8, 6]`
 
+
+
+---
 ### Remove values from lists
 ```Python
 list1= [1,2,3]
@@ -1090,6 +1101,13 @@ board = [[EMPTY for i in range(8)] for j in range(8)]
 The inner part creates a row, and the outer part builds a list of rows.
 
 ---
+## Tuples
+
+
+
+
+
+
 
 ## Functions and scopes
 A scope is the part of a code where a variable is properly recognizable. 
