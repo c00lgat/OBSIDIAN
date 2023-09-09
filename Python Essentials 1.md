@@ -1231,7 +1231,38 @@ print(clients[100])
 {'first name': 'Rick',
 'last name': 'Sanchez'}
 ```
-In order to access the data of the first dictionary 
+In order to access the data of the first dictionary, for example the last name of client 100:
+```Python
+print(clients[100]['last name'])
+```
+```Output
+'Sanchez'
+```
+Dictionaries allow us to grab data without having to remember the index in which a client's data exists. We can simply pull the data of client 100 and get the 'last name' field of said client.
+
+With dictionaries, we can dig even deeper:
+```Python
+clients = {100: {'first name': 'Rick', 'last name:': 'Sanchez'},
+	200: {'first name': 'Peter',
+	 'last name': 'Griffin'},
+	300: {'first name': 'Homer',
+	'last name': 'Simpson',
+	'children': ['Bart','Lisa','Maggie'],
+	'address': {'house': 742,
+	'street': 'Evergreen Terrace',
+	'city': 'Springfield',
+	'country': 'USA'}}}
+```
+By using a dictionary, we were able to list all kinds of information about a client in the same dictionary.
+```Python
+print(clients[300]['address']['street'])
+```
+```Output
+'Evergreen Terrace'
+```
+
+
+
 
 ---
 ## Functions and scopes
