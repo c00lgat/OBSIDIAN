@@ -695,12 +695,31 @@ result = data.method(arg)
 
 ---
 ## Adding elements to a list: `append()` and `insert()`
+
 A new element may be glued to the end of the existing list: 
 ```python
 list.append(value)
 ```
 It takes its argument's value and puts it at the end of the list. The list owns the method.
 The list's length then increases by one.
+
+Another way to append new values to an existing list is by doing the following:
+```Python
+list1= [1,2,3]
+list1 += 'hello'
+print(list1)
+```
+But as we can see, the list that we receive looks like the following:
+`[1,2,3,h,e,l,l,o]`.
+Since *strings* behave similarly to lists, the above code is basically the same as adding two lists together.
+
+So, if we want the entire word "hello" to be a single value inside the list, we run the following code:
+```Python
+list1= [1,2,3]
+list1 += ['hello']
+print(list1)
+```
+Tells the code that the word hello is a single value as opposed to 5 different values of letters that make up the word hello.
 
 
 The `insert()` method is a bit smarter - it can add a new element at any place in the list, not only at the end:
@@ -842,6 +861,13 @@ print(new_list)
 The `new_list` list will have `end - start` (3 - 1 = 2) elements - the ones with indices equal to `1` and `2` (but not `3`).
 
 The snippet's output is: `[8, 6]`
+
+### Remove values from lists
+```Python
+list1= [1,2,3]
+list1.remove(3)
+```
+Removes the value 3 from the list.
 
 ### Negative indices and slice
 This is how they work:

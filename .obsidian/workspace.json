@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Learning Resources.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Learning Resources.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Learning Resources.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -170,10 +169,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "39668a4c84140678",
+  "active": "31a356c4c57a3275",
   "lastOpenFiles": [
-    "Python Essentials 1.md",
     "Python Learning Resources.md",
+    "Python Essentials 1.md",
     "OCaml.md",
     "Regex.md",
     "Podcasts.md",
