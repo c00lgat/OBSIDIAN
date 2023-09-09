@@ -1118,8 +1118,16 @@ my_tuple = tuple([1,2,3])
 
 The main difference between tuples and lists is that we cannot change values in tuples.
 
+Both tuples and strings are immutable.
 
+###### Tuple methods:
+- `tuple_values.count(value)`: counts how many a certain value has occurred inside the tuple
+- `tuple_values.index(value)`: returns the index in which the value exists
+- `sorted(tuple_values, reverse=True)`: returns the values of the tuple in a sorted manner. Does not change the tuple itself.
+- `a,b,c = (1,2,3)`: sometimes, certain get methods return tuples and we want to keep the order of the tuples intact. Example:
+```python
 
+```
 
 
 
