@@ -1195,19 +1195,43 @@ https://youtu.be/b3dn4VFN-O4?si=p8y6wgNWQre1K-cD
 
 Dictionaries work with `key` and `values`.
 
-Say we have a list of bus lines. But it is not 
+Say we have a list of bus lines. But there is key information missing: destinations.
+We cannot display the destination to each one of the bus lines using just a list in an efficient and easy to read way.
 ```Python
 buses = [123,45,67,432]
 ```
 
+And for that purpose, dictionaries are used:
 ```Python
 buses = {123: 'Tel Aviv', 45: 'Ramat Gan', 67: 'Jerusalem', 432: 'Tel Aviv'}
 ```
 
+We cannot read dictionaries the conventional way: `buses[0]` will return an error.
+Instead, we use the `key` part of each field to access the data stored in the relevant field:
+```Python
+print(buses[123])
+```
+```Output
+'Tel Aviv'
+```
 
-
-
-
+Another example for what we can do with dictionaries:
+```Python
+clients = {100: {'first name': 'Rick', 'last name:': 'Sanchez'},
+	200: {'first name': 'Peter',
+	 'last name': 'Griffin'},
+	300: {'first name': 'Homer',
+	'last name': 'Simpson'}}
+```
+We made a dictionary inside a dictionary. Each number represents a client and each client represents the first name of the client and the last name of the client.
+```Python
+print(clients[100])
+```
+```Output
+{'first name': 'Rick',
+'last name': 'Sanchez'}
+```
+In order to access the data of the first dictionary 
 
 ---
 ## Functions and scopes
