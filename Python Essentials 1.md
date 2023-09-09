@@ -1261,8 +1261,57 @@ print(clients[300]['address']['street'])
 'Evergreen Terrace'
 ```
 
-###### Initialize a dictionary:
+###### Initializing a dictionary:
+```Python
+rest = dict()
+
+rest = {}
 ```
+
+Adding key-values to dictionaries:
+```Python
+menu = {'Hummus': 9.90, 'Pizza': 15.5}
+```
+If we wanted to add a new key-value, we do it in the following way:
+```Python
+menu['Salad'] = 12.1
+```
+Printing the dictionary will return the following:
+```Output
+{'Hummus': 9.90, 'Pizza': 15.5,'Salad': 12.1}
+```
+
+Say the price of Salad went down. So, if we wanted to update a certain value in the dictionary, we do it the following way:
+```Python
+menu['Salad'] = 9.5
+```
+
+If we wanted to delete a certain key-value, we use the `pop()` method.
+The following code will remove 'Salad' from the menu as well as store it in a variable:
+```Python
+price = menu.pop('Salad')
+```
+
+We can also use the `del` function:
+```Python
+del menu['Hummus']
+```
+
+Deleting the entire dictionary is done by using `del` as well:
+```Python
+del menu
+```
+menu will no longer exist in the memory and will be entirely deleted.
+
+
+
+
+
+
+
+
+
+
 
 
 ---
