@@ -1303,8 +1303,16 @@ del menu
 ```
 menu will no longer exist in the memory and will be entirely deleted.
 
-
-
+###### Dictionary keys
+```Python
+menu = {'Hummus': 9.90,
+		'Pizza': 15.5,
+		'Salad': 23,
+		'Hamburger': 40,
+		'Chips': 5,
+		'Orange Juice': 23}
+```
+The method `keys
 
 
 
