@@ -993,7 +993,44 @@ print(removed_number)
 Not only we could store it in an int type variable, but we could also store the removed numbers inside another list if we wanted to keep the values around and not lose them forever. Maybe useful while manipulating lists in specific ways that require us to remove values but also store the values that were removed.
 
 ---
+## Nested Lists
+```python
+inner1 = [1,2,3]
+inner2 = [11,22,33]
+inner3 = [111,222,333]
+lists = []
+lists.append(inner1)
+lists.append(inner2)
+lists.append(inner3)
+
+print(lists)
+```
+```Output
+[[1,2,3],[11,22,33],[111,222,333]]
+```
+- `len(lists)` returns 3 as there are 3 values inside lists, and each one of these values are a list themselves.
+
+- `lists[0][0]` returns 1 (returns the first list inner1 and then the first value from the list inner1 which is 1).
+
+- `lists[-1][1]` returns 222. The first -1 returns the last value from lists which is inner3, and the second 1 returns the index 1 which contains the value 222.
+
+---
 ## List in lists
+
+###### Lists in lists without list comprehensions:
+```Python
+import random as rd
+
+matrix = []
+for i in range(4):
+	row = []
+	for j in range(4):
+		row.append(rd.randint(10,99))
+	matrix.append(row)
+
+print(matrix)
+```
+
 
 Python has special syntax that is used to fill huge lists:
 ```python
