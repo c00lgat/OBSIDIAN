@@ -1126,12 +1126,56 @@ Both tuples and strings are immutable.
 - `sorted(tuple_values, reverse=True)`: returns the values of the tuple in a sorted manner. Does not change the tuple itself.
 - `a,b,c = (1,2,3)`: sometimes, certain get methods return tuples and we want to keep the order of the tuples intact. Example:
 ```python
+ values = [(1,10),(2,20),(3,30),(4,40)]
+ for n1,n2 in values:
+	 print(n1,n2)
+```
+---
+## Zip and Enumerate
+Tuple unpacking.
+```Python
+a,b,c = (1,2,3)
+a,b,c = 1,2,3
+a,b,c = [1,2,3]
+```
+Not necessary to use tuple. But Python does use tuples in that format automatically.
+
+We want to find all the numbers greater than 3:
+```Python
+numbers = [1,2,3,4,1,2,3,4,1]
+
+for number in numbers:
+	if number > 3:
+		print(number)
+```
+Sometimes, we also want to know which index each 4 is located at:
+```Python
+numbers = [1,2,3,4,1,2,3,4,1]
+
+for num in numbers:
+	if num > 3:
+		print(num, number.index(number))
+```
+In that case, we will get the following output:
+```Output
+4 3
+4 3
+4 3
+```
+If you can recall, the method `index()` only returns the first index in which a value occurs. Enumerate can solve that:
+```Python
+numbers = [1,2,3,4,1,2,3,4,1]
+
+for index, num in enumerate(numbers):
+	if num > 3:
+		print(num, index)
+```
+Enumerate will generate a tuple in which will help us figure out the index in which a number exists.
+```Output
 
 ```
 
-
-
-
+---
 ## Functions and scopes
 A scope is the part of a code where a variable is properly recognizable. 
 
