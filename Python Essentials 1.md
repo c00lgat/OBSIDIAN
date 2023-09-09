@@ -1261,7 +1261,8 @@ print(clients[300]['address']['street'])
 'Evergreen Terrace'
 ```
 
-
+###### Initialize a dictionary:
+```
 
 
 ---
