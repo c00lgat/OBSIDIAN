@@ -699,7 +699,7 @@ A new element may be glued to the end of the existing list:
 ```python
 list.append(value)
 ```
-It takes its argument's value and puts it at the end of the list which owns the method. 
+It takes its argument's value and puts it at the end of the list. The list owns the method.
 The list's length then increases by one.
 
 
