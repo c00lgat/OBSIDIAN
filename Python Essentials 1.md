@@ -1132,6 +1132,7 @@ Both tuples and strings are immutable.
 ```
 ---
 ## Zip and Enumerate
+https://youtu.be/tKippVMbsEI?si=2Uhp3nHeXkfP4cdf
 Tuple unpacking.
 ```Python
 a,b,c = (1,2,3)
@@ -1172,8 +1173,41 @@ for index, num in enumerate(numbers):
 ```
 Enumerate will generate a tuple in which will help us figure out the index in which a number exists.
 ```Output
-
+4 3
+4 6
+4 8
 ```
+
+Example for `zip`:
+```Python
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+calls = [23,13,26,41,11,31,12] #number of calls received each day of the week
+
+list(zip(days,calls))
+```
+```Output
+[('Sunday',23), ('Monday',13), ('Tuesday',26), ('Wednesday',41), ('Thursday',11), ('Friday',31), ('Saturday',12)]
+```
+---
+## Dictionaries
+https://youtu.be/b3dn4VFN-O4?si=p8y6wgNWQre1K-cD
+
+Dictionaries work with `key` and `values`.
+
+Say we have a list of bus lines. But it is not 
+```Python
+buses = [123,45,67,432]
+```
+
+```Python
+buses = {123: 'Tel Aviv', 45: 'Ramat Gan', 67: 'Jerusalem', 432: 'Tel Aviv'}
+```
+
+
+
+
+
 
 ---
 ## Functions and scopes
