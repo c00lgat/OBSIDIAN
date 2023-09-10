@@ -1495,7 +1495,7 @@ dc_comics.intersection(bad_guys)
 ```
 The intersection method will find the mutual values between the two sets. `intersection()` however, does not change the `dc_comics` object and it simply returns the intersection which we could then store in a new variable that we make.
 
-If we wanted to change the `dc_comics` set itself without having to make a new variable in order to store the outcome, similarly to how `union` and `update
+If we wanted to change the `dc_comics` set itself without having to make a new variable in order to store the outcome, similarly to how `union` and `update` work, we can use `intersection_update()` instead of `intersection()` if we want to change the original set at hand without having to make a new set.
 
 
 
