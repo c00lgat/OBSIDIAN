@@ -1991,3 +1991,28 @@ print(sorted(money_heist), key = len)
 
 ---
 ## Map
+https://youtu.be/-E3qKYwH7T0?si=z9dbacu01LEQz8m7
+
+```Python
+def sqr(number):
+	return number ** 0.5
+```
+A function that calculates the square root of a number.
+
+```Python
+def sqr(number):
+	return number ** 0.5
+
+numbers = []
+
+for i in range(20):
+	numbers.append(rd.randint(1,100))
+
+print(numbers)
+
+squares = []
+for number in numbers:
+	squares.append((sqr(number)))
+print(squares)
+```
+As we can see, it takes a lot of code in order to achieve something that is relatively simple.
