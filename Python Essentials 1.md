@@ -1469,11 +1469,33 @@ print(unique_numbers)
 ```
 
 ##### Set Operations
+```Python
+dc_comics = {'Superman', 'Batman', 'Joker', 'Wonder Woman', 'Deadshot'}
+
+bad_guys = {'Joker', 'Shredder', 'Rick Sanchez', 'Deadshot', 'Magneto', 'Captain Hook'}
+```
+
+Say we want to combine the two sets together. We can use the `union()` function:
+```Python
+characters = dc_comics.union(bad_guys)
+```
+The `characters` variable will contain all the heroes and the bad guys from both sets.
+
+If we don't want to make a new variable and have it store the union of two sets, we can just update one of the sets instead. Updating one set will change the set instead of returning it.
+```Python
+dc_comics.update(bad_guys)
+```
+This code will update the `dc_comics` set without having to make a new variable to store the outcome because the `update()` method changes the `dc_comics` object itself instead of simply returning the union of both sets.
 
 
+What if we wanted to check what values contain in both sets?
+We can use the `intersection()` method:
+```Python
+dc_comics.intersection(bad_guys)
+```
+The intersection method will find the mutual values between the two sets. `intersection()` however, does not change the `dc_comics` object and it simply returns the intersection which we could then store in a new variable that we make.
 
-
-
+If we wanted to change the `dc_comics` set itself without having to make a new variable in order to store the outcome, similarly to how `union` and `update
 
 
 
