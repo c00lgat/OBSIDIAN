@@ -1206,6 +1206,12 @@ The snippet makes a list with only the odd elements of the `squares` list.
 ## Dictionary Comprehensions
 https://youtu.be/QhRjdrfqKd4?si=S9GZJBRN4-TP5SI3
 
+Dictionary comprehensions allow us to make dictionaries in an easier, more efficient way.
+
+We want to make a dictionary where the key is a number and the value for each corresponding key is the squared value of each key:
+```Python
+squares = {n }
+```
 
 
 
