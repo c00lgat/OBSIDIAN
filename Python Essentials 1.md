@@ -2085,4 +2085,33 @@ average(100,200)
 ```
 
 What if we wanted to run the function on a list that has more than just two values?
-Then we would have to run with a 
+Then we would have to run with a `for` loop and calculate the sum etc.
+
+Instead, we can use `reduce()`.
+`reduce()` is imported from the `functools` library:
+`from functools import reduce`
+
+```Python
+from functools import reduce
+
+reduce(average, [100,200])
+```
+We have to remember that reduce will only work with functions that receive only two arguments, and also return a single value as well.
+
+Instead of having to build a function that calculates the average of two numbers once at a time, we can just use an anonymous function, or as also called a `lambda` function.
+```Python
+from functools import reduce
+
+reduce(lambda n1, n2: n1 + n2, movies.values())/len(movies)
+```
+As we can see, reduce and lambda both allow us to do the calculations that we need to run, without having to use a new function, list or loops.
+
+We can also use conditionals inside our `lambda` function as we have seen before:
+```Python
+from functools import reduce
+
+reduce(lambda n1, n2: n1 if n1 > n2 else n2, movies.values())/len(movies)
+```
+
+---
+## Filter
