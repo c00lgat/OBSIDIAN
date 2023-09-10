@@ -1926,3 +1926,19 @@ def factorial_function(n):
 ```
 
 ---
+## Lambda **Λ**
+https://youtu.be/xhN_xbMUAHU?si=jXx4lIlMX3VHI3Hd
+
+Anonymous function.
+Call a function without making an actual fully fledged function.
+It can make the code easier to read. 
+
+We can pass a Lambda function as a function argument to another function.
+
+We also use it if we wanted to change the behavior of a pre-existing function in very specific cases.
+
+Used for simple 
+```Python
+
+```
+
