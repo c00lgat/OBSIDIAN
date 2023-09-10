@@ -1045,9 +1045,32 @@ print(matrix)
 ### List Comprehensions
 https://youtu.be/OM4Ep-Zo2tA?si=XKdfkcVlpkRAXKAW
 
+Can be used on tuples, sets, dictionaries etc.
 
+```Python
+prices = [10,14,56,34,87,34,12,95]
+```
 
+```Python
+prices = [10,14,56,34,87,34,12,95]
+prices_in_shekels = []
 
+for price in prices:
+	prices_in_shekels.append(price * 3.5)
+
+print(prices_in_shekels)
+```
+
+We can do the above code in a single line:
+```Python
+prices = [10,14,56,34,87,34,12,95]
+
+prices_in_shekels = [price * 3.5 for price in prices]
+
+print(prices_in_shekels)
+```
+Output:
+![[Pasted image 20230910160137.png]]
 
 
 
