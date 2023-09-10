@@ -1447,7 +1447,32 @@ In order to not get an error that could disrupt our program, we could use the me
 ```Python
 fruits.discard('Peach')
 ```
-The discard method allows us to remove a value, similarly to remove, except it does not return an error in case a certain value does not already
+The discard method allows us to remove a value, similarly to remove, except it does not return an error in case a certain value does not exist in our Set.
+
+###### Copying a Set
+Similarly to Lists and Dictionaries, Sets uses the `copy()` method to make a new copy of an existing Set.
+```Python
+new_fruits = fruits.copy()
+```
+
+It also uses the `clear()` method in order to clear out all the values from an existing Set, leaving it all empty while also keeping the empty Set in memory without completely deleting it:
+```Python
+fruits.clear()
+```
+![[Pasted image 20230910143614.png]]
+The above code returns an empty set.
+
+A set can be particularly helpful in cases where we want to only store the unique values that are stored in a List:
+```Python
+unique_numbers = set([1,2,2,3,4,5,5,3,3,5,6,7,7,9,8,8,5,4,4,4,5,5,6,6,7,78,8,8,8,8,9,9,9,7,6,5,4])
+print(unique_numbers)
+```
+
+##### Set Operations
+
+
+
+
 
 
 
