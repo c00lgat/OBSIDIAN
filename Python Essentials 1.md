@@ -1408,6 +1408,48 @@ So instead, we can run the following code to make a new copy of a dictionary:
 ```Python
 new_menu = menu.copy()
 ```
+---
+## Sets
+Initializing a set:
+```Python
+empty_set = {} # This will create an empty dictionary
+
+empty_set = set() # This will create an empty set
+```
+
+A set is unique in a way that it only contains unique values. Meaning, the value 'banana' will only appear once, even if we added it twice to our set:
+```Python
+fruit = {'Apple', 'Orange', 'Banana'}
+fruits.add('Peach')
+fruits.add('Banana'))
+```
+We have a Set that contains fruits. As we can see, despite having banana in the set and then adding it once again to the set, it still only appears once in the set:
+![[Pasted image 20230910142903.png]]
+
+```Error
+print(fruits[0]) # Will return an error
+```
+One way to think about Sets is that Sets are similar to a Dictionary that only contains keys.
+
+Another example in which shows that a set only contains unique values:
+![[Pasted image 20230910143056.png]]
+
+
+###### Removing a value from a Set
+```Python
+fruits.remove('Peach')
+```
+![[Pasted image 20230910143151.png]]
+
+The problem with the `remove()` method is that it will return an error if a certain value does not exist in a Set while trying to remove the said value.
+
+In order to not get an error that could disrupt our program, we could use the method `discard()` instead:
+```Python
+fruits.discard('Peach')
+```
+The discard method allows us to remove a value, similarly to remove, except it does not return an error in case a certain value does not already
+
+
 
 
 ---
