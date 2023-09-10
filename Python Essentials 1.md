@@ -1382,7 +1382,33 @@ We can access the values of the dictionary by running `menu.values()` and we wou
 
 We can also run the following: `sorted(menu.values())` which returns the following output:![[Pasted image 20230910141239.png]]
 It returns a sorted list that contains the values, or in this case, a list of sorted prices. But that is not very helpful, is it? Since we do not know which price correlate to which product on the menu.
-Usually we are able to get certain values through the keys. But we cannot do it the other way around, we cannot get the keys
+Usually we are able to get certain values through the keys. But we cannot do it the other way around, we cannot get the keys only by knowing what the values are.
+
+The way to do so is:
+```Python
+sorted(menu.items(), key = lambda t: t[1])
+```
+![[Pasted image 20230910141638.png]]
+And we do get the desired output. 
+We basically tell the `sorted` function that we want to change our sorting key (not the same key found in dictionaries) and by running a `lambda` function, we tell it to look at the index `[1]` instead of the first index inside the tuples. And thus, the sorted function knows to sort according to the second value that is inside the tuples.
+
+```Python
+sorted(menu.items(), key = lambda t: t[1], reverse = True)
+```
+If we want to reverse the order.
+
+
+###### Copying a dictionary
+```Python
+new_menu = menu
+```
+Both menus will be pointing at the same location in memory. Meaning, changing the new menu will also affect the old menu. 
+
+So instead, we can run the following code to make a new copy of a dictionary:
+```Python
+new_menu = menu.copy()
+```
+
 
 ---
 ## Functions and scopes
