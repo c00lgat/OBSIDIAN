@@ -2054,3 +2054,4 @@ list(map(lambda n: round(n ** 0.5,2),numbers))
 ```
 Output:
 ![[Pasted image 20230910202651.png]]
+
