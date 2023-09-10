@@ -1230,7 +1230,11 @@ As we can see, we received a dictionary in which each key is a word and its valu
 
 
 What if we wanted to flip the keys to values and the values to keys?
+```Python
+my_dictionary = {1: 'aa', 2: 'bb', 3: 'cc', 4: 'dd', 5: 'ee', 6: 'ff'}
 
+flip_keys = {v: k for k,v in my_dictionary.items()}
+```
 
 
 ## Two dimensional arrays
