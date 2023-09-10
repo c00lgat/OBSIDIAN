@@ -1528,8 +1528,35 @@ We can sort a Set with the `sorted()` function, and the function will return a L
 sorted(dc_comics, reverse = True)
 ```
 ![[Pasted image 20230910151406.png]]
+> The `sorted()` function will return a `list` and not a `set`
 
-####
+
+#### Set Boolean Methods
+https://youtu.be/pbnTcCHGv0s?si=nzoE4m5ivx4HVh3p
+```Python
+video_games = {'Pacman', 'Super Mario', 'Space Invaders'}
+
+games = {'Poker', 'Monopol', 'Pacman', 'Chess', 'Taki', 'Super Mario', 'Space Invaders'}
+```
+
+###### Sets: `issubset()`
+```Python
+video_games.issubset(games)
+```
+Checks whether a certain set is a subset of a bigger set. Meaning, checks if **all** values in a certain set exist in another set. The `issubset()` method checks whether `video_games` is contained within `games`.
+
+###### Sets: `issuperset()`
+```Python
+games.issuperset(video_games)
+```
+Checks whether a Set is the superset of a given Set. Meaning, it checks if the given set is a subset of the superset or not.
+
+###### Sets: `isdisjoint()`
+```Python
+games.isdisjoint(video_games)
+```
+Returns True if both sets have no mutual value whatsoever.
+Returns false if there are mutual values between the two sets.
 
 ---
 ## Functions and scopes
