@@ -1140,13 +1140,34 @@ So we use a little trick that is used to join strings together:
 ```Python
 text = 'The past can hurt. But the way I see it, you can either run from it, or learn from it.'
 vowels = 'aeiou'
-print(['*' if letter in vowels else letter for letter in text])
+print(''.join(['*' if letter in vowels else letter for letter in text]))
 ```
+![[Pasted image 20230910163505.png]]
+And this is the output that we get.
 
+We can also do the same thing in many other variations. If for whatever reason we wanted to print the vowels as an asterisk and all the other letters as an underscore (\_) then we do it as follows:
+```Python
+text = 'The past can hurt. But the way I see it, you can either run from it, or learn from it.'
+vowels = 'aeiou'
+print(''.join(['*' if letter in vowels else '_' letter for letter in text]))
+```
+![[Pasted image 20230910163625.png]]
+This is the output we get.
 
+Another example that works with temperature degrees:
+```Python
+import random as rd
+temp = [rd.randint(0,38) for n in range(30)]
+```
+Now we want to substitute the temperature degrees with the feelings 'Cold', 'Nice' and 'Hot':
+```Python
+import random as rd
+temp = [rd.randint(0,38) for n in range(30)]
 
-
-
+print(['Cold' if t < 15 else 'Nice' if t < 25 else 'Hot' for t in temp])
+```
+And we get the following output:
+![[Pasted image 20230910164009.png]]
 
 Python has special syntax that is used to fill huge lists:
 ```python
@@ -1182,6 +1203,16 @@ odds = [x for x in squares if x % 2 != 0 ]
 The snippet makes a list with only the odd elements of the `squares` list.
 
 ---
+## Dictionary Comprehensions
+https://youtu.be/QhRjdrfqKd4?si=S9GZJBRN4-TP5SI3
+
+
+
+
+
+
+
+
 ## Two dimensional arrays
 Example:
 ```python
