@@ -1353,6 +1353,36 @@ If we wanted to update a dictionary's values, we use the `update()` method:
 Takes the values from `rest_new` and updates the values that correlate to the same keys that are found in both dictionaries. If not found in both dictionaries, then it will simply add it to the original dictionary.
 Basically, the end product will be the union of both dictionaries.
 
+###### Dictionary sort
+https://youtu.be/NumGmnqQQj8?si=70cCYNU0eqfBn9Ky
+
+One way we can sort a dictionary is by sorting the keys:
+```Python
+menu = {'Hummus': 9.90,
+		'Pizza': 15.5,
+		'Salad': 23,
+		'Hamburger': 40,
+		'Chips': 5,
+		'Orange Juice': 23,
+		'Wine': 30,
+		'Tea': 5,
+		'Beer': 17,
+		'Coffee': 10}
+
+for key in sorted(menu):
+	print(key,menu[key])
+```
+Now that should return something similar to the following:
+![[Pasted image 20230910140945.png]]
+We can see that the dictionary was sorted according to the alphabetical order.
+
+But, what if we wanted to sort according to the values instead of the keys? In this case, we would be sorting according to the price instead of the alphabetical order of the items that are on the menu. So, how do we do that?
+We can access the values of the dictionary by running `menu.values()` and we would get the following output:
+![[Pasted image 20230910141153.png]]
+
+We can also run the following: `sorted(menu.values())` which returns the following output:![[Pasted image 20230910141239.png]]
+It returns a sorted list that contains the values, or in this case, a list of sorted prices. But that is not very helpful, is it? Since we do not know which price correlate to which product on the menu.
+Usually we are able to get certain values through the keys. But we cannot do it the other way around, we cannot get the keys
 
 ---
 ## Functions and scopes
