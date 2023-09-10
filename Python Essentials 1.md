@@ -1304,6 +1304,7 @@ del menu
 menu will no longer exist in the memory and will be entirely deleted.
 
 ###### Dictionary keys
+https://youtu.be/c12hsJCZZak?si=PJOes9z8JMt5tusc
 ```Python
 menu = {'Hummus': 9.90,
 		'Pizza': 15.5,
@@ -1312,14 +1313,45 @@ menu = {'Hummus': 9.90,
 		'Chips': 5,
 		'Orange Juice': 23}
 ```
-The method `keys
+The method `keys()` will return a list that contains all the keys in a certain dictionary:
+```Python
+menu.keys()
+```
 
+And if we wanted to get the keys, or the prices in this case, we use `values()` method:
+```Python
+menu.values()
+```
 
+And if we wanted to get both the key and the values, we use `items()`:
+```Python
+menu.items()
+```
+The `items()` method will return the following:
+![[Pasted image 20230909204838.png]]
+A list of tuples that contain the keys and the values.
+If we wanted to print a comprehensive menu, we can do it the follow way:
+```Python
+for food, price in menu.items():
+	print(f'The price of {food} is {price} NIS.')
+```
+![[Pasted image 20230909205008.png]]
 
+In order to check whether a certain key exists in a dictionary, we get `get()` method:
+```Python
+menu.get('Coffee')
+```
+If a key does not exist, `get()` simply does not return anything.
 
+We can also set a default value: `setdefault()` method checks whether a key exists, if it exists then it returns the value of the said key. And if the key does not exist, then the `setdefault()` will add the key-value pair to the dictionary:
+```Python
+menu.setdefault('Coffee', 10)
+```
 
-
-
+If we wanted to update a dictionary's values, we use the `update()` method:
+![[Pasted image 20230909205424.png]]
+Takes the values from `rest_new` and updates the values that correlate to the same keys that are found in both dictionaries. If not found in both dictionaries, then it will simply add it to the original dictionary.
+Basically, the end product will be the union of both dictionaries.
 
 
 ---
