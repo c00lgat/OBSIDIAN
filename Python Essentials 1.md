@@ -2170,4 +2170,8 @@ We can take that one step further and make it even more efficient and simpler:
 list(filter(lambda movie: 250 <= movie[1] <= 500, movies.items()))
 ```
 ![[Pasted image 20230910220906.png]]
-As we can see, we got the desired output that lists both the movie names and the profit of each movie, without using a fully fledged function, nor a loop no
+As we can see, we got the desired output that lists both the movie names and the profit of each movie, without using a fully fledged function, nor a loop.
+
+---
+## Reading Files with Python
+`
