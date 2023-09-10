@@ -1087,9 +1087,20 @@ first_letters = [word[0].upper() for word in sentence.split()]
 ```
 ![[Pasted image 20230910161404.png]]
 
+###### List Comprehensions - Conditions
+We can use conditions inside List Comprehensions.
+```Python
+import random as rd
 
+numbers = [rd.randint(1,150) for i in range(50)] # Normal list comprehension
+```
+But what if we wanted to filter out some values?
+```Python
+import random as rd
 
-
+above_120 = [n for n in numbers if n > 120] 
+```
+The above code goes over the list `numbers` and only puts those that are above 120 inside the new list that we created with the name `above_120
 
 
 
