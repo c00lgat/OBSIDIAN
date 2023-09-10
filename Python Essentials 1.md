@@ -2120,4 +2120,34 @@ https://youtu.be/TU0Chfdjm7g?si=IFzG3gVt_mvd3lrm
 Helps us filter out a list according to criterions that we set.
 
 The `filter()` function has to receive a Boolean function.
+More specifically, a function that receives only one argument and returns either `True` or `False`.
+Only those values that return `True` will be added to the list that `filter()` makes for us.
+![[Pasted image 20230910215206.png]]
 
+As for the movies sample up top, we are going to be checking which movies made a certain amount of time and then use the filter function to receive the movies that are relevant.
+
+Firstly, we are going to do that without the use of `lambda` and `filter` functions.
+```Python
+def profit_range(amount):
+	if amount >= 250 and amount <= 500:
+		return True
+	else:
+		return False
+
+for profit in movies.values():
+	print(profit_range(profit))
+```
+
+Now we want to do the same, except for the movie names instead of the value fields of the movies:
+```Python
+def profit_range(amount):
+	if amount >= 250 and amount <= 500:
+		return True
+	else:
+		return False
+
+filter
+
+for profit in movies.values():
+	print(profit_range(profit))
+```
