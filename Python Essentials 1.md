@@ -2115,3 +2115,9 @@ reduce(lambda n1, n2: n1 if n1 > n2 else n2, movies.values())/len(movies)
 
 ---
 ## Filter
+https://youtu.be/TU0Chfdjm7g?si=IFzG3gVt_mvd3lrm
+![[Pasted image 20230910214428.png]]
+Helps us filter out a list according to criterions that we set.
+
+The `filter()` function has to receive a Boolean function.
+
