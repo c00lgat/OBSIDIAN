@@ -1042,6 +1042,28 @@ for i in range(4):
 print(matrix)
 ```
 
+### List Comprehensions
+https://youtu.be/OM4Ep-Zo2tA?si=XKdfkcVlpkRAXKAW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Python has special syntax that is used to fill huge lists:
 ```python
