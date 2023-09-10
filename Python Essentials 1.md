@@ -1252,12 +1252,8 @@ Output:
 ```Python
 drinks = {'Cola': 5, 'Coffee': 8.5, 'Tea': 6, 'B eer': 12, 'Wine': 15}
 
-drinks = {name: {'NIS': price, 'USD': price * 3.52, 'Euro': price * 3.78, 'Yen': price * 3.2} for name, price in drinks.items()}
+drinks = {name: {'NIS': price, 'USD': round(price * 3.52,2), 'Euro': round(price * 3.78,2), 'Yen': round(price * 3.2,2)} for name, price in drinks.items()}
 ```
-
-
-
-
 
 ## Two dimensional arrays
 Example:
@@ -1274,7 +1270,6 @@ row = [EMPTY for i in range(8)]  board.append(row)
 - the elements of the chessboard are rows, eight of them per chessboard.
 
 The `board` variable is now a **two-dimensional array**. It's also called, by analogy to algebraic terms, a **matrix**.
-
 
 We can shorten the board creation in the following way:
 ```python
