@@ -2058,3 +2058,8 @@ list(map(lambda n: round(n ** 0.5,2),numbers))
 Output:
 ![[Pasted image 20230910202651.png]]
 
+---
+## Reduce
+Reduce and Lambda functions work really well together.
+
+As opposed to the `map()` function, `reduce()` helps us to reduce a list into a single value.
