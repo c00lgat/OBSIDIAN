@@ -1977,15 +1977,17 @@ The output should look like the following:
 
 Since we want to sort our dictionary according to the amount of money each of the characters stole, we use the `key` option in `sorted()`:
 ```Python
-print(sorted(money_heist), key = lambda
+print(sorted(money_heist.items(), key = lambda t: t[1]))
 ```
-
-
-
-
+Since `money_heist.items()` returns a list of tuples, we use the `t[1]` notation to be able to access the value of each key (since the key exists at `t[0]`).
+Output:
+![[Pasted image 20230910191031.png]]
 
 We are also able to sort according to the length of the keys of the dictionary:
 ```Python
 print(sorted(money_heist), key = len)
 ```
 ![[Pasted image 20230910190710.png]]
+
+---
+## Map
