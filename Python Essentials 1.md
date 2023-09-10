@@ -1072,10 +1072,20 @@ print(prices_in_shekels)
 Output:
 ![[Pasted image 20230910160137.png]]
 
+```Python
+from random import uniform
+prices = [round(uniform(1,50),2) for i in range(20)]
+```
+Creates a list that has 20 random numbers between 1 and 50.
 
 
+What if we wanted to use list comprehensions to get the first letter of each word in a specific sentence?
+```Python
+sentence = 'The cold never bothered me anyway'
 
-
+first_letters = [word[0].upper() for word in sentence.split()]
+```
+![[Pasted image 20230910161404.png]]
 
 
 
