@@ -1235,6 +1235,28 @@ my_dictionary = {1: 'aa', 2: 'bb', 3: 'cc', 4: 'dd', 5: 'ee', 6: 'ff'}
 
 flip_keys = {v: k for k,v in my_dictionary.items()}
 ```
+Output:
+![[Pasted image 20230910174603.png]]
+
+We can also use conditionals:
+```Python
+my_dictionary = {1: 'aa', 2: 'bb', 3: 'cc', 4: 'dd', 5: 'ee', 6: 'ff'}
+
+flip_keys = {v: k for k,v in my_dictionary.items() if k % 2 ==0}
+```
+Output:
+![[Pasted image 20230910174643.png]]
+
+###### Complex dictionaries with dictionary comprehensions
+
+```Python
+drinks = {'Cola': 5, 'Coffee': 8.5, 'Tea': 6, 'B eer': 12, 'Wine': 15}
+
+drinks = {name: {'NIS': price, 'USD': price * 3.52, 'Euro': price * 3.78, 'Yen': price * 3.2} for name, price in drinks.items()}
+```
+
+
+
 
 
 ## Two dimensional arrays
