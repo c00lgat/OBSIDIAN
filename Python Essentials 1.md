@@ -2146,8 +2146,28 @@ def profit_range(amount):
 	else:
 		return False
 
-filter
+filtered_movies = []
 
-for profit in movies.values():
-	print(profit_range(profit))
+for name, profit in movies.items():
+	if(profit_range(profit)):
+		filtered_movies.append(name)
+
+print(filtered_movies)
 ```
+Output:
+![[Pasted image 20230910220111.png]]
+We received all the movies that are valid according to the criterion that we have set.
+
+As we can see, the entire process is quite long. We had to use a for loop, conditionals and other things along the way only to achieve what is needed.
+For that, the `filter()` makes it all so much simpler:
+```Python
+list(filter(profit_range, movies.values()))
+```
+The given example still does not fully do what is needed to be done. It returns a list of profit values as opposed to the movie names that have said profit. And we still had to build a function that does the boolean check to check whether a movie is within the profit range or not.
+
+We can take that one step further and make it even more efficient and simpler:
+```Python
+list(filter(lambda movie: 250 <= movie[1] <= 500, movies.items()))
+```
+![[Pasted image 20230910220906.png]]
+As we can see, we got the desired output that lists both the movie names and the profit of each movie, without using a fully fledged function, nor a loop no
