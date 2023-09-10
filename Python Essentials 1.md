@@ -1468,13 +1468,14 @@ unique_numbers = set([1,2,2,3,4,5,5,3,3,5,6,7,7,9,8,8,5,4,4,4,5,5,6,6,7,78,8,8,8
 print(unique_numbers)
 ```
 
-##### Set Operations
+#### Set Operations
 ```Python
 dc_comics = {'Superman', 'Batman', 'Joker', 'Wonder Woman', 'Deadshot'}
 
 bad_guys = {'Joker', 'Shredder', 'Rick Sanchez', 'Deadshot', 'Magneto', 'Captain Hook'}
 ```
 
+###### Set union
 Say we want to combine the two sets together. We can use the `union()` function:
 ```Python
 characters = dc_comics.union(bad_guys)
@@ -1487,7 +1488,7 @@ dc_comics.update(bad_guys)
 ```
 This code will update the `dc_comics` set without having to make a new variable to store the outcome because the `update()` method changes the `dc_comics` object itself instead of simply returning the union of both sets.
 
-
+###### Set intersection
 What if we wanted to check what values contain in both sets?
 We can use the `intersection()` method:
 ```Python
@@ -1497,7 +1498,38 @@ The intersection method will find the mutual values between the two sets. `inter
 
 If we wanted to change the `dc_comics` set itself without having to make a new variable in order to store the outcome, similarly to how `union` and `update` work, we can use `intersection_update()` instead of `intersection()` if we want to change the original set at hand without having to make a new set.
 
+###### Set difference
+Returns a set that contains values only found in A and not in B
+```Python
+dc_comics.difference(bad_guys)
+```
+![[Pasted image 20230910150736.png]]
+`difference()`, much like the rest of the operations we have seen, only returns a set without making any changes to the original set. 
+If we wanted the changes to happen to the original set, we use `difference_update()`
+```Python
+dc_comics.difference_update(bad_guys)
+```
 
+###### Symmetric Difference
+Returns all values from Set A and Set B except for the values that are mutual to the two sets.
+```Python
+dc_comics.symmetric_difference(bad_guys)
+```
+![[Pasted image 20230910150942.png]]
+Returns a Set that does not contain the values that the intersection method would return.
+If we wanted to change the original set, we can use `symmetric_difference_update()`:
+```Python
+dc_comics.symmetric_difference_update(bad_guys)
+```
+
+###### Set sorting
+We can sort a Set with the `sorted()` function, and the function will return a List that contains the values in a sorted manner:
+```Python
+sorted(dc_comics, reverse = True)
+```
+![[Pasted image 20230910151406.png]]
+
+####
 
 ---
 ## Functions and scopes
