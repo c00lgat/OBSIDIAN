@@ -2069,7 +2069,20 @@ Reduce and Lambda functions work really well together.
 
 As opposed to the `map()` function, `reduce()` helps us to reduce a list into a single value.
 
-Since the `map()` function runs the same function over and over while iterating over a list, and at the end returning a list that is as big as the original list, `reduce()` knows how to do the same, just more efficiently.
-`reduce()` also returns a single value as opposed to `map()` which returns a whole list that is as big as the original one.
+`reduce()` returns a single value as opposed to `map()` which returns a whole list that is as big as the original one.
 
-`reduce()` *has* to 
+`reduce()` *has* to receive two variables, and has to return only one value.
+
+Say we have the following dictionary that contains marvel movies along with their profits:
+![[Pasted image 20230910212143.png]]
+And we wanted to make a function that calculates an average of two numbers:
+```Python
+def average(n1, n2):
+	return (n1 + n2) / 2
+```
+```Python
+average(100,200)
+```
+
+What if we wanted to run the function on a list that has more than just two values?
+Then we would have to run with a 
