@@ -2060,6 +2060,16 @@ Output:
 
 ---
 ## Reduce
+Video that shows the `map()`, `filter()` and `reduce()` functions
+https://www.youtube.com/watch?v=nMS5ptwax08
+
+https://youtu.be/Wce8vVezoTI?si=WOleLadSStOCKrkE
+
 Reduce and Lambda functions work really well together.
 
 As opposed to the `map()` function, `reduce()` helps us to reduce a list into a single value.
+
+Since the `map()` function runs the same function over and over while iterating over a list, and at the end returning a list that is as big as the original list, `reduce()` knows how to do the same, just more efficiently.
+`reduce()` also returns a single value as opposed to `map()` which returns a whole list that is as big as the original one.
+
+`reduce()` *has* to 
