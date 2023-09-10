@@ -1229,6 +1229,9 @@ We get the following output:
 As we can see, we received a dictionary in which each key is a word and its value is the length of the word.
 
 
+What if we wanted to flip the keys to values and the values to keys?
+
+
 
 ## Two dimensional arrays
 Example:
