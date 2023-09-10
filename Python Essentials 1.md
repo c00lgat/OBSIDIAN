@@ -1991,6 +1991,9 @@ print(sorted(money_heist), key = len)
 
 ---
 ## Map
+Short video that explains what a map is
+https://www.youtube.com/watch?v=8q2vICb89ys
+
 https://youtu.be/-E3qKYwH7T0?si=z9dbacu01LEQz8m7
 
 ```Python
