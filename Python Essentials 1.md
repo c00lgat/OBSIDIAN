@@ -1210,12 +1210,23 @@ Dictionary comprehensions allow us to make dictionaries in an easier, more effic
 
 We want to make a dictionary where the key is a number and the value for each corresponding key is the squared value of each key:
 ```Python
-squares = {n }
+squares = {n: n**2 for n in range(1,11)}
 ```
+We get the following output:
+![[Pasted image 20230910165516.png]]
 
+Now, we want to make a dictionary where each word is a key and each value for the corresponding key is the length of the word:
+```Python
+fc = 'The first rule of Fight Club is you do not talk about Fight Club.'
+words = {word: len(word) for word in fc.split()}
+```
+> We need to split the string since strings behave just like lists. So if we run the code without the split, our string will just be a list of singular letters instead of complete words. The split will give us the following output, which is the desired output on which we want to run the code on:
+> 
+> ![[Pasted image 20230910165841.png]]
 
-
-
+We get the following output:
+![[Pasted image 20230910165940.png]]
+As we can see, we received a dictionary in which each key is a word and its value is the length of the word.
 
 
 
