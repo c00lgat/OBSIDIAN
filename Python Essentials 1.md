@@ -2015,4 +2015,42 @@ for number in numbers:
 	squares.append((sqr(number)))
 print(squares)
 ```
+Output:
+![[Pasted image 20230910202228.png]]
 As we can see, it takes a lot of code in order to achieve something that is relatively simple.
+We could use list comprehensions that will make our code much simpler and cleaner.
+
+But in this chapter, we will be using the `map()` function.
+
+```Python
+def sqr(number):
+	return number ** 0.5
+
+numbers = []
+
+for i in range(20):
+	numbers.append(rd.randint(1,100))
+
+
+list(map(sqr, numbers)) # We turned it into a map for demonstration purposes only
+```
+`map(sqr, numbers)` returns a `map` object.
+![[Pasted image 20230910202142.png]]
+> We only converted the map into a list for demonstration purposes only. But as we can see, we got the same output as our first code.
+
+Sometimes, a certain function that we use in our code resides inside another `.py` file.
+What if we do not remember what the `sqr` function does? What if we forgot how it was implemented?
+
+In that case, we can use a `lambda` function instead. 
+Since we already know what function we are looking for, and since we know that it is a simple function that only calculates the square root of a number, and possibly going to use it very few times, then it is a good idea to consider using a `lambda` function:
+```Python
+list(map(lambda n: n ** 0.5,numbers))
+```
+![[Pasted image 20230910202558.png]]
+And as we can see, we get the same output as before.
+And to make it a little easier to read, we add the `round()` function:
+```Python
+list(map(lambda n: round(n ** 0.5,2),numbers))
+```
+Output:
+![[Pasted image 20230910202651.png]]
