@@ -1100,9 +1100,48 @@ import random as rd
 
 above_120 = [n for n in numbers if n > 120] 
 ```
-The above code goes over the list `numbers` and only puts those that are above 120 inside the new list that we created with the name `above_120
+The above code goes over the list `numbers` and only puts those that are above 120 inside the new list that we created with the name `above_120`.
+
+List Comprehensions with conditionals is an easy way to filter out certain values from a pre-existing list and make a new list with the desired values.
+
+```Python
+import random as rd
+
+above_120 = [n * 1.2 for n in numbers if n > 120] 
+```
+Takes all numbers that are above 120 from `numbers`, multiplies them by 1.2 and adds them to the new list.
+
+###### List comprehensions `else`
+https://youtu.be/w1HKCR43LHE?si=TyLg0mXPNKceWEZw
+```Python
+import random as rd
+
+above_120 = [n * 1.2 if n > 120 else n for n in numbers] 
+```
+Returns all the numbers that are bigger than 120 and multiplies them by 1.2, and if the number isn't greater than 120, then simply return n for every n in `numbers`.
 
 
+```Python
+text = 'The past can hurt. But the way I see it, you can either run from it, or learn from it.'
+vowels = 'aeiou'
+print([letter for letter in text if letter in vowels])
+```
+Prints all the vowels from the text provided using list comprehensions.
+
+Instead, we can print an asterisk for each time that we find a vowel in the text:
+```Python
+text = 'The past can hurt. But the way I see it, you can either run from it, or learn from it.'
+vowels = 'aeiou'
+print(['*' if letter in vowels else letter for letter in text])
+```
+That way, we get all the letters, with the vowels being substituted with an asterisk. But the format that we get back is a little weird and it looks like this:
+![[Pasted image 20230910163423.png]]
+So we use a little trick that is used to join strings together:
+```Python
+text = 'The past can hurt. But the way I see it, you can either run from it, or learn from it.'
+vowels = 'aeiou'
+print(['*' if letter in vowels else letter for letter in text])
+```
 
 
 
