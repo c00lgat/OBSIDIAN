@@ -1937,8 +1937,55 @@ We can pass a Lambda function as a function argument to another function.
 
 We also use it if we wanted to change the behavior of a pre-existing function in very specific cases.
 
-Used for simple 
+Used for simpler things.
 ```Python
+lamb = lambda n: n**2
+lamb(5)
+```
+What does it expect? a number `n` and it returns `n**2`.
+Usually, we do not give names/store lambda functions in variables. The example above is for demonstration only, and it is not a practical use case of the `lambda` function.
 
+More examples:
+```Python
+lamb = lambda a,b: a*b
+lamb(4,9)
 ```
 
+```Python
+lamb = lambda a,b: a if a > b else b
+lamb(40,9)
+```
+
+If you recall, we used a lambda function when we wanted to sort a dictionary with the values being the sorting factor.
+```Python
+money_heist = {'Tokyo': 400,
+			  'Nairobi': 590,
+			  'El Profesor': 650,
+			  'Denver': 530,
+			  'Rio': 270,
+			  'Bogota': 340,
+			  'Berlin': 480}
+```
+
+When we wanted to sort our dictionary, we figured that we could just use the `sorted()` function:
+```Python
+print(sorted(money_heist))
+```
+But what we got instead, was the key values of the dictionary in a sorted manner. What we are looking for is to sort the dictionary according to the values of the keys, not the other way around.
+The output should look like the following:
+![[Pasted image 20230910190507.png]]
+
+Since we want to sort our dictionary according to the amount of money each of the characters stole, we use the `key` option in `sorted()`:
+```Python
+print(sorted(money_heist), key = lambda
+```
+
+
+
+
+
+We are also able to sort according to the length of the keys of the dictionary:
+```Python
+print(sorted(money_heist), key = len)
+```
+![[Pasted image 20230910190710.png]]
