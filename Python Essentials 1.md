@@ -1927,6 +1927,9 @@ def factorial_function(n):
 
 ---
 ## Lambda **Λ**
+Short YT video that explains about lambda functions in Python
+https://www.youtube.com/watch?v=KR22jigJLok
+
 https://youtu.be/xhN_xbMUAHU?si=jXx4lIlMX3VHI3Hd
 
 Anonymous function.
