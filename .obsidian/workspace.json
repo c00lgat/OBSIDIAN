@@ -23,9 +23,21 @@
             "id": "bfe15a1ddaef93c0",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "image",
               "state": {
-                "currentVersion": "1.4.10"
+                "file": "IMAGES/Pasted image 20230910141153.png"
+              }
+            }
+          },
+          {
+            "id": "ff85f1d3a9e453be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+                "mode": "preview",
+                "source": false
               }
             }
           },
@@ -42,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 390.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -108,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md"
               }
             }
           },
@@ -190,8 +202,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "ff85f1d3a9e453be",
   "lastOpenFiles": [
+    "Regex.md",
+    "IMAGES/Pasted image 20230910141153.png",
+    "IMAGES/Pasted image 20230910141239.png",
     "Pasted image 20230910221922.png",
     "Pasted image 20230910221803.png",
     "Pasted image 20230910220906.png",
@@ -200,13 +215,9 @@
     "Pasted image 20230910215446.png",
     "Pasted image 20230910215206.png",
     "Pasted image 20230910214428.png",
-    "Pasted image 20230910212213.png",
-    "Pasted image 20230910212143.png",
-    "Pasted image 20230910212140.png",
     "Python Learning Resources.md",
     "Python Essentials 1.md",
     "OCaml.md",
-    "Regex.md",
     "Podcasts.md",
     "Important Links.md",
     "Networks and Subnetting, AWS.md",
