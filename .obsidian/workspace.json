@@ -35,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+                "file": "Python Essentials 1.md",
                 "mode": "preview",
                 "source": false
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mastering Regular Expressions Third Edition- O'RILLEY.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -204,6 +204,7 @@
   },
   "active": "ff85f1d3a9e453be",
   "lastOpenFiles": [
+    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
     "IMAGES/Pasted image 20230910141153.png",
     "IMAGES/Pasted image 20230910141239.png",

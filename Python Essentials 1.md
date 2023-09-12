@@ -487,7 +487,7 @@ Lets us manipulate single bits of data.
 - `~` (tilde) - bitwise negation;
 - `^` (caret) - bitwise exclusive or (xor).
 
-| Argument `A` | Argument `B` | `A & B` | `A` \| `B` | `A ^ B` |
+|  `A` |  `B` | `A & B` | `A` \| `B` | `A ^ B` |
 | ------------ | ------------ | ------- | ------- | ------- |
 | `0`          | `0`          | `0`     | `0`     | `0`     |
 | `0`          | `1`          | `0`     | `1`     | `1`     |
