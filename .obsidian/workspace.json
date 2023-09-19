@@ -42,6 +42,16 @@
             }
           },
           {
+            "id": "6b1f0350be575378",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
+          },
+          {
             "id": "39668a4c84140678",
             "type": "leaf",
             "state": {
@@ -54,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -202,7 +212,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ff85f1d3a9e453be",
+  "active": "6b1f0350be575378",
   "lastOpenFiles": [
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
