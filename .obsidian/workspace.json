@@ -52,6 +52,18 @@
             }
           },
           {
+            "id": "8782a4012b4e51f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python Essentials 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "39668a4c84140678",
             "type": "leaf",
             "state": {
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -212,7 +224,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6b1f0350be575378",
+  "active": "8782a4012b4e51f1",
   "lastOpenFiles": [
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
