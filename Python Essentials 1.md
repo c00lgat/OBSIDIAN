@@ -2234,4 +2234,12 @@ print(var)
 ```
 In other words, this name becomes global (it has a **global scope**, and it doesn't matter whether it's the subject of read or assign).
 
+---
+### Dictionaries
+When you write a big or lengthy expression, it may be a good idea to keep it vertically aligned. This is how you can make your code more readable and more programmer-friendly, e.g.:
 
+```Python
+dictionary = {"cat": "chat",
+			  "dog": "chien",
+			  "horse": "cheval"} 
+```
