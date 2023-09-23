@@ -20,63 +20,19 @@
             }
           },
           {
-            "id": "bfe15a1ddaef93c0",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "IMAGES/Pasted image 20230910141153.png"
-              }
-            }
-          },
-          {
-            "id": "ff85f1d3a9e453be",
+            "id": "b0516e1169eefe03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Python Essentials 1.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6b1f0350be575378",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.12"
-              }
-            }
-          },
-          {
-            "id": "8782a4012b4e51f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python Essentials 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "39668a4c84140678",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python Learning Resources.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 390.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -224,22 +181,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8782a4012b4e51f1",
+  "active": "b0516e1169eefe03",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Excalidraw/Drawing 2023-09-23 21.04.16.excalidraw.md",
+    "Python Essentials 1.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
     "IMAGES/Pasted image 20230910141153.png",
     "IMAGES/Pasted image 20230910141239.png",
-    "Pasted image 20230910221922.png",
-    "Pasted image 20230910221803.png",
-    "Pasted image 20230910220906.png",
-    "Pasted image 20230910220231.png",
-    "Pasted image 20230910220111.png",
-    "Pasted image 20230910215446.png",
-    "Pasted image 20230910215206.png",
-    "Pasted image 20230910214428.png",
+    "IMAGES/Pasted image 20230910221922.png",
+    "IMAGES/Pasted image 20230910221803.png",
+    "IMAGES/Pasted image 20230910220906.png",
+    "IMAGES/Pasted image 20230910220231.png",
+    "IMAGES/Pasted image 20230910220111.png",
+    "IMAGES/Pasted image 20230910215446.png",
+    "IMAGES/Pasted image 20230910215206.png",
+    "IMAGES/Pasted image 20230910214428.png",
     "Python Learning Resources.md",
-    "Python Essentials 1.md",
     "OCaml.md",
     "Podcasts.md",
     "Important Links.md",
@@ -260,14 +219,11 @@
     "9.md",
     "Networks.md",
     "Netacad.md",
-    "Motivation.md",
-    "Microservices.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
     "Google Search",
     "Udemy Courses",
-    "IMAGES",
-    "Untitled.canvas"
+    "IMAGES"
   ]
 }

@@ -2178,3 +2178,16 @@ As we can see, we got the desired output that lists both the movie names and the
 ---
 ## Reading Files with Python
 https://youtu.be/lMK32yVcwNg?si=1KT_VAuGJH2H6siZ
+
+---
+### Keyword argument passing
+As opposed to positional argument passing, the meaning of the argument is dedicated by its name and not by its position.
+```Python
+def test_function(first_arg, second_arg):
+	print(f'First Arg: {first_arg}, Second arg: {second_arg}')
+
+#We could run the function in two different ways:
+
+test_
+	
+```
