@@ -2204,3 +2204,32 @@ adding(c = 1, a = 2, b = 3) #Keyword Args
 adding(3, c = 1, b = 2) #Mixing both positional and keyword argument passing
 ```
 
+---
+### Functions and scopes
+**A variable existing outside a function has a scope inside the functions' bodies**.
+```Python
+def my_function():
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+```
+
+###### Global variables
+``` python
+global name
+global name1, name2
+```
+Using this keyword inside a function with the name (or names separated with commas) of a variable(s), forces Python to refrain from creating a new variable inside the function - the one accessible from outside will be used instead.
+```Python
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+```
+In other words, this name becomes global (it has a **global scope**, and it doesn't matter whether it's the subject of read or assign).
