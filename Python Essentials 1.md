@@ -2243,3 +2243,6 @@ dictionary = {"cat": "chat",
 			  "dog": "chien",
 			  "horse": "cheval"} 
 ```
+
+---
+### Errors
