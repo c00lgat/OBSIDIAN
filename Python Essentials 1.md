@@ -2186,8 +2186,21 @@ As opposed to positional argument passing, the meaning of the argument is dedica
 def test_function(first_arg, second_arg):
 	print(f'First Arg: {first_arg}, Second arg: {second_arg}')
 
-#We could run the function in two different ways:
+# We could run the function in two different ways:
+test_function('first_arg', 'second_arg')
 
-test_
-	
+# Or; we could do it the keyword argument way:
+test_function(second_arg = 'this is going to be the second argument', first_arg = 'this is going to be the first argument that is passed to the function')
 ```
+
+We can also use both keyword and positional argument passing simultaneously; but under one condition: <mark style="background: #FFB86CA6;">positional arguments before keyword arguments.</mark>
+```Python
+def adding(a, b, c):
+	print(a, "+", b, "+", c, "=", a + b + c)
+
+adding(1, 2, 3) #Positional
+adding(c = 1, a = 2, b = 3) #Keyword Args
+
+adding(3, c = 1, b = 2) #Mixing both positional and keyword argument passing
+```
+
