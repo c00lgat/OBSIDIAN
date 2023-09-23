@@ -14,25 +14,12 @@
               "type": "markdown",
               "state": {
                 "file": "Python Essentials 1.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b0516e1169eefe03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python Essentials 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,11 +168,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0516e1169eefe03",
+  "active": "31a356c4c57a3275",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-09-23 21.39.01.excalidraw.md",
+    "Python Essentials 1.md",
     "Untitled.canvas",
     "Excalidraw/Drawing 2023-09-23 21.04.16.excalidraw.md",
-    "Python Essentials 1.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
     "IMAGES/Pasted image 20230910141153.png",

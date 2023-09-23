@@ -2233,3 +2233,5 @@ my_function()
 print(var)
 ```
 In other words, this name becomes global (it has a **global scope**, and it doesn't matter whether it's the subject of read or assign).
+
+
