@@ -1,5 +1,8 @@
 ###### You can read about all standard Python modules here: [https://docs.python.org/3/py-modindex.html](https://docs.python.org/3/py-modindex.html)
 
+###### Find, install and publish Python packages with the Python Package Index
+https://pypi.org/
+
 ###### Real Python Tutorials
 https://realpython.com/
 
