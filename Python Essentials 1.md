@@ -2245,4 +2245,9 @@ dictionary = {"cat": "chat",
 ```
 
 ---
-### Errors
+#### Functions from the `math` module
+- `ceil(x)` → the ceiling of x (the smallest integer greater than or equal to x)
+- `floor(x)` → the floor of x (the largest integer less than or equal to x)
+- `trunc(x)` → the value of x truncated to an integer (be careful - it's not an equivalent either of ceil or floor)
+- `factorial(x)` → returns x! (x has to be an integral and not a negative)
+---
