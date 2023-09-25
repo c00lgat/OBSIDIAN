@@ -1,3 +1,5 @@
+###### You can read about all standard Python modules here: [https://docs.python.org/3/py-modindex.html](https://docs.python.org/3/py-modindex.html)
+
 ###### Real Python Tutorials
 https://realpython.com/
 
