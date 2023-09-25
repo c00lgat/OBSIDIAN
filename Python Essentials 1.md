@@ -2251,3 +2251,45 @@ dictionary = {"cat": "chat",
 - `trunc(x)` → the value of x truncated to an integer (be careful - it's not an equivalent either of ceil or floor)
 - `factorial(x)` → returns x! (x has to be an integral and not a negative)
 ---
+#### Selected functions from the random module: continued
+
+The previous functions have one important disadvantage - they may produce repeating values even if the number of subsequent invocations is not greater than the width of the specified range.
+
+Look at the code below - the program very likely outputs a set of numbers in which some elements are not unique:
+```Python
+from random import randint
+for i in range(10):
+print(randint(1, 10), end=',')
+```
+
+This is what we got in one of the launches:
+```Output
+9,4,5,4,5,8,9,4,8,4,
+```
+
+**The `choice` and `sample` functions**
+As you can see, this is not a good tool for generating numbers in a lottery. Fortunately, there is a better solution than writing your own code to check the uniqueness of the "drawn" numbers.
+
+It's a function named in a very suggestive way - `choice`:
+- `choice(sequence)`
+- `sample(sequence, elements_to_choose)`
+
+The first variant chooses a "random" element from the input sequence and returns it.
+
+The second one builds a list (a sample) consisting of the `elements_to_choose` element "drawn" from the input sequence.
+
+In other words, the function chooses some of the input elements, returning a list with the choice. The elements in the sample are placed in random order. Note: the `elements_to_choose` must not be greater than the length of the input sequence.
+
+Look at the code below:
+```Python
+from random import choice, sample my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(choice(my_list))  print(sample(my_list, 5))  print(sample(my_list, 10))
+```  
+
+Again, the output of the program is not predictable. Our results looked like this:
+```Output
+4 
+[3, 1, 8, 9, 10]
+[10, 8, 5, 1, 6, 4, 3, 9, 7, 2]
+```
+
