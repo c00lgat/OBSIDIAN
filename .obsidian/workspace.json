@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python Learning Resources.md",
+                "file": "Python Essentials 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 390.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Learning Resources.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Learning Resources.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Learning Resources.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -169,8 +170,8 @@
   },
   "active": "31a356c4c57a3275",
   "lastOpenFiles": [
-    "Python Essentials 1.md",
     "Python Learning Resources.md",
+    "Python Essentials 1.md",
     "Excalidraw/Drawing 2023-09-23 21.39.01.excalidraw.md",
     "Untitled.canvas",
     "Excalidraw/Drawing 2023-09-23 21.04.16.excalidraw.md",
