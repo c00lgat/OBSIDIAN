@@ -1,7 +1,10 @@
 ###### Design Patterns in Python
 https://refactoring.guru/design-patterns/python
 https://python-patterns.guide/
-https://www.cosmicpython.com/
+https://www.cosmicpython.com/book/preface.html
+
+###### O'REILLY Architecture Patterns with Python book
+https://drive.google.com/file/d/12WI-H-dYjMrzNPSk1VEn5MewuSJCQs_5/view?usp=sharing
 
 ###### Python Design Patterns: For Sleek and Fashionable Code
 https://www.toptal.com/python/python-design-patterns
