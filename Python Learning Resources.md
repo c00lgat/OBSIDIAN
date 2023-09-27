@@ -1,3 +1,11 @@
+###### Design Patterns in Python
+https://refactoring.guru/design-patterns/python
+https://python-patterns.guide/
+https://www.cosmicpython.com/
+
+###### Python Design Patterns: For Sleek and Fashionable Code
+https://www.toptal.com/python/python-design-patterns
+
 ###### You can read about all standard Python modules here: [https://docs.python.org/3/py-modindex.html](https://docs.python.org/3/py-modindex.html)
 
 ###### Find, install and publish Python packages with the Python Package Index
