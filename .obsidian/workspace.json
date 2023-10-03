@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7e82fc1d860aa905",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python Essentials 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -180,7 +193,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e796890598f9ab29",
+  "active": "7e82fc1d860aa905",
   "lastOpenFiles": [
     "2023-09-03.md",
     "SQL.md",
