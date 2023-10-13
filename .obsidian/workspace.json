@@ -42,9 +42,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b9861db4dbac3306",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -111,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md"
               }
             }
           },
@@ -193,15 +203,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7e82fc1d860aa905",
+  "active": "b9861db4dbac3306",
   "lastOpenFiles": [
+    "Python Essentials 1.md",
+    "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
     "2023-09-03.md",
     "SQL.md",
     "CV.md",
     "CANVAS 261.md",
     "Python Learning Resources.md",
     "9.md",
-    "Python Essentials 1.md",
     "Excalidraw/Drawing 2023-09-23 21.39.01.excalidraw.md",
     "Untitled.canvas",
     "Excalidraw/Drawing 2023-09-23 21.04.16.excalidraw.md",
@@ -231,7 +242,6 @@
     "AWS AGENDA.md",
     "AppleSeeds MOODLE.md",
     "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",
-    "Networks.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
