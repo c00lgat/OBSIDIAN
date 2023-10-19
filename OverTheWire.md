@@ -24,3 +24,8 @@ aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 ### Bandit4
 bandit4 password:
 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+
+### Bandit5
+bandit5 password:
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
