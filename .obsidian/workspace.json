@@ -52,9 +52,31 @@
                 "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md"
               }
             }
+          },
+          {
+            "id": "975808338802b389",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
+          },
+          {
+            "id": "2aed1ad2bb72f93e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OverTheWire.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -104,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -121,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
+                "file": "OverTheWire.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
+                "file": "OverTheWire.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md"
+                "file": "OverTheWire.md"
               }
             }
           },
@@ -203,8 +224,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b9861db4dbac3306",
+  "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
+    "OverTheWire.md",
     "Python Essentials 1.md",
     "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
     "2023-09-03.md",
@@ -241,7 +263,6 @@
     "SED.md",
     "AWS AGENDA.md",
     "AppleSeeds MOODLE.md",
-    "Excalidraw/Drawing 2023-08-24 11.11.32.excalidraw.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
