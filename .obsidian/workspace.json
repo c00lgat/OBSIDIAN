@@ -74,21 +74,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ec8a78009cf4bba5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System Design for Beginners.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -154,7 +142,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System Design for Beginners.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +158,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System Design for Beginners.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -236,7 +222,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ec8a78009cf4bba5",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
     "OverTheWire.md",
     "System Design for Beginners.md",
