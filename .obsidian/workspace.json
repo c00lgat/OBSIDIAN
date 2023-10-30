@@ -142,6 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2023-09-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,6 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2023-09-03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Design for Beginners.md"
+                "file": "2023-09-03.md"
               }
             }
           },
