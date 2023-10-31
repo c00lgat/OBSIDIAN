@@ -69,7 +69,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OverTheWire.md",
+                "file": "Basic Shell Programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-09-03.md",
+                "file": "Basic Shell Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-09-03.md",
+                "file": "Basic Shell Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-09-03.md"
+                "file": "Basic Shell Programming.md"
               }
             }
           },
@@ -224,13 +224,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
+    "2023-09-03.md",
     "OverTheWire.md",
     "System Design for Beginners.md",
     "Python Essentials 1.md",
     "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
-    "2023-09-03.md",
     "SQL.md",
     "CV.md",
     "CANVAS 261.md",
