@@ -8,75 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "31a356c4c57a3275",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-09-03.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e796890598f9ab29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7e82fc1d860aa905",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python Essentials 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9861db4dbac3306",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "975808338802b389",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
-          },
-          {
             "id": "2aed1ad2bb72f93e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -142,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Shell Programming.md",
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Shell Programming.md"
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md"
               }
             }
           },
@@ -227,6 +171,14 @@
   "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
     "2023-09-03.md",
+    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+    "AWS reStart/Canvas",
+    "AWS reStart",
+    "IMAGES/Pasted image 20230903160816.png",
+    "AppleSeeds MOODLE.md",
+    "AWS resources.md",
+    "AWS AGENDA.md",
+    "Basic Shell Programming.md",
     "OverTheWire.md",
     "System Design for Beginners.md",
     "Python Essentials 1.md",
@@ -250,19 +202,13 @@
     "IMAGES/Pasted image 20230910220111.png",
     "IMAGES/Pasted image 20230910215446.png",
     "IMAGES/Pasted image 20230910215206.png",
-    "IMAGES/Pasted image 20230910214428.png",
     "OCaml.md",
     "Podcasts.md",
     "Important Links.md",
     "Networks and Subnetting, AWS.md",
-    "AWS resources.md",
     "Bash.md",
     "Basic Command Syntax.md",
-    "Basic Shell Programming.md",
     "Excalidraw/Drawing 2023-08-14 14.32.53.excalidraw.md",
-    "AWK.md",
-    "SED.md",
-    "AWS AGENDA.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
