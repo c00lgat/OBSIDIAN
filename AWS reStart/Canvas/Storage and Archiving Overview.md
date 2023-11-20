@@ -14,6 +14,6 @@ At the end of this project, you will be able to:
 
 
 
-| Category                      | AWS Products and Services | Example Troubleshooting Topics |
-| ----------------------------- | ------------------------- | ------------------------------ |
-| `Storage and Data Management` | Amazon S3, Amaz                          |                                |
+| Category                      | AWS Products and Services                                                                                                                                                                                                            | Example Troubleshooting Topics |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| `Storage and Data Management` | Amazon S3, Amazon Elastic File System (Amazon EFS), Amazon S3 Glacier, Amazon Elastic Block Store (Amazon EBS), instance store volumes, Snapshots, Amazon Relational Database Service (Amazon RDS), Amazon DynamoDB, Amazon Redshift | Troubleshooting a person's access to S3 objects, Troubleshooting AWS CLI access to S3, Uploading files to or downloading files from S3 using the AWS CLI, Importing data to S3 or exporting data from S3, Mounting EFS on an EC2 instance volume, Configuring data lifecycle migration from EC2 to Glacier, Increasing the size of an EBS volume on an EC2 instance, Attaching an additional EBS volume to an EC2 instance and mount it, Creating Snapshots, Restoring Snapshots, Accessing to RDS database, Importing data to RDS or exporting data from RDS, Adding a column to a database table, Querying a database table and limiting the result set                               |
