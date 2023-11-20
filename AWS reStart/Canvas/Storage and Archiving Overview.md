@@ -26,3 +26,11 @@ At the end of this project, you will be able to:
 | `Foundational IT`             | Linux OS configuration, Reading log files, VI editor, Bash scripting, Python, SQL and database management topics                                                                                                                     | Discovering remaining disk space on an EC2 instance, Discovering CPU use on an EC2 instance, Discovering memory on an EC2 instance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 
+#### Project details
+As you encounter and troubleshoot issues, document your findings in your Troubleshooting Knowledge Base spreadsheet. Use the following guidelines to create your spreadsheet:
+- Create a new row in the spreadsheet to document a new issue.
+- Enter the relevant information in the appropriate columns.
+- Refer to Table 2 for column descriptions.
+- Provide enough detail so you or someone in a SysOps role can easily understand the issue and resolution steps.
+- Remember that issues can be in the context of performing a lab or exercise, or when you are exploring AWS on your own. 
+- 
