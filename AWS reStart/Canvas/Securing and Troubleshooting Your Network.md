@@ -41,4 +41,8 @@ ACLs are usually administered by the network security or the network administrat
 
 #### Bastion host
 - Provides public-subnet-to-private-subnet access.
-- 
+	- Jump point to gain access to a private subnet
+- Do not store private keys on the bastion host
+	- For Linux instances, use the agent forwarding feature of the SSH client to specify the key
+	- For Microsoft Windows instances, decrypt the password with the key in the Amazon EC2 console and then add the instance to a domain
+Serves as a jump point 
