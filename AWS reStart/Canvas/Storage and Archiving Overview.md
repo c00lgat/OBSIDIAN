@@ -37,3 +37,8 @@ As you encounter and troubleshoot issues, document your findings in your Trouble
 - Do not create duplicate entries for different occurrences of the same issue:
 	- Use the spreadsheet’s Find function to check if an issue has already been documented.
 	- Make enhancements to existing entries as needed.
+
+###### Troubleshooting knowledge base template description
+The template file is named Troubleshooting Knowledge Base.xlsx; it contains a tab named Knowledge Base Entries. Table 2 describes each column in the template.
+![[Pasted image 20231120211006.png]]
+![[Pasted image 20231120211014.png]]
