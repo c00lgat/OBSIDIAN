@@ -80,4 +80,26 @@ First, verify that the instance is running. Also, verify that the security group
 Another configuration to verify is whether the public IP address has changed. If you stop an instance and then later start it, it will receive a new public IP address (unless an Elastic IP address is attached to it). Also, verify that the internet gateway and route table settings are correct.
 
 ###### Troubleshooting SSH connections
+![[Pasted image 20231120144747.png]]
+
+Sometimes, users try to log in to an EC2 instance by using the wrong user name and password combination. Though many EC2 instances have an ec2-user user defined in the operating system, not all do. Also, when you attempt to connect through SSH, verify that the correct private key is being used and that the access permissions set on the key are correct.
+
+The ping tool is a networking utility that is commonly used to test the reachability of a host on an IP network. It is available as a command line tool in both Microsoft Windows and Linux.
+
+###### Troubleshooting NAT
+![[Pasted image 20231120144937.png]]
+
+After you create a NAT gateway or NAT instance, you must update the route table that is associated with the subnet of the private instance. The route table must point internet-bound traffic to the NAT gateway or instance. This configuration enables the private instance to communicate with the internet.
+
+> NOTE: System administrators do not to need to troubleshoot the NAT instances that are created by AWS when they use the NAT instance and not NAT Gateway type. This consideration is important for companies that modify the NAT instances to reflect their own security rules or processes.
+
+
+###### Troubleshooting VPC peering
+![[Pasted image 20231120145112.png]]
+
+If you cannot reach resources in a peered network, verify that the peering request was approved. Also, verify that the Classless Inter-Domain Routing (CIDR) block ranges are configured to allow access across the VPCs.
+
+> For further details about troubleshooting VPC peering, refer to How do I resolve Amazon VPC peering network connectivity issues? https://repost.aws/knowledge-center/vpc-peering-connectivity
+
+![[Pasted image 20231120145210.png]]
 

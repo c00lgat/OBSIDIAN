@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md"
+                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md"
               }
             }
           },
@@ -170,18 +170,21 @@
   },
   "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
+    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+    "AWS reStart/Canvas/Storage and Archiving Overview.md",
+    "Pasted image 20231120145210.png",
+    "Pasted image 20231120145112.png",
+    "Pasted image 20231120144937.png",
+    "Pasted image 20231120144747.png",
     "Pasted image 20231120144456.png",
     "Pasted image 20231120094725.png",
     "Pasted image 20231120093024.png",
     "Pasted image 20231120092722.png",
     "Pasted image 20231120071639.png",
     "Pasted image 20231119204917.png",
-    "Pasted image 20231119203514.png",
     "2023-09-03.md",
-    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
     "AWS reStart/Canvas",
     "AWS reStart",
-    "IMAGES/Pasted image 20230903160816.png",
     "AppleSeeds MOODLE.md",
     "AWS resources.md",
     "AWS AGENDA.md",
@@ -200,9 +203,6 @@
     "Excalidraw/Drawing 2023-09-23 21.04.16.excalidraw.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
-    "IMAGES/Pasted image 20230910141153.png",
-    "IMAGES/Pasted image 20230910141239.png",
-    "IMAGES/Pasted image 20230910221922.png",
     "OCaml.md",
     "Podcasts.md",
     "Important Links.md",
