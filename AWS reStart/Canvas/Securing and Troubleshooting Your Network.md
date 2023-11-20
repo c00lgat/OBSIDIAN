@@ -22,5 +22,21 @@
 Security groups are usually configured with the help of the application development team because they understand which ports and protocols the application uses.
 
 #### Network access control lists
+Network access control lists (network ACLs) are associated with a subnet within a VPC.
+
 `Network access control lists (network ACLs):`
-- Allow a
+- Allow or deny traffic in and out of subnets
+- Default network ACL:
+	- Allow all inbound and outbound traffic.
+- Stateless:
+	- Even if rules allow traffic to flow in one direction, you must explicitly allow responses to flow in the opposite direction.
+- Hardens security as a secondary level of defense at the subnet level.
+![[Pasted image 20231120071639.png]]
+The special rule number \* is evaluated last. It represents a catchall if no match with a prior rule was found.
+
+Once the network ACL is defined, it can be associated to one or more subnets within a VPC.
+
+ACLs are usually administered by the network security or the network administration team.
+
+
+#### Bastion host
