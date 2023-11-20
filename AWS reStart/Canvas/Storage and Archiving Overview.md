@@ -33,4 +33,7 @@ As you encounter and troubleshoot issues, document your findings in your Trouble
 - Refer to Table 2 for column descriptions.
 - Provide enough detail so you or someone in a SysOps role can easily understand the issue and resolution steps.
 - Remember that issues can be in the context of performing a lab or exercise, or when you are exploring AWS on your own. 
-- 
+- Identify and document any tools, online documentation, or other resources that you used to resolve an issue.
+- Do not create duplicate entries for different occurrences of the same issue:
+	- Use the spreadsheet’s Find function to check if an issue has already been documented.
+	- Make enhancements to existing entries as needed.
