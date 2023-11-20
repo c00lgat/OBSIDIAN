@@ -65,4 +65,19 @@ If you run Microsoft Windows instances in Amazon EC2, you will probably use RDP 
 
 One solution to this problem is to protect your Microsoft Windows instances at the network layer by using the Microsoft Remote Desktop (RD) Gateway server set up as a bastion host. RD Gateway can be configured to accept connections through HTTPS (TCP port 443) from every IP address on the internet. It then proxies these connections to your other Microsoft Windows instances through RDP port (TCP port 3389). Only users who authenticate to your RD Gateway instance are allowed to proceed to the protected Microsoft Windows instances behind the proxy.
 
-For more information on configuring a Microsoft Windows bastion host to use RD Gateway, refer to Controlling Network Access to EC2 Instances Using a Bastion Server
+> For more information on configuring a Microsoft Windows bastion host to use RD Gateway, refer to Controlling Network Access to EC2 Instances Using a Bastion Server https://aws.amazon.com/blogs/security/controlling-network-access-to-ec2-instances-using-a-bastion-server/
+
+----
+### Common troubleshooting tasks
+
+###### Troubleshooting instance connections
+![[Pasted image 20231120144456.png]]
+
+One of the more common issues for Amazon EC2 users is that they cannot connect to an EC2 instance. The slide shows the most common sources of this issue. As an operations professional, you will want to verify that these resources are configured correctly.
+
+First, verify that the instance is running. Also, verify that the security group allows connections over the port or ports that you are attempting to connect to. For example, for SSH connections, verify that port 22 is open. For web server connections, verify that port 80 or port 443 (or both) are open.
+
+Another configuration to verify is whether the public IP address has changed. If you stop an instance and then later start it, it will receive a new public IP address (unless an Elastic IP address is attached to it). Also, verify that the internet gateway and route table settings are correct.
+
+###### Troubleshooting SSH connections
+
