@@ -57,5 +57,7 @@ Serves as a jump point from the public internet to the EC2 instances and other r
 1. Configure the bastion host to allow only connections from within your corporate network in order to prevent anyone outside the organization from accessing the bastion host.
    > In the example above, only connections from `17.5.0.0/16` address range are accepted by the bastion host. 
    
-2. Create a rule in the private instance's security group to allow only incoming 
-   > 
+2. Create a rule in the private instance's security group to allow only incoming connections from the bastion host. In the rule, we can simply add the bastion host's security group, which should contain all the instances that are allowed to connect to the bastion host and in turn, to the private subnet as well.
+   
+##### Remote desktop gateway as Windows bastion host
+![[Pasted image 20231120094725.png]]
