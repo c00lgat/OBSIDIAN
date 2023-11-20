@@ -40,3 +40,5 @@ ACLs are usually administered by the network security or the network administrat
 
 
 #### Bastion host
+- Provides public-subnet-to-private-subnet access.
+- 
