@@ -45,4 +45,17 @@ ACLs are usually administered by the network security or the network administrat
 - Do not store private keys on the bastion host
 	- For Linux instances, use the agent forwarding feature of the SSH client to specify the key
 	- For Microsoft Windows instances, decrypt the password with the key in the Amazon EC2 console and then add the instance to a domain
-Serves as a jump point 
+Serves as a jump point from the public internet to the EC2 instances and other resources in a private subnet. 
+
+> It is recommended that you use a different set of public-private key pairs for the bastion host and for the resources in the private subnet.
+![[Pasted image 20231120092722.png]]
+
+
+##### Linux bastion host security groups
+![[Pasted image 20231120093024.png]]
+`Configuring security groups to allow the bastion host to access an instance in your private subnet:`
+1. Configure the bastion host to allow only connections from within your corporate network in order to prevent anyone outside the organization from accessing the bastion host.
+   > In the example above, only connections from `17.5.0.0/16` address range are accepted by the bastion host. 
+   
+2. Create a rule in the private instance's security group to allow only incoming 
+   > 
