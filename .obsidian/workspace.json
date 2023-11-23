@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md",
+                "file": "SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md",
+                "file": "SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md",
+                "file": "SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/Storage and Archiving Overview.md"
+                "file": "SQL.md"
               }
             }
           },
@@ -170,10 +169,10 @@
   },
   "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
+    "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "Pasted image 20231120211014.png",
     "Pasted image 20231120211006.png",
     "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
-    "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
     "Pasted image 20231120145210.png",
     "Pasted image 20231120145112.png",
@@ -183,7 +182,6 @@
     "Pasted image 20231120094725.png",
     "Pasted image 20231120093024.png",
     "Pasted image 20231120092722.png",
-    "Pasted image 20231120071639.png",
     "2023-09-03.md",
     "AWS reStart/Canvas",
     "AWS reStart",
