@@ -21,3 +21,9 @@ Once the products are in use, the infrastructure is not very flexible to changin
 Or Operational expenses, are expenses that a company incurs while conducting normal business operations. These costs include, for example, rent, office supplies, maintenance fees, insurance and utilities. 
 In IT, these expenses may also include software licensing fees, leasing printers from a vendor, and paying for their maintenance contracts, internet subscriptions, and utility fees associated with keeping the IT infrastructure running (and cooled).
 
+> In order to estimate your IT architecture's costs on AWS, visit https://calculator.aws/
+
+
+
+
+
