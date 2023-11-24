@@ -24,6 +24,9 @@ In IT, these expenses may also include software licensing fees, leasing printers
 > In order to estimate your IT architecture's costs on AWS, visit https://calculator.aws/
 
 
+While both of these expenses are still very much prevalent nowadays, variable expenses are slowly making their way into corporations.
+With variable expenses, your pay for what you use and for when you use it. 
+
 
 
 
