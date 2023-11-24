@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "113c099c79bba396",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS For Non-Engineers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS For Non-Engineers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS For Non-Engineers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL.md"
+                "file": "AWS For Non-Engineers.md"
               }
             }
           },
@@ -167,8 +181,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2aed1ad2bb72f93e",
+  "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "SQL.md",
+    "AWS For Non-Engineers.md",
     "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "Pasted image 20231120211014.png",
     "Pasted image 20231120211006.png",
@@ -193,7 +209,6 @@
     "System Design for Beginners.md",
     "Python Essentials 1.md",
     "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
-    "SQL.md",
     "CV.md",
     "CANVAS 261.md",
     "Python Learning Resources.md",
