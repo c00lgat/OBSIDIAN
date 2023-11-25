@@ -54,3 +54,7 @@ AWS provides a number of technologies for configuring and deploying your Amazon 
 - Amazon Machine Images (AMIs) – By creating base images that are customized to the needs of your organization, you can pre-deploy installations and configurations into the EC2 instances that are launched from the AMI. By using this configuration method, you can potentially reduce deployment times.
   
 - Configuration and deployment frameworks – Technologies such as Chef, Puppet, and Ansible enable you to configure new instances by using templates. You can update configurations dynamically in response to change.
+  
+- AWS OpsWorks – A configuration management service that provides managed instances of Chef and Puppet.
+  
+- AWS CloudFormation – An AWS service that enables you to configure architectures for repeatable deployments.
