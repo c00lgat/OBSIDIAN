@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md"
+                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md"
               }
             }
           },
@@ -181,8 +180,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
     "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "Pasted image 20231125150406.png",
     "AWS For Non-Engineers.md",
@@ -191,7 +192,6 @@
     "Pasted image 20231120211014.png",
     "Pasted image 20231120211006.png",
     "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
-    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
     "Pasted image 20231120145210.png",
     "Pasted image 20231120145112.png",
     "Pasted image 20231120144937.png",
