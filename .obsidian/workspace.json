@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS For Non-Engineers.md",
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS For Non-Engineers.md",
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS For Non-Engineers.md",
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS For Non-Engineers.md"
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md"
               }
             }
           },
@@ -183,8 +182,10 @@
   },
   "active": "113c099c79bba396",
   "lastOpenFiles": [
-    "SQL.md",
+    "Pasted image 20231125150406.png",
     "AWS For Non-Engineers.md",
+    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
+    "SQL.md",
     "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "Pasted image 20231120211014.png",
     "Pasted image 20231120211006.png",
@@ -221,8 +222,6 @@
     "OCaml.md",
     "Podcasts.md",
     "Important Links.md",
-    "Networks and Subnetting, AWS.md",
-    "Bash.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
