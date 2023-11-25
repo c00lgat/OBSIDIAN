@@ -21,3 +21,21 @@ Athena offers fast, interactive query performance. It automatically runs queries
 
 ![[Pasted image 20231125150406.png]]
 
+https://docs.aws.amazon.com/athena/latest/ug/getting-started.html
+
+https://docs.aws.amazon.com/athena/latest/ug/code-samples.html
+
+
+Amazon Athena works with other AWS services.
+Athena makes it easier to query logs from services such as:
+- AWS CloudTrail
+- Applicated Load Balancer logs
+- Amazon VPC flow logs
+
+For example, using Athena with CloudTrail logs can enhance your analysis of AWS service activity. You can automatically create tables for querying CloudTrail logs directly from the CloudTrail console, and use those tables to run queries in Athena. You can then use queries to identify trends and further isolate activity by attribute, such as source IP address or user.
+
+Querying Application Load Balancer logs with Athena enables you to see the source of traffic, latency, and bytes that are transferred to and from Elastic Load Balancing instances and backend applications.
+
+Amazon Virtual Private Cloud (Amazon VPC) flow logs capture information about the IP traffic that goes to and from network interfaces in a VPC. Query the logs in Athena to investigate network traffic patterns, and to identify threats and risks across your Amazon VPC network.
+
+https://docs.aws.amazon.com/athena/latest/ug/athena-aws-service-integrations.html

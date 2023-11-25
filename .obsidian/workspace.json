@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md"
+                "file": "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md"
               }
             }
           },
@@ -182,9 +182,9 @@
   },
   "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "Pasted image 20231125150406.png",
     "AWS For Non-Engineers.md",
-    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "SQL.md",
     "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "Pasted image 20231120211014.png",
@@ -198,7 +198,6 @@
     "Pasted image 20231120144456.png",
     "Pasted image 20231120094725.png",
     "Pasted image 20231120093024.png",
-    "Pasted image 20231120092722.png",
     "2023-09-03.md",
     "AWS reStart/Canvas",
     "AWS reStart",
