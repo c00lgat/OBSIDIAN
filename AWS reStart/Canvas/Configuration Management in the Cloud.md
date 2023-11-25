@@ -58,3 +58,23 @@ AWS provides a number of technologies for configuring and deploying your Amazon 
 - AWS OpsWorks – A configuration management service that provides managed instances of Chef and Puppet.
   
 - AWS CloudFormation – An AWS service that enables you to configure architectures for repeatable deployments.
+
+
+#### Using configuration software
+###### Benefits of using a configuration server
+- Can greatly simplify common administrative tasks.
+- Offers a configuration that is idempotent.
+	- Resources are allocated only once
+	- Manual changes are detected and rolled back
+- Supply user data to instance to kick off client configuration
+	- Install client and any required configuration and security credentials
+	- Specify the templates to be run
+
+Using a configuration server can simplify many common administrative tasks. The most common example is provisioning and de-provisioning user access to Amazon EC2 instances.
+
+`Simplified common tasks`
+Suppose that Jane, an engineer, was granted access to multiple Amazon EC2 instances across the fleet. That is, Jane has a private key that enables her to log in with her unique user ID and perform administrative tasks on these instances. What happens when Jane leaves the company? Without a configuration server, de-provisioning Jane's access to these servers can be a manual nightmare. However, by using a configuration server, a systems administrator can easily change Jane's status in the system. The administrator can then apply this change to all instances in the fleet with a few simple commands.
+
+`Idempotent configuration`
+One of the advantages of using a configuration server (such as Chef, Puppet, or Ansible) is that configuration is idempotent. Repeating commands and functions do not alter the surrounding system or environment. Resources that are created or configured by a configuration server are configured or created only once. If manual modifications are made to the configuration of an instance, the configuration server detects them and rolls them back. This ensures that the integrity of the instance isn't compromised by an accidental change. You will see an example of this process in the Chef-Solo demonstration.
+
