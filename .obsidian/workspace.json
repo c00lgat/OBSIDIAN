@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -180,7 +181,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "113c099c79bba396",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
     "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "Pasted image 20231125150406.png",
