@@ -28,3 +28,19 @@ In contrast, with Organizations, you use service control policies (SCPs) to allo
 
 
 ###### Organizations setup
+To create and set up an organization, follow these steps:
+- Step 1: Create your organization with your current AWS account as the management account. This process assumes that you have administrator permissions in your current account. After you create an organization, you can add accounts to it by creating new accounts or inviting existing accounts to join using the management account.
+- Step 2: Create organizational units (OUs) in your new organization and move the member accounts in to those OUs.
+- Step 3: Create service control policies (SCPs), which enable you to apply restrictions to what actions can be delegated to users and roles in the member accounts. An SCP is a type of organization control policy.
+- Step 4: To test your organization’s policies, sign in as a user for each role in your OUs and see how the service control policies impact account access. Alternatively, you can use the IAM policy simulator to test and troubleshoot IAM and resource-based policies that are attached to IAM users, groups, or roles in your AWS account.
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html
+
+![[Pasted image 20231126105224.png]]
+
+When you create names in AWS Organizations—which includes names of accounts, OUs, roots, and policies—you must follow certain rules. For example, names must be composed of Unicode characters, and can be up to 250 characters in length.
+There are a number of other maximum and minimum values for entities in AWS Organizations. Some of the main values are shown in the table.
+
+![[Pasted image 20231126105311.png]]
+
+
