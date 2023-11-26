@@ -18,4 +18,37 @@ You have to make sure that you have the right permissions to access the bucket, 
 `Resources fail to create`
 Things to consider:
 - Does the user have the permissions to create the corresponding AWS resource?
-- Does the resource type have all required 
+- Does the resource type have all required parameters?
+	- Compare your code against working templates.
+	- Check the documented syntax for the resource in the AWS CloudFormation User Guide.
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
+
+
+If you attempt to create an AWS CloudFormation stack from a template and you see an error message that one of the resources failed to create, you can investigate the following areas.
+
+First, does the user have the permissions to create that type of resource? Check the AWS Identity and Access Management (IAM) policy permissions. Check the user’s level of access for the AWS service that the resource is a part of.
+
+Second, verify that the specified resource type has all the required parameters. The easiest way to do this is to review the JavaScript Object Notation (JSON) or YAML Ain’t Markup Language (YAML) code section in the template where you specify the resource. Then, compare that code against other code that creates the same type of resource, and is also known to work.
+
+
+###### Troubleshooting a WaitCondition
+`WaitCondition failure`
+If WaitCondition times our or returns an error, your `CloudFormation::Init` code has an error.
+- Analyze the `cfn-init.log` and `cfn-wire.log` files for details.
+- Collect logs through Amazon CloudWatch logs.
+- Set `--on-failure DO_NOTHING` to keep the instance from rolling back so that you can log in and examine the logs.
+- Most common error:
+	- URLs for references resources-such as scripts, MSI files (Microsoft installer files)m and others- return HTTP 403 or 404 errors.
+
+Recall that WaitConditions are often used when an EC2 instance resource is created. If a WaitCondition times out or returns an error when you attempt to create your AWS CloudFormation stack, it means your CloudFormation::Init code has an error.
+
+If the EC2 instance is still accessible after you notice the error, analyze the cfn-init.log and the cfn-wire.log files for details. You can configure Amazon CloudWatch Logs to collect the logs from the instance.
+
+You could also try running the create stack-command again. However, this time, specify --on-failure DO_NOTHING to keep instance from rolling back so that you can log in to the instance and examine the logs.
+
+The most common error occurs when files that the CloudFormation::Init code references for resources—such as scripts, MSI files (Microsoft Installer files), and others—return HTTP 403 or 404 errors. These errors means that the referenced resources cannot be accessed from the instance.
+
+
+###### AWS CloudFormation errors
+`Troubleshooting resources`
+- Template and resource-creation errors are returns in the AWS CloudFormation condole and on 
