@@ -36,4 +36,28 @@ To find all instances in the account that are tagged with a tag of `Project` and
 aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem"
 ```
 
-The command outputs the full set of parameters available for all seven instances that are tagged `Project=ERPSystem`. Next we will use the `--query` option to 
+The command outputs the full set of parameters available for all seven instances that are tagged `Project=ERPSystem`. Next we will use the `--query` option to narrow down the results.
+
+
+Using the `--query` parameter to limit the output of the previous command to only the instance ID of the discovered instance:
+```bash
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].InstanceId'
+```
+![[Pasted image 20231126212315.png]]
+
+The `--query` command used in this example uses the `JMESPath` wildcard syntax to specify that the command should iterate through all reservations and all instances and return the InstanceId for each instance in the return results.
+
+This is an improvement over returning every property of our instances. 
+But what if we wanted to include multiple fields in the output?
+
+The following command will include both the instance ID and the Availability Zone of each instance in the return result:
+```bash
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone}'
+```
+![[Pasted image 20231126212546.png]]
+
+As seen in the previous command, we can specify an alias for each property in order to return a more abbreviated output format.
+
+But there is still one missing key information. The instance names.
+
+To include the value of `Project` tag in your output, copy and 
