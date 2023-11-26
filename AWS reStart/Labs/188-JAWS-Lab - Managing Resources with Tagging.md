@@ -13,7 +13,7 @@ The environment for this lab (pictured below) consists of:
 - Amazon VPC named Lab VPC
 - Public subnet
 - Private subnet
-- Amazon EC2 Linux instance named CommandHost [AWS Command Line Interface (CLI) tools have been pre-installed and configured for you on this instance]
+- Amazon EC2 Linux instance named CommandHost AWS Command Line Interface (CLI) tools have been pre-installed and configured for you on this instance
 - 8 Amazon EC2 Linux instances
 - Private instances have three custom tags applied to them:
 
@@ -25,3 +25,15 @@ The environment for this lab (pictured below) consists of:
 
 
 In the Task portion of this lab, you will log in to the Command Host and run some commands to find and change the Version tag on all development instances. You will run several examples that show how you can use the JMESPath syntax supported by the AWS CLI `--query` option to return richly formatted output. You will then use a set of pre-provided scripts to stop and re-start all instances that are tagged as belonging to the **development** environment.
+
+![[Pasted image 20231126211108.png]]
+
+First, we log into the Command host EC2.
+And we are going to be using the AWS CLI in order to find the resources in the private subnet that belong to the `ERPSystem` project and are in the Environment named `development`.
+
+To find all instances in the account that are tagged with a tag of `Project` and a value of `ERPSystem`, run the following command:
+```bash
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem"
+```
+
+The command outputs the full set of parameters available for all seven instances that are tagged `Project=ERPSystem`. Next we will use the `--query` option to 
