@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -180,8 +181,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "Pasted image 20231126113213.png",
+    "Pasted image 20231126113033.png",
     "IMAGES/Pasted image 20231126112332.png",
     "IMAGES/Pasted image 20231126111221.png",
     "IMAGES/Pasted image 20231126110907.png",
@@ -201,8 +204,6 @@
     "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
     "IMAGES/Pasted image 20231125154655.png",
-    "IMAGES/Pasted image 20231125154653.png",
-    "IMAGES/Pasted image 20231125150406.png",
     "AWS For Non-Engineers.md",
     "SQL.md",
     "2023-09-03.md",

@@ -31,3 +31,39 @@ Tags have a number of important characteristics, which include:
 - Tags are sometimes inherited or propagated. Some services, such as AWS CloudFormation, and AWS Elastic Beanstalk can create other resources, such as Amazon Relational Database (Amazon RDS) instances or EC2 instances. Generally, when one of these services creates a resource, it will tag that resource with a reference to itself. For example, a resource that is created as part of an AWS CloudFormation stack automatically inherits the stack’s `aws:cloudformation:<stack-name>` tag.
   
 - You can create up to 50 tags for each resource. Tags with the `aws:` prefix do not count towards this number.
+
+###### Examples of common tags
+- Environment (production/test)
+- Application
+- Owner
+- Department
+- Cost center
+- Purpose
+- Stack
+![[Pasted image 20231126113033.png]]
+
+Tags should represent organizationally relevant dimensions. This slide lists some examples of meaningful tags because they support the ability to manage resource inventory, access control, cost tracking, automation, and organization.
+
+###### AWS Config and tagging
+`AWS Config provides a mechanism to enforce tagging on a resource:`
+- Use the `required-tags` manages rule.
+- Specify the required tag key (and optionally the required value)
+- Evaluates rules and identifies non-compliant resources
+![[Pasted image 20231126113213.png]]
+
+AWS Config provides AWS managed rules, which are predefined, customizable rules that AWS Config uses to evaluate whether your AWS resources comply with common best practices. You can customize the behavior of a managed rule to suit your needs. For example, you could use the required-tags managed rule to quickly assess whether a specific tag is applied to your resources. This rule enables you to specify the key of the required tag and, optionally, its value. After you activate the rule, AWS Config compares your resources to the defined conditions and reports any non-compliant resources. The evaluation of a managed rule can occur when a resource changes, or on a periodic basis.
+https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html
+
+
+###### Tagging in AWS CLI
+- Create a tag:
+``` bash
+export TIMESTAMP=`date`
+
+aws ec2 create-tags --resources i-1234567890abdef0 --tags "Key=SecurityCheck,Value=$TIMESTAMP"
+```
+
+- Query and filter based on a tag:
+``` bash
+aws ec2 describe-instance
+```
