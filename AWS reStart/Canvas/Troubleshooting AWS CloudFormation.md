@@ -51,4 +51,29 @@ The most common error occurs when files that the CloudFormation::Init code refer
 
 ###### AWS CloudFormation errors
 `Troubleshooting resources`
-- Template and resource-creation errors are returns in the AWS CloudFormation condole and on 
+- Template and resource-creation errors are returns in the <mark style="background: #D2B3FFA6;">AWS CloudFormation console</mark> and on <mark style="background: #D2B3FFA6;">stdout</mark>. 
+- User data and `CloudFormation::Init` errors are written to the error logs <mark style="background: #FF5582A6;">cloud-init.log</mark>, <mark style="background: #FF5582A6;">cfn-init.log</mark>, and <mark style="background: #FF5582A6;">cfn-wire.log</mark> located at:
+	- Linux: /var/log
+	- Microsoft Windows: C:\\cfn\
+- Options for retrieving
+	- Log in to the instance
+	- Use CloudWatch Logs to automatically upload logs
+
+If AWS CloudFormation fails to create, update, or delete your stack, you can view error messages or logs to help you learn more about the issue.
+
+This slide describes general methods for troubleshooting an AWS CloudFormation issue.
+
+Template and resource-creation errors are returned in the AWS CloudFormation console and on stdout. For example, in the AWS CloudFormation console, you can view the status of your stack. You can view a list of stack events while your stack is being created, updated, or deleted.
+
+If an error occurs when the stack runs, you can find the stack event that failed in this view. You can then expand the details to learn information about what caused the error for that event. The status reason might contain an error message from AWS CloudFormation or from a particular service. These error messages can help you troubleshoot your problem.
+
+For Amazon EC2 issues, connect to the instance—if you can—and review the cloud-init and cfn logs. These logs are published on the EC2 instance. In Linux instances, they are in the /var/log/ directory. In Microsoft Windows instances, they are in the C:\cfn directory. These logs capture processes and command outputs while AWS CloudFormation sets up your instance. For Windows, you can also access the EC2Configure service and cfn logs in the `%ProgramFiles%\Amazon\EC2ConfigService` and `C:\cfn\log` directories. You can also configure your AWS CloudFormation template so that the logs are published to Amazon CloudWatch. CloudWatch displays logs in the AWS Management Console, so you do not need to connect to your EC2 instance.
+
+
+
+Some key takeaways from this module:
+• If AWS CloudFormation fails to create, update, or delete your stack, you can view error messages or logs to help you learn more about the issue.
+• It is a common practice to store AWS CloudFormation templates on Amazon S3. You then specify the Amazon S3 location when you choose a template so that you can run a stack.
+• If a WaitCondition times out or returns an error when you attempt to create your AWS CloudFormation stack, your CloudFormation::Init code has an error.
+
+
