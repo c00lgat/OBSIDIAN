@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md"
+                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md"
               }
             }
           },
@@ -182,9 +182,12 @@
   },
   "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "AWS reStart/Canvas/Tagging.md",
+    "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
+    "AWS reStart/Labs",
+    "AWS reStart/Canvas/Managing Resource Consumption overview.md",
     "AWS reStart/Canvas/Configuration Management in the Cloud.md",
     "AWS reStart/Canvas/AWS Service Integration with Athena.md",
-    "AWS reStart/Canvas/Tagging.md",
     "IMAGES/Pasted image 20231126114118.png",
     "IMAGES/Pasted image 20231126113847.png",
     "IMAGES/Pasted image 20231126113213.png",
@@ -192,7 +195,6 @@
     "IMAGES/Pasted image 20231126112332.png",
     "IMAGES/Pasted image 20231126111221.png",
     "IMAGES/Pasted image 20231126110907.png",
-    "AWS reStart/Canvas/Managing Resource Consumption overview.md",
     "AWS reStart/Canvas/AWS Organizations.md",
     "IMAGES/Pasted image 20231126105311.png",
     "IMAGES/Pasted image 20231126105224.png",
