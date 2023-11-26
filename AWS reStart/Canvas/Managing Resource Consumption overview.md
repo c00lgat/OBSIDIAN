@@ -9,4 +9,4 @@ At the end of this module, you will be able to:
 You will also have the opportunity to complete a knowledge check. 
 
 [[AWS Organizations]]
-
+[[Tagging]]

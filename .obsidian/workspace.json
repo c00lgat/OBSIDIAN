@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Organizations.md",
+                "file": "AWS reStart/Canvas/Tagging.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Organizations.md",
+                "file": "AWS reStart/Canvas/Tagging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Organizations.md",
+                "file": "AWS reStart/Canvas/Tagging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/AWS Organizations.md"
+                "file": "AWS reStart/Canvas/Tagging.md"
               }
             }
           },
@@ -183,14 +182,15 @@
   },
   "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
+    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
+    "AWS reStart/Canvas/Tagging.md",
+    "AWS reStart/Canvas/AWS Organizations.md",
     "Pasted image 20231126105311.png",
     "Pasted image 20231126105224.png",
     "IMAGES/Pasted image 20231126104045.png",
-    "AWS reStart/Canvas/Managing Resource Consumption overview.md",
-    "AWS reStart/Canvas/AWS Organizations.md",
     "IMAGES/Pasted image 20231126103755.png",
-    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
-    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
     "IMAGES/Pasted image 20231126095130.png",
     "Untitled.md",
@@ -204,7 +204,6 @@
     "SQL.md",
     "IMAGES/Pasted image 20231120211014.png",
     "IMAGES/Pasted image 20231120211006.png",
-    "IMAGES/Pasted image 20231120145210.png",
     "2023-09-03.md",
     "AWS reStart/Canvas",
     "AWS reStart",
