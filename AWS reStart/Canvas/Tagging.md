@@ -65,5 +65,62 @@ aws ec2 create-tags --resources i-1234567890abdef0 --tags "Key=SecurityCheck,Val
 
 - Query and filter based on a tag:
 ``` bash
-aws ec2 describe-instance
+aws ec2 describe-instances --filters "Name=tag-key,Values=SecurityCheck" --query "Reservations[].Instances[].[InstanceId,Tags[?Key=='SecurityCheck'].Value]"
 ```
+
+
+The examples show how to use the AWS Command Line Interface (AWS CLI) to create a tag and how to use a tag to query resources.
+
+The first command creates a tag that is named `SecurityCheck` on the instance, which is identified by the ID of `i-1234567890abcdef0`. The command assigns the value of the current timestamp to the tag. The tag’s key and value attributes are specified using the --tags option of the create-tags command. You can specify tags for EC2 instances and Amazon Elastic Block Store (Amazon EBS) volumes as part of the application programming interface (API) call that creates them. If the call creates both instances and volumes, you can specify distinct tags for the instance and for each associated volume.
+
+The second command lists the instance ID and the tag value of all instances in the current Region that have a tag named `SecurityCheck`. The --filters option of the `describe-instances` command identifies the key that was used to filter the query results. The `--query` option identifies the data that is returned by the command.
+
+
+###### Common use cases
+`Common use cases for tagging:`
+- Simultaneously start or shut down instances that have a specific tag. For example, shut down all Development instances on the weekends.
+- Enforce tagging requirements for corporate standards.
+	- Tag or terminate (Conformity Monkey)
+	- Pseudocode (Shown below)
+![[Pasted image 20231126113847.png]]
+
+Two common use cases for tagging include using a tag to shut down and restart all instances that have a specific tag, and the tag or terminate compliance check.
+
+The first use case involves tagging all instances so they have an attribute that indicates the environment that they run in, such as Development, Test, or Production. To save costs, you can create a script that automatically shuts down Development instances on weekends and restarts them at the beginning of the week.
+
+The tag or terminate strategy is shown in pseudocode. In this scenario, a company or division issues a set of policies regarding what tags must be placed on running resources. A script periodically examines all instances that run under an AWS account and checks that the required tags exist. If an instance does not have the required tags, the instance is terminated for being non-compliant.
+
+In practice, companies that implement this strategy usually stagger deployment over several weeks. In Phase 1, machines are not immediately shut down. Instead, the tag or terminate script is written so that it sends an email message to the IAM user who created the instance. The message warns the IAM user that their instance might be shut down soon because it does not comply with corporate policies. In Phase 2 of the rollout, instances are actually shut down, and an explanation of the shutdown is sent to the IAM user who created the resource.
+
+After instances are properly tagged to describe their role and function in an organization, companies can create other automated processes that implement company-wide cost-saving strategies. Companies can also use tags to organize billing reports that reflect internal cost structures and to achieve more accurate reporting for cost allocation.
+
+
+For more information about the Conformity Monkey compliance check, refer to the following Netflix blog post:
+https://netflixtechblog.com/conformity-monkey-keeping-your-cloud-instances-following-best-practices-2aaff3479adc
+
+
+###### Enforcing tagging with IAM
+Write IAM policies that enforce the use of specific tags. Use the `Condition` policy element.
+![[Pasted image 20231126114118.png]]
+
+You can also write IAM policies that enforce the use of specific tags. For example, when you create a resource, you could use an IAM policy to enforce the use of the department and costcenter tags to help you achieve more accurate reporting for cost allocation. Other tag-related scenarios that you can enforce by using an IAM policy include:
+- Blocking the deletion of tags that are required by corporate standards 
+- Disallowing the creation of new tags for specific existing resources
+- Requiring the use of encryption for any EBS volume that is created with a specific tag value
+
+
+These tagging requirements are expressed in an IAM policy through the Condition policy element. In the example IAM policy, the requirements are enforced when a request to create an EBS volume is processed:
+- The request must include a `costcenter` and `department` tag, and only those tags. This scenario is indicated in the `ForAllValues` modifier.
+- The values for the `costcenter` and `department` tags in the request must be `115` and `Accounting`, respectively. This scenario is expressed in the keys for `aws:RequestTag/costcenter` and `aws:RequestTag/department`, respectively.
+
+The net effect of this policy is that all newly created EBS volumes must have a costcenter tag and a department tag with the respective values of 115 and Accounting.
+
+The net effect of this policy is that all newly created EBS volumes must have a costcenter tag and a department tag with the respective values of `115` and `Accounting`
+
+For more information on tagging EC2 instances and EBS volumes on creation, refer to the following AWS News Blog post: 
+https://aws.amazon.com/blogs/aws/new-tag-ec2-instances-ebs-volumes-on-creation/
+
+
+###### Tagging best practices
+<mark style="background: #BBFABBA6;">Best practices for tagging:</mark>
+- Create business-relevant tag group
