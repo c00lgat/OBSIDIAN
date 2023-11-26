@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/Tagging.md",
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/Tagging.md",
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/Tagging.md",
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/Tagging.md"
+                "file": "AWS reStart/Canvas/AWS Service Integration with Athena.md"
               }
             }
           },
@@ -181,24 +180,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "113c099c79bba396",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
-    "Pasted image 20231126114118.png",
-    "Pasted image 20231126113847.png",
-    "Pasted image 20231126113213.png",
-    "Pasted image 20231126113033.png",
+    "AWS reStart/Canvas/Tagging.md",
+    "IMAGES/Pasted image 20231126114118.png",
+    "IMAGES/Pasted image 20231126113847.png",
+    "IMAGES/Pasted image 20231126113213.png",
+    "IMAGES/Pasted image 20231126113033.png",
     "IMAGES/Pasted image 20231126112332.png",
     "IMAGES/Pasted image 20231126111221.png",
     "IMAGES/Pasted image 20231126110907.png",
     "AWS reStart/Canvas/Managing Resource Consumption overview.md",
     "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "AWS reStart/Canvas/Configuration Management in the Cloud.md",
-    "AWS reStart/Canvas/Tagging.md",
     "AWS reStart/Canvas/AWS Organizations.md",
     "IMAGES/Pasted image 20231126105311.png",
     "IMAGES/Pasted image 20231126105224.png",
     "IMAGES/Pasted image 20231126104045.png",
-    "IMAGES/Pasted image 20231126103755.png",
     "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
     "Untitled.md",
     "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",

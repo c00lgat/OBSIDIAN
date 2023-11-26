@@ -123,4 +123,25 @@ https://aws.amazon.com/blogs/aws/new-tag-ec2-instances-ebs-volumes-on-creation/
 
 ###### Tagging best practices
 <mark style="background: #BBFABBA6;">Best practices for tagging:</mark>
-- Create business-relevant tag group
+- Create business-relevant tag groupings to organize resources along technical, business and security dimensions.
+- Always use more tags instead of using too few tags.
+- Always use a standardized, case-sensitive format for tags, and implement it consistently across all resources types.
+- Implement automated tools to help manage resource tags. For example, use the <mark style="background: #D2B3FFA6;">Resource Groups Tagging API</mark>.
+
+One best practice is to use automated tools to manage resource tags, such as the Resource Groups Tagging application programming interface (API). This API enables the programmatic control of tags. This practice makes it easier to automatically manage, search, and filter tags and resources. For example, you can use the API to perform the following tasks:
+- Tag and untag supported resources.
+- Use tag-based filters to search for resources.
+- List all existing tag keys.
+- List all existing values for specified keys.
+
+For more information about tagging strategies, refer to the Tagging Best Practices AWS whitepaper.
+https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html
+
+For more information about the Resource Groups Tagging API, see: Resource Groups Tagging API Reference documentation.
+https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html
+
+
+Some key takeaways from this lesson include: 
+- A tag is a descriptive label that is attached to an AWS resource.
+- Use an IAM policy to mandate the use of specific tags on a resource, and AWS Config to periodically verify that all resources are tagged.
+- A good tagging strategy defines tags along dimensions that enable resource access control, cost-tracking, automation, and organization.
