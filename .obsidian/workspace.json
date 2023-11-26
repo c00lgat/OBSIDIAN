@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+                "file": "AWS reStart/Canvas/AWS Organizations.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+                "file": "AWS reStart/Canvas/AWS Organizations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+                "file": "AWS reStart/Canvas/AWS Organizations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/Managing Resource Consumption overview.md"
+                "file": "AWS reStart/Canvas/AWS Organizations.md"
               }
             }
           },
@@ -182,12 +182,13 @@
   },
   "active": "113c099c79bba396",
   "lastOpenFiles": [
-    "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
     "AWS reStart/Canvas/Managing Resource Consumption overview.md",
+    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
+    "AWS reStart/Canvas/AWS Organizations.md",
+    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
+    "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
     "Pasted image 20231126095130.png",
     "Untitled.md",
-    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
-    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
     "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
     "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
@@ -221,7 +222,6 @@
     "Untitled.canvas",
     "Excalidraw/Drawing 2023-09-23 21.04.16.excalidraw.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
-    "Regex.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
