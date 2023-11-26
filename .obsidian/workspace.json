@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md",
+                "file": "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md",
+                "file": "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md",
+                "file": "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Canvas/Configuration Management in the Cloud.md"
+                "file": "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md"
               }
             }
           },
@@ -182,24 +182,26 @@
   },
   "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "Pasted image 20231126095130.png",
+    "Untitled.md",
+    "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
+    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
+    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
+    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
+    "AWS reStart/Canvas/Storage and Archiving Overview.md",
+    "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
     "Pasted image 20231125154655.png",
     "Pasted image 20231125154653.png",
-    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
-    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
-    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "Pasted image 20231125150406.png",
     "AWS For Non-Engineers.md",
     "SQL.md",
-    "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "Pasted image 20231120211014.png",
     "Pasted image 20231120211006.png",
-    "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
     "Pasted image 20231120145210.png",
     "Pasted image 20231120145112.png",
     "Pasted image 20231120144937.png",
     "Pasted image 20231120144747.png",
     "Pasted image 20231120144456.png",
-    "Pasted image 20231120094725.png",
     "2023-09-03.md",
     "AWS reStart/Canvas",
     "AWS reStart",
@@ -220,8 +222,6 @@
     "Excalidraw/Drawing 2023-09-23 21.04.16.excalidraw.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "Regex.md",
-    "OCaml.md",
-    "Podcasts.md",
     "Excalidraw",
     "Presentations",
     "AGILE",
