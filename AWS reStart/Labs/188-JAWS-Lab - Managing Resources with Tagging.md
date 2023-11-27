@@ -98,3 +98,11 @@ aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 
 ![[Pasted image 20231126213731.png]]
 
 
+### Task 2: Stop and Start Resources by Tag
+##### Examining the Stopinator script
+The **stopinator.php** script is a simple script that uses the AWS SDK for PHP to stop and restart instances based on a set of tags. This enables scenarios such as shutting off your development environment servers at the end of the day and restarting them the next morning. The script will look in every AWS region for instances that match the specified tags.
+![[Pasted image 20231127133301.png]]![[Pasted image 20231127133420.png]]
+![[Pasted image 20231127133457.png]]
+![[Pasted image 20231127133524.png]]
+- **-t**: A set of tags in the following format: `name=value;name=value` The script converts these tags into the format expected by the AWS PHP call `Ec2::DescribeInstance()`. If this optional parameter is absent, the script will identify and shut down all running Amazon EC2 instances in the account.
+- **-s**: A Boolean parameter; no arguments are required. When this parameter is present, instances identified by **-t** are started instead of stopped.
