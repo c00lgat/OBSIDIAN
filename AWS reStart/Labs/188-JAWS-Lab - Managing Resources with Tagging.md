@@ -113,3 +113,8 @@ Running the PHP script as the following:
 ```
 Will stop the two development EC2 instances.
 
+```PHP
+./stopinator.php -t"Project=ERPSystem;Environment=development" -s
+```
+Will start the two EC2 instances back up.
+
