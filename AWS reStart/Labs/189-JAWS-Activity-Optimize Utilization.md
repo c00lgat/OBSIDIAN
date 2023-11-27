@@ -29,3 +29,15 @@ Because the local database was migrated to Amazon RDS, you can reduce AWS servic
 - Change the instance type from t3.small to _t3.micro_. Because the database process no longer runs on the instance, the smaller instance type will be both effective and also cheaper to run.
 
 In this task, you use the AWS Command Line Interface (AWS CLI) to perform these actions. You begin by opening a Secure Shell (SSH) session to the _Café instance_ and the _CLI Host_.
+
+In order to optimize our EC2 instance, first we are going to uninstall MariaDB and then resize the instance.
+
+In order to stop the local database and uninstall it from the Café instance, we need to run the following scripts:
+
+```bash
+sudo systemctl stop mariadb
+```
+
+```bash
+sudo yum -y remove mariadb-server
+```
