@@ -41,3 +41,44 @@ sudo systemctl stop mariadb
 ```bash
 sudo yum -y remove mariadb-server
 ```
+
+Then we disconnect from the Cafe Instance and connect to the CLI-Host instance.
+
+Once connected, we run the following command in order to determine the CafeInstance Instance ID from the CLI-Host EC2 instance:
+```bash
+aws ec2 describe-instances \
+
+--filters "Name=tag:Name,Values= CafeInstance" \
+
+--query "Reservations[*].Instances[*].InstanceId"
+```
+And we get the following output:
+![[Pasted image 20231127183236.png]]
+```bash
+[
+    [
+        "i-0534398156444c857"
+    ]
+]
+```
+
+Now, we need to stop the Café instance and change its instance type from t3.small to t3.micro. In order to achieve that, we run the following command:
+```bash
+aws ec2 stop-instances --instance-ids i-0534398156444c857
+```
+And we get the following output:
+![[Pasted image 20231127183525.png]]
+
+Next, we run the command that downgrades the instance from a t3.small to a t3.micro instance.
+```bash
+aws ec2 modify-instance-attribute \
+
+--instance-id i-0534398156444c857 \
+
+--instance-type "{\"Value\": \"t3.micro\"}"
+```
+
+Then, we run the following command in order to start the instance back up:
+```bash
+aws ec2 start-instances --instance-ids i-0534398156444c857
+```
