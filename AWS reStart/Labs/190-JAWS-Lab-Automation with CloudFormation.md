@@ -28,3 +28,6 @@ The listing in the **Events** tab shows (in reverse order) the activities perfor
 
 The **Resources** tab shows the resources that are being created. CloudFormation determines the optimal order for resources to be created, such as creating the VPC before the subnet.
 
+Once the stack is up and running, we should see the __CREATE_COMPLETE__ status.
+![[Pasted image 20231127221453.png]]
+
