@@ -23,3 +23,9 @@ After the migration to Amazon Relational Database Service (Amazon RDS) was compl
 
 In this activity, you will take on the role of Sofia, and work on optimizing the Café instance to save costs.
 
+## Task 1: Optimize the website to reduce costs
+Because the local database was migrated to Amazon RDS, you can reduce AWS service costs by performing the following actions on the Café EC2 instance:
+- Remove the local database from the instance. This action will reduce costs in both CPU and storage utilization.
+- Change the instance type from t3.small to _t3.micro_. Because the database process no longer runs on the instance, the smaller instance type will be both effective and also cheaper to run.
+
+In this task, you use the AWS Command Line Interface (AWS CLI) to perform these actions. You begin by opening a Secure Shell (SSH) session to the _Café instance_ and the _CLI Host_.
