@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL.md",
+                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL.md"
+                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md"
               }
             }
           },
@@ -178,6 +178,9 @@
   },
   "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
+    "optimize-resources-architecture.png",
+    "SQL.md",
+    "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
     "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
     "non-complying-ec2-shutdown.py",
     "Pasted image 20231127133604.png",
@@ -202,7 +205,6 @@
     "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
     "AWS For Non-Engineers.md",
-    "SQL.md",
     "2023-09-03.md",
     "AWS reStart/Canvas",
     "AWS reStart",
@@ -217,7 +219,6 @@
     "CV.md",
     "CANVAS 261.md",
     "Python Learning Resources.md",
-    "9.md",
     "Untitled.canvas",
     "Excalidraw",
     "Presentations",
