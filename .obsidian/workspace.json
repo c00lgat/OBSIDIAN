@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
+                "file": "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
+                "file": "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
+                "file": "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md"
+                "file": "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md"
               }
             }
           },
@@ -178,11 +178,14 @@
   },
   "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
+    "task1.yaml",
+    "initial-template.png",
+    "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
+    "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md",
     "Pasted image 20231127183525.png",
     "Pasted image 20231127183236.png",
     "optimize-resources-architecture.png",
     "SQL.md",
-    "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
     "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
     "non-complying-ec2-shutdown.py",
     "Pasted image 20231127133604.png",
@@ -191,8 +194,6 @@
     "Pasted image 20231127133420.png",
     "Pasted image 20231127133301.png",
     "Pasted image 20231126213731.png",
-    "Pasted image 20231126213407.png",
-    "Pasted image 20231126213226.png",
     "AWS reStart/Canvas/Tagging.md",
     "AWS reStart/Labs",
     "AWS reStart/Canvas/Managing Resource Consumption overview.md",
@@ -218,7 +219,6 @@
     "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
     "CV.md",
     "CANVAS 261.md",
-    "Python Learning Resources.md",
     "Untitled.canvas",
     "Excalidraw",
     "Presentations",
