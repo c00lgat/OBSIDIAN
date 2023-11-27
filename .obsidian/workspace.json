@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "113c099c79bba396",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
+                "file": "SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
+                "file": "SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md"
+                "file": "SQL.md"
               }
             }
           },
@@ -189,8 +176,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "113c099c79bba396",
+  "active": "2aed1ad2bb72f93e",
   "lastOpenFiles": [
+    "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
+    "non-complying-ec2-shutdown.py",
     "Pasted image 20231127133604.png",
     "Pasted image 20231127133524.png",
     "Pasted image 20231127133457.png",
@@ -201,9 +190,7 @@
     "Pasted image 20231126213226.png",
     "Pasted image 20231126212838.png",
     "Pasted image 20231126212744.png",
-    "Pasted image 20231126212546.png",
     "AWS reStart/Canvas/Tagging.md",
-    "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
     "AWS reStart/Labs",
     "AWS reStart/Canvas/Managing Resource Consumption overview.md",
     "AWS reStart/Canvas/Configuration Management in the Cloud.md",
@@ -236,7 +223,6 @@
     "Presentations",
     "AGILE",
     "Google Search",
-    "Udemy Courses",
-    "IMAGES"
+    "Udemy Courses"
   ]
 }

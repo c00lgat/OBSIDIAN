@@ -118,3 +118,31 @@ Will stop the two development EC2 instances.
 ```
 Will start the two EC2 instances back up.
 
+
+The following `boto3` script terminates the EC2 instances that do not comply with the company's rules, as they lack the required tags. Thus, following the `Tag-Or-Terminate` policy, we run the script in order to terminate the relevant EC2 instances from our environment.
+
+```Python
+import boto3  
+from pprint import pprint as pp  
+  
+  
+client = boto3.client('ec2')  
+  
+response = client.describe_instances(  
+    # Filters=[  
+    #     {    #         'Subnet-Id': 'subnet-090d6373abcd8fa37'    #     }    # ])  
+  
+for i in response['Reservations']:  
+    pp(i['Instances'][0]['InstanceId'])  
+    instance_id = i['Instances'][0]['InstanceId']  
+    tag_counter = 0  
+    for y in i['Instances'][0]['Tags']:  
+        tag = y  
+        if y['Key'] == 'Environment':  
+            tag_counter+=1  
+    if tag_counter == 0:  
+        termination_response = client.terminate_instances(  
+            InstanceIds = [instance_id]  
+        )        print(termination_response)
+```
+![[non-complying-ec2-shutdown.py]]
