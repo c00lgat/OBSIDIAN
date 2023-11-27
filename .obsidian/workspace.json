@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -173,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,6 +191,10 @@
   },
   "active": "113c099c79bba396",
   "lastOpenFiles": [
+    "Pasted image 20231126213731.png",
+    "Pasted image 20231126213407.png",
+    "Pasted image 20231126213226.png",
+    "Pasted image 20231126212838.png",
     "Pasted image 20231126212744.png",
     "Pasted image 20231126212546.png",
     "Pasted image 20231126212329.png",
@@ -202,10 +208,6 @@
     "AWS reStart/Canvas/Configuration Management in the Cloud.md",
     "AWS reStart/Canvas/AWS Service Integration with Athena.md",
     "IMAGES/Pasted image 20231126114118.png",
-    "IMAGES/Pasted image 20231126113847.png",
-    "IMAGES/Pasted image 20231126113213.png",
-    "IMAGES/Pasted image 20231126113033.png",
-    "IMAGES/Pasted image 20231126112332.png",
     "AWS reStart/Canvas/AWS Organizations.md",
     "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
     "Untitled.md",

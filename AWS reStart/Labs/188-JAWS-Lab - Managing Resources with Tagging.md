@@ -60,4 +60,41 @@ As seen in the previous command, we can specify an alias for each property in or
 
 But there is still one missing key information. The instance names.
 
-To include the value of `Project` tag in your output, copy and 
+To include the value of `Project` tag in your output, run the following command:
+```bash
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone,Project:Tags[?Key==`Project`] | [0].Value}'
+```
+![[Pasted image 20231126212838.png]]
+The value of a specific named tag can be retrieved via a JMESPath query, using the following syntax:
+```bash
+Tags[?Key==\`Project\`] | [0].Value
+```
+The syntax instructs the JMESPath to find all elements within the **Tags** array that have a **Key** value of **Project**. The output of that command is then piped to another command that selects the first instance of this filtered set and selects the named parameter **Value**, which is the value of the **Project** tag. This result is then assigned the alias **Project**.
+
+The following command will include the **Environment** and **Version** tags in the output:
+```bash
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone,Project:Tags[?Key==`Project`] | [0].Value,Environment:Tags[?Key==`Environment`] | [0].Value,Version:Tags[?Key==`Version`] | [0].Value}'
+```
+![[Pasted image 20231126213226.png]]
+
+###### Changing version Tag for Development Process
+We will change all of the **Version** tags on the instances marked as **development** for the project **ERPSystem**.
+
+```bash
+#!/bin/bash
+
+ids=$(aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" "Name=tag:Environment,Values=development" --query 'Reservations[*].Instances[*].InstanceId' --output text)
+
+aws ec2 create-tags --resources $ids --tags 'Key=Version,Value=1.1'
+```
+This script first uses the command `aws ec2 describe-instances` to return only a list of instance IDs for the development machines that belong to the **ERPSystem** project. It then passes those values to the `aws ec2 create-tags` command, which either creates a new tag or (in this case) overwrites an existing tag.
+
+> Notice how the first command uses the **--output text** option to manipulate the return results as text instead of as JSON. Using this command instead of JSON on a simple return result—in this case, a list of IDs—can make it easier to manipulate the return result and pass it to other commands.
+
+We run the command, and then make sure that the right instances have been changed, and the ones not belonging to **ERPSystem** were not affected by running the following command:
+```bash
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId, AZ:Placement.AvailabilityZone, Project:Tags[?Key==`Project`] |[0].Value,Environment:Tags[?Key==`Environment`] | [0].Value,Version:Tags[?Key==`Version`] | [0].Value}'
+```
+![[Pasted image 20231126213731.png]]
+
+
