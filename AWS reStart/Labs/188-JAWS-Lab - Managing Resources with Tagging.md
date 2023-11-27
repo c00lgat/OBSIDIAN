@@ -106,3 +106,10 @@ The **stopinator.php** script is a simple script that uses the AWS SDK for PHP t
 ![[Pasted image 20231127133524.png]]
 - **-t**: A set of tags in the following format: `name=value;name=value` The script converts these tags into the format expected by the AWS PHP call `Ec2::DescribeInstance()`. If this optional parameter is absent, the script will identify and shut down all running Amazon EC2 instances in the account.
 - **-s**: A Boolean parameter; no arguments are required. When this parameter is present, instances identified by **-t** are started instead of stopped.
+
+Running the PHP script as the following:
+```PHP
+./stopinator.php -t"Project=ERPSystem;Environment=development"
+```
+Will stop the two development EC2 instances.
+
