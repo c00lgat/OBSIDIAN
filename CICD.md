@@ -22,3 +22,11 @@ The testing result is usually sent to the developers to get a grasp on the statu
 Continuous Delivery, Continuous Deployment
 ![[Pasted image 20231206093324.png]]
 ![[Pasted image 20231206093729.png]]
+CD does not eliminate the work of QA, QA is usually done on the application that is already in production. It is possible that QA passes code that checks certain things that QA would like to see tested before the application goes into production, saving them time 
+
+
+
+![[Pasted image 20231206094103.png]]![[Pasted image 20231206094114.png]]
+
+![[Pasted image 20231206094740.png]]
+
