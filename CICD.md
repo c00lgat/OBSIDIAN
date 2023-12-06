@@ -1,3 +1,4 @@
+Presentation by Amit Shemesh
 ## CI
 CI is a practice of integrating code from multiple developers into a central repo or branch, multiple times per day
 
@@ -29,4 +30,18 @@ CD does not eliminate the work of QA, QA is usually done on the application that
 ![[Pasted image 20231206094103.png]]![[Pasted image 20231206094114.png]]
 
 ![[Pasted image 20231206094740.png]]
+
+![[Pasted image 20231206095042.png]]
+
+![[Pasted image 20231206095118.png]]
+
+![[Pasted image 20231206095151.png]]
+
+![[Pasted image 20231206095203.png]]
+
+![[Pasted image 20231206095444.png]]
+
+![[Pasted image 20231206095538.png]]
+
+![[Pasted image 20231206095825.png]]
 
