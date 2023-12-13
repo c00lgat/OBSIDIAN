@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CICD.md",
+                "file": "AWSCookbook/Chapter 1. Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CICD.md",
+                "file": "AWSCookbook/Chapter 1. Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CICD.md",
+                "file": "AWSCookbook/Chapter 1. Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CICD.md"
+                "file": "AWSCookbook/Chapter 1. Security.md"
               }
             }
           },
@@ -190,6 +190,9 @@
   },
   "active": "48ac06be4e62fd39",
   "lastOpenFiles": [
+    "CICD.md",
+    "AWSCookbook/Chapter 1. Security.md",
+    "AWSCookbook",
     "Pasted image 20231206095825.png",
     "IMAGES/Pasted image 20231206095538.png",
     "IMAGES/Pasted image 20231206095444.png",
@@ -200,9 +203,7 @@
     "IMAGES/Pasted image 20231206094740.png",
     "IMAGES/Pasted image 20231206094114.png",
     "IMAGES/Pasted image 20231206094103.png",
-    "IMAGES/Pasted image 20231206093729.png",
     "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md",
-    "CICD.md",
     "task1.yaml",
     "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
     "SQL.md",
@@ -235,7 +236,6 @@
     "Untitled.canvas",
     "Excalidraw",
     "Presentations",
-    "AGILE",
-    "Google Search"
+    "AGILE"
   ]
 }
