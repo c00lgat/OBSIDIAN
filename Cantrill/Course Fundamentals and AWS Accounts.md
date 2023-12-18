@@ -17,3 +17,4 @@ We can create an identity called IAMADMIN. Normal IAM user which we are going to
 Once we are done creating the General account, we are going to be making a new root user account called Production.
 ![[Pasted image 20231218130259.png]]
 
+---
