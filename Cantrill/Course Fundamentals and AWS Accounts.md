@@ -26,3 +26,4 @@ Then, click on the `Assign MFA device` button after scrolling down a little:
 Following through with the setup, we should eventually receive a success message in the AWS Console:
 ![[Pasted image 20231218150624.png]]
 
+---
