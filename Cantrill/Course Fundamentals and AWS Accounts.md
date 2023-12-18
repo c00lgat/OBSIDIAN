@@ -5,7 +5,7 @@ Any IAM identity starts off with no permission. We have to explicitly give the I
 
 Cross-account activity is not abled by default.
 
-Creating multiple AWS Accounts; such as a development account, a testing account and a production account, then we can limit the damage in case of system admins doing mistakes, any bad actors intentionally trying to cause damage etc. since AWS Accounts are good at containing the damage done and does not allow the rest of the accounts to be exploited as long as the credentials aren't hacked.
+Creating multiple AWS Accounts; such as a development account, a testing account and a production account, then we can limit the damage in case of system admins doing mistakes, any bad actors intentionally trying to cause damage etc. since AWS Accounts are good at containing the damage done and does not allow the rest of the accounts to be exploited as long as the credentials aren't compromised.
 
 AWS Accounts can also be created for the different teams in the company, or even the different products that each account hosts.
 
