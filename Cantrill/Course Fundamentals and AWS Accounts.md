@@ -11,3 +11,9 @@ AWS Accounts can also be created for the different teams in the company, or even
 
 ![[Pasted image 20231218123824.png]]
 
+We are going to avoid using the root user because we cannot restrict it. Best practice is creating IAM identities within that root user account. 
+We can create an identity called IAMADMIN. Normal IAM user which we are going to give administrative permissions over the general AWS account.
+
+Once we are done creating the General account, we are going to be making a new root user account called Production.
+![[Pasted image 20231218130259.png]]
+
