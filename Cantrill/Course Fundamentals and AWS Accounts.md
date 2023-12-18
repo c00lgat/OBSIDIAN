@@ -18,3 +18,11 @@ Once we are done creating the General account, we are going to be making a new r
 ![[Pasted image 20231218130259.png]]
 
 ---
+![[Pasted image 20231218150106.png]]
+Going to the account user in the top right corner, and then clicking on `Security credentials` should take us to the <mark style="background: #FF5582A6;">Identity and Access Management (IAM)</mark> page, specifically the page that has to do with the account's security credentials page.
+
+Then, click on the `Assign MFA device` button after scrolling down a little:
+![[Pasted image 20231218150417.png]]
+Following through with the setup, we should eventually receive a success message in the AWS Console:
+![[Pasted image 20231218150624.png]]
+
