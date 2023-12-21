@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fantasy Books.md",
+                "file": "Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fantasy Books.md",
+                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fantasy Books.md",
+                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fantasy Books.md"
+                "file": "Docker.md"
               }
             }
           },
@@ -177,13 +177,16 @@
   },
   "active": "f6691f329adfb0d5",
   "lastOpenFiles": [
+    "Downloading books.md",
+    "CICD.md",
+    "Extra curriculum.md",
+    "Fantasy Books.md",
     "LISP LANG.md",
     "Markup Guide.md",
     "Podcasts.md",
     "OverTheWire.md",
     "Online Courses.md",
     "OCaml.md",
-    "CICD.md",
     "AGILE/SCRUM.md",
     "AGILE/Trello.md",
     "AGILE/CICD.md",
@@ -201,9 +204,6 @@
     "להגיש דוח סוף שנה.md",
     "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "IMAGES/initial-template.png",
-    "Important Links.md",
-    "Hexadecimal Numbers.md",
-    "GIT & Github.md",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
     "IMAGES/Pasted image 20231221224233.png",
