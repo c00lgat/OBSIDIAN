@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker.md",
+                "file": "CICD.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker.md",
+                "file": "CICD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker.md",
+                "file": "CICD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker.md"
+                "file": "CICD.md"
               }
             }
           },
@@ -177,11 +177,16 @@
   },
   "active": "f6691f329adfb0d5",
   "lastOpenFiles": [
+    "Docker.md",
+    "LISP LANG.md",
+    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+    "Microservices.md",
+    "Motivation.md",
+    "Netacad.md",
     "Downloading books.md",
     "CICD.md",
     "Extra curriculum.md",
     "Fantasy Books.md",
-    "LISP LANG.md",
     "Markup Guide.md",
     "Podcasts.md",
     "OverTheWire.md",
@@ -198,11 +203,6 @@
     "SED.md",
     "SQL.md",
     "SSH.md",
-    "Tutorial websites.md",
-    "VIM.md",
-    "Website Project.md",
-    "להגיש דוח סוף שנה.md",
-    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
