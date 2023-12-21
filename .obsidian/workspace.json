@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CICD.md",
+                "file": "AppleSeeds MOODLE.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CICD.md",
+                "file": "AppleSeeds MOODLE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CICD.md",
+                "file": "AppleSeeds MOODLE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CICD.md"
+                "file": "AppleSeeds MOODLE.md"
               }
             }
           },
@@ -177,32 +177,32 @@
   },
   "active": "f6691f329adfb0d5",
   "lastOpenFiles": [
-    "Docker.md",
+    "Downloading books.md",
+    "Extra curriculum.md",
+    "VIM.md",
+    "Learning the vi and Vim Editors.md",
+    "Markup Guide.md",
     "LISP LANG.md",
-    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+    "Learning resources.md",
+    "Important Links.md",
+    "AppleSeeds MOODLE.md",
+    "2023-09-03.md",
+    "Fantasy Books.md",
     "Microservices.md",
     "Motivation.md",
     "Netacad.md",
-    "Downloading books.md",
-    "CICD.md",
-    "Extra curriculum.md",
-    "Fantasy Books.md",
-    "Markup Guide.md",
-    "Podcasts.md",
-    "OverTheWire.md",
-    "Online Courses.md",
+    "Networks and Subnetting, AWS.md",
     "OCaml.md",
-    "AGILE/SCRUM.md",
-    "AGILE/Trello.md",
-    "AGILE/CICD.md",
-    "AGILE/Agile.md",
-    "Practical Vim Edit Text at the Speed of Thought.md",
-    "Python Essentials 1.md",
-    "Python Learning Resources.md",
+    "Online Courses.md",
+    "OverTheWire.md",
     "Regex.md",
     "SED.md",
     "SQL.md",
     "SSH.md",
+    "GIT & Github.md",
+    "Bash.md",
+    "CICD.md",
+    "Docker.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
