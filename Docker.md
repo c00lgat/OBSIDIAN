@@ -65,4 +65,12 @@ If we do change the images, we are actually making a new image.
 Container images are used to run containers, and containers need storage.
 
 When we run a container image, what actually happens is a writable layer is added.
+![[Pasted image 20231221225114.png]]
+
+Images are a collection of independent file system layers.
+![[Pasted image 20231221225444.png]]
+
+---
+#### \[DEMO] Working with existing docker images
+https://learn.cantrill.io/courses/docker-fundamentals/lectures/44151206
 

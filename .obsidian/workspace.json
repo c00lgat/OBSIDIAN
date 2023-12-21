@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker.md",
+                "file": "Fantasy Books.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker.md",
+                "file": "Fantasy Books.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker.md",
+                "file": "Fantasy Books.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker.md"
+                "file": "Fantasy Books.md"
               }
             }
           },
@@ -178,6 +177,35 @@
   },
   "active": "f6691f329adfb0d5",
   "lastOpenFiles": [
+    "LISP LANG.md",
+    "Markup Guide.md",
+    "Podcasts.md",
+    "OverTheWire.md",
+    "Online Courses.md",
+    "OCaml.md",
+    "CICD.md",
+    "AGILE/SCRUM.md",
+    "AGILE/Trello.md",
+    "AGILE/CICD.md",
+    "AGILE/Agile.md",
+    "Practical Vim Edit Text at the Speed of Thought.md",
+    "Python Essentials 1.md",
+    "Python Learning Resources.md",
+    "Regex.md",
+    "SED.md",
+    "SQL.md",
+    "SSH.md",
+    "Tutorial websites.md",
+    "VIM.md",
+    "Website Project.md",
+    "להגיש דוח סוף שנה.md",
+    "Mastering Regular Expressions Third Edition- O'RILLEY.md",
+    "IMAGES/initial-template.png",
+    "Important Links.md",
+    "Hexadecimal Numbers.md",
+    "GIT & Github.md",
+    "IMAGES/Pasted image 20231221225444.png",
+    "IMAGES/Pasted image 20231221225114.png",
     "IMAGES/Pasted image 20231221224233.png",
     "IMAGES/Pasted image 20231221224219.png",
     "IMAGES/Pasted image 20231221224201.png",
@@ -185,43 +213,14 @@
     "IMAGES/Pasted image 20231221224046.png",
     "IMAGES/Pasted image 20231221223501.png",
     "IMAGES/Pasted image 20231221223200.png",
-    "IMAGES/Pasted image 20231221223136.png",
-    "IMAGES/Pasted image 20231221223040.png",
-    "IMAGES/Pasted image 20231221222951.png",
-    "IMAGES/Pasted image 20231221222519.png",
-    "Cantrill/Course Fundamentals and AWS Accounts.md",
-    "AWSCookbook/Chapter 1. Security.md",
     "Cantrill",
-    "CICD.md",
     "AWSCookbook",
-    "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md",
     "task1.yaml",
-    "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",
-    "SQL.md",
-    "AWS reStart/Labs/188-JAWS-Lab - Managing Resources with Tagging.md",
     "non-complying-ec2-shutdown.py",
-    "AWS reStart/Canvas/Tagging.md",
     "AWS reStart/Labs",
-    "AWS reStart/Canvas/Managing Resource Consumption overview.md",
-    "AWS reStart/Canvas/Configuration Management in the Cloud.md",
-    "AWS reStart/Canvas/AWS Service Integration with Athena.md",
-    "AWS reStart/Canvas/AWS Organizations.md",
-    "AWS reStart/Canvas/Troubleshooting AWS CloudFormation.md",
-    "AWS reStart/Canvas/Securing and Troubleshooting Your Network.md",
-    "AWS reStart/Canvas/Storage and Archiving Overview.md",
     "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
-    "AWS For Non-Engineers.md",
-    "2023-09-03.md",
     "AWS reStart/Canvas",
     "AWS reStart",
-    "AppleSeeds MOODLE.md",
-    "AWS resources.md",
-    "AWS AGENDA.md",
-    "Basic Shell Programming.md",
-    "OverTheWire.md",
-    "System Design for Beginners.md",
-    "Python Essentials 1.md",
-    "Excalidraw/Drawing 2023-10-13 20.33.23.excalidraw.md",
     "Untitled.canvas",
     "Excalidraw",
     "Presentations"
