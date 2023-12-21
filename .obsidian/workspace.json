@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cantrill/Course Fundamentals and AWS Accounts.md",
+                "file": "Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cantrill/Course Fundamentals and AWS Accounts.md",
+                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cantrill/Course Fundamentals and AWS Accounts.md",
+                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cantrill/Course Fundamentals and AWS Accounts.md"
+                "file": "Docker.md"
               }
             }
           },
@@ -178,13 +178,14 @@
   },
   "active": "f6691f329adfb0d5",
   "lastOpenFiles": [
+    "Pasted image 20231221222519.png",
+    "Cantrill/Course Fundamentals and AWS Accounts.md",
     "Pasted image 20231218150624.png",
     "Pasted image 20231218150417.png",
     "Pasted image 20231218150106.png",
     "Pasted image 20231218130259.png",
     "Pasted image 20231218123824.png",
     "AWSCookbook/Chapter 1. Security.md",
-    "Cantrill/Course Fundamentals and AWS Accounts.md",
     "Cantrill",
     "CICD.md",
     "AWSCookbook",
@@ -193,7 +194,6 @@
     "IMAGES/Pasted image 20231206095444.png",
     "IMAGES/Pasted image 20231206095203.png",
     "IMAGES/Pasted image 20231206095151.png",
-    "IMAGES/Pasted image 20231206095118.png",
     "AWS reStart/Labs/190-JAWS-Lab-Automation with CloudFormation.md",
     "task1.yaml",
     "AWS reStart/Labs/189-JAWS-Activity-Optimize Utilization.md",

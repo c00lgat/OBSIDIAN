@@ -27,3 +27,9 @@ No need to maintain long complex release documents. Package apps in containers a
 
 ---
 
+![[Pasted image 20231221222519.png]]
+In order to run a docker container with the following command: 
+`docker run hello-world`
+
+But before that, we run the command 
+
