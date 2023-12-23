@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Cantrill/AWS Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Cantrill/AWS Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Cantrill/AWS Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work Interview.md"
+                "file": "Cantrill/AWS Fundamentals.md"
               }
             }
           },
@@ -190,8 +191,10 @@
   },
   "active": "c141d4c4b180dfae",
   "lastOpenFiles": [
-    "AppleSeeds MOODLE.md",
+    "Cantrill/Course Fundamentals and AWS Accounts.md",
+    "Cantrill/AWS Fundamentals.md",
     "Work Interview.md",
+    "AppleSeeds MOODLE.md",
     "Downloading books.md",
     "Extra curriculum.md",
     "VIM.md",
@@ -214,8 +217,6 @@
     "SQL.md",
     "SSH.md",
     "GIT & Github.md",
-    "Bash.md",
-    "CICD.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
