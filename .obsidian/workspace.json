@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c141d4c4b180dfae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work Interview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AppleSeeds MOODLE.md",
+                "file": "Work Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AppleSeeds MOODLE.md",
+                "file": "Work Interview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppleSeeds MOODLE.md"
+                "file": "Work Interview.md"
               }
             }
           },
@@ -175,8 +188,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f6691f329adfb0d5",
+  "active": "c141d4c4b180dfae",
   "lastOpenFiles": [
+    "AppleSeeds MOODLE.md",
+    "Work Interview.md",
     "Downloading books.md",
     "Extra curriculum.md",
     "VIM.md",
@@ -185,7 +200,6 @@
     "LISP LANG.md",
     "Learning resources.md",
     "Important Links.md",
-    "AppleSeeds MOODLE.md",
     "2023-09-03.md",
     "Fantasy Books.md",
     "Microservices.md",
@@ -202,7 +216,6 @@
     "GIT & Github.md",
     "Bash.md",
     "CICD.md",
-    "Docker.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
