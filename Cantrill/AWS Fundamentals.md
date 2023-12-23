@@ -9,3 +9,17 @@ A private AWS service on the other hand, is a service that runs within a VPC and
 
 Even though S3 is a public service, by default, an identity other than the account root user has no authorization to access that resource.
 
+Two zones:
+- Public internet zone
+	- Online games
+	- Gmail
+	- Online stores
+
+- "AWS Private" Zone
+	- VPCs
+	- EC2 Instances inside VPCs
+Nothing from the internet can access these services unless you configure it.
+
+There is actually a third zone:
+"AWS PUBLIC" Zone.
+This runs between the Public Internet and the 
