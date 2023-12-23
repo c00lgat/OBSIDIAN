@@ -22,4 +22,7 @@ Nothing from the internet can access these services unless you configure it.
 
 There is actually a third zone:
 "AWS PUBLIC" Zone.
-This runs between the Public Internet and the 
+This runs between the Public Internet and the AWS Private Zone networks.
+It is not on the public internet and is not part of the public internet but rather is connected to the public internet.
+
+It is the zone where services with public endpoints, such as S3, run.
