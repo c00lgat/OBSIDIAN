@@ -7,4 +7,5 @@ A public service is something that is accessed with a public endpoint. Such as a
 
 A private AWS service on the other hand, is a service that runs within a VPC and only things that are within that VPC or things that are connected to that VPC can access the service.
 
-Even though S3 is a public service,
+Even though S3 is a public service, by default, an identity other than the account root user has no authorization to access that resource.
+
