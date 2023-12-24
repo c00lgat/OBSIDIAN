@@ -37,3 +37,4 @@ It also allows access to Public AWS services such as S3 but it is important to k
 # \[ASSOCIATESHARED] AWS Global Infrastructure
 https://learn.cantrill.io/courses/1820301/lectures/41301618
 
+
