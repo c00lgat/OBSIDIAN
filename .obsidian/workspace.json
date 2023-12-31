@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cantrill/AWS Fundamentals.md",
+                "file": "Basic Shell Programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cantrill/AWS Fundamentals.md",
+                "file": "Basic Shell Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cantrill/AWS Fundamentals.md",
+                "file": "Basic Shell Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cantrill/AWS Fundamentals.md"
+                "file": "Basic Shell Programming.md"
               }
             }
           },
@@ -190,8 +190,11 @@
   },
   "active": "c141d4c4b180dfae",
   "lastOpenFiles": [
-    "Cantrill/Course Fundamentals and AWS Accounts.md",
+    "Basic Command Syntax.md",
+    "Basic Shell Programming.md",
+    "Bash.md",
     "Cantrill/AWS Fundamentals.md",
+    "Cantrill/Course Fundamentals and AWS Accounts.md",
     "Work Interview.md",
     "AppleSeeds MOODLE.md",
     "Downloading books.md",
@@ -213,9 +216,6 @@
     "OverTheWire.md",
     "Regex.md",
     "SED.md",
-    "SQL.md",
-    "SSH.md",
-    "GIT & Github.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
