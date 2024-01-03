@@ -32,3 +32,12 @@ Lets start with me taking a few minutes so u know who u talking to from X(compan
 
 
 לגבי שאלות בסוף הראיון תמיד תשאל לפחות שאלה אחרת: בעיקר תראה התעניינות באופציות קידום, שיתופי פעולה בין מחלקות, מה מבדיל את החברה שאתה מתמיין אליה ממתחרים שלה, וכו… שאלות שמעידות שאתה שואף לקידום ולבנות את עצמך יחד עם החברה, וגם שעשית שיעורי בית ואתה מכיר את התעשיה, החברה והמתחרים שלה
+
+search for
+recruiter 
+devops
+aws
+technical recruiter
+
+AWS Cloud Practitioner certified
+
