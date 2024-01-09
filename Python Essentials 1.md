@@ -2373,4 +2373,5 @@ We get the following output:
 3.5  
 Error: Invalid argument.
 ```
-The `print(spam(1))` is never executed because
+The `print(spam(1))` is never executed because once the exception jumps to the code in the `except` clause, it does not return to the `try` clause. Instead, it just continues moving down the program as normal.
+
