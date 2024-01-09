@@ -50,3 +50,6 @@ https://testdriven.io/blog/clean-code-python/
 
 ###### Python blog:
 https://www.bitecode.dev/
+
+###### Automate the boring stuff with Python
+https://automatetheboringstuff.com/2e/chapter3/

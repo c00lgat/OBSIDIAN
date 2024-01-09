@@ -2318,3 +2318,59 @@ Again, the output of the program is not predictable. Our results looked like thi
 [10, 8, 5, 1, 6, 4, 3, 9, 7, 2]
 ```
 
+
+---
+# Exception Handling
+Getting an error, or exception, in your python program means the entire program will crash.
+
+Instead, we want the program to detect errors, handle them, and then continue to run.
+
+> example of a divide-by-zero error down below:
+![[Pasted image 20240109184538.png]]
+
+Errors can be handled with `try` and `except` statements.
+The code that could potentially have an error is put in a `try` clause. 
+The program execution moves to the start of a following `except` clause if an error happens.
+
+Consider the following code:
+```python
+def spam(divideBy):  
+    try:  
+        return 42 / divideBy  
+    except ZeroDivisionError:  
+        print('Error: Invalid argument.')  
+  
+print(spam(2))  
+print(spam(12))  
+print(spam(0))  
+print(spam(1))
+```
+When code in a `try` clause causes an error, the program execution immediately moves to the code in the `except` clause. After running that code, the execution continues as normal. The output of the previous program is as follows:
+```output
+21.0  
+3.5  
+Error: Invalid argument.  
+None  
+42.0
+```
+
+Now, consider the following program, where the `spam()` calls are put in the `try` block instead of inside the funciton:
+```python
+def spam(divideBy):  
+    return 42 / divideBy  
+  
+try:  
+    print(spam(2))  
+    print(spam(12))  
+    print(spam(0))  
+    print(spam(1))  
+except ZeroDivisionError:  
+    print('Error: Invalid argument.')
+```
+We get the following output:
+```output
+21.0  
+3.5  
+Error: Invalid argument.
+```
+The `print(spam(1))` is never executed because

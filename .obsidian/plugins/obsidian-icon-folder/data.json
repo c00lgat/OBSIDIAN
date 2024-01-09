@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiPython",
       "LiInfinity",
       "RaDragon",
       "SiGit",
-      "SiOcaml",
-      "SiMysql"
+      "SiOcaml"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -33,5 +33,7 @@
   "OCaml.md": "SiOcaml",
   "GIT & Github.md": "SiGit",
   "Fantasy Books.md": "RaDragon",
-  "CICD.md": "LiInfinity"
+  "CICD.md": "LiInfinity",
+  "Python Essentials 1.md": "SiPython",
+  "Python Learning Resources.md": "SiPython"
 }

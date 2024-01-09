@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Python Essentials 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Python Essentials 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Python Essentials 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work Interview.md"
+                "file": "Python Essentials 1.md"
               }
             }
           },
@@ -204,32 +204,32 @@
   },
   "active": "3a80fcb8653c1f25",
   "lastOpenFiles": [
+    "Pasted image 20240109184538.png",
+    "Regex.md",
+    "SED.md",
+    "Netacad.md",
+    "Motivation.md",
+    "Microservices.md",
+    "CICD.md",
+    "Online Courses.md",
+    "Practical Vim Edit Text at the Speed of Thought.md",
+    "SQL.md",
+    "SSH.md",
+    "Tutorial websites.md",
+    "VIM.md",
+    "Website Project.md",
+    "Work Interview.md",
+    "Python Essentials 1.md",
+    "Python Learning Resources.md",
     "Basic Command Syntax.md",
     "Basic Shell Programming.md",
     "Bash.md",
     "Cantrill/AWS Fundamentals.md",
     "Cantrill/Course Fundamentals and AWS Accounts.md",
-    "Work Interview.md",
     "AppleSeeds MOODLE.md",
     "Downloading books.md",
     "Extra curriculum.md",
-    "VIM.md",
     "Learning the vi and Vim Editors.md",
-    "Markup Guide.md",
-    "LISP LANG.md",
-    "Learning resources.md",
-    "Important Links.md",
-    "2023-09-03.md",
-    "Fantasy Books.md",
-    "Microservices.md",
-    "Motivation.md",
-    "Netacad.md",
-    "Networks and Subnetting, AWS.md",
-    "OCaml.md",
-    "Online Courses.md",
-    "OverTheWire.md",
-    "Regex.md",
-    "SED.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
