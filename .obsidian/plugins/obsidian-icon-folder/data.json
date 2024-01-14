@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiTerraform",
       "SiPython",
       "LiInfinity",
       "RaDragon",
-      "SiGit",
-      "SiOcaml"
+      "SiGit"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,5 +35,6 @@
   "Fantasy Books.md": "RaDragon",
   "CICD.md": "LiInfinity",
   "Python Essentials 1.md": "SiPython",
-  "Python Learning Resources.md": "SiPython"
+  "Python Learning Resources.md": "SiPython",
+  "Terraform.md": "SiTerraform"
 }

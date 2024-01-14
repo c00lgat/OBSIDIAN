@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "032ae53ae3b2c08c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -110,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Terraform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Terraform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work Interview.md"
+                "file": "Terraform.md"
               }
             }
           },
@@ -202,8 +215,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3a80fcb8653c1f25",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
+    "Work Interview.md",
+    "Terraform.md",
     "AppleSeeds MOODLE.md",
     "Pasted image 20240109184538.png",
     "Regex.md",
@@ -219,7 +234,6 @@
     "Tutorial websites.md",
     "VIM.md",
     "Website Project.md",
-    "Work Interview.md",
     "Python Essentials 1.md",
     "Python Learning Resources.md",
     "Basic Command Syntax.md",
