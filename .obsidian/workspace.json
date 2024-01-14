@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform.md",
+                "file": "Work Interview.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform.md",
+                "file": "Work Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform.md",
+                "file": "Work Interview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform.md"
+                "file": "Work Interview.md"
               }
             }
           },
@@ -215,27 +214,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "032ae53ae3b2c08c",
   "lastOpenFiles": [
-    "Work Interview.md",
+    "SQL.md",
+    "SED.md",
+    "OCaml.md",
+    "Python Essentials 1.md",
+    "Python Learning Resources.md",
+    "VIM.md",
     "Terraform.md",
     "AppleSeeds MOODLE.md",
+    "Work Interview.md",
     "Pasted image 20240109184538.png",
     "Regex.md",
-    "SED.md",
     "Netacad.md",
     "Motivation.md",
     "Microservices.md",
     "CICD.md",
     "Online Courses.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
-    "SQL.md",
     "SSH.md",
     "Tutorial websites.md",
-    "VIM.md",
     "Website Project.md",
-    "Python Essentials 1.md",
-    "Python Learning Resources.md",
     "Basic Command Syntax.md",
     "Basic Shell Programming.md",
     "Bash.md",
@@ -243,7 +243,6 @@
     "Cantrill/Course Fundamentals and AWS Accounts.md",
     "Downloading books.md",
     "Extra curriculum.md",
-    "Learning the vi and Vim Editors.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
