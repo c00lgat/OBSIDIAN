@@ -41,3 +41,21 @@ technical recruiter
 
 AWS Cloud Practitioner certified
 
+
+
+Hello, my name is anan i just finished my aws bootcamp which is 4 months of full days 
+i wanted to show you these projects that i made
+look at how i made **redundancy**
+the shikolim i made
+code i wrote
+**terraform** must
+architecture
+according to the pillars well **architected framework**
+**kubernetes** MUST
+containers MUST
+clusters MUST
+**CKA** cert RECOMMENDED AF
+**Jenkins **CICD **pipelines** **orchestration**
+
+
+i would be happy to learn it if i were given the opportunity 

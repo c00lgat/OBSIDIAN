@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Work Interview.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Work Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python Essentials 1.md",
+                "file": "Work Interview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python Essentials 1.md"
+                "file": "Work Interview.md"
               }
             }
           },
@@ -203,8 +202,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "3a80fcb8653c1f25",
   "lastOpenFiles": [
+    "AppleSeeds MOODLE.md",
     "Pasted image 20240109184538.png",
     "Regex.md",
     "SED.md",
@@ -227,7 +227,6 @@
     "Bash.md",
     "Cantrill/AWS Fundamentals.md",
     "Cantrill/Course Fundamentals and AWS Accounts.md",
-    "AppleSeeds MOODLE.md",
     "Downloading books.md",
     "Extra curriculum.md",
     "Learning the vi and Vim Editors.md",
@@ -240,7 +239,6 @@
     "IMAGES/Pasted image 20231221224128.png",
     "IMAGES/Pasted image 20231221224046.png",
     "IMAGES/Pasted image 20231221223501.png",
-    "IMAGES/Pasted image 20231221223200.png",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
