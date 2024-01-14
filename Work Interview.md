@@ -42,6 +42,7 @@ technical recruiter
 AWS Cloud Practitioner certified
 
 
+webinars online and physical
 
 Hello, my name is anan i just finished my aws bootcamp which is 4 months of full days 
 i wanted to show you these projects that i made
