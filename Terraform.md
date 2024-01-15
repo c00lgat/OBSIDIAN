@@ -24,7 +24,9 @@ Provisioning multiple environment makes it harder to do so using the GUI, so def
 3. `Server Templating tools`: building out a template for what we are going to provision onto a server, similarly to AMI. Any image that is provisioned from a template, and we can build all dependencies through that template. 
 4. `Orchestration tools`: for orchestration containers; how you can define your application deployment, how we can take the code and deploy it in a certain way onto whatever system we have provisioned in the background
 5. `Provisioning tools`: focuses on provisioning the cloud resources that we have running on the cloud.
-	1. Declarative: define the end state of what we want: 5 servers, one load balancer, an S3 bucket and then the tool manages what API calls need to be made and how to actually make it happen
-	2. Imperative:: 
+
+- Declarative: define the end state of what we want: 5 servers, one load balancer, an S3 bucket and then the tool manages what API calls need to be made and how to actually make it happen
+- Imperative: tell the system what we want to happen and the sequence in which we want them to happen.
+> A lot of these tools fall more on the imperative side; some do offer capabilities that make the tools more declarative and make those scripts idempotent so that they can be ran multiple times.
 
 
