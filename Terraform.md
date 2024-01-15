@@ -1,3 +1,4 @@
+https://youtu.be/7xngnjfIlK4?si=QIzK6oF260JFzrZK
 ### Evolution of Cloud + Infrastructure as Code
 - Infrastructure provisioned via APIs
 - Servers created and destroyed in seconds
@@ -58,4 +59,28 @@ After the `init` command is ran, a new folder is created in our working director
 
 We are also greeted with a new file aside from the new directory, the lock file. `.terraform.lock.hcl` contains information about the specific dependencies and providers that are installed within the workspace. 
 
-If terraform modules are used, they too will appear under the `.terraform/modules/` directory in our work
+If terraform modules are used, they too will appear under the `.terraform/modules/` directory in our working directory.
+![[Pasted image 20240115205551.png]]
+
+---
+
+### State File
+Terraform's representation of the world.
+JSON file containing information about every resources and data object that we have deployed using terraform.
+![[Pasted image 20240115205731.png]]
+It gives us information about all the resources we've deployed.
+
+<mark style="background: #FF5582A6;">The State File contains sensitive information (database password for example)</mark>
+Therefore, the State File needs to be protected accordingly, making sure that it is encrypted and permissions are set to the correct set of individuals that would have access to it.
+
+The State File can be stored locally or remotely:
+1. Local Backend; the state file is stored on our local machine. 
+	1. Convenient and easy to get started. 
+	2. Not recommended, as it will have sensitive values in plain text. 
+	3. Uncollaborative; makes it harder to work on the infrastructure by other individuals that need access to it.
+	4. Very Manual: every time we are interacting with the configuration; we need to manually run terraform apply command within the terminal each time. Ideally we need to automate that. 
+2. With a remote backend, having the state file stored remotely on a server somewhere. 
+	1. One option is using `Terraform Cloud` which is a managed service that will host our state file for us and will manage permissions for us etc.
+	2. Self managed remote 
+
+
