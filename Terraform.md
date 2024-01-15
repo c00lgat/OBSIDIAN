@@ -43,3 +43,19 @@ Terraform is more on the declarative side of tools. We specify the end state tha
 With `Terraform` handling the provisioning; spinning up virtual servers for example, and `Ansible` handling the configuration management side; install all the necessary dependencies on said resources such as virtual servers.
 Like we could provision a virtual server that is running Ubuntu and install all the necessary dependencies needed for our application and we can use `Ansible` for that.
 
+---
+## Basic Usage Sequence:
+- terraform init
+- terraform plan
+- terraform apply
+- terraform destroy
+
+`Terraform Core` is the engine that parses the configuration from the `Terraform State` file and providers, mapping what's needed from the core to the cloud providers themselves.
+
+When the `init` command, the associated providers that were defined the `terraform block` in our code base are then downloaded. It gets the code for the `AWS Provider` from the `terraform registry`; downloads it and puts it in our working directory.
+After the `init` command is ran, a new folder is created in our working directory, called `.terraform` (a hidden directory). Inside it is the official registry information needed.
+![[Pasted image 20240115205344.png]]
+
+We are also greeted with a new file aside from the new directory, the lock file. `.terraform.lock.hcl` contains information about the specific dependencies and providers that are installed within the workspace. 
+
+If terraform modules are used, they too will appear under the `.terraform/modules/` directory in our work
