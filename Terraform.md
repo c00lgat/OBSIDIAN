@@ -14,4 +14,6 @@
 # API/CLI
 ![[Pasted image 20240115123414.png]]
 # IaC
-![[Pasted image 20240115123434.png]]IaC enables you to take 
+![[Pasted image 20240115123434.png]]IaC enables you to take your entire infrastructure and define it in the code base. 
+It lets us know what is exactly positioned at any given time.
+Provisioning multiple environment makes it harder to do so using the GUI, so defining things as code as configurations within the code base, we have much higher confidence telling what we have actually deployed, and use the power of programming languages to have multi
