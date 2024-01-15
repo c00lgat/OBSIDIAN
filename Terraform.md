@@ -29,4 +29,17 @@ Provisioning multiple environment makes it harder to do so using the GUI, so def
 - Imperative: tell the system what we want to happen and the sequence in which we want them to happen.
 > A lot of these tools fall more on the imperative side; some do offer capabilities that make the tools more declarative and make those scripts idempotent so that they can be ran multiple times.
 
+Terraform is more on the declarative side of tools. We specify the end state that we want our infrastructure to take, and then the tools handles the details of how to get there.
+
+
+---
+# Terraform Overview + Setup
+- Terraform is a tool for building, changing and versioning infrastructure safely and efficiently.
+- Enables application software best practices to infrastructure.
+- Compatible with many clouds and services - cloud agnostic. Can interact with anything with an API.
+
+## Common Patterns:
+`Terraform` is usually used along with `Ansible`. 
+With `Terraform` handling the provisioning; spinning up virtual servers for example, and `Ansible` handling the configuration management side; install all the necessary dependencies on said resources such as virtual servers.
+Like we could provision a virtual server that is running Ubuntu and install all the necessary dependencies needed for our application and we can use `Ansible` for that.
 
