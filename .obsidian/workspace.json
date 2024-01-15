@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -216,6 +217,9 @@
   },
   "active": "032ae53ae3b2c08c",
   "lastOpenFiles": [
+    "Pasted image 20240115123434.png",
+    "Pasted image 20240115123414.png",
+    "Pasted image 20240115123359.png",
     "Work Interview.md",
     "SQL.md",
     "SED.md",
@@ -242,7 +246,6 @@
     "Cantrill/AWS Fundamentals.md",
     "Cantrill/Course Fundamentals and AWS Accounts.md",
     "Downloading books.md",
-    "Extra curriculum.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
     "IMAGES/Pasted image 20231221225114.png",
@@ -250,8 +253,6 @@
     "IMAGES/Pasted image 20231221224219.png",
     "IMAGES/Pasted image 20231221224201.png",
     "IMAGES/Pasted image 20231221224128.png",
-    "IMAGES/Pasted image 20231221224046.png",
-    "IMAGES/Pasted image 20231221223501.png",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
