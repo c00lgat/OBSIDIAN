@@ -102,4 +102,9 @@ As long as no config changes were made through the GUI or through any other mean
 We run this command when we want to clean up at the end of the project; it is never ran for a live project that is still executing.
 
 ---
+## Remote Backend (Terraform Cloud)
+![[Pasted image 20240116201042.png]]
+
+## Remote Backend (AWS)
+![[Pasted image 20240116201132.png]]
 
