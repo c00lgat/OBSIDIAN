@@ -118,12 +118,12 @@ Now, how will we be able to provision these S3 bucket and DynamoDB tables given 
 
 And for that, we have to first initialize terraform with the default local backend. 
 
-```terraform
+```HCL
 terraform {
 	required_providers{
 		aws = {
 			source = "hashicorp/aws"
-			
+			version = "~> 5.0"
 		}
 	}
 }

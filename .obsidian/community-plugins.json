@@ -4,5 +4,6 @@
   "table-editor-obsidian",
   "highlightr-plugin",
   "obsidian-excalidraw-plugin",
-  "obsidian-icon-folder"
+  "obsidian-icon-folder",
+  "cm-editor-syntax-highlight-obsidian"
 ]
