@@ -116,7 +116,8 @@ As for the `DynamoDB table`, we need to have the setting `terraform-state-lockin
 
 Now, how will we be able to provision these S3 bucket and DynamoDB tables given that we want to provision everything with infrastructure's code but we don't have these resources provisioned yet. 
 
-And for that, we have to first initialize terraform with the default local backend. 
+And for that, we have to first provision these resources with the default local backend. 
+And once that is done, we can simply import them into our configuration.
 
 ```HCL
 terraform {
@@ -126,5 +127,9 @@ terraform {
 			version = "~> 5.0"
 		}
 	}
+}
+
+provider "aws"{
+	region = "us-west-2"
 }
 ```
