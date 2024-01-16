@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform.md",
+                "file": "Work Interview.md",
                 "mode": "preview",
                 "source": false
               }
@@ -102,13 +102,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -124,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform.md",
+                "file": "Work Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform.md",
+                "file": "Work Interview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform.md"
+                "file": "Work Interview.md"
               }
             }
           },
@@ -218,6 +216,7 @@
   },
   "active": "032ae53ae3b2c08c",
   "lastOpenFiles": [
+    "Terraform.md",
     "Pasted image 20240115205731.png",
     "Pasted image 20240115205551.png",
     "Pasted image 20240115205417.png",
@@ -232,7 +231,6 @@
     "Python Essentials 1.md",
     "Python Learning Resources.md",
     "VIM.md",
-    "Terraform.md",
     "AppleSeeds MOODLE.md",
     "Pasted image 20240109184538.png",
     "Regex.md",
@@ -253,7 +251,6 @@
     "Downloading books.md",
     "IMAGES/initial-template.png",
     "IMAGES/Pasted image 20231221225444.png",
-    "IMAGES/Pasted image 20231221225114.png",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
