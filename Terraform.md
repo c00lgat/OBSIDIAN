@@ -90,3 +90,7 @@ The State File can be stored locally or remotely:
 
 ---
 ### $ terraform plan 
+`terraform plan` command takes the `Terraform Config` file <mark style="background: #ADCCFFA6;">(Desired State)</mark> which is defined on our system; what we want the infrastructure to look like.
+Terraform then compares the `Terraform Config` file to the `Terraform State` <mark style="background: #ADCCFFA6;">(Actual State)</mark> which is the actual state of the world.
+
+As long as no config changes were made through the GUI or through any other means that is not through Terraform, `Terraform State` should represent the actual state of the world

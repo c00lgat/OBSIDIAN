@@ -49,8 +49,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work Interview.md",
-                "mode": "preview",
+                "file": "Terraform.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Terraform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Terraform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work Interview.md"
+                "file": "Terraform.md"
               }
             }
           },
@@ -216,15 +217,15 @@
   },
   "active": "032ae53ae3b2c08c",
   "lastOpenFiles": [
-    "Terraform.md",
-    "Pasted image 20240115205731.png",
-    "Pasted image 20240115205551.png",
-    "Pasted image 20240115205417.png",
-    "Pasted image 20240115205344.png",
-    "Pasted image 20240115123434.png",
-    "Pasted image 20240115123414.png",
-    "Pasted image 20240115123359.png",
     "Work Interview.md",
+    "Terraform.md",
+    "IMAGES/Pasted image 20240115205731.png",
+    "IMAGES/Pasted image 20240115205551.png",
+    "IMAGES/Pasted image 20240115205417.png",
+    "IMAGES/Pasted image 20240115205344.png",
+    "IMAGES/Pasted image 20240115123434.png",
+    "IMAGES/Pasted image 20240115123414.png",
+    "IMAGES/Pasted image 20240115123359.png",
     "SQL.md",
     "SED.md",
     "OCaml.md",
@@ -232,7 +233,7 @@
     "Python Learning Resources.md",
     "VIM.md",
     "AppleSeeds MOODLE.md",
-    "Pasted image 20240109184538.png",
+    "IMAGES/Pasted image 20240109184538.png",
     "Regex.md",
     "Netacad.md",
     "Motivation.md",
