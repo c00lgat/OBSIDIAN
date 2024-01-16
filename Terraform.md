@@ -112,4 +112,19 @@ Instead of using `Terraform Cloud`, one could use an AWS managed service instead
 To do so; an `S3 bucket` used for storage is needed, as well as a `DynamoDB` table which is used for locking.
 The `S3 bucket` is where the `state file` will live and we can tell it whether we want it to be encrypted or not; obviously it is a best practice to have it encrypted.
 
-As for the `DynamoDB table`, we need to have the setting `terraform-state-locking` for it. And that is because, it is possible that we will have multiple people working on the same project at once; we want to prevent having different people trying to apply different changes at the same time. And in order to solve that, we can leverage the atomic guarantees that DynamoDB offers 
+As for the `DynamoDB table`, we need to have the setting `terraform-state-locking` for it. And that is because, it is possible that we will have multiple people working on the same project at once; we want to prevent having different people trying to apply different changes at the same time. And in order to solve that, we can leverage the atomic guarantees that DynamoDB offers so that if we issue a command, we can lock the terraform configuration such as that if someone else issues any commands during the same time, they will be rejected until our command is finished.
+
+Now, how will we be able to provision these S3 bucket and DynamoDB tables given that we want to provision everything with infrastructure's code but we don't have these resources provisioned yet. 
+
+And for that, we have to first initialize terraform with the default local backend. 
+
+```terraform
+terraform {
+	required_providers{
+		aws = {
+			source = "hashicorp/aws"
+			
+		}
+	}
+}
+```
