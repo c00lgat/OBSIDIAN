@@ -108,4 +108,8 @@ We run this command when we want to clean up at the end of the project; it is ne
 ## Remote Backend (AWS)
 ![[Pasted image 20240116201132.png]]
 
-`
+Instead of using `Terraform Cloud`, one could use an AWS managed service instead for the terraform config file. 
+To do so; an `S3 bucket` used for storage is needed, as well as a `DynamoDB` table which is used for locking.
+The `S3 bucket` is where the `state file` will live and we can tell it whether we want it to be encrypted or not; obviously it is a best practice to have it encrypted.
+
+As for the `DynamoDB table`, we need to have the setting `terraform-state-locking` for it. And that is because, it is possible that we will have multiple people working on the same project at once; we want to prevent having different people trying to apply different changes at the same time. And in order to solve that, we can leverage the atomic guarantees that DynamoDB offers 
