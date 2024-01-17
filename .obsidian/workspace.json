@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform.md",
+                "file": "Extra curriculum.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform.md",
+                "file": "Extra curriculum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform.md",
+                "file": "Extra curriculum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform.md"
+                "file": "Extra curriculum.md"
               }
             }
           },
@@ -217,19 +216,26 @@
   },
   "active": "032ae53ae3b2c08c",
   "lastOpenFiles": [
-    "Pasted image 20240116202808.png",
-    "Pasted image 20240116201132.png",
-    "Pasted image 20240116201042.png",
-    "Pasted image 20240116201028.png",
-    "Work Interview.md",
+    "Fantasy Books.md",
+    "Hexadecimal Numbers.md",
+    "LISP LANG.md",
+    "Learning the vi and Vim Editors.md",
+    "Learning resources.md",
+    "Website Project.md",
+    "Important Links.md",
+    "Downloading books.md",
     "Terraform.md",
+    "IMAGES/Pasted image 20240116202808.png",
+    "IMAGES/Pasted image 20240116201132.png",
+    "IMAGES/Pasted image 20240116201042.png",
+    "IMAGES/Pasted image 20240116201028.png",
+    "Work Interview.md",
     "IMAGES/Pasted image 20240115205731.png",
     "IMAGES/Pasted image 20240115205551.png",
     "IMAGES/Pasted image 20240115205417.png",
     "IMAGES/Pasted image 20240115205344.png",
     "IMAGES/Pasted image 20240115123434.png",
     "IMAGES/Pasted image 20240115123414.png",
-    "IMAGES/Pasted image 20240115123359.png",
     "SQL.md",
     "SED.md",
     "OCaml.md",
@@ -246,13 +252,6 @@
     "Practical Vim Edit Text at the Speed of Thought.md",
     "SSH.md",
     "Tutorial websites.md",
-    "Website Project.md",
-    "Basic Command Syntax.md",
-    "Basic Shell Programming.md",
-    "Bash.md",
-    "Cantrill/AWS Fundamentals.md",
-    "Cantrill/Course Fundamentals and AWS Accounts.md",
-    "Downloading books.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
