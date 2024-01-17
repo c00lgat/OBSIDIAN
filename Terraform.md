@@ -167,11 +167,10 @@ Once the command runs and applies the configuration we have just set up, the `te
 With the resources we just made for the backend up and running, we can modify our code in the following way:
 ```HCL
 terraform {
-	required_providers {
-		aws = {
-			source = "hashicorp/aws"
-			version = "~> 5.0"
-		}
+	backend "s3" {
+		bucket = "devops-directive-tf-state"
+		key = "tf-infra/terraform.tfstate"
+		region = ""
 	}
 }
 
