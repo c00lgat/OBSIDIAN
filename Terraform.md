@@ -161,4 +161,4 @@ resource "aws_dynamodb_table" "terraform_locks" {
 ```
  > It is important that the hash_key = "LockID" which is a key attribute in order for it to work as intended.
 
-Once our configuration has been set up that way, we run the `terraform apply` which is the normal process
+Once our configuration has been set up that way, we run the `terraform apply` which is the normal process.
