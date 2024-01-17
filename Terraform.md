@@ -162,3 +162,46 @@ resource "aws_dynamodb_table" "terraform_locks" {
  > It is important that the hash_key = "LockID" which is a key attribute in order for it to work as intended.
 
 Once our configuration has been set up that way, we run the `terraform apply` which is the normal process.
+Once the command runs and applies the configuration we have just set up, the `terraform.tfstate` now contains the DynamoDB and the S3 bucket we just made. We also have these two resources provisioned in AWS as well.
+
+With the resources we just made for the backend up and running, we can modify our code in the following way:
+```HCL
+terraform {
+	required_providers {
+		aws = {
+			source = "hashicorp/aws"
+			version = "~> 5.0"
+		}
+	}
+}
+
+provider "aws" {
+	region = "us-west-2"
+}
+
+resource "aws_s3_bucket" "terraform_state" {
+bucket = "devops-directive-tf-state"
+force_destroy = true
+versioning {
+	enabled = true
+}
+
+server_side_encryption_configuration {
+	rule {
+	apply_server_side_encryption_by_default{
+			sse_algorithm = "AES256"
+		}
+	}
+}
+}
+
+resource "aws_dynamodb_table" "terraform_locks" {
+	name = "terraform-state-locking"
+	billing_mode = "PAY_PER_REQUEST"
+	hash_key = "LockID"
+	attribute {
+		name = "LockID"
+		type = "S"
+	}
+}
+```
