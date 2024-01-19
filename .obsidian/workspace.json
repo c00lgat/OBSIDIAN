@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -179,6 +180,7 @@
   },
   "active": "334c19ede029d180",
   "lastOpenFiles": [
+    "Pasted image 20240119162738.png",
     "AppleSeeds MOODLE.md",
     "Basic Shell Programming.md",
     "Work Interview.md",
@@ -214,7 +216,6 @@
     "Microservices.md",
     "CICD.md",
     "Online Courses.md",
-    "Practical Vim Edit Text at the Speed of Thought.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",

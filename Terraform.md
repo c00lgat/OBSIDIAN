@@ -210,4 +210,6 @@ resource "aws_dynamodb_table" "terraform_locks" {
 This time, we specify that we want to use the remote backend: the S3 with the proper configuration applied. 
 And the rest of the configuration is unchanged.
 
-Once that is done, we re-run our `terraform init` command and terraform will automatically recognize 
+Once that is done, we re-run our `terraform init` command and terraform will automatically recognize the infrastructure needed for the remote hosting. 
+(44:50)
+![[Pasted image 20240119162738.png]]
