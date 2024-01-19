@@ -1,4 +1,8 @@
 https://youtu.be/7xngnjfIlK4?si=QIzK6oF260JFzrZK
+
+### Documentation:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
 ### Evolution of Cloud + Infrastructure as Code
 - Infrastructure provisioned via APIs
 - Servers created and destroyed in seconds

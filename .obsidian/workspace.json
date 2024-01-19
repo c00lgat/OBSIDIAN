@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -180,10 +179,11 @@
   },
   "active": "334c19ede029d180",
   "lastOpenFiles": [
+    "Work Interview.md",
+    "Terraform.md",
     "Pasted image 20240119162738.png",
     "AppleSeeds MOODLE.md",
     "Basic Shell Programming.md",
-    "Work Interview.md",
     "Extra curriculum.md",
     "Fantasy Books.md",
     "Hexadecimal Numbers.md",
@@ -193,7 +193,6 @@
     "Website Project.md",
     "Important Links.md",
     "Downloading books.md",
-    "Terraform.md",
     "IMAGES/Pasted image 20240116202808.png",
     "IMAGES/Pasted image 20240116201132.png",
     "IMAGES/Pasted image 20240116201042.png",
@@ -203,7 +202,6 @@
     "IMAGES/Pasted image 20240115205417.png",
     "IMAGES/Pasted image 20240115205344.png",
     "IMAGES/Pasted image 20240115123434.png",
-    "IMAGES/Pasted image 20240115123414.png",
     "SQL.md",
     "SED.md",
     "OCaml.md",
