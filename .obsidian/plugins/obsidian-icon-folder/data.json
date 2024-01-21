@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabVuejs",
       "SiTerraform",
       "SiPython",
       "LiInfinity",
-      "RaDragon",
-      "SiGit"
+      "RaDragon"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -36,5 +36,6 @@
   "CICD.md": "LiInfinity",
   "Python Essentials 1.md": "SiPython",
   "Python Learning Resources.md": "SiPython",
-  "Terraform.md": "SiTerraform"
+  "Terraform.md": "SiTerraform",
+  "Vue.js.md": "FabVuejs"
 }
