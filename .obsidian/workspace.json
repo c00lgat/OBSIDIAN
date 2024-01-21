@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -178,12 +177,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "334c19ede029d180",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
     "Bash.md",
     "Terraform.md",
     "Work Interview.md",
-    "Pasted image 20240119162738.png",
+    "IMAGES/Pasted image 20240119162738.png",
     "AppleSeeds MOODLE.md",
     "Basic Shell Programming.md",
     "Extra curriculum.md",
