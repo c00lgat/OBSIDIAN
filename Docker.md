@@ -78,4 +78,7 @@ We can either access docker images by going to the docker hub website, find the 
 Alternatively, we can simply run the `docker run` command without previously pulling the image own to our local machine. If we run an image that does not exist locally on our local machine, Docker is going to attempt to pull that image down from the registry. 
 
 Running the `docker run -p 8081:80 acantril/containerofcats` command without the `-d` option, the container image is not going to load once we close our terminal session.
-And so, by using the `-d` command as the following; we will successfully run the container image without having it attached to the terminal session and thus terminating the terminal session will not affect the container image that is running: `docker run -p 8081:80 -d acantril/containerofcats`
+And so, by using the `-d` command as the following; we will successfully run the container image without having it attached to the terminal session and thus terminating the terminal session will not affect the container image that is running: `docker run -p 8081:80 -d acantril/containerofcats`.
+Usually, when we want to run containers, we will want to detach them so that we won't have to keep the terminal open.
+
+
