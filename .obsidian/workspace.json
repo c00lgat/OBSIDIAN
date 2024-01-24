@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work Interview.md",
+                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work Interview.md"
+                "file": "Docker.md"
               }
             }
           },
@@ -192,9 +192,11 @@
   },
   "active": "661d6952bccf1da0",
   "lastOpenFiles": [
+    "CICD.md",
+    "Docker.md",
+    "Work Interview.md",
     "Website Project.md",
     "Vue.js.md",
-    "Work Interview.md",
     "Bash.md",
     "Terraform.md",
     "IMAGES/Pasted image 20240119162738.png",
@@ -226,8 +228,6 @@
     "Regex.md",
     "Netacad.md",
     "Motivation.md",
-    "Microservices.md",
-    "CICD.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
