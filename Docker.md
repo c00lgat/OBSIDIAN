@@ -89,4 +89,4 @@ Since the container is running, we can run commands within the container.
 `docker exec -it [containerID]`
 The above command will run commands inside the running container. 
 For example:
-`docker exec -it faf82ca79d4a ps -aux` will list all of the processes running inside the container. 
+`` will list all of the processes running inside the container. 
