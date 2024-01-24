@@ -74,5 +74,8 @@ Images are a collection of independent file system layers.
 #### \[DEMO] Working with existing docker images
 https://learn.cantrill.io/courses/docker-fundamentals/lectures/44151206
 
-We can either access docker images by going to the docker hub website, find the image we need, copy the `docker pull` command, pull the image into our local machine and then run the `docker run` command.
-Alternatively, we can simply run the `docker run` command without previously pulling the image 
+We can either access docker images by going to the docker hub website, find the image we need, copy the `docker pull` (`docker pull acantril/containerofcats`) command, pull the image into our local machine and then run the `docker run` command (`docker run -p 8081:80 acantril/containerofcats)`.
+Alternatively, we can simply run the `docker run` command without previously pulling the image own to our local machine. If we run an image that does not exist locally on our local machine, Docker is going to attempt to pull that image down from the registry. 
+
+Running the `docker run -p 8081:80 acantril/containerofcats` command without the `-d` option, the container image is not going to load once we close our terminal session.
+And so, by using the `-d` command as the following; we will successfully run the container image without having it attached to the terminal session and thus terminating the terminal session will not affect the container image that is running: `docker run -p 8081:80 -d acantril/containerofcats`
