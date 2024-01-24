@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue.js.md",
+                "file": "Work Interview.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vue.js.md",
+                "file": "Work Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vue.js.md",
+                "file": "Work Interview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue.js.md"
+                "file": "Work Interview.md"
               }
             }
           },
@@ -193,8 +192,9 @@
   },
   "active": "661d6952bccf1da0",
   "lastOpenFiles": [
-    "Work Interview.md",
+    "Website Project.md",
     "Vue.js.md",
+    "Work Interview.md",
     "Bash.md",
     "Terraform.md",
     "IMAGES/Pasted image 20240119162738.png",
@@ -206,7 +206,6 @@
     "LISP LANG.md",
     "Learning the vi and Vim Editors.md",
     "Learning resources.md",
-    "Website Project.md",
     "Important Links.md",
     "Downloading books.md",
     "IMAGES/Pasted image 20240116202808.png",
