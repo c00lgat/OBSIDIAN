@@ -81,4 +81,12 @@ Running the `docker run -p 8081:80 acantril/containerofcats` command without the
 And so, by using the `-d` command as the following; we will successfully run the container image without having it attached to the terminal session and thus terminating the terminal session will not affect the container image that is running: `docker run -p 8081:80 -d acantril/containerofcats`.
 Usually, when we want to run containers, we will want to detach them so that we won't have to keep the terminal open.
 
+If we wanted to know the port being used for a container, we can run the command `docker port faf82ca79d4a` where `faf82ca79d4a` is the container ID.
+![[Pasted image 20240124192847.png]]
+On the left, we have the port that is used within the running container. On the right we can see how its mapped onto the Docker host. Its mapped onto any IP on the Docker host and then port 8081.
+Since the container is running, we can run commands within the container.
 
+`docker exec -it [containerID]`
+The above command will run commands inside the running container. 
+For example:
+`docker exec -it faf82ca79d4a ps -aux` will list all of the processes running inside the container. 
