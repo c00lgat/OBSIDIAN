@@ -74,3 +74,5 @@ Images are a collection of independent file system layers.
 #### \[DEMO] Working with existing docker images
 https://learn.cantrill.io/courses/docker-fundamentals/lectures/44151206
 
+We can either access docker images by going to the docker hub website, find the image we need, copy the `docker pull` command, pull the image into our local machine and then run the `docker run` command.
+Alternatively, we can simply run the `docker run` command without previously pulling the image 
