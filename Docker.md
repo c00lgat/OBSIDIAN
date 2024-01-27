@@ -99,3 +99,7 @@ When a container is ran, a writeable layer is added on top of the read-only laye
 The Union File System allows files and directories from different file systems to be overlaid into one conceptual single file system.
 
 The writeable layer is what makes every container it's own unique thing. 
+
+This architecture requires a <mark style="background: #BBFABBA6;">File System Driver</mark>. This has overhead and <mark style="background: #FF5582A6;">impacts</mark> performance.
+
+Layers from the 
