@@ -132,4 +132,7 @@ However, if we attempt to run another Container on the same host, using the same
 
 <mark style="background: #BBFABBA6;">Upsides</mark>: Great if we want to run lots of different **Containers** on a Host, which use different ports.
 The problem starts when we need to run multiple containers of the same Container.
+So, if we needed to scale horizontally or run multiple versions of the same service for different clients. This problem is solved by using the Bridge Networking mode that is mentioned down below.
+
 ## Bridge Networking
+With this network type, a Bridge Network is created separately 
