@@ -116,3 +116,10 @@ Bind Mound map host (or remote) folders to a container folder.
 One host folder can be accessed by multiple containers at the same time. 
 Good type of storage for shared data which is stored on the host. 
 One downside is that Bind mounts rely on a *host folder structure* and is not managed by Docker. This can <mark style="background: #FF5582A6;">reduce portability</mark>.
+The folders used on the host could themselves be network-based folders, for example, mounted remotely using NFS.
+
+#### Volumes:
+These are like bind mounts in that they are storage accessible to a container but they are managed by Docker. So the volume is created by Docker as required. They also exist outside the lifecycle of the container. They can remain when the container is removed. They can be moved between containers and even attached by multiple containers.
+Though there is not file locking, meaning we have to be careful having multiple containers accessing the files at the same time. 
+
+---
