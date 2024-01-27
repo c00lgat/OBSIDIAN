@@ -149,3 +149,17 @@ We can also publish container 2 but we cant use host port 1337 because its alrea
 #### Key takeaways:
 We don't get to choose the Port mappings because they aren't needed.
 Whatever a Container uses for its application port, is used on the Host. 
+No configuration is needed, but it limits us to one of each Container on one Host. 
+But, we can run many different containers on the same Host as long as they use different ports. 
+
+Bridge Networking enables us to overcome this limitation but we need to publish the port mappings for every Container. 
+So map a Container port to a Host port for every single Container which uses the Bridge Networking mode.
+
+We can define many Bridge Networks.
+There are also other types of more complicated Networking.
+
+---
+# DEMO: Extending our container application using Environment Variables. 
+
+https://github.com/acantril/docker-fundamentals/blob/main/docker-container-environment-variables/instructions.md
+
