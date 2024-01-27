@@ -111,3 +111,8 @@ The writable layer in Containers is not something which can be migrated around s
 Should only be used for temporary storage. For example, files that we do not need to be stored on disk such as sensitive files that should not be stored on disk for any length of time, data that we are holding for a short time while processing or accessing.
 ![[Pasted image 20240127164511.png]]
 
+`Bind mounts`: we also can mount folders onto containers. 
+Bind Mound map host (or remote) folders to a container folder.
+One host folder can be accessed by multiple containers at the same time. 
+Good type of storage for shared data which is stored on the host. 
+One downside is that Bind mounts rely on a *host folder structure* and is not managed by Docker. This can <mark style="background: #FF5582A6;">reduce portability</mark>.
