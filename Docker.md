@@ -90,3 +90,12 @@ Since the container is running, we can run commands within the container.
 The above command will run commands inside the running container. 
 For example:
 `` will list all of the processes running inside the container. 
+
+---
+# Docker Container Storage
+
+A container is comprised of a number of File System Layers bunched up together. In this example, a container made up of three layers is shown. Conceptually, they are represented as a single file system. 
+When a container is ran, a writeable layer is added on top of the read-only layer (that makes up the container image). The added writeable layer uses the <mark style="background: #FFB86CA6;">Union</mark> File System.
+The Union File System allows files and directories from different file systems to be overlaid into one conceptual single file system.
+
+The writeable layer is what makes every container it's own unique thing. 
