@@ -89,17 +89,25 @@ Since the container is running, we can run commands within the container.
 `docker exec -it [containerID]`
 The above command will run commands inside the running container. 
 For example:
-`` will list all of the processes running inside the container. 
+`docker exec it [containerID] ps` will list all of the processes running inside the container. 
 
 ---
 # Docker Container Storage
 
-A container is comprised of a number of File System Layers bunched up together. In this example, a container made up of three layers is shown. Conceptually, they are represented as a single file system. 
+A container is comprised of a number of File System Layers bunched up together. In this example, a container made up of three layers is shown. Conceptually, they are represented as a single file system.  
 When a container is ran, a writeable layer is added on top of the read-only layer (that makes up the container image). The added writeable layer uses the <mark style="background: #FFB86CA6;">Union</mark> File System.
 The Union File System allows files and directories from different file systems to be overlaid into one conceptual single file system.
 
-The writeable layer is what makes every container it's own unique thing. 
+The writeable layer is what makes every container it's own unique thing.  
 
-This architecture requires a <mark style="background: #BBFABBA6;">File System Driver</mark>. This has overhead and <mark style="background: #FF5582A6;">impacts</mark> performance.
+This architecture requires a <mark style="background: #BBFABBA6;">File System Driver</mark>. This has overhead and <mark style="background: #FF5582A6;">impacts</mark> performance.  
 
-Layers from the 
+Layers from the docker image can be read from but any writes go into the writable layer. And the container sees both of the writeable layer and the original layers as _one filesystem_.  
+
+The writable layer in Containers is not something which can be migrated around so any data written is conceptually, part of that one single container.  
+
+### Storage options:
+`tmpfs`: is a file system which is accessible to a specific container, which uses the memory in the Docker Host. Simply put, fast, in memory storage that is not persistent since its not being stored on disk. It also cant be shared by containers.
+Should only be used for temporary storage. For example, files that we do not need to be stored on disk such as sensitive files that should not be stored on disk for any length of time, data that we are holding for a short time while processing or accessing.
+![[Pasted image 20240127164511.png]]
+
