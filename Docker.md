@@ -145,3 +145,7 @@ For example: we can run container 1 using `-p 1337:1337` and this would publish 
 ![[Pasted image 20240127173846.png]]
 
 We can also publish container 2 but we cant use host port 1337 because its already used. Instead, we can use this option: `-p 1338:1337` and this would publish container port 1337 through to host port 1338. And then our customers can access this container. So, by using Bridge Networking and publishing containers, we are able to publish the same container to different Host Ports.
+
+#### Key takeaways:
+We don't get to choose the Port mappings because they aren't needed.
+Whatever a Container uses for its application port, is used on the Host. 
