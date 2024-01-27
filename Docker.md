@@ -133,6 +133,10 @@ However, if we attempt to run another Container on the same host, using the same
 <mark style="background: #BBFABBA6;">Upsides</mark>: Great if we want to run lots of different **Containers** on a Host, which use different ports.
 The problem starts when we need to run multiple containers of the same Container.
 So, if we needed to scale horizontally or run multiple versions of the same service for different clients. This problem is solved by using the Bridge Networking mode that is mentioned down below.
+![[Pasted image 20240127173314.png]]
 
 ## Bridge Networking
-With this network type, a Bridge Network is created separately 
+With this network type, a Bridge Network is created separately and containers can be connected to this Bridge Network. Each container gets its own unique IP address on this network and because of this, each container can use the same port because its IP is unique on this Network.
+![[Pasted image 20240127173430.png]]
+In that configuration, each container can communicate with each other directly because they are on the same bridge network. By default, each container on the same Bridge Network can communicate. But, they cant be reached from outside of the Docker Host. 
+In order to have them reached from outside of the Docker Host, we need to publish them.
