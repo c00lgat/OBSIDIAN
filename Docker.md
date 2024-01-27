@@ -139,4 +139,9 @@ So, if we needed to scale horizontally or run multiple versions of the same serv
 With this network type, a Bridge Network is created separately and containers can be connected to this Bridge Network. Each container gets its own unique IP address on this network and because of this, each container can use the same port because its IP is unique on this Network.
 ![[Pasted image 20240127173430.png]]
 In that configuration, each container can communicate with each other directly because they are on the same bridge network. By default, each container on the same Bridge Network can communicate. But, they cant be reached from outside of the Docker Host. 
-In order to have them reached from outside of the Docker Host, we need to publish them.
+In order to have them reached from outside of the Docker Host, we need to publish them. We need to publish a container port to a host port. We will often see it written as `Host Port: Container Port`.
+
+For example: we can run container 1 using `-p 1337:1337` and this would publish container one port 1337 through to host port 1337 at which point it will be accessible by outside customers.
+![[Pasted image 20240127173846.png]]
+
+We can also publish container 2 but we cant use host port 1337 because its already used. Instead, we can use this option: `-p 1338:1337` and this would publish container port 1337 through to host port 1338. And then our customers can access this container. So, by using Bridge Networking and publishing containers, we are able to publish the same container to different Host Ports.
