@@ -123,3 +123,13 @@ These are like bind mounts in that they are storage accessible to a container bu
 Though there is not file locking, meaning we have to be careful having multiple containers accessing the files at the same time. 
 
 ---
+# Docker Container Networking
+## Host Networking
+Containers share the network of the host. When running a container this way, the Host port is the same port that the container application uses.
+<mark style="background: #FF5582A6;">Downsides</mark>: take a containerized application that uses port TCP 1337 for example. Said application is running with the Host Networking configuration on port TCP 1337.
+A user can access the application using the Host IP and the given port TCP 1337.  
+However, if we attempt to run another Container on the same host, using the same Docker Image, using the same Networking mode; its going to fail. Because port TCP 1337 is already used on the Host.
+
+<mark style="background: #BBFABBA6;">Upsides</mark>: Great if we want to run lots of different **Containers** on a Host, which use different ports.
+The problem starts when we need to run multiple containers of the same Container.
+## Bridge Networking
