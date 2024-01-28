@@ -213,3 +213,8 @@ Finally, we run `docker stop db` in order to stop the Database Container.
 `docker rm db` in order to delete the Database Container. 
 `docker stop phpmyadmin` in order to stop the phpMyAdmin container.
 `docker rm phpmyadmin` in order to delete the phpMyAdmin container. 
+
+---
+# DEMO: Docker Bind Mounts & Volumes.
+
+First off, we are going to 
