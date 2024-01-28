@@ -194,4 +194,13 @@ The page should look like this.
 
 phpMyAdmin is a tool that let's us manage database instances. 
 Now, by entering the MariaDB's IP that we retrieved after running the `docker inspect [MariaDB's containerID]` 
- 
+ And then, we move on to use the username and password that we had set using the variable environments.
+
+Running the command `docker exec -it db bash` will allow us to go into the container via a bash shell.
+Once in, we run `df -k` in order to list all of the drives and volumes that are mounted within this container. 
+![[Pasted image 20240128160648.png]]
+As we can see, the container uses no external drives and volumes and only uses ones that are within the container. Meaning, the storage is linked to the life cycle of the container. If the container is deleted, then so is the Storage.
+This is important because if we go to `cd /var/lib/mysql`, and run `ls -la`, we will be able to see all the files that actually store the data of the MariaDB database engine. And all of this is stored within the Container.
+If the container is deleted, then all of the data within the container is also deleted.
+
+This is a limitation that can be overcome by configuring sepa
