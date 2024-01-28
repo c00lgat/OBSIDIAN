@@ -163,3 +163,15 @@ There are also other types of more complicated Networking.
 
 https://github.com/acantril/docker-fundamentals/blob/main/docker-container-environment-variables/instructions.md
 
+`docker inspect [imageNameHere]` allows us to explore a certain image's metadata.
+In an image's metadata we will find an `"Env"` variable. These are environment variables.
+![[Pasted image 20240128152503.png]]
+
+Environment variables are key value pairs. 
+![[Pasted image 20240128152615.png]]
+When setting environment variables, we use all caps for the environment variable names as seen above.
+
+Using the `-e` option while running a container lets us initialize environment variables that will run in the container. Example:
+`docker run --name db -e MYSQL_ROOT_PASSWORD=somewordpress -e MY_SQL_PASSWORD=wordpress -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -d mariadb:latest --default-authentication-plugin=mysql_native_password`
+
+These environment variables are passed to the container when the container is first ran.
