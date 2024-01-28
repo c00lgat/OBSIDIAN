@@ -172,6 +172,17 @@ Environment variables are key value pairs.
 When setting environment variables, we use all caps for the environment variable names as seen above.
 
 Using the `-e` option while running a container lets us initialize environment variables that will run in the container. Example:
-`docker run --name db -e MYSQL_ROOT_PASSWORD=somewordpress -e MY_SQL_PASSWORD=wordpress -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -d mariadb:latest --default-authentication-plugin=mysql_native_password`
+`docker run --name db -e MYSQL_ROOT_PASSWORD=somewordpress -e MY_SQL_PASSWORD=wordpress -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -d mariadb:10.6.4:focal --default-authentication-plugin=mysql_native_password`
 
 These environment variables are passed to the container when the container is first ran.
+The MySQL_ROOT_PASSWORD is responsible for the root user password, the MYSQL_PASSWORD is responsible for the user's password , the MYSQL_DATABASE variable being set up as `wordpress` will create an additional database, in this case, Wordpress.
+MYSQL_USER=wordpress creates a new MariaDB user called wordpress.
+`--default-authentication-plugin=mysql_native_password` a way of specifying another argument to the Docker container, so additional configuration information.
+
+Once we run the container using the above `docker run` command, we run the `docker ps -a` command to make sure the container is up and running. 
+
+Running `docker inspect [insert docker ID]` will return all the metadata for that specific container.
+Once ran, we should look at the `"IPAddress"` variable under `"Networks"`. This IP is the internal IP that the MariaDB Container that we spun up is using. That IP is the IP that we will be using in order to access the MariaDB database server.
+
+
+ 
