@@ -203,4 +203,13 @@ As we can see, the container uses no external drives and volumes and only uses o
 This is important because if we go to `cd /var/lib/mysql`, and run `ls -la`, we will be able to see all the files that actually store the data of the MariaDB database engine. And all of this is stored within the Container.
 If the container is deleted, then all of the data within the container is also deleted.
 
-This is a limitation that can be overcome by configuring sepa
+This is a limitation that can be overcome by configuring separate Storage for our Container using named volumes and bind mounts. 
+
+> Anything inside the Container is Ephemeral.
+
+The storage will not persist past the lifetime of the Container. 
+
+Finally, we run `docker stop db` in order to stop the Database Container.
+`docker rm db` in order to delete the Database Container. 
+`docker stop phpmyadmin` in order to stop the phpMyAdmin container.
+`docker rm phpmyadmin` in order to delete the phpMyAdmin container. 
