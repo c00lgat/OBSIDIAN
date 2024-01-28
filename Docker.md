@@ -163,6 +163,9 @@ There are also other types of more complicated Networking.
 
 https://github.com/acantril/docker-fundamentals/blob/main/docker-container-environment-variables/instructions.md
 
+First, we run a phpMyAdmin container by running the following command:
+`docker run --name phpmyadmin -d -p 8081:80 -e PMA_ARBITRARY=1 phpmyadmin/phpmyadmin`
+
 `docker inspect [imageNameHere]` allows us to explore a certain image's metadata.
 In an image's metadata we will find an `"Env"` variable. These are environment variables.
 ![[Pasted image 20240128152503.png]]
@@ -184,5 +187,11 @@ Once we run the container using the above `docker run` command, we run the `dock
 Running `docker inspect [insert docker ID]` will return all the metadata for that specific container.
 Once ran, we should look at the `"IPAddress"` variable under `"Networks"`. This IP is the internal IP that the MariaDB Container that we spun up is using. That IP is the IP that we will be using in order to access the MariaDB database server.
 
+Now once the MariaDB container is running, we go ahead and type in `http://localhost:8081` into our internet browser. 
+This will take us to the phpMyAdmin container image that is running as we ran it right before we ran the MariaDB container.
+![[Pasted image 20240128154600.png]]
+The page should look like this.
 
+phpMyAdmin is a tool that let's us manage database instances. 
+Now, by entering the MariaDB's IP that we retrieved after running the `docker inspect [MariaDB's containerID]` 
  
