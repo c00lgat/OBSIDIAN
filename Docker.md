@@ -319,4 +319,5 @@ The `compose.yaml` file also configures how Containers are presented: the Networ
 ---
 # DEMO: Using Docker Compose with our application
 Usually, `docker compose` is part of a multi-step process.
-First, we define each of our container 
+First, we define each of our container images using a Docker file. 
+We push those container images to a repository
