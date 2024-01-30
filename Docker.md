@@ -320,4 +320,57 @@ The `compose.yaml` file also configures how Containers are presented: the Networ
 # DEMO: Using Docker Compose with our application
 Usually, `docker compose` is part of a multi-step process.
 First, we define each of our container images using a Docker file. 
-We push those container images to a repository
+We push those container images to a repository.
+And then we define a Docker Compose file and then use that file using the `docker compose`command.
+https://github.com/acantril/docker-fundamentals/blob/main/docker-compose/instructions.md
+```yaml
+services:
+  db:
+    image: mariadb:10.6.4-focal
+    command: '--default-authentication-plugin=mysql_native_password'
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=somewordpress
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+    expose:
+      - 3306
+      - 33060
+  wordpress:
+    image: wordpress:latest
+    volumes:
+      - wordpress_data:/var/www/html
+    ports:
+      - 8081:80
+    restart: always
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_DB_NAME=wordpress
+volumes:
+  mariadb_data:
+  wordpress_data:
+```
+
+> YAML files can't have tabs inside them. Convert tabs to spaces.
+
+Now, the code listed above is the Docker Compose file.
+
+Under `services`, two containers are defined:
+###### `db` container: the database part is defined within this container.
+We can see that the `mariadb_data` volume is mapped inside the container to the `/var/lib/mysql` folder inside the container.
+
+###### `wordpress` container: the application part is defined within this container. 
+We can see that the `wordpress_data` volume is mapped inside this container to the `/var/www/html` folder inside the Container. 
+
+
+This is a multi container deployment of Wordpress. It requires the application part and the database part. 
+
+The Docker compose file also defined two named volumes: `mariadb_data` and `wordpress_data`.
+
+What we will be doing now is saving the YAML file as `compose.yaml`. Go to the folder where the Docker compose file was saved and run the following command: 
+`docker compose up -d`
