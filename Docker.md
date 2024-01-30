@@ -4,8 +4,6 @@ https://www.youtube.com/watch?v=pTFZFxd4hOI
 
 Allows us to run different versions of packages and development environments on the same machine. 
 
-$ docker-compose up
-
 Docker isolates containers. 
 One app can use Node 9, and another can run Node 14 and they can run on the same machine at the same time.
 
@@ -26,7 +24,7 @@ We tell docker to start a container with that image. Our image is loaded into a 
 No need to maintain long complex release documents. Package apps in containers and run it anywhere and everywhere. 
 
 ---
-
+#### Docker Architecture
 ![[Pasted image 20231221222519.png]]
 
 ---
@@ -43,7 +41,7 @@ Running `docker images` will return all the docker images that are currently dow
 ![[Pasted image 20231221223136.png]]
 As we can see, we currently have one Docker image that is downloaded on the Docker Host, which is a container called `hello-world`.
 
-Upon running the first command mentioned, `docker run hello-world`, Docker will return a message saying Unable to find image 'hello-world:latest' locally, meaning that it is not stored on our local host. Docker will then proceed to pull it from Docker Hub and run the container.
+Upon running the first command mentioned, `docker run hello-world`, Docker will return a message saying Unable to find image `hello-world:latest'` locally, meaning that it is not stored on our local host. Docker will then proceed to pull it from Docker Hub and run the container.
 ![[Pasted image 20231221223501.png]]
 
 When we try to run `docker run [insert image name here]` and had no copy of the relevant image, then Docker will pull that image automatically for us.
@@ -416,4 +414,7 @@ Now, we can set up new containers that use these two Volumes and we should be ab
 
 Running `docker compose up -d` is going to recreate both the Wordpress Container and the Database Container. Docker will utilize the existing named volumes. 
 
-Once the command finishes running, we can go back to the browser,
+Once the command finishes running, we can go back to the `http://localhostL:8081/` page, refresh, and we should be able to see the existing post we created previously with no problems.
+
+This is all possible because we used named Volumes, which persist past the lifetime of the existing containers. 
+
