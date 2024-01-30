@@ -390,3 +390,30 @@ Proceed with the registration, save the password and then login as admin into th
 After that, we try to publish a post containing cat images. 
 
 On the Wordpress Container, the actual images were stored. Whereas on the Database Container, the metadata and information about the post were stored.
+
+Now, we are going to demonstrate how the data that we have stored in both of the Containers can live on past the lifecycle of the Containers.
+We are going to be doing that using the *Multi Container Management* functionality provided by Docker Compose. 
+
+Running `docker ps` command is going to show us the two containers that we are running: 
+![[Pasted image 20240130234239.png]]
+
+Now, while still being in the same folder as the `compose.yaml` file, we are going to go ahead and run the following command:
+`docker compose down`
+That is going to stop and remove any of the containers defined within the `composed.yaml` file. Its going to remove the MariaDB container and the Wordpress container. 
+
+Running the `docker ps` command once again is going to show us that there are currently no running containers:
+![[Pasted image 20240130234442.png]]
+
+Running `docker ps -a` is going to show us that there are currently no stopped containers, either:
+![[Pasted image 20240130234528.png]]
+These have been completely removed.
+
+However, running the `docker volume ls` command is going to show us that the volumes we have previously created were not deleted:
+![[Pasted image 20240130234701.png]]
+These volumes are actually storing the Wordpress data and the data from MariaDB.
+
+Now, we can set up new containers that use these two Volumes and we should be able to see the post that we had created in the previous two containers.
+
+Running `docker compose up -d` is going to recreate both the Wordpress Container and the Database Container. Docker will utilize the existing named volumes. 
+
+Once the command finishes running, we can go back to the browser,
