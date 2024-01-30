@@ -233,3 +233,21 @@ Bind mounts allow us to map a file or directory on the Docker host onto a Contai
 Useful when we need to access any files within a certain part of the Container from the Docker host or access a shared collection of files between Containers or between Containers and other compute services.
 
 In this example, we are going to create a bind mount for the MariaDB data folder within the Container and map it to a folder on our Docker Host. 
+This can be done through two different command line options:
+- `-v`
+- `--mount`
+
+First off, we go ahead and create a folder in our Home folder: `mariadb_data`
+
+In order to use Bind Mounts with Docker; the following command is ran (<mark style="background: #D2B3FFA6;">Linux/MacOS</mark>):
+```bash
+docker run \
+--name db \
+-e MYSQL_ROOT_PASSWORD=somewordpress \
+-e MYSQL_PASSWORD=wordpress \
+-e MYSQL_USER=wordpress \
+--mount type=bind,source="$(pwd)"/mariadb_data,target=var/lib/mysql \
+-d \
+mariadb:10.6.4-focal \
+--default-authentication-plugin=mysql_native_password
+```
