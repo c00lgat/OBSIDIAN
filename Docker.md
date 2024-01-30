@@ -226,9 +226,9 @@ The Container up above is going to allow us to interact with MariaDB database Co
  The following commands will only apply to Linux/MacOS systems as these commands will
  cause problems on Windows. 
 
-The instructions are split into two different components: Bind Mounts and Named Volumes.
+The instructions are split into two different components: <mark style="background: #FFF3A3A6;">Bind Mounts</mark> and <mark style="background: #FFF3A3A6;">Named Volumes</mark>.
 
-## Bind Mounts
+## <mark style="background: #ABF7F7A6;">Bind Mounts</mark>
 Bind mounts allow us to map a file or directory on the Docker host onto a Container.
 Useful when we need to access any files within a certain part of the Container from the Docker host or access a shared collection of files between Containers or between Containers and other compute services.
 
@@ -253,4 +253,31 @@ mariadb:10.6.4-focal \
 ```
 The `source="$(pwd)"/maria_db` section of the code is going to return the `maria_db` folder that is in the current working directory.
 
-The `target=/var/lib/mysql` is the Container folder 
+The `target=/var/lib/mysql` is the Container folder in which the data folder for MariaDB resides.
+
+In order to check whether the command worked as intended or not, we change directory into the `/maria_db` folder that we have created and run the `la` command.
+![[Pasted image 20240130173939.png]]As we can see, all the data within the `/var/lib/mysql` folder that exists on the container has now been mapped into the `/maria_db` folder on the Docker host. 
+
+Any changes in the `/var/lib/mysql` folder is going to be reflected within the `/maria_db` folder on the Docker host; and any changes done to the `/maria_db` folder on the Docker host, will be reflected in the `/var/lib/mysql` folder in the Container.
+
+Now, we will be illustrating the other format.
+Run `docker stop db` and then `docker rm db` in order to get rid of the running Container. 
+
+### Variation 2 of Binding Mounts:
+Instead of using the `--mount` command option, the other alternative is using the `-v` command option. And it is used as follows:
+```bash
+docker run \
+--name db \
+-e MYSQL_ROOT_PASSWORD=somewordpress \
+-e MYSQL_PASSWORD=wordpress \
+-e MYSQL_USER=wordpress \
+-v "$(pwd)"/mariadb_data:/var/lib/mysql \
+-d \
+mariadb:10.6.4-focal \
+--default-authentication-plugin=mysql_native_password
+```
+
+The `-v` is a slightly different format. A shorter way than using the `--mount`. Both of them do the exact same thing.
+
+## <mark style="background: #ABF7F7A6;">Named Volumes</mark>
+Volumes are the pr
