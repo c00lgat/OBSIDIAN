@@ -251,3 +251,6 @@ docker run \
 mariadb:10.6.4-focal \
 --default-authentication-plugin=mysql_native_password
 ```
+The `source="$(pwd)"/maria_db` section of the code is going to return the `maria_db` folder that is in the current working directory.
+
+The `target=/var/lib/mysql` is the Container folder 
