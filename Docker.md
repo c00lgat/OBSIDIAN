@@ -300,3 +300,5 @@ A Volume can be deleted by running `docker volume rm mariadb_data`.
 Volumes get created either explicitly; e.g. when we run a docker volume create command.
 Or alternatively, when we specify to use a Volume on the `docker run` command on a Volume that does not already exist. Then the Volume gets created as part of that process.
 
+---
+# Docker Compose
