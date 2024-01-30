@@ -309,3 +309,14 @@ The way a Docker Compose works is that it reads a `docker compose file` which is
 Docker <mark style="background: #BBFABBA6;">Creates</mark>, <mark style="background: #FFB86CA6;">Updates</mark> or <mark style="background: #FF5582A6;">deletes</mark> resources based on the contents of that file.
 Resources include Containers, Networking, Volumes and other things Docker provides.
 
+Docker Compose starts with the `compose.yaml` file which defines what Docker should do.
+Generally, to start with this file is provided via the Docker Client to Docker via the `docker compose up` command.
+Based on this, the **Docker Daemon (dockerd)** begins to create, adjust or delete resources. This might include Volumes, Network and even Containers.
+These Containers will require Container Images. These are often pulled from registries such as Docker Hub. 
+The `compose.yaml` file also configures how Containers are presented: the Networking of Containers such as the networking between containers, and how the Containers are accessible from outside of the Docker Host. 
+![[Pasted image 20240130185602.png]]
+
+---
+# DEMO: Using Docker Compose with our application
+Usually, `docker compose` is part of a multi-step process.
+First, we define each of our container 
