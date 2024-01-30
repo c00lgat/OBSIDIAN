@@ -302,3 +302,10 @@ Or alternatively, when we specify to use a Volume on the `docker run` command on
 
 ---
 # Docker Compose
+Docker Compose is used to <mark style="background: #BBFABBA6;">Create</mark>, <mark style="background: #FFB86CA6;">Manage</mark> and <mark style="background: #FF5582A6;">Cleanup</mark> multi-container applications.
+Docker Compose let's us manage applications which consist of multiple Containers and associated things like Volumes and networking.
+
+The way a Docker Compose works is that it reads a `docker compose file` which is usually a file called `compose.yaml` and for legacy purposes: `docker-compose.yaml`.
+Docker <mark style="background: #BBFABBA6;">Creates</mark>, <mark style="background: #FFB86CA6;">Updates</mark> or <mark style="background: #FF5582A6;">deletes</mark> resources based on the contents of that file.
+Resources include Containers, Networking, Volumes and other things Docker provides.
+
