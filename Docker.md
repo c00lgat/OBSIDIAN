@@ -217,4 +217,19 @@ Finally, we run `docker stop db` in order to stop the Database Container.
 ---
 # DEMO: Docker Bind Mounts & Volumes.
 
-First off, we are going to 
+First off, we are going to spin up a `phpMyAdmin` Container, by running the following command:
+```bash
+docker run --name phpmyadmin -d -p 8081:80 -e PMA_ARBITRARY=1 phpmyadmin/phpmyadmin
+```
+The Container up above is going to allow us to interact with MariaDB database Container if needed.
+
+ The following commands will only apply to Linux/MacOS systems as these commands will
+ cause problems on Windows. 
+
+The instructions are split into two different components: Bind Mounts and Named Volumes.
+
+## Bind Mounts
+Bind mounts allow us to map a file or directory on the Docker host onto a Container.
+Useful when we need to access any files within a certain part of the Container from the Docker host or access a shared collection of files between Containers or between Containers and other compute services.
+
+In this example, we are going to create a bind mount for the MariaDB data folder within the Container and map it to a folder on our Docker Host. 
