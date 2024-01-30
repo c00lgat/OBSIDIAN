@@ -373,4 +373,20 @@ This is a multi container deployment of Wordpress. It requires the application p
 The Docker compose file also defined two named volumes: `mariadb_data` and `wordpress_data`.
 
 What we will be doing now is saving the YAML file as `compose.yaml`. Go to the folder where the Docker compose file was saved and run the following command: 
-`docker compose up -d`
+`docker compose up -d`. If nothing else is defined in the command, Docker is going to look for that Docker Compose file using one of its default valid names. `compose.yaml` is one of those names. 
+
+The `up` option is going to tell Docker Compose to bring up the things defined in that file. Will have the effect of running containers and creating any named volumes.
+
+The `-d` option is going to detach the command from the terminal, running it in the background.
+
+Running the `docker ps` command is going to show us a list of the Containers that are currently running: ![[Pasted image 20240130233305.png]]
+
+Running the `docker volume ls` command is going to show us the volumes that we have created:
+![[Pasted image 20240130233343.png]]
+
+Once all of that is done, we go to `http://localhost:8081/` and see that the Wordpress application is up and running.
+Proceed with the registration, save the password and then login as admin into the Wordpress application that is running.
+
+After that, we try to publish a post containing cat images. 
+
+On the Wordpress Container, the actual images were stored. Whereas on the Database Container, the metadata and information about the post were stored.
