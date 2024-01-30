@@ -280,4 +280,23 @@ mariadb:10.6.4-focal \
 The `-v` is a slightly different format. A shorter way than using the `--mount`. Both of them do the exact same thing.
 
 ## <mark style="background: #ABF7F7A6;">Named Volumes</mark>
-Volumes are the pr
+Volumes are the preferred way of adding storage to Docker Containers outside the lifecycle of a Container. 
+*Managed entirely by Docker*, and they work whether we are using Windows Container hosts or Linux Container hosts.
+Instead of mapping a Container folder to a folder on the Docker host, we essentially create a Volume, or let Docker do that on our behalf; which is entirely managed end-to-end by Docker, and this Volume exists outside the lifecycle of the Container. If the Container is deleted, this Volume continues to exist.
+
+In order to create a volume, we use the following command: 
+```bash
+docker volume create mariadb_data
+```
+This command will create a new Volume called `mariadb_data`.
+
+Running the command `docker volume ls` will display all the Volumes.
+We can display the Metadata of any Volume by running `docker volume inspect mariadb_data`:
+![[Pasted image 20240130175247.png]]
+
+A Volume can be deleted by running `docker volume rm mariadb_data`.
+
+
+Volumes get created either explicitly; e.g. when we run a docker volume create command.
+Or alternatively, when we specify to use a Volume on the `docker run` command on a Volume that does not already exist. Then the Volume gets created as part of that process.
+
