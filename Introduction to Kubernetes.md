@@ -104,4 +104,8 @@ A poorly designed legacy application should be re-designed and re-built from scr
 
 Applications tightly coupled with data stores are also poor candidates for refactoring.
 
+**Post Refactoring Challenges**
+Once a Monolith survives the refactoring phase, the next challenge is to design mechanisms or find suitable tools to keep the decoupled modules alive and ensure the application resiliency as a whole.
 
+**Runtimes**
+Choosing runtimes might pose another challenge. Running many modules on a single physical or virtual server could result in libraries conflicting with each other; causing errors and failures. 
