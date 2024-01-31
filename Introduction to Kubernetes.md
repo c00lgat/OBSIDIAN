@@ -94,3 +94,14 @@ If an enterprise chooses to go through the Incremental refactoring approach, a R
 Through refactoring, a Monolith receives a second chance at life. To live on as a modular system adapted to fully integrate with today's fast-paced cloud automation tools and services.
 
 ### Challenges
+Not all Monoliths are able to be turned into Microservice based applications. Some even fail. 
+There are multiple considerations to take before one proceeds to modernize a Monolith application.
+
+**Poor candidates**
+If a Monolith application is written in legacy code such as Cobol or Assembly, it might make more sense to just rebuild it from the ground up as a cloud-native application. 
+
+A poorly designed legacy application should be re-designed and re-built from scratch using modern architectural patterns for microservices and even containers.
+
+Applications tightly coupled with data stores are also poor candidates for refactoring.
+
+
