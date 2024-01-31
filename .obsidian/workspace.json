@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8d360894de14bf7c",
+        "id": "fcd2f6ee89384167",
         "type": "tabs",
         "children": [
           {
-            "id": "334c19ede029d180",
+            "id": "3c129b065e5cd151",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work Interview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "661d6952bccf1da0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker.md",
+                "file": "Mirantis CN50.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker.md",
+                "file": "Mirantis CN50.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker.md",
+                "file": "Mirantis CN50.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker.md"
+                "file": "Mirantis CN50.md"
               }
             }
           },
@@ -191,22 +177,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "661d6952bccf1da0",
+  "active": "3c129b065e5cd151",
   "lastOpenFiles": [
-    "Pasted image 20240131100135.png",
-    "Pasted image 20240131100127.png",
-    "Pasted image 20240130234811.png",
-    "Pasted image 20240130234701.png",
-    "Pasted image 20240130234600.png",
-    "Pasted image 20240130234528.png",
-    "Pasted image 20240130234455.png",
-    "Pasted image 20240130234442.png",
-    "Pasted image 20240130234255.png",
-    "Pasted image 20240130234239.png",
-    "Pasted image 20240130233656.png",
+    "IMAGES/Pasted image 20240130233315.png",
+    "Mirantis CN50.md",
+    "IMAGES/Pasted image 20240127173846.png",
+    "IMAGES/Pasted image 20240128152615.png",
+    "IMAGES/Pasted image 20240128152503.png",
+    "Docker.md",
+    "IMAGES/Pasted image 20240131100135.png",
+    "IMAGES/Pasted image 20240131100127.png",
+    "IMAGES/Pasted image 20240130234811.png",
+    "IMAGES/Pasted image 20240130234701.png",
+    "IMAGES/Pasted image 20240130234600.png",
+    "IMAGES/Pasted image 20240130234528.png",
+    "IMAGES/Pasted image 20240130234455.png",
     "README.md",
     "CICD.md",
-    "Docker.md",
     "Work Interview.md",
     "Website Project.md",
     "Vue.js.md",
@@ -228,7 +215,6 @@
     "Python Essentials 1.md",
     "Python Learning Resources.md",
     "VIM.md",
-    "Regex.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
