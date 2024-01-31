@@ -137,3 +137,5 @@ You should now be able to:
 ## Introduction
 Container images allow us to confine the application code, along with its dependencies and runtime in a pre-defined format.
 
+Container runtimes such as *runC*, *containerd* and *cri-o* can use pre-packaged images as a source to create and run one or more containers.
+
