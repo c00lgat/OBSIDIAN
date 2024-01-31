@@ -109,3 +109,11 @@ Once a Monolith survives the refactoring phase, the next challenge is to design 
 
 **Runtimes**
 Choosing runtimes might pose another challenge. Running many modules on a single physical or virtual server could result in libraries conflicting with each other; causing errors and failures. 
+This forces running each individual module on its own server where such conflicts could be eliminated but that is not an economical way of resource management. 
+That also results in wasting server resources as each server has the same main dependencies and libraries such as the Operating System.
+At times, the OS consumes more resources than the Modules themselves.
+
+**Solution**
+Application Containers. 
+They provide encapsulated lightweight runtime environment for application modules. 
+
