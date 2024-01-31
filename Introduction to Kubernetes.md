@@ -56,6 +56,19 @@ Microservices-based architecture is aligned with Event-driven Architecture and S
 > *Event-driven Architecture* uses events to trigger and communicate between decoupled services and is common in modern applications built with microservices. An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website. Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped). 
 
 >Event-driven architectures have *three* key components: event producers, event routers, and event consumers. A producer publishes an event to the router, which filters and pushes the events to consumers. Producer services and consumer services are decoupled, which allows them to be scaled, updated, and deployed independently.
+
+Below is a demonstration of an Event-driven architecture (Taken from AWS).
 ![[1-SEO-Diagram_Event-Driven-Architecture_Diagram.b3fbc18f8cd65e3af3ccb4845dce735b0b9e2c54.png]]
 
->
+>*Service-Oriented Architecture (SOA) Principles*:There are 9 types of SOA design principles. 
+- Standardized Service Contract (Services adhere to a service description)
+- Loose Coupling (Less dependency on each other)
+- Service Abstraction (Services hide the logic they encapsulate from the outside world)
+- Service Reusability (Logic is divided into services with the intent of maximizing reuse)
+- Service Autonomy (Services should have control over the logic they encapsulate)
+- Service Statelessness (This means that services should not withhold information from one state to the other)
+- Service Discoverability (Services can be discovered (usually in a service registry))
+- Service Composability (Services break big problems into little problems)
+- Service Interoperability (Services should use standards that allow diverse subscribers to use the service)
+https://www.guru99.com/soa-principles.html
+
