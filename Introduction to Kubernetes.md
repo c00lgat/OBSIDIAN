@@ -83,3 +83,14 @@ As opposed to Monolith Architecture, Microservices allow for virtually no downti
 Thus, Microservices allow for an agile approach of development, having separate teams focus on separate features, thus making development more efficient and productive.
 
 ### Refactoring
+Some Monolith applications are harder than others in migrating to a Microservices approach. Some have failed, even.
+
+There exists two approaches to breaking down a Monolith application into a Microservices based application:
+- "Bang-bang" approach: focuses all efforts on refactoring of the Monolith, postponing the development and implementation of any new features - essentially delaying progress.
+- An incremental refactoring approach: new features are developed and implemented as modern microservices which are able to communicate with the Monolith through APIs with no dependency on the Monolith's code. Existing features within the Monolith are also slowly being refactored out and being modernized and the Monolith starts slowly fading away. Gradual transition, allows for phased migration of the application features.
+
+If an enterprise chooses to go through the Incremental refactoring approach, a Roadmap is needed to highlight the development timeline and order of features to separate from the Monolith and turn into distributed Microservices, how to decouple dependent components such as the databases from the application to separate data complexity from application logic and more. 
+
+Through refactoring, a Monolith receives a second chance at life. To live on as a modular system adapted to fully integrate with today's fast-paced cloud automation tools and services.
+
+### Challenges
