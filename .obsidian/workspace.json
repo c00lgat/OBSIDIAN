@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ac75ded70ba921a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction to Kubernetes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kubernetes.md",
+                "file": "Introduction to Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kubernetes.md",
+                "file": "Introduction to Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kubernetes.md"
+                "file": "Introduction to Kubernetes.md"
               }
             }
           },
@@ -191,10 +203,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "654d9d5ca3226fa7",
+  "active": "ac75ded70ba921a7",
   "lastOpenFiles": [
-    "Mirantis CN50.md",
+    "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158x_Course_Syllabus__2022_.pdf",
     "Kubernetes.md",
+    "Introduction to Kubernetes.md",
+    "Pasted image 20240131125630.png",
+    "Mirantis CN50.md",
     "Excalidraw/Drawing 2024-01-31 12.35.47.excalidraw.md",
     "2023-09-03.md",
     "2024-01-31.md",
@@ -209,7 +224,6 @@
     "IMAGES/Pasted image 20240130234811.png",
     "IMAGES/Pasted image 20240130234701.png",
     "IMAGES/Pasted image 20240130234600.png",
-    "IMAGES/Pasted image 20240130234528.png",
     "README.md",
     "CICD.md",
     "Work Interview.md",
@@ -228,8 +242,6 @@
     "Important Links.md",
     "Downloading books.md",
     "SQL.md",
-    "SED.md",
-    "OCaml.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",

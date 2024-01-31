@@ -38,5 +38,6 @@
   "Python Learning Resources.md": "SiPython",
   "Terraform.md": "SiTerraform",
   "Vue.js.md": "FabVuejs",
-  "Kubernetes.md": "SiKubernetes"
+  "Kubernetes.md": "SiKubernetes",
+  "Introduction to Kubernetes.md": "SiKubernetes"
 }
