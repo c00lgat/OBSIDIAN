@@ -139,3 +139,16 @@ Container images allow us to confine the application code, along with its depend
 
 Container runtimes such as *runC*, *containerd* and *cri-o* can use pre-packaged images as a source to create and run one or more containers.
 
+While these runtimes can run multiple containers on a single host, in practice, we would like to have a fault-tolerant and scalable solution. 
+Such solution is achieved by building a single **controller/management unit**, a collection of multiple hosts connected together.
+This controller/management unit is generally referred to as a ***container orchestrator***.
+
+
+**Learning Objectives**
+By the end of this chapter, you should be able to:
+- Define the concept of container orchestration.
+- Explain the benefits of using container orchestration.
+- Discuss different container orchestration options.
+- Discuss different container orchestration deployment options.
+
+## What Are Containers?
