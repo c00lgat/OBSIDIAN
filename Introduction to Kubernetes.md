@@ -38,7 +38,7 @@ Although scaling can be achieved manually through deployment of the application 
 
 Monolith application down time during updates, upgrades, patches or migrations is inevitable. Maintenance windows have to be planned well in advance.
 
-## The Modern Microservice
+### The Modern Microservice
 An analogy of pebbles, and a 1000-ton boulder has been mentioned to try and demonstrate how the two approaches work and how efficient they are. 
 The pebbles are the microservices of which the application is made out of.
 But on the other hand, with the Monolith approach, the 1000-ton boulder represents the single process-single system application that is extremely hard to maintain, change, upgrade, update and scale.
@@ -72,3 +72,14 @@ Below is a demonstration of an Event-driven architecture (Taken from AWS).
 - Service Interoperability (Services should use standards that allow diverse subscribers to use the service)
 https://www.guru99.com/soa-principles.html
 
+Microservices are made out of smaller independent processes which communicate with each other through APIs over a network. 
+APIs allow internal and external access to the services.
+
+Although Microservices do add up to the complexity of a system, their distributed nature allows for easy scalability, which is one of it's biggest benefits.
+Since Microservices allow modularity, each component or each microservice can be scaled individually, either manually, or automatically through demand-based autoscaling. 
+
+As opposed to Monolith Architecture, Microservices allow for virtually no downtime and no service disruption to clients while updating, upgrading or going through changes as they are usually rolled out seamlessly.
+
+Thus, Microservices allow for an agile approach of development, having separate teams focus on separate features, thus making development more efficient and productive.
+
+### Refactoring
