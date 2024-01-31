@@ -119,3 +119,21 @@ They provide encapsulated lightweight runtime environment for application module
 
 Consistent software environments for developers, testers, all the way from development to production.
 
+Containers ensure application portability from physical bare-metal  to Virtual Machines, but this time, with multiple applications deployed on the very same server, each running in their own execution environments isolated from each other, avoiding conflicts, errors and failures.
+
+Other features include higher server utilization, individual module scalability, flexibility, interoperability and easy integration with automation tools.
+
+###### Learning Objectives:
+You should now be able to:
+- Explain what a monolith is.
+- Discuss the monolith's challenges in the cloud.
+- Explain the concept of microservices.
+- Discuss microservices advantages in the cloud.
+- Describe the transformation path from a monolith to microservices.
+
+---
+# Chapter 2. Container Orchestration
+
+## Introduction
+Container images allow us to confine the application code, along with its dependencies and runtime in a pre-defined format.
+
