@@ -31,3 +31,12 @@ By the end of this chapter, you should be able to:
 - Discuss microservices advantages in the cloud.
 - Describe the transformation path from a monolith to microservices.
 
+A Monolith software is extremely pricey to maintain. It has to run on a single system that is not only pricey but also complex and at times, challenging to procure. 
+
+Since the Monolith application runs as a single process, the scaling of individual features is almost impossible. 
+Although scaling can be achieved manually through deployment of the application on another server, typically behind a load balancer - another pricey option.
+
+Monolith application down time during updates, upgrades, patches or migrations is inevitable. Maintenance windows have to be planned well in advance.
+
+An analogy of pebbles, and a 1000-ton boulder has been mentioned to try and demonstrate how the two approaches work and how efficient they are. 
+The pebbles are the microservices
