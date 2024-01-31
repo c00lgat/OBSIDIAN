@@ -117,3 +117,5 @@ At times, the OS consumes more resources than the Modules themselves.
 Application Containers. 
 They provide encapsulated lightweight runtime environment for application modules. 
 
+Consistent software environments for developers, testers, all the way from development to production.
+
