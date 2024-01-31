@@ -418,3 +418,30 @@ Once the command finishes running, we can go back to the `http://localhostL:8081
 
 This is all possible because we used named Volumes, which persist past the lifetime of the existing containers. 
 
+Running `docker compose down` will remove the containers and the networking for the containers.
+
+We will have to remove the Volumes manually. 
+Running `docker volume ls` will return the names of the volumes.
+![[Pasted image 20240131100127.png]]
+
+Running `docker volume rm [volume_name]` will remove the Volume.
+
+Run `docker ps -a` to make sure there are no running/stopped containers. 
+
+Run `docker volume ls` to make sure the Volumes we created have been deleted. 
+
+---
+# Container Registry
+Container registries are like GitHub but for Docker images. 
+
+Docker Hub is an example of a registry. 
+Private registries are a thing (cloud or on-premises).
+
+Registries are split into repositories just like GitHub: You can `docker pull` from or `docker push` to repositories.
+`docker pull` will pull images from the repository to the local Docker host. 
+`docker push` will push images from the Docker Host to the registry of our choosing. 
+
+To use Docker Hub, we will need a username, repository name and a tag: e.g. `acantril/containerofcats:latest`
+
+---
+# DEMO: Uploading our application to Docker Hub
