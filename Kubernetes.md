@@ -6,6 +6,9 @@ https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.28.pdf
 CNCF curriculums:
 https://github.com/cncf/curriculum
 
+CNCF courses:
+https://www.cncf.io/training/courses/
+https://training.linuxfoundation.org/training/kubernetes-fundamentals/
 
 ![[Pasted image 20240131125630.png]]
 >Kubernetes primitives relevant to the exam.

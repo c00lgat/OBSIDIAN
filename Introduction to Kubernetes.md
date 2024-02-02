@@ -347,3 +347,23 @@ For Kubernetes, the Cloud Native Computing Foundation:
 - Supports ad hoc activities.
 - Sponsors conferences and meetup events.
 
+---
+# Chapter 4. Kubernetes Architecture
+## Introduction
+In this chapter, we will explore the **Kubernetes architecture**, the components of a **control plane node**, the role of the **worker nodes**, the cluster state management with **etcd** and the network setup requirements. We will also learn about the **Container Network Interface (CNI)**, as Kubernetes' network specification.
+
+**Learning Objectives**
+By the end of this chapter, you should be able to:
+- Discuss the Kubernetes architecture.
+- Explain the different components of the control plane and worker nodes.
+- Discuss cluster state management with etcd.
+- Review the Kubernetes network setup requirements.
+
+## Kubernetes Architecture
+At a very high level, Kubernetes is a cluster of compute systems categorized by their distinct roles:
+- One or more **control plane** nodes
+- One or more **worker** nodes (optional, but recommended).
+
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png]]
+
+**Control Plane Node overview**
