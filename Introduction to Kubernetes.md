@@ -238,3 +238,10 @@ By the end of this chapter, you should be able to:
 - Explain the role of the Cloud Native Computing Foundation.
 
 ## What Is Kubernetes?
+According to the [Kubernetes website](https://kubernetes.io/),
+_"Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications"._
+
+Kubernetes comes from a Greek word, which means *helmsman* or *ship pilot*. We can think of Kubernetes as the pilot on a ship of containers.
+
+Kubernetes is also referred to as **k8s** (pronounced Kate's), as there are 8 characters between k and s.
+
