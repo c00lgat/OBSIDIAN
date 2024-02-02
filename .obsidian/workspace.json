@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction to Kubernetes.md"
+                "file": "Kubernetes.md"
               }
             }
           },
@@ -205,11 +204,12 @@
   },
   "active": "ac75ded70ba921a7",
   "lastOpenFiles": [
+    "Introduction to Kubernetes.md",
+    "cncf-color-bg.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Deployment.png",
     "1-SEO-Diagram_Event-Driven-Architecture_Diagram.b3fbc18f8cd65e3af3ccb4845dce735b0b9e2c54.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158x_Course_Syllabus__2022_.pdf",
     "Kubernetes.md",
-    "Introduction to Kubernetes.md",
     "Pasted image 20240131125630.png",
     "Mirantis CN50.md",
     "Excalidraw/Drawing 2024-01-31 12.35.47.excalidraw.md",
@@ -223,8 +223,6 @@
     "Docker.md",
     "IMAGES/Pasted image 20240131100135.png",
     "IMAGES/Pasted image 20240131100127.png",
-    "IMAGES/Pasted image 20240130234811.png",
-    "IMAGES/Pasted image 20240130234701.png",
     "README.md",
     "CICD.md",
     "Work Interview.md",
