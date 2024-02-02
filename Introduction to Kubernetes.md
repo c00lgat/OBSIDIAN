@@ -161,3 +161,21 @@ Container deployment.
 Microservices are lightweight applications written in various modern programming languages with specific dependencies, libraries and environmental requirements.
 To ensure an application has everything it needs in order to run, it is packaged together with its dependencies.
 
+Containers encapsulate microservices but do not run them directly. Containers run container images.
+
+A *Container Image* bundles the application along with its runtime, libraries and dependencies and is the source of a container deployed to offer an isolated executable environment for the application.
+They can be deployed using any specific container image and on many different platforms such as servers, virtual servers, public cloud, etc.
+
+## What Is Container Orchestration?
+Running containers in Development on a single host is usually fine but, in environments such as QA and Production, that is no longer a viable option as containers need to meet more specific demands: 
+- Fault-tolerance
+- On-demand scalability
+- Optimal resource usage
+- Auto-discovery to automatically discover and communicate with each other
+- Accessibility from the outside world
+- Seamless updates/rollbacks without any downtime
+
+**Container Orchestration** are tools which group systems together to form clusters where containers' deployment and management is automated at scale while meeting the requirements mentioned above.
+
+
+## Container Orchestrators
