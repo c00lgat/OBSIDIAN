@@ -152,3 +152,5 @@ By the end of this chapter, you should be able to:
 - Discuss different container orchestration deployment options.
 
 ## What Are Containers?
+Containers allow us to deploy Microservice based application on any infrastructure of our choice. It provides a high-performing, scalable solution as opposed to the Monolith approach. 
+Containers are best suited to deliver microservices by providing portable, isolated virtual environments for applications to run without 
