@@ -153,4 +153,11 @@ By the end of this chapter, you should be able to:
 
 ## What Are Containers?
 Containers allow us to deploy Microservice based application on any infrastructure of our choice. It provides a high-performing, scalable solution as opposed to the Monolith approach. 
-Containers are best suited to deliver microservices by providing portable, isolated virtual environments for applications to run without 
+Containers are best suited to deliver microservices by providing portable, isolated virtual environments for applications to run without interference from other running apps.
+
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Deployment.png]]
+Container deployment.
+
+Microservices are lightweight applications written in various modern programming languages with specific dependencies, libraries and environmental requirements.
+To ensure an application has everything it needs in order to run, it is packaged together with its dependencies.
+
