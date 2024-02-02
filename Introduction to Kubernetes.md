@@ -208,4 +208,33 @@ While manually maintaining a couple of containers or dozens of them, orchestrato
 - Manage and optimize resource usage.
 - Allow for implementation of policies to secure access to applications running inside containers.
 
-## Where to Deploy Container
+## Where to Deploy Container Orchestrators?
+On bare metal, Virtual Machines, on-premises, on public and hybrid clouds. Kubernetes, for example, can be deployed on a workstation, with or without an isolation layer such as a local hypervisor or container runtime, inside a company's data center, in the cloud on AWS Elastic Compute Cloud (EC2) instances, Google Compute Engine (GCE) VMs, DigitalOcean Droplets, OpenStack, etc.
+
+Last but not least, there is the managed container orchestration as-a-Service, more specifically the managed Kubernetes as-a-Service solution, offered and hosted by the major cloud providers, such as [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (Amazon EKS), [Azure Kubernetes Service](https://azure.microsoft.com/en-us/products/kubernetes-service/#overview) (AKS), [DigitalOcean Kubernetes](https://www.digitalocean.com/products/kubernetes), [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) (GKE), [IBM Cloud Kubernetes Service](https://www.ibm.com/cloud/kubernetes-service), [Oracle Container Engine for Kubernetes](https://www.oracle.com/cloud/cloud-native/container-engine-kubernetes/), or [VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid).
+
+**Learning Objectives (Review)**
+You should now be able to:
+- Define the concept of container orchestration.
+- Explain the benefits of using container orchestration.
+- Discuss different container orchestration options.
+- Discuss different container orchestration deployment options.
+
+---
+# Chapter 3. Kubernetes
+
+## Introduction
+**Chapter Overview**
+In this chapter, we describe Kubernetes, its features, and the reasons why you should use it. We will explore the evolution of Kubernetes from Borg, Google's very own distributed workload manager.
+
+We will also learn about the Cloud Native Computing Foundation (CNCF), which currently hosts the Kubernetes project, along with other popular cloud-native projects, such as Prometheus, Fluentd, cri-o, containerd, Helm, Envoy, and Contour, just to name a few.
+
+**Learning Objectives**
+By the end of this chapter, you should be able to:
+- Define Kubernetes.
+- Explain the reasons for using Kubernetes.
+- Discuss the features of Kubernetes.
+- Discuss the evolution of Kubernetes from Borg.
+- Explain the role of the Cloud Native Computing Foundation.
+
+## What Is Kubernetes?
