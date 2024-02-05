@@ -503,3 +503,6 @@ Runtimes are required on all nodes of a Kubernetes cluster, both control plane a
 	  Formerly known as the **Docker Enterprise Edition**.
 
 ##### **Worker Node Components: Node Agent - kubelet**
+The *kubelet* is an agent running in both control plane nodes and worker nodes. It communicates with the Control Plane node. 
+
+It receives Pod definitions, primarily from the API Server, and interacts with the container runtime on the node to run containers associated with the Pod.
