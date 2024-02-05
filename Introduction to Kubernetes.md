@@ -411,4 +411,11 @@ Meaning, changes are saved in the key-value store for persistence.
 
 The API Server is the only control plane component to talk to the key-value store, both to read from and to save Kubernetes cluster state information, acting as a middle interface for any other control plane agent inquiring about the cluster's state.
 
-The API Server is very configurable and customizable. It can scale horizontally, and supports thj
+The API Server is very configurable and customizable. It can scale horizontally, and supports the addition of custom secondary API Servers, a config that transforms the primary API Server int o a proxy to all secondary, custom API Servers, routing all incoming RESTful calls to them based on customer defined rules (Load Balancer?).
+
+### **Control Plane Node Components: Scheduler**
+https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/
+
+https://kubernetes.io/docs/concepts/scheduling-eviction/
+
+The role of the *kube-scheduler* is to assign new workload objects 
