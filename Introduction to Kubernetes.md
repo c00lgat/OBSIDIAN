@@ -367,3 +367,6 @@ At a very high level, Kubernetes is a cluster of compute systems categorized by 
 ![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png]]
 
 **Control Plane Node overview**
+The Control Plane Node is the brain behind all operations inside the cluster. 
+It is an environment that encapsulates *control plane agents* that are responsible for managing the state of a Kubernetes cluster.
+The *control plane agents* have very distinct roles in the cluter's 
