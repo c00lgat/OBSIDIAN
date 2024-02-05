@@ -456,9 +456,20 @@ Out of all of the Control Plane components, <mark style="background: #BBFABBA6;"
 etcd's CLI management tool - **etcdctl**, provides snapshot save and restore capabilities which come in handy especially for a single etcd instance Kubernetes cluster - common in Development and learning environments. However, in Stage and Production environments, it is extremely important to replicate the data stores in HA mode, for cluster configuration data resiliency.
 
 Some Kubernetes cluster bootstrapping tools, such as **kubeadm**, by default, provision stacked etcd control plane nodes, where the data store runs alongside and shares resources with the other control plane components on the same control plane node.
-
-> Stacked etcd Topology
-![[Stacked_etcd_Topology2023.png]]
+> **Stacked etcd Topology**![[Stacked_etcd_Topology2023.png]]
 
 
 For data store isolation from the control plane components, the bootstrapping process can be configured for an *external* etcd topology, where the data store is provisioned on a dedicated separate host, thus reducing the chances of an etcd failure.
+> **External etcd Topology**![[External_etcd_Topology2023.png]]
+
+
+Both stacked and external etcd topologies support HA configurations. etcd is based on the [Raft Consensus Algorithm](https://web.stanford.edu/~ouster/cgi-bin/papers/raft-atc14) which allows a collection of machines to work as a coherent group that can survive the failures of some of its members. At any given time, one of the nodes in the group will be the leader, and the rest of them will be the followers. etcd gracefully handles leader elections and can tolerate node failure, including leader node failures. Any node can be treated as a leader.
+> **Leader and Followers**![[Leader_and_Followers2023.png]]
+
+etcd is written in the Go programming language. In Kubernetes, besides storing the cluster state, etcd is also used to store <mark style="background: #BBFABBA6;">configuration details such as subnets, ConfigMaps, Secrets, etc.
+</mark>
+
+### **Worker Node Overview**
+A **Worker Node** provides a running environment for client applications. These applications are microservices running as application containers.
+
+In Kubernetes, application containers are encapsulated in Pods, controlled by the cluster Control Plane agents running on the control plane node. 

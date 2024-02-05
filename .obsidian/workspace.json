@@ -192,6 +192,8 @@
   },
   "active": "89cc6184edde77cb",
   "lastOpenFiles": [
+    "Leader_and_Followers2023.png",
+    "External_etcd_Topology2023.png",
     "Stacked_etcd_Topology2023.png",
     "Kubernetes.md",
     "Introduction to Kubernetes.md",
@@ -213,9 +215,7 @@
     "IMAGES/Pasted image 20240130233315.png",
     "IMAGES/Pasted image 20240127173846.png",
     "IMAGES/Pasted image 20240128152615.png",
-    "IMAGES/Pasted image 20240128152503.png",
     "Docker.md",
-    "IMAGES/Pasted image 20240131100135.png",
     "README.md",
     "CICD.md",
     "Work Interview.md",
