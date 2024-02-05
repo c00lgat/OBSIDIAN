@@ -550,4 +550,24 @@ The **kube-proxy** is the network agent which runs on each node, control plane a
 The kube-proxy is responsible for TCP, UDP, and SCTP stream forwarding or random forwarding across a set of Pod backends of an application, and it implements forwarding rules defined by users through Service API objects.
 
 ##### **Worker Node Components: Proxy - Add-ons**
+**Add-ons** are cluster features and functionality not yet available in Kubernetes, therefore implemented through 3rd-party pods and services.
 
+- **DNS  
+    **Cluster DNS is a DNS server required to assign DNS records to Kubernetes objects and resources.
+- **Dashboard**   
+    A general purpose web-based user interface for cluster management.
+- **Monitoring**   
+    Collects cluster-level container metrics and saves them to a central data store.
+- **Logging**   
+    Collects cluster-level container logs and saves them to a central log store for analysis.
+
+#### **Networking Challenges**
+Decoupled microservices based applications rely heavily on networking in order to mimic the tight-coupling once available in the monolithic era. Networking, in general, is not the easiest to understand and implement. Kubernetes is no exception - as a containerized microservices orchestrator it needs to address a few distinct networking challenges:
+- Container-to-Container communication inside Pods
+- Pod-to-Pod communication on the same node and across cluster nodes
+- Service-to-Pod communication within the same namespace and across cluster namespaces
+- External-to-Service communication for clients to access applications in a cluster
+
+All these networking challenges must be addressed before deploying a Kubernetes cluster.
+
+##### **Container-to-Container Communication Inside Pods**
