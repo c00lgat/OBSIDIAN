@@ -495,9 +495,11 @@ In order to manage a container's lifecycle, Kubernetes requires a **container ru
 Runtimes are required on all nodes of a Kubernetes cluster, both control plane and worker. Kubernetes supports several container runtimes:
 - [CRI-O ](https://cri-o.io/)
 	  A lightweight container runtime for Kubernetes, supporting [quay.io](https://quay.io/) and [Docker Hub](https://hub.docker.com/) image registries.
-- [containerd ](https://containerd.io/)A simple, robust, and portable container runtime.
-- [Docker Engine](https://www.docker.com/)[  
-    ](https://www.docker.com/)A popular and complex container platform which uses **containerd** as a container runtime.
-- [Mirantis Container Runtime  
-    ](https://www.mirantis.com/software/container-runtime/)Formerly known as the **Docker Enterprise Edition**.
-    
+- [containerd ](https://containerd.io/)
+	  A simple, robust, and portable container runtime.
+- [Docker Engine](https://www.docker.com/)
+	  A popular and complex container platform which uses **containerd** as a container runtime.
+- [Mirantis Container Runtime ](https://www.mirantis.com/software/container-runtime/)
+	  Formerly known as the **Docker Enterprise Edition**.
+
+##### **Worker Node Components: Node Agent - kubelet**

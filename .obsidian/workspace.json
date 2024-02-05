@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "89cc6184edde77cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction to Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,18 +177,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "89cc6184edde77cb",
+  "active": "9794737d5f1f918e",
   "lastOpenFiles": [
+    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png",
+    "Introduction to Kubernetes.md",
     "Leader_and_Followers2023.png",
     "External_etcd_Topology2023.png",
     "Stacked_etcd_Topology2023.png",
     "Kubernetes.md",
-    "Introduction to Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
     "Kubernetes Linked Notes",
     "Kubernetes Linked Notes/External Topology Kubernetes.md",
     "Kubernetes Linked Notes/Stacked Topology Kubernetes.md",
-    "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158x_Course_Syllabus__2022_.pdf",
     "IMAGES/cncf-color-bg.png",
     "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Deployment.png",
@@ -214,7 +201,6 @@
     "Untitled.canvas",
     "IMAGES/Pasted image 20240130233315.png",
     "IMAGES/Pasted image 20240127173846.png",
-    "IMAGES/Pasted image 20240128152615.png",
     "Docker.md",
     "README.md",
     "CICD.md",
