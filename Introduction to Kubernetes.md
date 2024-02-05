@@ -403,6 +403,8 @@ https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver
 
 The [[kube-apiserver]] is a crucial component that runs in the *Control Plane Node*.
 
+API Server is like the secretary. It receives the calls from all surrounding parties, checks the state of the company, updates it accordingly after the calls are approved, 
+
 The API Server intercepts RESTful calls from users, administrators, developers, operators and external agents. It validates and processes the API calls.
 
 During processing, the API Server reads the Kubernetes cluster's current state from the key-value store, and after a call's execution, the resulting state of the Kubernetes cluster is saved in the key-value store for persistence.
