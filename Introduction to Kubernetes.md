@@ -366,7 +366,7 @@ At a very high level, Kubernetes is a cluster of compute systems categorized by 
 
 ![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png]]
 
-**Control Plane Node overview**
+### **Control Plane Node overview**
 The Control Plane Node is the brain behind all operations inside the cluster. 
 It is an environment that encapsulates *control plane agents* that are responsible for managing the state of a Kubernetes cluster.
 The *control plane agents* have very distinct roles in the cluster's management.
@@ -384,7 +384,8 @@ The key-value store may be configured on the control plane node ([[Stacked Topol
 
 In the stacked key-value store topology, HA control plane node replicas ensure the key-value store's resiliency as well. However, that is not the case with external key-value store topology, where the dedicated key-value store hosts have to be separately replicated for HA, a configuration that introduces the need for additional hardware, hence additional operational costs.
 
-**Control Plane Node Components**
+## **Control Plane Node Components**
+https://kubernetes.io/docs/concepts/overview/components/
 A control plane node runs the following essential control plane components and agents:
 - API Server
 - Scheduler
@@ -396,3 +397,18 @@ In addition, the control plane node runs:
 - Node Agent
 - Proxy
 - Optional add-ons for cluster-level monitoring and logging.
+
+### **Control Plane Node Components: API Server**
+https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/
+
+The [[kube-apiserver]] is a crucial component that runs in the *Control Plane Node*.
+
+The API Server intercepts RESTful calls from users, administrators, developers, operators and external agents. It validates and processes the API calls.
+
+During processing, the API Server reads the Kubernetes cluster's current state from the key-value store, and after a call's execution, the resulting state of the Kubernetes cluster is saved in the key-value store for persistence.
+
+Meaning, changes are saved in the key-value store for persistence. 
+
+The API Server is the only control plane component to talk to the key-value store, both to read from and to save Kubernetes cluster state information, acting as a middle interface for any other control plane agent inquiring about the cluster's state.
+
+The API Server is very configurable and customizable. It can scale horizontally, and supports thj
