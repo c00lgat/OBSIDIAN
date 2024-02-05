@@ -605,3 +605,28 @@ For more details, you can explore the [Kubernetes documentation](https://kuberne
 A successfully deployed containerized application running in Pods inside a Kubernetes cluster may require accessibility from the outside world. 
 Kubernetes enables external accessibility through **Services**, complex encapsulations of network routing rule definitions stored in **iptables** on cluster nodes and implemented by **kube-proxy** agents.
 By exposing services to the external world with the aid of **kube-proxy**, applications become accessible from outside the cluster over a virtual IP address and a dedicated port number.
+
+
+##### Learning Objectives (Review)
+You should now be able to:
+- Discuss the Kubernetes architecture.
+- Explain the different components of the control plane and worker nodes.
+- Discuss cluster state management with etcd.
+- Review the Kubernetes network setup requirements.
+
+---
+# Installing Kubernetes
+ 
+## Chapter Overview
+In this chapter, we will explore Kubernetes cluster deployment considerations. 
+First, we will learn about Kubernetes cluster configuration options, followed by infrastructure requirements and installation tools specific to various cluster deployment models.
+
+###### Learning Objectives
+By the end of this chapter, you should be able to:
+- Discuss Kubernetes configuration options.
+- Discuss infrastructure considerations before installing Kubernetes.
+- Discuss infrastructure choices for a Kubernetes cluster deployment.
+- Review Kubernetes installation tools and certified solutions.
+
+### Kubernetes Configuration
+
