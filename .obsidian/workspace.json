@@ -192,6 +192,7 @@
   },
   "active": "89cc6184edde77cb",
   "lastOpenFiles": [
+    "Stacked_etcd_Topology2023.png",
     "Kubernetes.md",
     "Introduction to Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
@@ -230,7 +231,6 @@
     "LISP LANG.md",
     "Learning the vi and Vim Editors.md",
     "Learning resources.md",
-    "Important Links.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",

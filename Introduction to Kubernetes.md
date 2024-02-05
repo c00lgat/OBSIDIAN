@@ -446,3 +446,19 @@ The **kube-controller-manager** runs controllers or operators responsible to act
 The **cloud-controller-manager** runs controllers or operators responsible to interact with the underlying infrastructure of a cloud provider when nodes become unavailable, to manage storage volumes when provided by a cloud service, and to manage load balancing and routing.
 
 ### **Control Plane Node Components: Key-Value Data Store**
+
+https://etcd.io/docs/v3.5/
+
+[**etcd**](https://etcd.io) is an open source project under the [Cloud Native Computing Foundation](https://www.cncf.io) (CNCF). etcd is a strongly consistent, distributed **key-value data store** used to persist a Kubernetes cluster's state. New data is written to the data store only by appending to it, data is never replaced in the data store. Obsolete data is compacted (or shredded) periodically to minimize the size of the data store.
+
+Out of all of the Control Plane components, <mark style="background: #BBFABBA6;">only the API Server</mark> is able to communicate with the etcd data store.
+
+etcd's CLI management tool - **etcdctl**, provides snapshot save and restore capabilities which come in handy especially for a single etcd instance Kubernetes cluster - common in Development and learning environments. However, in Stage and Production environments, it is extremely important to replicate the data stores in HA mode, for cluster configuration data resiliency.
+
+Some Kubernetes cluster bootstrapping tools, such as **kubeadm**, by default, provision stacked etcd control plane nodes, where the data store runs alongside and shares resources with the other control plane components on the same control plane node.
+
+> Stacked etcd Topology
+![[Stacked_etcd_Topology2023.png]]
+
+
+For data store isolation from the control plane components, the bootstrapping process can be configured for an *external* etcd topology, where the data store is provisioned on a dedicated separate host, thus reducing the chances of an etcd failure.
