@@ -473,3 +473,31 @@ etcd is written in the Go programming language. In Kubernetes, besides storing t
 A **Worker Node** provides a running environment for client applications. These applications are microservices running as application containers.
 
 In Kubernetes, application containers are encapsulated in Pods, controlled by the cluster Control Plane agents running on the control plane node. 
+
+Pods are scheduled on worker nodes, where they find required compute, memory and storage resources to run, and networking to talk to each other and the outside world. 
+
+A Pod is the smallest scheduling work unit in Kubernetes.
+
+It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work.
+
+Also, in a multi-worker Kubernetes cluster, the network traffic between client users and the containerized applications deployed in Pods is handled directly by the worker nodes, and is not routed through the control plane node.
+
+#### **Worker Node Components**
+A worker node has the following components:
+- Container Runtime
+- Node Agent - kubelet
+- Proxy - kube-proxy
+- Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging.
+
+##### **Worker Node Components: Container Runtime**
+Although Kubernetes is described as a "container orchestration engine", it lacks the capability to directly handle and run containers. 
+In order to manage a container's lifecycle, Kubernetes requires a **container runtime** on the node where a Pod and its containers are to be scheduled.
+Runtimes are required on all nodes of a Kubernetes cluster, both control plane and worker. Kubernetes supports several container runtimes:
+- [CRI-O ](https://cri-o.io/)
+	  A lightweight container runtime for Kubernetes, supporting [quay.io](https://quay.io/) and [Docker Hub](https://hub.docker.com/) image registries.
+- [containerd ](https://containerd.io/)A simple, robust, and portable container runtime.
+- [Docker Engine](https://www.docker.com/)[  
+    ](https://www.docker.com/)A popular and complex container platform which uses **containerd** as a container runtime.
+- [Mirantis Container Runtime  
+    ](https://www.mirantis.com/software/container-runtime/)Formerly known as the **Docker Enterprise Edition**.
+    
