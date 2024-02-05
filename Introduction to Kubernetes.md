@@ -403,7 +403,7 @@ https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver
 
 The [[kube-apiserver]] is a crucial component that runs in the *Control Plane Node*.
 
-API Server is like the secretary. It receives the calls from all surrounding parties, checks the state of the company, updates it accordingly after the calls are approved, 
+<mark style="background: #FFF3A3A6;">Analogy:</mark> API Server is like the secretary. It receives the calls from all surrounding parties, checks the state of the company (cluster), updates it accordingly after the calls are approved in the calendar (state store). The secretary is the only person to read the calendar and make changes and save them. The secretary is the person for when any other company wants to inquire about the company's state. 
 
 The API Server intercepts RESTful calls from users, administrators, developers, operators and external agents. It validates and processes the API calls.
 
@@ -420,4 +420,13 @@ https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler
 
 https://kubernetes.io/docs/concepts/scheduling-eviction/
 
-The role of the *kube-scheduler* is to assign new workload objects 
+The role of the *kube-scheduler* is to assign new workload objects, such as pods encapsulating container, to nodes - typically worker nodes. 
+During the scheduling process, decisions are made based on current Kubernetes cluster state and new workload object's requirements.
+
+The *kube-scheduler* obtains the resources usage data for each worker node in the cluster from the key-value store via the API Server.
+
+The *kube-scheduler* also receives the new workload object's requirements which are part of its configuration data (of the workload object). It receives it from the API Server as well.
+
+Requirements may include constraints that users and operators set. Such as scheduling work on a node labeled with **disk=\=ssd**  key-value pair.
+
+The 
