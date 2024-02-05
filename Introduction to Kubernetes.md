@@ -506,3 +506,31 @@ Runtimes are required on all nodes of a Kubernetes cluster, both control plane a
 The *kubelet* is an agent running in both control plane nodes and worker nodes. It communicates with the Control Plane node. 
 
 It receives Pod definitions, primarily from the API Server, and interacts with the container runtime on the node to run containers associated with the Pod.
+It also monitors the health and resources of Pods running containers.
+
+The *kubelet* connects to container runtimes through a plugin based interface - the [Container Runtime Interface](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md) (CRI).
+The CRI consists of protocol buffers, gRPC API, libraries, and additional specifications and tools. 
+In order to connect to interchangeable container runtimes, kubelet uses a **CRI shim**, an application which provides a clear abstraction layer between kubelet and the container runtime.
+
+> **Container Runtime Interface (Retrieved from** [blog.kubernetes.io](http://blog.kubernetes.io/2016/12/container-runtime-interface-cri-in-kubernetes.html))![[Container_Runtime_Interface2023.png]]
+
+As shown above, the kubelet acting as grpc client connects to the CRI shim acting as grpc server to perform container and image operations. The CRI implements two services: **ImageService** and **RuntimeService**. 
+The **ImageService** is responsible for all the image-related operations, while the **RuntimeService** is responsible for all the Pod and container-related operations.
+
+##### **Worker Node Components: kubelet - CRI shims**
+Originally the kubelet agent supported only a couple of container runtimes, first the Docker Engine followed by rkt, through a unique interface model integrated directly in the kubelet source code.
+However, this approach was not intended to last forever even though it was especially beneficial for Docker.
+In time, Kubernetes started migrating towards a standardized approach to container runtime integration by introducing the CRI.
+Kubernetes adopted a decoupled and flexible method to integrate with various container runtimes without the need to recompile its source code.
+Any container runtime that implements the CRI could be used by Kubernetes to manage containers.
+
+Shims are Container Runtime Interface (CRI) implementations, interfaces or adapters, specific to each container runtime supported by Kubernetes. Below we present some examples of CRI shims:
+
+**cri-containerd**
+cri-containerd allows containers to be directly created and managed with containerd at kubelet's request:
+> **cri-containerd** (Retrieved from [blog.kubernetes.io](http://blog.kubernetes.io/2017/11/containerd-container-runtime-options-kubernetes.html))![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@cri-containerd2023.png]]
+
+**CRI-O**
+CRI-O enables the use of any Open Container Initiative (OCI) compatible runtime with Kubernetes, such as runC:
+> **CRI-O** (Retrieved from [cri-o.io](http://cri-o.io/))
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@CRI-O2023.png]]
