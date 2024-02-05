@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stacked Topology Kubernetes.md",
+                "file": "Introduction to Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stacked Topology Kubernetes.md",
+                "file": "Introduction to Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stacked Topology Kubernetes.md",
+                "file": "Introduction to Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stacked Topology Kubernetes.md"
+                "file": "Introduction to Kubernetes.md"
               }
             }
           },
@@ -177,18 +177,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9794737d5f1f918e",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
-    "Introduction to Kubernetes.md",
+    "Untitled",
+    "Kubernetes.md",
     "External Topology Kubernetes.md",
     "Stacked Topology Kubernetes.md",
+    "Introduction to Kubernetes.md",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158x_Course_Syllabus__2022_.pdf",
-    "Kubernetes.md",
-    "cncf-color-bg.png",
+    "IMAGES/cncf-color-bg.png",
     "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Deployment.png",
     "1-SEO-Diagram_Event-Driven-Architecture_Diagram.b3fbc18f8cd65e3af3ccb4845dce735b0b9e2c54.png",
-    "Pasted image 20240131125630.png",
+    "IMAGES/Pasted image 20240131125630.png",
     "Mirantis CN50.md",
     "Excalidraw/Drawing 2024-01-31 12.35.47.excalidraw.md",
     "2023-09-03.md",
@@ -216,7 +217,6 @@
     "Learning the vi and Vim Editors.md",
     "Learning resources.md",
     "Important Links.md",
-    "Downloading books.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",

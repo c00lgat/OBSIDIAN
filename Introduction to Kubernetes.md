@@ -381,3 +381,18 @@ This type of configuration adds resiliency to the clusters control plane, should
 
 To persist the Kubernetes' cluster state, all cluster configuration is saved to a distributed key-value store which only holds cluster state related data.
 The key-value store may be configured on the control plane node ([[Stacked Topology Kubernetes]]), or on its dedicated host ([[External Topology Kubernetes]]) to help reduce the chances of data store loss by decoupling it from the other control plane agents.
+
+In the stacked key-value store topology, HA control plane node replicas ensure the key-value store's resiliency as well. However, that is not the case with external key-value store topology, where the dedicated key-value store hosts have to be separately replicated for HA, a configuration that introduces the need for additional hardware, hence additional operational costs.
+
+**Control Plane Node Components**
+A control plane node runs the following essential control plane components and agents:
+- API Server
+- Scheduler
+- Controller Managers
+- Key-Value Data Store.
+
+In addition, the control plane node runs:
+- Container Runtime
+- Node Agent
+- Proxy
+- Optional add-ons for cluster-level monitoring and logging.
