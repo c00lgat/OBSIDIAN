@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 260.51103591918945
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -179,13 +179,14 @@
   },
   "active": "9794737d5f1f918e",
   "lastOpenFiles": [
-    "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@CRI-O2023.png",
-    "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@cri-containerd2023.png",
-    "Container_Runtime_Interface2023.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png",
+    "IMAGES/Leader_and_Followers2023.png",
     "Introduction to Kubernetes.md",
-    "Leader_and_Followers2023.png",
-    "External_etcd_Topology2023.png",
+    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@dockershim2023.png",
+    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@CRI-O2023.png",
+    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@cri-containerd2023.png",
+    "IMAGES/Container_Runtime_Interface2023.png",
+    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png",
+    "IMAGES/External_etcd_Topology2023.png",
     "Stacked_etcd_Topology2023.png",
     "Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
@@ -195,8 +196,6 @@
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158x_Course_Syllabus__2022_.pdf",
     "IMAGES/cncf-color-bg.png",
     "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Deployment.png",
-    "IMAGES/1-SEO-Diagram_Event-Driven-Architecture_Diagram.b3fbc18f8cd65e3af3ccb4845dce735b0b9e2c54.png",
-    "IMAGES/Pasted image 20240131125630.png",
     "Mirantis CN50.md",
     "Excalidraw/Drawing 2024-01-31 12.35.47.excalidraw.md",
     "2023-09-03.md",

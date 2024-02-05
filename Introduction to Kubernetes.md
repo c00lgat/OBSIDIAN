@@ -534,3 +534,20 @@ cri-containerd allows containers to be directly created and managed with contain
 CRI-O enables the use of any Open Container Initiative (OCI) compatible runtime with Kubernetes, such as runC:
 > **CRI-O** (Retrieved from [cri-o.io](http://cri-o.io/))
 ![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@CRI-O2023.png]]
+
+**dockershim** and **cri-dockerd**
+Before Kubernetes release v1.24 the **dockershim** allowed containers to be created and managed by invoking the Docker Engine and its internal runtime containerd.
+Due to Docker Engine's popularity, this shim has been the default interface used by kubelet. However, starting with Kubernetes release v1.24, the dockershim is no longer being maintained by the Kubernetes project, its specific code is removed from kubelet source code, thus will no longer be supported by the kubelet node agent of Kubernetes.
+As a result, [Docker, Inc.,](https://www.docker.com/) and [Mirantis](https://www.mirantis.com/) have agreed to introduce and maintain a replacement adapter, **cri-dockerd** that would ensure that the Docker Engine will continue to be a container runtime option for Kubernetes, in addition to the Mirantis Container Runtime (MCR).
+The introduction of cri-dockerd also ensures that both Docker Engine and MCR follow the same standardized integration method as the CRI-compatible runtimes.
+>**dockershim** (Retrieved from [blog.kubernetes.io](http://blog.kubernetes.io/2017/11/containerd-container-runtime-options-kubernetes.html))![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@dockershim2023.png]]
+
+Additional details about the deprecation process of the dockershim can be found on the [Updated: Dockershim Removal FAQ](https://kubernetes.io/blog/2022/02/17/dockershim-faq/) page.
+
+##### **Worker Node Components: Proxy - kube-proxy**
+The **kube-proxy** is the network agent which runs on each node, control plane and workers, responsible for dynamic updates and maintenance of all networking rules on the node. It abstracts the details of Pods networking and forwards connection requests to the containers in the Pods.
+
+The kube-proxy is responsible for TCP, UDP, and SCTP stream forwarding or random forwarding across a set of Pod backends of an application, and it implements forwarding rules defined by users through Service API objects.
+
+##### **Worker Node Components: Proxy - Add-ons**
+
