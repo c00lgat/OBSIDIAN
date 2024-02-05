@@ -380,5 +380,4 @@ Only one Control Plane node is active in managing the cluster once at a time, th
 This type of configuration adds resiliency to the clusters control plane, should the active control plane node fail.
 
 To persist the Kubernetes' cluster state, all cluster configuration is saved to a distributed key-value store which only holds cluster state related data.
-The key-value store may be configured on the control plane node ([Stacked Topology]), or on its dedicated host ([External Topology]) to help reduce the chances of data store loss by decoupling it from the other control plane agents.
-
+The key-value store may be configured on the control plane node ([[Stacked Topology Kubernetes]]), or on its dedicated host ([[External Topology Kubernetes]]) to help reduce the chances of data store loss by decoupling it from the other control plane agents.
