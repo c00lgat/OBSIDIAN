@@ -369,4 +369,16 @@ At a very high level, Kubernetes is a cluster of compute systems categorized by 
 **Control Plane Node overview**
 The Control Plane Node is the brain behind all operations inside the cluster. 
 It is an environment that encapsulates *control plane agents* that are responsible for managing the state of a Kubernetes cluster.
-The *control plane agents* have very distinct roles in the cluter's 
+The *control plane agents* have very distinct roles in the cluster's management.
+
+The Kubernetes cluster can be communicated with by the user via the CLI, Web UI and an API.
+
+The Control Plane is <mark style="background: #FFB86CA6;">very crucial</mark>. Losing it means <mark style="background: #FF5582A6;">downtime</mark>. Causing service disruption to clients, with possible loss of business.
+To ensure durability and reliability, control plane node replicas can be added to the cluster, configured in High-Availability (HA) mode.
+
+Only one Control Plane node is active in managing the cluster once at a time, the control plane components stay in sync across the control plane node replicas. 
+This type of configuration adds resiliency to the clusters control plane, should the active control plane node fail.
+
+To persist the Kubernetes' cluster state, all cluster configuration is saved to a distributed key-value store which only holds cluster state related data.
+The key-value store may be configured on the control plane node ([Stacked Topology]), or on its dedicated host ([External Topology]) to help reduce the chances of data store loss by decoupling it from the other control plane agents.
+
