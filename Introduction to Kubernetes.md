@@ -814,3 +814,6 @@ _**NOTE:** Minikube supports a **[--driver=none](https://minikube.sigs.k8s.io/d
 Read more about Minikube from the official [Minikube documentation](https://minikube.sigs.k8s.io/docs/), the official [Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/#minikube), or [GitHub](https://github.com/kubernetes/minikube).
 
 ## Installing Minikube on Linux
+The course recommends working with a VirtualBox hypervisor for the sake of convenience.
+
+I will be attempting to set it up and running with the Docker Engine as i already have it installed on my Linux machine running Debian 12.0 Bookworm.
