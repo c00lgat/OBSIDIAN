@@ -1012,4 +1012,16 @@ For additional commands and usage options please visit the [Minikube command lin
 ##### Demo: Exploring Minikube Profiles
 ![[9c2e84a1-4434-4220-bb44-82e680681110-mp4_720p.mp4]]
 What if we wanted to provision a different cluster, with a different size, runtime and driver?
-For
+For that, we need to run `minikube start` with a few configuration options:
+```bash
+minikube start --nodes=2 --driver=docker --kubernetes-version=1.24.4 --container-runtime=cri-o --profile minidock
+```
+The above command is going to provision a cluster that has 2 nodes, with the docker driver and a Kubernetes version of 1.24.4, container runtime cri-o and with the default compute resources CPUs=2, Memory=2200MB.
+![[Pasted image 20240206154823.png]]
+Once the provisioning is done, we can run the `minikube profile list` command in order to see the new cluster is reflected in the profiles list:
+![[Pasted image 20240206154942.png]]
+As we can see, the `minidock` cluster has indeed been provisioned and is currently running.
+
+Currently, we can see that the Active selection is currently set to the `minikube` cluster, which means the CLI commands will be ran on the selected `minikube` cluster.
+
+Running `sudo docker ps` will liu
