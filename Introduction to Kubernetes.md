@@ -816,4 +816,4 @@ Read more about Minikube from the official [Minikube documentation](https://min
 ## Installing Minikube on Linux
 The course recommends working with a VirtualBox hypervisor for the sake of convenience.
 
-I will be attempting to set it up and running with the Docker Engine as i already have it installed on my Linux machine running Debian 12.0 Bookworm.
+I will be attempting to set it up and running with the Docker Engine as i already have it installed on my Linux machine running Debian 12.4 Bookworm.
