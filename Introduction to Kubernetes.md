@@ -1024,4 +1024,16 @@ As we can see, the `minidock` cluster has indeed been provisioned and is current
 
 Currently, we can see that the Active selection is currently set to the `minikube` cluster, which means the CLI commands will be ran on the selected `minikube` cluster.
 
-Running `sudo docker ps` will liu
+Running `sudo docker ps` will list all of the Docker containers currently running:
+![[Pasted image 20240206155252.png]]
+As we can see, two Docker processes are currently running, which are the two nodes that we have previously provisioned via the Minikube command. 
+
+The `minidock` container will be our ***Control Plane Node*** whereas the `minidock-m02` will be our ***Worker Node***.
+
+Since we are using the Docker driver instead of a Virtual Machine, the nodes reside inside Docker Containers instead of virtual machines.
+
+In order to remove the `minidock` profile, we run the following command:
+```bash
+minikube delete -p minidock
+```
+![[Pasted image 20240206155717.png]]
