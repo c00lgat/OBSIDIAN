@@ -1129,3 +1129,28 @@ The kubeconfig includes the API Server's endpoint **server:** https://192.168.9
 Once **kubectl** is installed, we can display information about the Minikube Kubernetes cluster with the **kubectl cluster-info** command:
 `kubectl cluster-info`
 ![[Pasted image 20240206190233.png]]
+You can find more details about the **kubectl** command line options [here](https://kubernetes.io/docs/reference/kubectl/overview/).
+
+Although for the Kubernetes cluster installed by Minikube the **~/.kube/config** file gets created automatically, this is not the case for Kubernetes clusters installed by other tools.
+In other cases, the config file has to be created manually and sometimes re-configured to suit various networking and client/server setups.
+
+
+#### Kubernetes Dashboard
+The **[Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)** provides a web-based user interface for Kubernetes cluster management.
+Minikube installs the Dashboard as an addon, but it is disabled by default. 
+Prior to using the Dashboard we are required to enable the Dashboard addon, together with the metrics-server addon, a helper addon designed to collect usage metrics from the Kubernetes cluster. 
+To access the dashboard from Minikube, we can use the **minikube dashboard** command, which opens a new tab in our web browser displaying the Kubernetes Dashboard, but only after we list, enable required addons, and verify their state:
+
+`minikube addons list`
+
+`minikube addons enable metrics-server`
+
+`minikube addons enable dashboard`
+
+`minikube addons list`
+
+`minikube dashboard`
+
+![[ui-dashboard 1.png]]
+![[Pasted image 20240206190946.png]]
+
