@@ -5,5 +5,7 @@
   "highlightr-plugin",
   "obsidian-excalidraw-plugin",
   "obsidian-icon-folder",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "media-extended",
+  "obsidian-read-it-later"
 ]

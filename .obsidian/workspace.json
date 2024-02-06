@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction to Kubernetes.md"
+                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md"
               }
             }
           },
@@ -174,11 +174,19 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
   "active": "9794737d5f1f918e",
   "lastOpenFiles": [
+    "8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p.mp4",
+    "Introduction to Kubernetes.md",
+    "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
+    "ReadItLater Inbox/Youtube - Be gentle with the Apple Vision Pro - ITS PLASTIC!!.md",
+    "ReadItLater Inbox",
+    "Pasted image 20240206123315.png",
+    "Pasted image 20240206123309.png",
     "Pasted image 20240206123217.png",
     "Pasted image 20240206123051.png",
     "Pasted image 20240206122751.png",
@@ -187,10 +195,6 @@
     "IMAGES/Minikube_logo.png",
     "IMAGES/logo-kops.jpg",
     "IMAGES/kubespray-logo-text-clear.png",
-    "IMAGES/logo-kubeadm.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Network_Interface__CNI__Core_Plugins2023.png",
-    "IMAGES/Leader_and_Followers2023.png",
-    "Introduction to Kubernetes.md",
     "Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
     "Kubernetes Linked Notes",
@@ -216,15 +220,12 @@
     "Fantasy Books.md",
     "Hexadecimal Numbers.md",
     "LISP LANG.md",
-    "Learning the vi and Vim Editors.md",
-    "Learning resources.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
     "non-complying-ec2-shutdown.py",
     "AWS reStart/Labs",
     "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
-    "AWS reStart/Canvas",
-    "AWS reStart"
+    "AWS reStart/Canvas"
   ]
 }

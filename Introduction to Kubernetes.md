@@ -839,3 +839,12 @@ End result:
 Running `minikube status` returns the desired output:
 ![[Pasted image 20240206123217.png]]
 
+Running `minikube stop` will stop Minikube:
+![[Pasted image 20240206123315.png]]
+
+### Demo: Getting Started with Minikube on Linux
+
+https://courses.edx.org/videos/block-v1:LinuxFoundationX+LFS158x+1T2022+type@video+block@689e6e66b7614db99470f91c88843c81
+
+https://www.youtube.com/watch?v=LmcWMjBpYBU
+
