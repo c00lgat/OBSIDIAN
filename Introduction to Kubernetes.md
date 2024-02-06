@@ -846,7 +846,7 @@ Running `minikube stop` will stop Minikube:
 
 ![[8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p.mp4]]
 
-### Advanced Minikube Features (1)
+### Advanced Minikube Features
 
 The **minikube start** by default selects a driver isolation software, such as a hypervisor or a container runtime, if one (VitualBox) or multiple are installed on the host workstation. In addition it downloads the latest Kubernetes version components.
 
@@ -916,3 +916,89 @@ minikube start --driver=virtualbox -n 3 --container-runtime=containerd \
 
 Once multiple cluster profiles are available (the default **minikube** and custom **minibox**), the profiles table will look like this:
 
+![[Pasted image 20240206145229.png]]
+
+The **active** marker indicates the target cluster profile of the minikube command line tool. The target cluster can be set to **minibox** with the following command:
+```bash
+minikube profile minibox
+```
+
+The target cluster can be set to the default **minikube** with one of the following commands:
+```bash
+minikube profile minikube
+```
+
+```bash
+minikube profile default
+```
+
+
+Most **minikube** commands, such as start, stop, node, etc. are profile aware, meaning that the user is required to specify the target cluster of the command, through its profile name.
+The default **minikube** cluster, however, can be managed without specifying its profile name.
+Stopping and re-starting the two clusters listed above, the **minibox** cluster and the default **minikube**:
+
+```bash
+minikube stop -p minibox
+```
+
+```bash
+minikube start -p minibox
+```
+
+```bash
+minikube stop
+```
+
+```bash
+minikube start
+```
+
+
+>Additional helpful **minikube** commands:
+
+To display the version of the current Minikube installation:
+```bash
+minikube version
+```
+![[Pasted image 20240206145634.png]]
+
+
+Completion is a helpful post installation configuration to enable the **minikube** command to respond to typical auto-completion mechanisms, such as completing a command in the terminal by pressing the TAB key.
+To enable completion for the bash shell on Ubuntu: #Minikube_auto
+```bash
+sudo apt install bash-completion
+```
+
+```bash
+source /etc/bash_completion
+```
+
+```bash
+source <(minikube completion bash)
+```
+
+If needed, also run the following command:
+```bash
+minikube completion bash
+```
+
+
+A command that allows users to *list the nodes of a cluster*, *add new control plane* or *worker nodes*, *delete* existing cluster nodes, *start or stop individual nodes of a cluster*:
+```bash
+minikube node list
+```
+![[Pasted image 20240206145956.png]]
+
+```bash
+minikube node list -p minibox
+```
+![[Pasted image 20240206150032.png]]
+
+To display the cluster control plane node's IP address, or another node's IP with the **--node** or **-n** flags:
+![[Pasted image 20240206150106.png]]
+
+![[Pasted image 20240206150121.png]]
+
+![[Pasted image 20240206150127.png]]
+
+When a cluster configuration is no longer of use, the cluster's profile can be deleted. It is also a profile aware command - it deletes the default **minikube** cluster if no profile is specified, or a custom cluster if its profile is specified:
