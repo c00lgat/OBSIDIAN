@@ -817,3 +817,25 @@ Read more about Minikube from the official [Minikube documentation](https://min
 The course recommends working with a VirtualBox hypervisor for the sake of convenience.
 
 I will be attempting to set it up and running with the Docker Engine as i already have it installed on my Linux machine running Debian 12.4 Bookworm.
+
+Following the documentation below to install *minikube*:
+https://minikube.sigs.k8s.io/docs/start/
+
+```shell
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+
+sudo dpkg -i minikube_latest_amd64.deb
+```
+
+
+https://stackoverflow.com/questions/47854463/docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socke
+
+After following the steps in the above link, adding the $USER to the docker group, i am able to finally run `minikube start --driver=docker` without having to use docker as root.
+![[Pasted image 20240206122751.png]]
+
+End result:
+![[Pasted image 20240206123051.png]]
+
+Running `minikube status` returns the desired output:
+![[Pasted image 20240206123217.png]]
+
