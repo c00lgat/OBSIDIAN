@@ -1009,6 +1009,7 @@ It is also a profile aware command - it deletes the default **minikube** cluster
 
 For additional commands and usage options please visit the [Minikube command line reference](https://minikube.sigs.k8s.io/docs/commands/). #Minikube_command_line_reference
 
-
 ##### Demo: Exploring Minikube Profiles
 ![[9c2e84a1-4434-4220-bb44-82e680681110-mp4_720p.mp4]]
+What if we wanted to provision a different cluster, with a different size, runtime and driver?
+For
