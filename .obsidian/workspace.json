@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
+                "file": "Introduction to Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
+                "file": "Introduction to Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
+                "file": "Introduction to Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md"
+                "file": "Introduction to Kubernetes.md"
               }
             }
           },
@@ -180,9 +180,10 @@
   },
   "active": "9794737d5f1f918e",
   "lastOpenFiles": [
+    "8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p 1.mp4",
+    "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
     "8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p.mp4",
     "Introduction to Kubernetes.md",
-    "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
     "ReadItLater Inbox/Youtube - Be gentle with the Apple Vision Pro - ITS PLASTIC!!.md",
     "ReadItLater Inbox",
     "Pasted image 20240206123315.png",
@@ -225,7 +226,6 @@
     "task1.yaml",
     "non-complying-ec2-shutdown.py",
     "AWS reStart/Labs",
-    "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf",
-    "AWS reStart/Canvas"
+    "AWS reStart/Canvas/Troubleshooting-Knowledge-Base-Project-Handout-1-1.pdf"
   ]
 }
