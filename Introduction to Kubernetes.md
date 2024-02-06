@@ -964,7 +964,7 @@ minikube version
 
 
 Completion is a helpful post installation configuration to enable the **minikube** command to respond to typical auto-completion mechanisms, such as completing a command in the terminal by pressing the TAB key.
-To enable completion for the bash shell on Ubuntu: #Minikube_auto
+To enable completion for the bash shell on Ubuntu: #Minikube_auto_completion
 ```bash
 sudo apt install bash-completion
 ```
@@ -983,7 +983,7 @@ minikube completion bash
 ```
 
 
-A command that allows users to *list the nodes of a cluster*, *add new control plane* or *worker nodes*, *delete* existing cluster nodes, *start or stop individual nodes of a cluster*:
+A command that allows users to *list the nodes of a cluster*, *add new control plane* or *worker nodes*, *delete* existing cluster nodes, *start or stop individual nodes of a cluster*: #Minikube_list_nodes
 ```bash
 minikube node list
 ```
@@ -994,11 +994,21 @@ minikube node list -p minibox
 ```
 ![[Pasted image 20240206150032.png]]
 
-To display the cluster control plane node's IP address, or another node's IP with the **--node** or **-n** flags:
+To display the cluster control plane node's IP address, or another node's IP with the **--node** or **-n** flags: #Minikube_display_control_plane_IP
 ![[Pasted image 20240206150106.png]]
 
 ![[Pasted image 20240206150121.png]]
 
 ![[Pasted image 20240206150127.png]]
 
-When a cluster configuration is no longer of use, the cluster's profile can be deleted. It is also a profile aware command - it deletes the default **minikube** cluster if no profile is specified, or a custom cluster if its profile is specified:
+When a cluster configuration is no longer of use, the cluster's profile can be deleted.
+It is also a profile aware command - it deletes the default **minikube** cluster if no profile is specified, or a custom cluster if its profile is specified: #Minikube_delete_cluster_profile
+![[Pasted image 20240206150400.png]]
+
+![[Pasted image 20240206150407.png]]
+
+For additional commands and usage options please visit the [Minikube command line reference](https://minikube.sigs.k8s.io/docs/commands/). #Minikube_command_line_reference
+
+
+##### Demo: Exploring Minikube Profiles
+![[9c2e84a1-4434-4220-bb44-82e680681110-mp4_720p.mp4]]
