@@ -878,3 +878,41 @@ The table also displays the *number of nodes*: 1 by default,
 the *private IP address* of the minikube cluster's control plane,
 and the *secure port* that exposes the API Server to cluster control plane components, agents and clients: 8443.
 
+What if we desire to create several reusable clusters instead, with other drivers (Docker or Podman for node isolation, or different Kubernetes versions (v1.23.3 or v1.24.4), another runtime (cri-o or containerd), and possibly 2, 3, or more nodes (if permitted by the resources of our host system)? 
+What if we desire to further customize the cluster with a specific networking option or plugin?
+
+The **minikube start**  command allows us to create such custom profiles with the **--profile** or **-p** flags.
+
+Several of the isolation drivers support creation of node VMs or node containers of custom sizes as well, features that we will not explore in this course as not all are very stable at the time of this writing.
+
+Below are a few examples of more complex **start** commands that allow custom clusters to be created with Minikube.
+They assume that the desired driver software (Docker and/or Podman) has been installed on the host workstation.
+There is no need to download the desired CNI (network plugin) or the container runtime, they will be set up and enabled by Minikube on our behalf:
+```bash
+minikube start --kubernetes-version=v1.23.3 \  
+--driver=podman --profile minipod
+```
+
+```bash
+minikube start --nodes=2 --kubernetes-version=v1.24.4 \
+--driver=docker --profile doubledocker
+```
+
+```bash
+minikube start --driver=virtualbox --nodes=3 --disk-size=10g \  
+--cpus=2 --memory=4g --kubernetes-version=v1.25.1 --cni=calico \  
+--container-runtime=cri-o -p multivbox
+```
+
+```bash
+minikube start --driver=docker --cpus=6 --memory=8g \  
+--kubernetes-version="1.24.4" -p largedock
+```
+
+```bash
+minikube start --driver=virtualbox -n 3 --container-runtime=containerd \ 
+--cni=calico -p minibox
+```
+
+Once multiple cluster profiles are available (the default **minikube** and custom **minibox**), the profiles table will look like this:
+
