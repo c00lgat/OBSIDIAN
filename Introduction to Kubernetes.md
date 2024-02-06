@@ -1104,3 +1104,22 @@ A Minikube installation has its own kubectl CLI installed and ready to use.
 However, it is somewhat inconvenient to use as the **kubectl** command becomes a subcommand of the **minikube** command.
 Users would be required to type longer commands, such as `minikube kubectl --<subcommand> <object-type> <object-name> -o --option`, instead of just `kubectl <subcommand> <object-type> <object-name> -o --option`.
 While a simple solution would be to set up an alias, the recommendation is to run the kubectl CLI tool as a standalone installation.
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+Once separately installed, **kubectl** receives its configuration automatically for Minikube Kubernetes cluster access.
+However, in different Kubernetes cluster setups, we may need to manually configure the cluster access points and certificates required by **kubectl** to securely access the cluster.
+
+Additional details about the **kubectl** command line client can be found in the [kubectl book](https://kubectl.docs.kubernetes.io/), the [Kubernetes official documentation](https://kubernetes.io/docs/reference/kubectl/), or its [GitHub repository](https://github.com/kubernetes/kubectl).
+
+- Kubectl is the Kubernetes cli
+- Kubectl provides a swiss army knife of functionality for working with Kubernetes clusters
+- Kubectl may be used to deploy and manage applications on Kubernetes
+- Kubectl may be used for scripting and building higher-level frameworks
+
+#### kubectl Configuration File
+To access the Kubernetes cluster, the **kubectl** client needs the control plane node endpoint and appropriate credentials to be able to securely interact with the API Server running on the control plane node.
+While starting Minikube, the startup process creates, by default, a configuration file, **config**, inside the **.kube** directory (often referred to as the **[kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)**), which resides in the user's **home** directory.
+The configuration file has all the connection details required by **kubectl**.
+By default, the **kubectl** binary parses this file to find the control plane node's connection endpoint, along with the required credentials. Multiple **kubeconfig** files can be configured with a single **kubectl** client. To look at the connection details, we can either display the content of the **~/.kube/config** file (on Linux) or run the following command (the output is redacted for readability):
+`kubectl config view`
