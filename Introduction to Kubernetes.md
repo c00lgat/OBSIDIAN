@@ -1123,3 +1123,9 @@ While starting Minikube, the startup process creates, by default, a configurati
 The configuration file has all the connection details required by **kubectl**.
 By default, the **kubectl** binary parses this file to find the control plane node's connection endpoint, along with the required credentials. Multiple **kubeconfig** files can be configured with a single **kubectl** client. To look at the connection details, we can either display the content of the **~/.kube/config** file (on Linux) or run the following command (the output is redacted for readability):
 `kubectl config view`
+![[Pasted image 20240206185918.png]]
+The kubeconfig includes the API Server's endpoint **server:** https://192.168.99.100:8443 and the **minikube** user's client authentication **key** and **certificate** data.
+
+Once **kubectl** is installed, we can display information about the Minikube Kubernetes cluster with the **kubectl cluster-info** command:
+`kubectl cluster-info`
+![[Pasted image 20240206190233.png]]
