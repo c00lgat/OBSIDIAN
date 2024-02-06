@@ -1154,3 +1154,4 @@ To access the dashboard from Minikube, we can use the **minikube dashboard** 
 ![[ui-dashboard 1.png]]
 ![[Pasted image 20240206190946.png]]
 
+#### APIs with 'kubectl proxy'
