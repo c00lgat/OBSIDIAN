@@ -1062,5 +1062,45 @@ Any healthy running Kubernetes cluster can be accessed via any one of the follow
 
 These methods are applicable to all Kubernetes clusters.
 
-### Accessing Minikube: Command Line Interface (CLI)
+#### Accessing Minikube: Command Line Interface (CLI)
 **[kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)** is the Kubernetes Command Line Interface (CLI) client to manage cluster resources and applications. It is very flexible and easy to integrate with other systems, therefore it can be used standalone, or part of scripts and automation tools. Once all required credentials and cluster access points have been configured for **kubectl**, it can be used remotely from anywhere to access a cluster.
+
+We will be using **kubectl** extensively to deploy applications, manage and configure Kubernetes resources.
+
+#### Accessing Minikube: Web-based User Interface (Web UI)
+The **[Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)** provides a Web-based User Interface (Web UI) to interact with a Kubernetes cluster to manage resources and containerized applications.
+While not as flexible as the **kubectl** CLI client tool, it is still a preferred tool to users who are not as proficient with the CLI.
+![[ui-dashboard.png]]
+#### Accessing Minikube: APIs
+The main component of the Kubernetes control plane is the **API Server**, responsible for exposing the Kubernetes APIs.
+The APIs allow operators and users to directly interact with the cluster.
+Using both CLI tools and the Dashboard UI, we can access the API server running on the control plane node to perform various operations to modify the cluster's state. 
+The API Server is accessible through its endpoints by agents and users possessing the required credentials.
+
+Below, we can see the representation of the HTTP API directory tree of Kubernetes:
+**HTTP API Directory Tree of Kubernetes**
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158_2023_CourseImage_Chapter-7-02.png]]
+
+HTTP API directory tree of Kubernetes can be divided into three independent group types:
+- Core group **(/api/v1)**
+	   This group includes objects such as Pods, Services, Nodes, Namespaces, ConfigMaps, Secrets, etc.
+
+- Named group
+	  This group includes objects in **/apis/\$NAME/$VERSION** format. These different API versions imply different levels of stability and support:  
+    - _Alpha level_ - it may be dropped at any point in time, without notice. For example, **/apis/batch/v2alpha1**.  
+    - _Beta level_ - it is well-tested, but the semantics of objects may change in incompatible ways in a subsequent beta or stable release. For example, **/apis/certificates.k8s.io/v1beta1**.  
+    - _Stable level_ - appears in released software for many subsequent versions. For example, **/apis/networking.k8s.io/v1**.
+
+- System-wide
+	  This group consists of system-wide API endpoints, like **/healthz**, **/logs**, **/metrics**, **/ui**, etc.
+
+We can access an API Server either directly by calling the respective API endpoints, using the CLI tools, or the Dashboard UI.
+
+#### kubectl
+**kubectl** allows us to manage local Kubernetes clusters like the Minikube cluster, or remote clusters deployed in the cloud.
+It is generally installed before installing and starting Minikube, but it can also be installed after the cluster bootstrapping step.
+
+A Minikube installation has its own kubectl CLI installed and ready to use.
+However, it is somewhat inconvenient to use as the **kubectl** command becomes a subcommand of the **minikube** command.
+Users would be required to type longer commands, such as `minikube kubectl --<subcommand> <object-type> <object-name> -o --option`, instead of just `kubectl <subcommand> <object-type> <object-name> -o --option`.
+While a simple solution would be to set up an alias, the recommendation is to run the kubectl CLI tool as a standalone installation.
