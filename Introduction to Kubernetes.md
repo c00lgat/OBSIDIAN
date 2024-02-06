@@ -874,5 +874,7 @@ The *isolation driver*: docker,
 The *container runtime*: Docker,
 The *Kubernetes version*: v1.25.3, 
 The *status of the cluster* - running or stopped.
-The table also displays the *number of nodes*: 1 by default, the private IP address of the minikube cluster's control plane VirtualBox VM, and the *secure port that exposes the API Server to cluster control plane components, agents and clients: 8443.
+The table also displays the *number of nodes*: 1 by default,
+the *private IP address* of the minikube cluster's control plane,
+and the *secure port* that exposes the API Server to cluster control plane components, agents and clients: 8443.
 
