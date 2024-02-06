@@ -844,7 +844,35 @@ Running `minikube stop` will stop Minikube:
 
 ### Demo: Getting Started with Minikube on Linux
 
-![[8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p 1.mp4]]
+![[8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p.mp4]]
 
+### Advanced Minikube Features (1)
 
+The **minikube start** by default selects a driver isolation software, such as a hypervisor or a container runtime, if one (VitualBox) or multiple are installed on the host workstation. In addition it downloads the latest Kubernetes version components.
+
+With the selected driver software it provisions a single VM named **minikube** (with hardware profile of CPUs=2, Memory=6GB, Disk=20GB) or container to host the default single-node all-in-one Kubernetes cluster.
+
+Once the node is provisioned, it bootstraps the Kubernetes control plane (with the default kubeadm tool), and it installs the latest version of the default container runtime, Docker, that will serve as a running environment for the containerized applications we will deploy to the Kubernetes cluster.
+
+The **minikube start** command generates a <mark style="background: #FFF3A3A6;">default</mark> **minikube** cluster with the specifications described above and it will store these specs so that we can restart the default cluster whenever desired. 
+The object that stores the specifications of our cluster is called a **profile**.
+
+With the introduction of **profiles**, Minikube allows users to create custom reusable clusters that can all be managed from a single command line client.
+
+The **minikube profile** command allows us to view the status of all our clusters in a table formatted output. Assuming we have created only the default **minikube** cluster, we could list the properties that define the default profile with:
+
+```bash
+minikube profile list
+```
+
+Which returns the following output in the CLI:
+![[Pasted image 20240206143026.png]]
+
+This table presents the columns associated with the default properties such as:
+The *profile name*: minikube,
+The *isolation driver*: docker,
+The *container runtime*: Docker,
+The *Kubernetes version*: v1.25.3, 
+The *status of the cluster* - running or stopped.
+The table also displays the *number of nodes*: 1 by default, the private IP address of the minikube cluster's control plane VirtualBox VM, and the *secure port that exposes the API Server to cluster control plane components, agents and clients: 8443.
 
