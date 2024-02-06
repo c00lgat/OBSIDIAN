@@ -653,7 +653,7 @@ For infrastructure, we need to decide on the following:
 
 Explore the [Kubernetes documentation](https://kubernetes.io/docs/setup/) for details on choosing the right solution.
 
-### Installing Local Learning Clusters
+### Installing *Local* Learning Clusters
 There are a variety of installation tools allowing us to deploy single- or multi-node Kubernetes clusters on our workstations, for learning and development purposes.
 While not an exhaustive list, below we enumerate a few popular ones:
 - [Minikube](https://minikube.sigs.k8s.io/docs/)   
@@ -668,3 +668,86 @@ While not an exhaustive list, below we enumerate a few popular ones:
     Lightweight Kubernetes cluster for local, cloud, edge, IoT deployments, originally from Rancher, currently a CNCF project.
 
 Minikube is an easy and flexible method to create a local Kubernetes setup. We will be using it extensively in this course to manage certain aspects of a Kubernetes cluster, while taking advantage of several automated features designed to simplify the user interaction with the Kubernetes environment and the containerized applications deployed to the cluster.
+
+### Installing *Production* Clusters with Deployment Tools
+When it comes to production ready solutions, there are several recommended tools for Kubernetes clusters bootstrapping and a few that are also capable of provisioning the necessary hosts on the underlying infrastructure.
+
+Let's take a look at the most popular installation tools available:
+
+**kubeadm**
+[kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/) is a first-class citizen of the Kubernetes ecosystem.
+It is a secure and recommended method to bootstrap a multi-node production ready Highly Available Kubernetes cluster, on-premises or in the cloud.
+kubeadm can also bootstrap a single-node cluster for learning.
+It has a set of building blocks to set up the cluster, but it is easily extendable to add more features.
+Please note that kubeadm does not support the provisioning of hosts - they should be provisioned separately with a tool of our choice.
+![[logo-kubeadm.png]]
+
+
+**kubespray**
+[kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/) (formerly known as kargo) allows us to install Highly Available production ready Kubernetes clusters on AWS, GCP, Azure, OpenStack, vSphere, or bare metal.
+kubespray is based on Ansible, and is available on most Linux distributions. 
+It is a [Kubernetes Incubator](https://github.com/kubernetes-sigs/kubespray/) project.
+![[kubespray-logo-text-clear.png]]
+
+**kops**
+[kops](https://kubernetes.io/docs/setup/production-environment/tools/kops/) enables us to create, upgrade, and maintain production-grade, Highly Available Kubernetes clusters from the command line.
+It can provision the required infrastructure as well.
+Currently, AWS is officially supported. 
+Support for DigitalOcean and OpenStack is in beta, Azure and GCE is in alpha support, and other platforms are planned for the future. Explore the [kops project](https://github.com/kubernetes/kops/) for more details.
+![[logo-kops.jpg]]
+
+In addition, for a manual installation approach, the _[Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)_ GitHub project by [Kelsey Hightower](https://twitter.com/kelseyhightower) is an extremely helpful installation guide and resource.
+The project aims to teach all the detailed steps involved in the bootstrapping of a Kubernetes cluster, steps that are otherwise automated by various tools mentioned in this chapter and obscured from the end user.
+
+### Production Clusters from Certified Solutions Providers
+The growing popularity of Kubernetes accelerated its adoption by many cloud services providers together with hosted platforms of certified Kubernetes distributions.
+There are well over 200 managed [certified Kubernetes](https://kubernetes.io/partners/) services providers today, as many more organizations became Kubernetes partners, joining the list of initial providers of hosted Kubernetes solutions:
+
+**Hosted Solutions**  
+Hosted Solutions providers fully manage the provided software stack, while the user pays hosting and management charges.
+Popular vendors providing hosted solutions for Kubernetes are (listed in alphabetical order):
+- [Alibaba Cloud Container Service for Kubernetes](https://www.alibabacloud.com/product/kubernetes) (ACK)
+- [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (EKS)
+- [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/) (AKS)
+- [DigitalOcean Kubernetes](https://www.digitalocean.com/products/kubernetes/)
+- [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) (GKE)
+- [IBM Cloud Kubernetes Service](https://www.ibm.com/cloud/kubernetes-service/)
+- [Oracle Container Engine for Kubernetes](https://www.oracle.com/cloud-native/container-engine-kubernetes/) (OKE)
+- [Platform9 Managed Kubernetes](https://platform9.com/managed-kubernetes/) (PMK)
+- [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)
+- [VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
+
+**Partners**
+Additional [Partners](https://kubernetes.io/partners/) providing managed Kubernetes services and platforms (listed in alphabetical order):
+- Altoros
+- Aqua Security
+- Canonical
+- D2IQ
+- Dell Technologies Consulting
+- Deloitte
+- Fujitsu
+- GitLab
+- HPE
+- Inovex
+- Kubermatic
+- Kublr
+- Mirantis
+- Nirmata
+- Rancher
+- SAP
+- Sysdig
+- Weaveworks
+
+**Turnkey Cloud Solutions**
+[Turnkey Cloud Solutions](https://kubernetes.io/docs/setup/production-environment/turnkey-solutions/) install production ready Kubernetes clusters on cloud infrastructure:
+- Linode Kubernetes Engine
+- Nirmata Managed Kubernetes
+- Nutanix Karbon
+- Vultr Kubernetes Engine
+
+---
+# Chapter 6. Minikube - Installing Local Kubernetes Clusters
+## Introduction
+
+**Chapter Overview**
+

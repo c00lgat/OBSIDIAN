@@ -177,8 +177,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "9794737d5f1f918e",
   "lastOpenFiles": [
+    "logo-kops.jpg",
+    "kubespray-logo-text-clear.png",
+    "logo-kubeadm.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Network_Interface__CNI__Core_Plugins2023.png",
     "IMAGES/Leader_and_Followers2023.png",
     "Introduction to Kubernetes.md",
@@ -188,15 +191,12 @@
     "IMAGES/Container_Runtime_Interface2023.png",
     "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@TrainingImage.png",
     "IMAGES/External_etcd_Topology2023.png",
-    "IMAGES/Stacked_etcd_Topology2023.png",
     "Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
     "Kubernetes Linked Notes",
     "Kubernetes Linked Notes/External Topology Kubernetes.md",
     "Kubernetes Linked Notes/Stacked Topology Kubernetes.md",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158x_Course_Syllabus__2022_.pdf",
-    "IMAGES/cncf-color-bg.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Container_Deployment.png",
     "Mirantis CN50.md",
     "Excalidraw/Drawing 2024-01-31 12.35.47.excalidraw.md",
     "2023-09-03.md",
