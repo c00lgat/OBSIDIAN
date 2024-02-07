@@ -1161,4 +1161,9 @@ Issuing the **kubectl proxy** command, **kubectl** authenticates with the API s
 It locks the terminal for as long as the proxy is running, unless we run it in the background (with `kubectl proxy &`).
 
 When **kubectl proxy** is running, we can send requests to the API over the **localhost** on the default proxy port **8001** (from another terminal, since the proxy locks the first terminal when running in foreground):
+![[Pasted image 20240207140245.png]]
 
+`curl http://localhost:8001/`
+![[Pasted image 20240207140324.png]]
+
+With the above **curl** request, we requested all the API endpoints from the API server. Clicking on the link above (in the **curl** command), it will open the same listing output in a browser tab.
