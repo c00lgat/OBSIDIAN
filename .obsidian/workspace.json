@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "94f21adfc529c70b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction to Kubernetes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,24 +191,30 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "65c18106f9148d68",
+  "active": "94f21adfc529c70b",
   "lastOpenFiles": [
-    "Pasted image 20240206190946.png",
-    "ui-dashboard 2.png",
-    "ui-dashboard 1.png",
-    "Pasted image 20240206190233.png",
-    "Pasted image 20240206185918.png",
-    "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158_2023_CourseImage_Chapter-7-02.png",
-    "ui-dashboard.png",
+    "Microservices.md",
+    "Hexadecimal Numbers.md",
+    "grep.md",
+    "GIT & Github.md",
+    "Practical Vim Edit Text at the Speed of Thought.md",
+    "SED.md",
+    "README.md",
+    "Introduction to Kubernetes.md",
+    "IMAGES/Pasted image 20240206190946.png",
+    "IMAGES/ui-dashboard 2.png",
+    "IMAGES/ui-dashboard 1.png",
+    "IMAGES/Pasted image 20240206190233.png",
+    "IMAGES/Pasted image 20240206185918.png",
+    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158_2023_CourseImage_Chapter-7-02.png",
+    "IMAGES/ui-dashboard.png",
     "IMAGES/Pasted image 20240206155717.png",
     "IMAGES/Pasted image 20240206155252.png",
     "IMAGES/Pasted image 20240206154942.png",
-    "IMAGES/Pasted image 20240206154823.png",
     "Kubernetes Linked Notes/9c2e84a1-4434-4220-bb44-82e680681110-mp4_720p.mp4",
     "Kubernetes Linked Notes/8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p.mp4",
     "8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p 1.mp4",
     "Podcasts.md",
-    "Introduction to Kubernetes.md",
     "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
     "ReadItLater Inbox/Youtube - Be gentle with the Apple Vision Pro - ITS PLASTIC!!.md",
     "ReadItLater Inbox",
@@ -211,18 +230,12 @@
     "2024-01-31.md",
     "Untitled.canvas",
     "Docker.md",
-    "README.md",
     "CICD.md",
     "Work Interview.md",
     "Website Project.md",
     "Vue.js.md",
     "Bash.md",
     "Terraform.md",
-    "AppleSeeds MOODLE.md",
-    "Basic Shell Programming.md",
-    "Extra curriculum.md",
-    "Fantasy Books.md",
-    "Hexadecimal Numbers.md",
     "Cantrill",
     "AWSCookbook",
     "task1.yaml",
