@@ -1193,9 +1193,46 @@ export TOKEN=$(kubectl create token default)
 ```
 
 ```shell
-kubectl create clusterrole api-access-root --verb=get --none-resource-url=/*
+kubectl create clusterrole api-access-root --verb=get --non-resource-url=/*
 ```
+![[Pasted image 20240207184655.png]]
 
 ```shell
 kubectl create clusterrolebinding api-access-root --clusterrole api-access-root --serviceaccount=default:default
 ```
+![[Pasted image 20240207184716.png]]
+
+Retrieving the API Server endpoint:
+```shell
+export APISERVER=$(kubectl config view | grep https | cut -f 2- -d ":" | tr -d " ")
+```
+
+Confirming that the `APISERVER` stored the same IP as the Kubernetes control plane IP:
+![[Pasted image 20240207185025.png]]
+We can see that they do have the same IP.
+
+Then, we can access the API Server using the `curl` command:
+```shell
+curl $APISERVER --header "Authorization: Bearer $TOKEN" --insecure
+```
+Which should return the API endpoints for us:
+![[Pasted image 20240207185216.png]]
+
+We can run additional **curl** commands to retrieve details about specific API groups as follows. These commands should work even without the special permission defined above and granted to the default ServiceAccount associated with the access token:
+
+```shell
+curl $APISERVER/api/v1 --header "Authorization: Bearer $TOKEN" --insecure
+```
+
+```shell
+curl $APISERVER/apis/apps/v1 --header "Authorization: Bearer $TOKEN" --insecure
+```
+
+```shell
+curl $APISERVER/healthz --header "Authorization: Bearer $TOKEN" --insecure
+```
+
+```shell
+curl $APISERVER/metrics --header "Authorization: Bearer $TOKEN" --insecure
+```
+
