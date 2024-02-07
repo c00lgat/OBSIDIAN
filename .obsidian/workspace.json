@@ -23,11 +23,9 @@
             "id": "94f21adfc529c70b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Introduction to Kubernetes.md",
-                "mode": "source",
-                "source": false
+                "file": "IMAGES/Pasted image 20240207140117.png"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "IMAGES/Pasted image 20240207140117.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "IMAGES/Pasted image 20240207140117.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction to Kubernetes.md"
+                "file": "IMAGES/Pasted image 20240207140117.png"
               }
             }
           },
@@ -191,19 +189,20 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "94f21adfc529c70b",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
+    "Introduction to Kubernetes.md",
     "f781f2ec-8e70-4123-a2b8-c3dd7adfc219-mp4_720p.mp4",
-    "Pasted image 20240207185216.png",
+    "IMAGES/Pasted image 20240207185216.png",
     "Pasted image 20240207185025.png",
     "Pasted image 20240207184956.png",
     "Pasted image 20240207184716.png",
-    "Pasted image 20240207184655.png",
+    "IMAGES/Pasted image 20240207184655.png",
     "Pasted image 20240207181408.png",
-    "Pasted image 20240207181349.png",
-    "Pasted image 20240207181330.png",
-    "Pasted image 20240207181258.png",
-    "Pasted image 20240207181155.png",
+    "IMAGES/Pasted image 20240207181349.png",
+    "IMAGES/Pasted image 20240207181330.png",
+    "IMAGES/Pasted image 20240207181258.png",
+    "IMAGES/Pasted image 20240207181155.png",
     "Microservices.md",
     "Hexadecimal Numbers.md",
     "grep.md",
@@ -211,7 +210,6 @@
     "Practical Vim Edit Text at the Speed of Thought.md",
     "SED.md",
     "README.md",
-    "Introduction to Kubernetes.md",
     "Kubernetes Linked Notes/9c2e84a1-4434-4220-bb44-82e680681110-mp4_720p.mp4",
     "Kubernetes Linked Notes/8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p.mp4",
     "8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p 1.mp4",
@@ -238,7 +236,6 @@
     "Bash.md",
     "Cantrill",
     "AWSCookbook",
-    "task1.yaml",
-    "non-complying-ec2-shutdown.py"
+    "task1.yaml"
   ]
 }
