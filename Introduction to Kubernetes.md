@@ -1167,3 +1167,17 @@ When **kubectl proxy** is running, we can send requests to the API over the **l
 ![[Pasted image 20240207140324.png]]
 
 With the above **curl** request, we requested all the API endpoints from the API server. Clicking on the link above (in the **curl** command), it will open the same listing output in a browser tab.
+
+![[Pasted image 20240207181155.png]]
+
+![[Pasted image 20240207181258.png]]
+
+![[Pasted image 20240207181330.png]]
+
+![[Pasted image 20240207181349.png]]
+
+![[Pasted image 20240207181408.png]]
+
+#### APIs with Authentication
+
+
