@@ -1156,3 +1156,9 @@ To access the dashboard from Minikube, we can use the **minikube dashboard** 
 
 #### APIs with 'kubectl proxy'
 Issuing the **kubectl proxy** command, **kubectl** authenticates with the API server on the control plane node and makes services available on the default proxy port **8001**.
+![[Pasted image 20240207140117.png]]
+
+It locks the terminal for as long as the proxy is running, unless we run it in the background (with `kubectl proxy &`).
+
+When **kubectl proxy** is running, we can send requests to the API over the **localhost** on the default proxy port **8001** (from another terminal, since the proxy locks the first terminal when running in foreground):
+
