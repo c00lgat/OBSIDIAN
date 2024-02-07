@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "94f21adfc529c70b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "IMAGES/Pasted image 20240207140117.png"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IMAGES/Pasted image 20240207140117.png",
+                "file": "Introduction to Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IMAGES/Pasted image 20240207140117.png",
+                "file": "Introduction to Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IMAGES/Pasted image 20240207140117.png"
+                "file": "Introduction to Kubernetes.md"
               }
             }
           },
@@ -189,16 +178,17 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "65c18106f9148d68",
   "lastOpenFiles": [
+    "IMAGES/Pasted image 20240207140117.png",
     "Introduction to Kubernetes.md",
-    "f781f2ec-8e70-4123-a2b8-c3dd7adfc219-mp4_720p.mp4",
+    "Kubernetes Linked Notes/f781f2ec-8e70-4123-a2b8-c3dd7adfc219-mp4_720p.mp4",
     "IMAGES/Pasted image 20240207185216.png",
-    "Pasted image 20240207185025.png",
-    "Pasted image 20240207184956.png",
-    "Pasted image 20240207184716.png",
+    "IMAGES/Pasted image 20240207185025.png",
+    "IMAGES/Pasted image 20240207184956.png",
+    "IMAGES/Pasted image 20240207184716.png",
     "IMAGES/Pasted image 20240207184655.png",
-    "Pasted image 20240207181408.png",
+    "IMAGES/Pasted image 20240207181408.png",
     "IMAGES/Pasted image 20240207181349.png",
     "IMAGES/Pasted image 20240207181330.png",
     "IMAGES/Pasted image 20240207181258.png",
