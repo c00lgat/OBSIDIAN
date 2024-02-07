@@ -1236,3 +1236,17 @@ curl $APISERVER/healthz --header "Authorization: Bearer $TOKEN" --insecure
 curl $APISERVER/metrics --header "Authorization: Bearer $TOKEN" --insecure
 ```
 
+Instead of the **access token,** we can extract the client certificate, client key, and certificate authority data from the **.kube/config** file. Once extracted, they can be encoded and then passed with a **curl** command for authentication. The new **curl** command would look similar to the example below. Keep in mind, however, that the example command below would only work with the base 64 encoded client certificate, key and certificate authority data, and it is provided only for illustrative purposes.
+
+```shell
+curl $APISERVER --cert encoded-cert --key encoded-key --cacert encoded-ca
+```
+
+
+### DEMO: Accessing the Kubernetes API with kubectl
+https://kubernetes.io/docs/reference/access-authn-authz/
+
+![[f781f2ec-8e70-4123-a2b8-c3dd7adfc219-mp4_720p.mp4]]
+
+---
+# Chapter 8. Kubernetes Building Blocks
