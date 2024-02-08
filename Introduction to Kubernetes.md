@@ -1305,4 +1305,6 @@ The *control plane nodes* run the control plane agents, such as the API Server, 
 
 *Worker nodes* run the kubelet and kube-proxy node agents, the container runtime, and add-ons for container networking, monitoring, logging, DNS, etc.
 
-
+## Namespaces
+If multiple users and teams use the same Kubernetes cluster we can partition the cluster into virtual sub-clusters using [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).
+The names of the resources/objects created inside a Namespace are unique, but not across Namespaces in the cluster.
