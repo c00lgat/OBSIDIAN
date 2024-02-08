@@ -1280,3 +1280,29 @@ Although the API Server accepts object definitions in a JSON format, most often
 
 ## Nodes
 [Nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) are virtual identities assigned by Kubernetes to the systems part of the cluster - whether Virtual Machines, bare-metal, Containers, etc. These identities are unique to each system, and are used by the cluster for resources accounting and monitoring purposes, which helps with workload management throughout the cluster.
+
+
+Each node is managed with the help of two Kubernetes node agents - kubelet and kube-proxy, while it also hosts a container runtime.
+The container runtime is required to run all containerized workload on the node - control plane agents and user workloads. 
+
+The kubelet and kube-proxy node agents are responsible for executing all local workload management related tasks - interact with the runtime to run containers, monitor containers and node health, report any issues and node state to the API Server, and managing network traffic to containers.
+
+
+Based on their pre-determined functions, there are two distinct types of nodes - *control plane* and *worker*.
+
+A typical Kubernetes cluster includes at least one control plane node, but it may include multiple control plane nodes for Highly Available (HA) control plane.
+
+In addition, the cluster includes one or mode worker nodes to provide resource redundancy in the cluster.
+
+There are cases when a single all-in-one cluster is bootstrapped as a single node on a single VM, bare-metal, or Container, when high availability and resource redundancy are not of importance. 
+These are hybrid or mixed nodes hosting both control plane agents and user workload on the same system.
+Minikube allows us to bootstrap multi-node clusters with distinct, dedicated control plane nodes, however, if our host system has a limited amount of physical resources, we can easily bootstrap a single all-in-one cluster as a single node on a single VM or Container, and still be able to explore most of the topics covered in this course, with the exception of features specific to multi-node clusters, such as DaemonSets, multi node networking, etc.
+
+Node identities are created and assigned during the cluster bootstrapping process by the tool responsible to initialize the cluster agents. 
+Minikube is using the default **kubeadm** bootstrapping tool, to initialize the control plane node during the **init** phase and grow the cluster by adding worker or control plane nodes with the **join** phase.
+
+The *control plane nodes* run the control plane agents, such as the API Server, Scheduler, Controller Managers, and etcd in addition to the kubelet and kube-proxy node agents, the container runtime, and add-ons for container networking, monitoring, logging, DNS, etc.
+
+*Worker nodes* run the kubelet and kube-proxy node agents, the container runtime, and add-ons for container networking, monitoring, logging, DNS, etc.
+
+
