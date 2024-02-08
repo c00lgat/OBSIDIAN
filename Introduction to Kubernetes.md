@@ -1425,9 +1425,26 @@ kubectl run firstrun --image=nginx --port=88 --dry-run=client -o yaml > secondru
 
 This command reuses the same command we used in the second method, except, this one generates the YAML file for us, `secondrun.yaml`.
 
-That is done with the help of the `--dry-run` option, which will generate a YAML formatted output, a
+That is done with the help of the `--dry-run` option, which will generate a YAML formatted output, a definition manifest for a new pod. 
+It will subsequently stored in the file `secondrun.yaml`, in the same folder where we had run the command.
 
+But, since the pod name is the same as the one we had generated in the last method, `firstrun` we will have to change that in this new pod.
 
+Since names are unique in the same Namespace, and both pods being in the same default Namespace, this pod's name will need to be changed.
 
+![[Pasted image 20240208210057.png]]
 
+After changes to the Labels, Pod name and Container name (for the sake of consistency), as well as changing the port to 80, since that is the port than nginx uses, we will now go ahead and run the `kubectl apply` command:
+![[Pasted image 20240208210219.png]]
 
+We run `kubectl get pods` in order to list our pods in the cluster:
+![[Pasted image 20240208210337.png]]
+
+Now, in case of something going wrong, in order to trouble shoot the pods, we run `kubectl describe pods`.
+While it ran fine on my machine, the tutorial does showcase a troubleshooting section which explains the different terminal screenshots.
+
+Once we run the `kubectl describe pods` command, we go ahead and look at the *Events* section in the output displayed by the terminal:
+![[Pasted image 20240208210545.png]]
+As we can see, the reason for failure of the command is a typo. The author had, on purpose, typed in `nginxx` instead of `nginx` and as a result, Kubernetes did not find the right image to pull.
+
+After the demo, a cleanup
