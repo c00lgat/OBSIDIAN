@@ -1402,9 +1402,32 @@ For a fuller list of details regarding the Pods, we can run `kubectl get pods -o
 ![[Pasted image 20240208130336.png]]
 We can see that the Pod is ready and running.
 
+###### Method 2:
 Instead, we can use the Imperative method of running pods in a cluster:
 ```SHELL
 kubectl run firstrun --image=nginx
 ```
 The first argument, *firstrun*, is the name of the pod.
+And the second argument is the option, the image, which is nginx, the latest image of nginx in this case:
+![[Pasted image 20240208205132.png]]
+
+Now, running `kubectl get pods -o wide` again in order to make sure that the pod has been created:
+![[Pasted image 20240208205303.png]]
+
+Now we have the two pods in the default Namespace.
+
+###### Method 3:
+A mix of an imperative method and a YAML definition file.
+
+```SHELL
+kubectl run firstrun --image=nginx --port=88 --dry-run=client -o yaml > secondrun.yaml
+```
+
+This command reuses the same command we used in the second method, except, this one generates the YAML file for us, `secondrun.yaml`.
+
+That is done with the help of the `--dry-run` option, which will generate a YAML formatted output, a
+
+
+
+
 
