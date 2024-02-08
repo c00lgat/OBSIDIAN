@@ -1322,5 +1322,53 @@ Good practice, however, is to create additional Namespaces, as desired, to virtu
 `kubectl create namespace new-awesome-namespace`
 ![[Pasted image 20240208123158.png]]
 
+Namespaces are one of the most desired features of Kubernetes, securing its lead against competitors, as it provides a solution to the multi-tenancy requirement of today's enterprise development teams.
 
+[Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/) help users limit the overall resources consumed within Namespaces, while [LimitRanges](https://kubernetes.io/docs/concepts/policy/limit-range/) help limit the resources consumed by Containers and their enclosing objects in a Namespace.
+
+
+## Pods
+A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) is the smallest Kubernetes workload object. 
+It is the unit of deployment in Kubernetes, which represents a single instance of the application.
+A Pod is a logical collection of one or more containers, enclosing and isolating them to ensure that they:
+- Are scheduled together on the same host with the Pod.
+- Share the same network namespace, meaning that they share a single IP address originally assigned to the Pod.
+- Have access to mount the same external storage (volumes) and other common dependencies.
+
+>Single- and Multi-Container Pods
+![[Single-_and_Multi-Container_Pods.png]]
+
+Pods are ephemeral in nature, and they do not have the capability to self-heal themselves. 
+That is the reason they are used with controllers, or operators (controllers/operators are used interchangeably), which handle Pods' replication, fault tolerance, self-healing, etc.
+Examples of controllers are Deployments, ReplicaSets, DaemonSets, Jobs, etc.
+When an operator is used to manage an application, the Pod's specification is nested in the controller's definition using the *Pod Template*.
+
+Below is an example of a stand-alone Pod object's definition manifest in **YAML** format, *without* an operator:
+```YAML
+apiVersion: v1  
+kind: Pod  
+metadata:  
+  name: nginx-pod  
+  labels:  
+    run: nginx-pod  
+spec:  
+  containers:  
+  - name: nginx  
+    image: nginx:1.22.1  
+    ports:  
+    - containerPort: 80
+```
+
+The **apiVersion** field <mark style="background: #FFB86CA6;">must</mark> specify **v1** for the Pod object definition.
+The second <mark style="background: #FFB86CA6;">required</mark> field is **kind** specifying the **Pod** object type.
+The third required field **metadata**, holds the object's name and optional labels and annotations.
+The fourth <mark style="background: #FFB86CA6;">required</mark> field **spec** marks the beginning of the block defining the desired state of the Pod object - also named the **PodSpec**.
+Our Pod creates a single container running the **nginx:1.22.1** image pulled from a container image registry, in this case from [Docker Hub](https://hub.docker.com/_/nginx).
+The **containerPort** field specifies the container port to be exposed by Kubernetes resources for inter-application access or external client access - to be explored in the Services chapter.
+The contents of **spec** are evaluated for scheduling purposes, then the **kubelet** of the selected node becomes responsible for running the container image with the help of the container runtime of the node.
+The Pod's name and labels are used for workload accounting purposes.
+
+## DEMO: How to Run Applications with Pods
+![[61a5fb9c-6ebc-4d4e-9a16-22481e975246-mp4_720p.mp4]]
+https://kubernetes.io/docs/concepts/workloads/pods/
 
