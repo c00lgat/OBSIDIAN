@@ -1372,3 +1372,39 @@ The Pod's name and labels are used for workload accounting purposes.
 ![[61a5fb9c-6ebc-4d4e-9a16-22481e975246-mp4_720p.mp4]]
 https://kubernetes.io/docs/concepts/workloads/pods/
 
+Simple pod YAML file was taken from the documentation above: 
+```YAML
+apiVersion: v1  
+kind: Pod  
+metadata:  
+  name: nginx    
+spec:  
+  containers:  
+  - name: nginx  
+    image: nginx:1.20.2  
+    ports:  
+    - containerPort: 80
+```
+
+![[Pasted image 20240208125900.png]]
+Saving the file as `nginx-pod.yaml`
+
+Running the `kubectl apply` command:
+```SHELL
+kubectl apply -f nginx-pod.yaml
+```
+![[Pasted image 20240208130105.png]]
+
+We can make sure that the pod has been created by running `kubectl get pods` command:
+![[Pasted image 20240208130224.png]]
+
+For a fuller list of details regarding the Pods, we can run `kubectl get pods -o wide`:
+![[Pasted image 20240208130336.png]]
+We can see that the Pod is ready and running.
+
+Instead, we can use the Imperative method of running pods in a cluster:
+```SHELL
+kubectl run firstrun --image=nginx
+```
+The first argument, *firstrun*, is the name of the pod.
+
