@@ -1447,4 +1447,9 @@ Once we run the `kubectl describe pods` command, we go ahead and look at the *Ev
 ![[Pasted image 20240208210545.png]]
 As we can see, the reason for failure of the command is a typo. The author had, on purpose, typed in `nginxx` instead of `nginx` and as a result, Kubernetes did not find the right image to pull.
 
-After the demo, a cleanup
+After the demo, a cleanup is needed. Running the `kubectl delete -f [podname.yaml]` will do the trick:
+![[Pasted image 20240208210826.png]]
+
+If we wanted to delete all pods currently running, we can simply run the `kubectl delete pods firstrun secondrun`:
+![[Pasted image 20240208211022.png]]
+
