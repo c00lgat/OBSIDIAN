@@ -1549,4 +1549,43 @@ There is no need to manage ReplicaSets and Pods separately, the Deployment will 
 ## Deployments
 [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) objects provide declarative updates to Pods and ReplicaSets. 
 The DeploymentController is part of the control plane node's controller manager, and as a controller it also ensures that the current state always matches the desired state of our running containerized application. 
-It allows for seamless application updates and rollbacks, known as the default **RollingUpdate** strategy, through **rollouts** and **rollbacks**, and it directly manages its ReplicaSets for application scaling. It also supports a disruptive, less popular update strategy, known as **Recreate**.
+It allows for seamless application updates and rollbacks, known as the default **RollingUpdate** strategy, through **rollouts** and **rollbacks**, and it directly manages its ReplicaSets for application scaling.
+It also supports a disruptive, less popular update strategy, known as **Recreate**.
+
+Below is an example of a Deployment object's definition manifest in YAML format:
+```YAML
+apiVersion: apps/v1  
+kind: Deployment  
+metadata:
+  name: nginx-deployment  
+  labels:
+    app: nginx-deployment  
+spec:  
+  replicas: 3  
+  selector:  
+    matchLabels:
+      app: nginx-deployment  
+  template:  
+    metadata:  
+      labels:
+        app: nginx-deployment  
+    spec:  
+      containers:  
+      - name: nginx  
+        image: nginx:1.20.2  
+        ports:  
+        - containerPort: 80
+```
+
+The **apiVersion** field is the first <mark style="background: #FF5582A6;">required</mark> field, and it specifies the API endpoint on the API server which we want to connect to; it must match an existing version for the object type defined.
+
+The second <mark style="background: #FF5582A6;">required</mark> field is **kind**, specifying the object type - in our case it is **Deployment**, but it can be Pod, ReplicaSet, Namespace, Service, etc. 
+
+The third <mark style="background: #FF5582A6;">required</mark> field **metadata**, holds the object's basic information, such as name, annotations, labels, namespaces, etc.
+
+Our example shows two **spec** fields (**spec** and **spec.template.spec**).
+The fourth <mark style="background: #FF5582A6;">required</mark> field **spec** marks the beginning of the block defining the desired state of the Deployment object.
+In our example, we are requesting that 3 replicas, that is 3 instances of the Pod, are running at any given time.
+The Pods are created using the Pod Template defined in **spec.template**. 
+A nested object, such as the Pod being part of a Deployment, retains its **metadata** and **spec** and loses its own **apiVersion** and **kind** - both being replaced by **template**.
+In **spec.template.spec**, we define the desired state of the Pod. Our Pod creates a single container running the **nginx:1.20.2** image from [Docker Hub](https://hub.docker.com/_/nginx).
