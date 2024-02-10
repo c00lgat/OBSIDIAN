@@ -1622,4 +1622,37 @@ In our example, if the performance of the new **nginx:1.21.5** is not satisfact
 ## DEMO: Deployment Rolling Update and Rollback
 ![[LinuxFoundationXLFS158x-V000800_DTH.mp4]]
 
-We start out by creating a new *Deployment* called `mynginx`, which is going to run pods that run containers 
+We start out by creating a new *Deployment* called `mynginx`, which is going to run pods that run containers running the image `nginx:1.15-alpine`.
+
+```SHELL
+kubectl create deployment mynginx --image=nginx:1.15-alpine
+```
+
+![[Pasted image 20240210212738.png]]
+
+Then, we want to display all the ReplicaSets and Pods that that are labeled as `app=mynginx`:
+
+```SHELL
+kubectl get deploy,rs,po -l app=mynginx
+```
+![[Pasted image 20240210213057.png]]
+
+As we can see, the terminal only displays `mynginx` Deployment, the ReplicaSets associated with this Deployment, and the only Pod that was created with this Deployment.
+
+We can see that everything has the Ready status.
+
+Now, we scale the Deployment up to 3 replicas:
+```SHELL
+kubectl scale deploy mynginx --replicas=3
+```
+![[Pasted image 20240210213421.png]]
+
+Now, we list the Deployments again by running the following command once again:
+```SHELL
+kubectl get deploy,rs,po -l app=mynginx
+```
+![[Pasted image 20240210213508.png]]
+As we can see, we now have three running Pods, three Replicas and the Deployment is ready.
+
+
+

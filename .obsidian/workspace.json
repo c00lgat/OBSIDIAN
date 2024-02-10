@@ -181,6 +181,12 @@
   },
   "active": "b059bf0eb6085629",
   "lastOpenFiles": [
+    "Pasted image 20240210213508.png",
+    "Pasted image 20240210213421.png",
+    "Pasted image 20240210213114.png",
+    "Pasted image 20240210213057.png",
+    "Pasted image 20240210212850.png",
+    "Pasted image 20240210212738.png",
     "LinuxFoundationXLFS158x-V000800_DTH.mp4",
     "Deployment_Points_to_ReplicaSet_B.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Deployment__ReplicaSet_B_Created_.png",
@@ -188,11 +194,6 @@
     "Introduction to Kubernetes.md",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Creating_a_Pod_to_Match_Current_State_with_Desired_State_2023.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_and_Desired_State_Are_Different_2023_.png",
-    "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_Matches_the_Desired_State_2023.png",
-    "Selectors2023.png",
-    "Labels2023.png",
-    "Pasted image 20240208211022.png",
-    "Pasted image 20240208210826.png",
     "Kubernetes Linked Notes/61a5fb9c-6ebc-4d4e-9a16-22481e975246-mp4_720p.mp4",
     "grep.md",
     "Markdown Guide.md",
@@ -226,7 +227,6 @@
     "Work Interview.md",
     "Website Project.md",
     "Vue.js.md",
-    "Cantrill",
-    "AWSCookbook"
+    "Cantrill"
   ]
 }
