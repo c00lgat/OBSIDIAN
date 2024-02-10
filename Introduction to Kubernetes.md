@@ -1487,6 +1487,18 @@ However, the default recommended controller is the [Deployment](https://kuberne
 
 ## ReplicaSets
 A [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) is, in part, the next-generation ReplicationController, as it implements the replication and self-healing aspects of the ReplicationController.
- ReplicaSets support both equality- and set-based Selectors, whereas ReplicationControllers only support equality-based Selectors.
+ReplicaSets support both equality- and set-based Selectors, whereas ReplicationControllers only support equality-based Selectors.
 
- When a single instance of an application is running there is always the risk of the application instance crashing unexpectedly, or the entire server hosting the application crashing. If relying only on a single application instance, such a crash could adversely impact other applications, services, or clients. To avoid such possible failures, we can run in parallel multiple instances of the application, hence achieving high availability. The lifecycle of the application defined by a Pod will be overseen by a controller - the ReplicaSet. With the help of the ReplicaSet, we can scale the number of Pods running a specific application container image. Scaling can be accomplished manually or through the use of an [autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
+ When a single instance of an application is running there is always the risk of the application instance crashing unexpectedly, or the entire server hosting the application crashing.
+If relying only on a single application instance, such a crash could adversely impact other applications, services, or clients. 
+To avoid such possible failures, we can run in parallel multiple instances of the application, hence achieving high availability.
+The lifecycle of the application defined by a Pod will be overseen by a controller - the ReplicaSet. With the help of the ReplicaSet, we can scale the number of Pods running a specific application container image.
+Scaling can be accomplished manually or through the use of an [autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
+
+Below we graphically represent a ReplicaSet, with the replica count set to 3 for a specific Pod template. 
+Pod-1, Pod-2, and Pod-3 are identical, running the same application container image, being cloned from the same Pod template.
+For now, the current state matches the desired state. 
+Keep in mind, however, that although the three Pod replicas are said to be identical - running an instance of the same application, same configuration, they are still distinct in identity - Pod name, IP address, and the Pod object ensures that the application can be individually placed on any worker node of the cluster as a result of the scheduling process.
+
+>*ReplicaSet (Current State Matches the Desired State)
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_Matches_the_Desired_State_2023.png]]
