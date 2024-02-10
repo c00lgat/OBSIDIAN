@@ -181,6 +181,8 @@
   },
   "active": "b059bf0eb6085629",
   "lastOpenFiles": [
+    "Introduction to Kubernetes.md",
+    "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Creating_a_Pod_to_Match_Current_State_with_Desired_State_2023.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_and_Desired_State_Are_Different_2023_.png",
     "asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_Matches_the_Desired_State_2023.png",
     "Selectors2023.png",
@@ -190,9 +192,6 @@
     "Pasted image 20240208210639.png",
     "Pasted image 20240208210545.png",
     "Pasted image 20240208210349.png",
-    "Pasted image 20240208210337.png",
-    "Pasted image 20240208210227.png",
-    "Introduction to Kubernetes.md",
     "Kubernetes Linked Notes/61a5fb9c-6ebc-4d4e-9a16-22481e975246-mp4_720p.mp4",
     "grep.md",
     "Markdown Guide.md",

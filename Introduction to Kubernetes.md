@@ -1503,7 +1503,6 @@ Keep in mind, however, that although the three Pod replicas are said to be ident
 >*ReplicaSet (Current State Matches the Desired State)
 ![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_Matches_the_Desired_State_2023.png]]
 
-
 Below is an example of a ReplicaSet object's definition manifest in YAML format:
 ```YAML
 apiVersion: apps/v1  
@@ -1534,3 +1533,20 @@ Let's continue with the same ReplicaSet example and assume that one of the Pods 
 ![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_and_Desired_State_Are_Different_2023_.png]]
 
 The ReplicaSet detects that the current state is no longer matching the desired state and triggers a request for an additional Pod to be created, thus ensuring that the current state matches the desired state.
+
+>*ReplicaSet (Creating a Pod to Match Current State with Desired State*)
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Creating_a_Pod_to_Match_Current_State_with_Desired_State_2023.png]]
+
+ReplicaSets can be used independently as Pod controllers but they only offer a limited set of features. 
+A set of complementary features are provided by <mark style="background: #FFB8EBA6;">Deployments</mark>, the recommended controllers for the orchestration of Pods. 
+*Deployments* manage the creation, deletion, and updates of Pods. 
+A Deployment automatically creates a ReplicaSet, which then creates a Pod.
+
+Deployment --> ReplicaSet --> Pod created.
+
+There is no need to manage ReplicaSets and Pods separately, the Deployment will manage them on our behalf.
+
+## Deployments
+[Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) objects provide declarative updates to Pods and ReplicaSets. 
+The DeploymentController is part of the control plane node's controller manager, and as a controller it also ensures that the current state always matches the desired state of our running containerized application. 
+It allows for seamless application updates and rollbacks, known as the default **RollingUpdate** strategy, through **rollouts** and **rollbacks**, and it directly manages its ReplicaSets for application scaling. It also supports a disruptive, less popular update strategy, known as **Recreate**.
