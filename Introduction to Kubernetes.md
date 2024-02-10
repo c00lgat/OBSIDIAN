@@ -1530,3 +1530,7 @@ spec:
 
 Let's continue with the same ReplicaSet example and assume that one of the Pods is forced to unexpectedly terminate (due to insufficient resources, timeout, its hosting node has crashed, etc.), causing the current state to no longer match the desired state.
 
+> *ReplicaSet (Current State and Desired State Are Different)*
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_and_Desired_State_Are_Different_2023_.png]]
+
+The ReplicaSet detects that the current state is no longer matching the desired state and triggers a request for an additional Pod to be created, thus ensuring that the current state matches the desired state.
