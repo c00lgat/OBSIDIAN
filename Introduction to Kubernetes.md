@@ -1502,3 +1502,31 @@ Keep in mind, however, that although the three Pod replicas are said to be ident
 
 >*ReplicaSet (Current State Matches the Desired State)
 ![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_Matches_the_Desired_State_2023.png]]
+
+
+Below is an example of a ReplicaSet object's definition manifest in YAML format:
+```YAML
+apiVersion: apps/v1  
+kind: ReplicaSet  
+metadata:  
+  name: frontend  
+  labels:  
+    app: guestbook  
+    tier: frontend  
+spec:  
+  replicas: 3  
+  selector:  
+    matchLabels:  
+      app: guestbook  
+  template:  
+    metadata:  
+      labels:  
+        app: guestbook  
+    spec:  
+      containers:  
+      - name: php-redis  
+        image: gcr.io/google_samples/gb-frontend:v3
+        ```
+
+Let's continue with the same ReplicaSet example and assume that one of the Pods is forced to unexpectedly terminate (due to insufficient resources, timeout, its hosting node has crashed, etc.), causing the current state to no longer match the desired state.
+
