@@ -1453,3 +1453,40 @@ After the demo, a cleanup is needed. Running the `kubectl delete -f [podname.yam
 If we wanted to delete all pods currently running, we can simply run the `kubectl delete pods firstrun secondrun`:
 ![[Pasted image 20240208211022.png]]
 
+## Labels
+[Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are **key-value pairs** attached to Kubernetes objects (e.g. Pods, ReplicaSets, Nodes, Namespaces, Persistent Volumes).
+Labels are used to organize and select a subset of objects, based on the requirements in place.
+Many objects can have the same Label(s).
+Labels <mark style="background: #FFF3A3A6;">do not</mark> provide uniqueness to objects. Controllers use Labels to logically group together decoupled objects, rather than using objects' names or IDs. (Similar to AWS Tags).
+
+![[Labels2023.png]]
+
+In the image above, we have used two Label keys: **app** and **env**. Based on our requirements, we have given different values to our four Pods. The Label **env=dev** logically selects and groups the top two Pods, while the Label **app=frontend** logically selects and groups the left two Pods. We can select one of the four Pods - bottom left, by selecting two Labels: **app=frontend** **AND** **env=qa**
+
+## Label Selectors
+Controllers, or operators, and Services, use [label selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors) to select a subset of objects. Kubernetes supports two types of Selectors:- **Equality-Based Selectors** 
+    Equality-Based Selectors allow filtering of objects based on Label keys and values.
+     Matching is achieved using the **=**, **=\=** (equals, used interchangeably), or **!=** (not equals) operators.
+      For example, with **env\==dev** or **env=dev** we are selecting the objects where the **env** Label key is set to value **dev**. 
+- **Set-Based Selectors**  
+    Set-Based Selectors allow filtering of objects based on a set of values.
+     We can use **in**, **notin** operators for Label values, and **exist/does not exist** operators for Label keys.
+    For example, with **env in (dev,qa)** we are selecting objects where the **env** Label is set to either **dev** or **qa**; with **!app** we select objects with no Label key **app**.
+
+![[Selectors2023.png]]
+
+## ReplicationControllers
+Although no longer a recommended controller, a [ReplicationController](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/) is a complex operator that ensures a specified number of replicas of a Pod is running at any given time, by constantly comparing the actual state with the desired state of the managed application.
+If there are more Pods than the desired count, the replication controller randomly terminates the number of Pods exceeding the desired count, and, if there are fewer Pods than the desired count, then the replication controller requests additional Pods to be created until the actual count matches the desired count.
+Generally, we do not deploy a Pod independently, as it would not be able to re-start itself if terminated in error because a Pod misses the much desired self-healing feature that Kubernetes otherwise promises.
+The recommended method is to use some type of an operator to run and manage Pods.
+
+In addition to replication, the ReplicationController operator also supports application updates. 
+
+However, the default recommended controller is the [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) which configures a [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) controller to manage application Pods' lifecycle.
+
+## ReplicaSets
+A [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) is, in part, the next-generation ReplicationController, as it implements the replication and self-healing aspects of the ReplicationController.
+ ReplicaSets support both equality- and set-based Selectors, whereas ReplicationControllers only support equality-based Selectors.
+
+ When a single instance of an application is running there is always the risk of the application instance crashing unexpectedly, or the entire server hosting the application crashing. If relying only on a single application instance, such a crash could adversely impact other applications, services, or clients. To avoid such possible failures, we can run in parallel multiple instances of the application, hence achieving high availability. The lifecycle of the application defined by a Pod will be overseen by a controller - the ReplicaSet. With the help of the ReplicaSet, we can scale the number of Pods running a specific application container image. Scaling can be accomplished manually or through the use of an [autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
