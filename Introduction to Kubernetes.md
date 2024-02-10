@@ -1589,3 +1589,37 @@ In our example, we are requesting that 3 replicas, that is 3 instances of the P
 The Pods are created using the Pod Template defined in **spec.template**. 
 A nested object, such as the Pod being part of a Deployment, retains its **metadata** and **spec** and loses its own **apiVersion** and **kind** - both being replaced by **template**.
 In **spec.template.spec**, we define the desired state of the Pod. Our Pod creates a single container running the **nginx:1.20.2** image from [Docker Hub](https://hub.docker.com/_/nginx).
+
+Once the Deployment object is created, the Kubernetes system attaches the **status** field to the object and populates it with all necessary status fields.
+
+In the following example, a new **Deployment** creates **ReplicaSet** **A** which then creates **3 Pods**, with each Pod Template configured to run one **nginx:1.20.2** container image. 
+In this case, the **ReplicaSet A** is associated with **nginx:1.20.2** representing a state of the **Deployment**.
+This particular state is recorded as **Revision 1**.
+
+>*Deployment (ReplicaSet A Created)
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Deployment__ReplicaSet_A_Created_2023.png]]
+
+In time, we need to push updates to the application managed by the Deployment object. Let's change the Pods' Template and update the container image from `nginx:1.20.2` to `nginx:1.21.5`. 
+The `Deployment` triggers a new `ReplicaSet B` for the new container image versioned `1.21.5` and this association represents a new recorded state of the `Deployment`, `Revision 2`. 
+The seamless transition between the two ReplicaSets, from `ReplicaSet A` with three Pods versioned `1.20.2` to the new `ReplicaSet B` with three new Pods versioned `1.21.5`, or from `Revision 1` to `Revision 2`, is a <mark style="background: #D2B3FFA6;">Deployment rolling update.</mark>
+
+A **rolling update** is triggered when we update specific properties of the Pod Template for a deployment. 
+While planned changes such as updating the container image, container port, volumes, and mounts would trigger a new Revision, other operations that are dynamic in nature, like scaling or labeling the deployment, do not trigger a rolling update, thus do not change the Revision number.
+
+Once the rolling update has completed, the **Deployment** will show both **ReplicaSets A** and **B**, where **A** is scaled to 0 (zero) Pods, and **B** is scaled to 3 Pods. This is how the Deployment records its prior state configuration settings, as **Revisions**.
+
+> *Deployment (ReplicaSet B Created*
+![[asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Deployment__ReplicaSet_B_Created_.png]]
+
+Once **ReplicaSet B** and its **3 Pods** versioned **1.21.5** are ready, the **Deployment** starts actively managing them. 
+However, the Deployment keeps its prior configuration states saved as Revisions which play a key factor in the **rollback** capability of the Deployment - returning to a prior known configuration state. 
+In our example, if the performance of the new **nginx:1.21.5** is not satisfactory, the Deployment can be rolled back to a prior Revision, in this case from **Revision 2** back to **Revision 1** running **nginx:1.20.2** once again.
+
+>*Deployment Points to ReplicaSet B
+![[Deployment_Points_to_ReplicaSet_B.png]]
+
+
+## DEMO: Deployment Rolling Update and Rollback
+![[LinuxFoundationXLFS158x-V000800_DTH.mp4]]
+
+We start out by creating a new *Deployment* called `mynginx`, which is going to run pods that run containers 
