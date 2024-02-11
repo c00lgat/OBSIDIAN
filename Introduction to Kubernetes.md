@@ -1724,4 +1724,28 @@ Now, if we try to check Revision 1 in the Deploy history, we get the following e
 ![[Pasted image 20240211202647.png]]
 Because Revision 1 just became Revision 3.
 
-`kubectl get deployment,rs,po 
+Now, lets take a look at our deployment, ReplicaSets and Pods:
+`kubectl get deployment,rs,po -l app=mynginx`
+![[Pasted image 20240211202830.png]]
+We can see that the original ReplicaSet `7fbcf7bbfd` has been scaled back up to three replicas.
+
+And the other ReplicaSet, with the *1.16-alpine*version, also associated with Revision 2, has now been scaled down to zero.
+
+The state has been recorded in the ReplicaSet, and we can always rollback to that Revision if we wanted to.
+
+By default, we can perform up to 10 consecutive rolling updates.
+As well as then rollback to any one of those 10 recorded states.
+
+In this case we just performed one rolling update and one roll back.
+
+Rolling updates and roll backs are not Deployments exclusive. They are supported by other controllers as well, such as DaemonSets and StatefulSets.
+
+
+## DaemonSets
+[DaemonSets](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) are operators designed to manage node agents. 
+They resemble ReplicaSet and Deployment operators when managing multiple Pod replicas and application updates, but the DaemonSets present a distinct feature that enforces a single Pod replica to be placed per Node, on all the Nodes. 
+In contrast, the ReplicaSet and Deployment operators by default have no control over the scheduling and placement of multiple Pod replicas on the same Node.
+
+DaemonSet operators are commonly used in cases when we need to collect monitoring data from all Nodes, or to run a storage, networking, or proxy daemons on all Nodes, to ensure that we have a specific type of Pod running on all Nodes at all times. 
+They are critical API resources in multi-node Kubernetes clusters. 
+The kube-proxy agent running as a Pod on every single node in the cluster, or the Calico networking node agent implementing the Pod networking across all nodes of the cluster, are both examples of applications managed by DaemonSet operators.
