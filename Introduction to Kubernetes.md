@@ -1654,5 +1654,23 @@ kubectl get deploy,rs,po -l app=mynginx
 ![[Pasted image 20240210213508.png]]
 As we can see, we now have three running Pods, three Replicas and the Deployment is ready.
 
+Now, for reference, we will be remembering the name of the ReplicaSet of *mynginx*: `7fbcf7bbfd` to see how this state is recorded.
 
+With our ReplicaSet being `7fbcf7bbfd`, it will undergo several changes throughout the rolling update and rollback processes.
 
+Now, we are going to run the following command:
+```SHELL
+kubectl describe deploy mynginx
+```
+![[Pasted image 20240211155122.png]]
+We will be looking out for the Image. (We can also run `kubectl describe deployment`).
+
+As we can see, the image is currently *nginx:1.15-alpine*.
+
+Running `kubectl rollout history deploy mynginx` command will show us the rollout history (We can also run `kubectl rollout history deployment`):
+![[Pasted image 20240211155512.png]]
+
+So far, we only have a single Revision.
+*Revision 1* is associated with the `nginx:1.115-alpine` image with the `7fbcf7bbfd` ID.
+
+We can run `kubectl rollout history deploy mynginx --revision=1` in order to display further details about the specific Revision:
