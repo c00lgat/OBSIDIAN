@@ -1674,3 +1674,26 @@ So far, we only have a single Revision.
 *Revision 1* is associated with the `nginx:1.115-alpine` image with the `7fbcf7bbfd` ID.
 
 We can run `kubectl rollout history deploy mynginx --revision=1` in order to display further details about the specific Revision:
+![[Pasted image 20240211155733.png]]
+
+> *Rolling updates do not necessarily mean an Upgrade. We can perform a Rolling Update while moving down in the image version.*
+
+Now, we are going to be upgrading our image via a Rolling update:
+```SHELL
+kubectl set image deployment mynginx nginx=nginx:1.16-alpine
+```
+![[Pasted image 20240211160117.png]]
+
+Now, we will look at the Rollout history of deployment once again:
+![[Pasted image 20240211160234.png]]
+We can see that now we have a new Revision: 1 and 2, with 2 being the most recent Revision.
+
+Running `kubectl rollout history deploy mynginx --revision=1` in order to showcase the difference between the two Revisions:
+![[Pasted image 20240211160414.png]]
+*The nginx has an image version of 1.15-alpine*
+
+![[Pasted image 20240211160506.png]]
+*The nginx has an image version of 1.16-alpine*
+
+Now, we will be displaying our application objects with the following command that we had ran previously:
+`kubectl get deploy,rs,po -l app=mynginx`
