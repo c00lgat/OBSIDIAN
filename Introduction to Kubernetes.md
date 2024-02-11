@@ -1714,3 +1714,14 @@ And to do that, we run:
 `kubectl rollout undo deployment mynginx --to-revision=1`
 ![[Pasted image 20240211164816.png]]
 
+We run `kubectl rollout history deploy mynginx` once again to take a look at the Rollout history.
+![[Pasted image 20240211202259.png]]
+Revision 1, which was the original Revision has now become Revision 3, which is the most recent and the current Revision
+
+Revision 2 is still associated with the *1.16-alpine nginx*, and Revision 3 is associated with the rolled back version *1.15-alpine*.
+
+Now, if we try to check Revision 1 in the Deploy history, we get the following error:
+![[Pasted image 20240211202647.png]]
+Because Revision 1 just became Revision 3.
+
+`kubectl get deployment,rs,po 
