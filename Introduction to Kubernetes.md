@@ -1697,3 +1697,10 @@ Running `kubectl rollout history deploy mynginx --revision=1` in order to showca
 
 Now, we will be displaying our application objects with the following command that we had ran previously:
 `kubectl get deploy,rs,po -l app=mynginx`
+![[Pasted image 20240211160732.png]]
+
+We can see that we have the same Deployment: 3 replicas, ready.
+The three pods, running.
+
+However, if we look at the ReplicaSets, we will see the original ReplicaSet that we had originally set up, `7fbcf7bbfd`, with the three Replicas, has now been scaled down to zero. 
+
