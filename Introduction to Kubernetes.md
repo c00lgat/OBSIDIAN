@@ -1712,3 +1712,5 @@ It is also associated with the Revision number two.
 Now, in case we are not happy with the new rollout update, we can always rollout back to the previous Revision 1.
 And to do that, we run:
 `kubectl rollout undo deployment mynginx --to-revision=1`
+![[Pasted image 20240211164816.png]]
+
