@@ -1704,3 +1704,11 @@ The three pods, running.
 
 However, if we look at the ReplicaSets, we will see the original ReplicaSet that we had originally set up, `7fbcf7bbfd`, with the three Replicas, has now been scaled down to zero. 
 
+So the `7fbcf7bbfd` ReplicaSet is recorded as the original state, and we can rollback to that state any time we want.
+
+The new ReplicaSet, `6fdbc5d54c`, is associated with the new and current *1.16-alpine* image.
+It is also associated with the Revision number two.
+
+Now, in case we are not happy with the new rollout update, we can always rollout back to the previous Revision 1.
+And to do that, we run:
+`kubectl rollout undo deployment mynginx --to-revision=1`
