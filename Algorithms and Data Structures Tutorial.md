@@ -26,3 +26,4 @@ A blazingly fast algorithm won't matter if the algorithm consumes more memory th
 
 log<sub>b</sub><sup>x</sup>+log<sub>b</sub><sup>y</sup>
 
+
