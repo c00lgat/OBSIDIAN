@@ -1749,3 +1749,11 @@ In contrast, the ReplicaSet and Deployment operators by default have no control 
 DaemonSet operators are commonly used in cases when we need to collect monitoring data from all Nodes, or to run a storage, networking, or proxy daemons on all Nodes, to ensure that we have a specific type of Pod running on all Nodes at all times. 
 They are critical API resources in multi-node Kubernetes clusters. 
 The kube-proxy agent running as a Pod on every single node in the cluster, or the Calico networking node agent implementing the Pod networking across all nodes of the cluster, are both examples of applications managed by DaemonSet operators.
+
+
+Flutter
+IOS ANDROID WEB
+
+REACT
+.NET 6/7
+
