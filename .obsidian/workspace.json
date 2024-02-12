@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b059bf0eb6085629",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction to Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "bd12a92c638567ab",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,54 +178,53 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "bd12a92c638567ab",
   "lastOpenFiles": [
-    "Grokking Algorithms",
-    "IMAGES/Selectors2023.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Creating_a_Pod_to_Match_Current_State_with_Desired_State_2023.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Deployment__ReplicaSet_B_Created_.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Deployment__ReplicaSet_A_Created_2023.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_Matches_the_Desired_State_2023.png",
-    "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Current_State_and_Desired_State_Are_Different_2023_.png",
-    "IMAGES/Deployment_Points_to_ReplicaSet_B.png",
-    "IMAGES/Pasted image 20240208210219.png",
-    "IMAGES/Pasted image 20240208210140.png",
-    "IMAGES/Pasted image 20240208210057.png",
     "Introduction to Kubernetes.md",
     "Grokking Algorithms/Grokking Algorithms.md",
-    "LinuxFoundationXLFS158x-V000800_DTH.mp4",
-    "Kubernetes Linked Notes/61a5fb9c-6ebc-4d4e-9a16-22481e975246-mp4_720p.mp4",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/118_locality_sensitive_hashing/dot_hash.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/119_diffie-hellman_key_exchange/ifmmp_xpsme.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/118_locality_sensitive_hashing/dog_hash.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/119_diffie-hellman_key_exchange/hello_world.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/115_map_reduce/reduce.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/115_map_reduce/map.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/116_bloom_filters_and_hyperloglog/large_set.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/116_bloom_filters_and_hyperloglog/google_big_hash.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/116_bloom_filters_and_hyperloglog/adit_hash.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/117_the_sha_algorithms/string_to_hash.png",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/118_locality_sensitive_hashing",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/119_diffie-hellman_key_exchange",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/115_map_reduce",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/116_bloom_filters_and_hyperloglog",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/117_the_sha_algorithms",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/112_inverted_indexes",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next/111_trees",
+    "Grokking Algorithms/grokking_algorithms/images/11_where_to_go_next",
+    "Grokking Algorithms/grokking_algorithms/images/08_greedy_algorithms/083_the_set_covering_problem",
+    "Grokking Algorithms/grokking_algorithms/images/08_greedy_algorithms/084_np_complete_problems",
+    "Grokking Algorithms/grokking_algorithms/README.md",
+    "Grokking Algorithms/grokking_algorithms/12_knn/README.md",
+    "Grokking Algorithms/grokking_algorithms/05_hash_tables/kotlin/readme.md",
+    "Grokking Algorithms/grokking_algorithms/02_selection_sort/Purescript/README.md",
+    "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/Purescript/README.md",
     "grep.md",
     "Markdown Guide.md",
-    "Kubernetes Linked Notes/f781f2ec-8e70-4123-a2b8-c3dd7adfc219-mp4_720p.mp4",
     "Microservices.md",
     "Hexadecimal Numbers.md",
     "GIT & Github.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "SED.md",
     "README.md",
-    "Kubernetes Linked Notes/9c2e84a1-4434-4220-bb44-82e680681110-mp4_720p.mp4",
-    "Kubernetes Linked Notes/8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p.mp4",
-    "8358fa40-08c5-40a4-b701-92affa8e7447-mp4_720p 1.mp4",
     "Podcasts.md",
     "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
     "ReadItLater Inbox/Youtube - Be gentle with the Apple Vision Pro - ITS PLASTIC!!.md",
-    "ReadItLater Inbox",
     "Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
-    "Kubernetes Linked Notes",
     "Kubernetes Linked Notes/External Topology Kubernetes.md",
     "Kubernetes Linked Notes/Stacked Topology Kubernetes.md",
-    "Kubernetes Linked Notes/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@LFS158x_Course_Syllabus__2022_.pdf",
     "Mirantis CN50.md",
     "Excalidraw/Drawing 2024-01-31 12.35.47.excalidraw.md",
     "2023-09-03.md",
-    "2024-01-31.md",
-    "Untitled.canvas",
-    "Docker.md",
-    "CICD.md",
-    "Work Interview.md",
-    "Website Project.md",
-    "Cantrill"
+    "Untitled.canvas"
   ]
 }
