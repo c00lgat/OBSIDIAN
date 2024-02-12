@@ -23,7 +23,5 @@ A *balance* between the two complexities is usually a good way to approach solut
 
 A blazingly fast algorithm won't matter if the algorithm consumes more memory than available.
 
-
-log<sub>b</sub><sup>x</sup>+log<sub>b</sub><sup>y</sup>
-
+ 
 
