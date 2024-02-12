@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grokking Algorithms.md",
+                "file": "Grokking Algorithms/Grokking Algorithms.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grokking Algorithms.md",
+                "file": "Grokking Algorithms/Grokking Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grokking Algorithms.md",
+                "file": "Grokking Algorithms/Grokking Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grokking Algorithms.md"
+                "file": "Grokking Algorithms/Grokking Algorithms.md"
               }
             }
           },
@@ -193,6 +193,7 @@
   },
   "active": "04b98147acbe29e3",
   "lastOpenFiles": [
+    "Grokking Algorithms",
     "IMAGES/Selectors2023.png",
     "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@ReplicaSet__Creating_a_Pod_to_Match_Current_State_with_Desired_State_2023.png",
     "IMAGES/asset-v1 LinuxFoundationX+LFS158x+1T2022+type@asset+block@Deployment__ReplicaSet_B_Created_.png",
@@ -203,9 +204,8 @@
     "IMAGES/Pasted image 20240208210219.png",
     "IMAGES/Pasted image 20240208210140.png",
     "IMAGES/Pasted image 20240208210057.png",
-    "IMAGES/Pasted image 20240208205303.png",
     "Introduction to Kubernetes.md",
-    "Grokking Algorithms.md",
+    "Grokking Algorithms/Grokking Algorithms.md",
     "LinuxFoundationXLFS158x-V000800_DTH.mp4",
     "Kubernetes Linked Notes/61a5fb9c-6ebc-4d4e-9a16-22481e975246-mp4_720p.mp4",
     "grep.md",
