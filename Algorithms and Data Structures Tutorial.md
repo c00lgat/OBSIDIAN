@@ -14,3 +14,12 @@ Break down the problem into smaller problems, where each problem can be clearly 
 First, we need to ensure correctness. 
 After that, we can calculate efficiency.
 
+**Time Complexity**: how long does it take to complete a job. 
+The less time, the more efficient.
+
+**Space Complexity**: amount of memory taken up on a computer. 
+
+A *balance* between the two complexities is usually a good way to approach solutions.
+
+A blazingly fast algorithm won't matter if the algorithm consumes more memory than available.
+
