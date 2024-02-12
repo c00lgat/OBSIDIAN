@@ -9,3 +9,5 @@ Identify the worst case scenario.
 
 In order to Identify the problem, we need to specify how the input is defined and what the output looks like when the algorithm has done it's job.
 
+Break down the problem into smaller problems, where each problem can be clearly defined with an input and an output.
+
