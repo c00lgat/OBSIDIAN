@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms and Data Structures Tutorial.md",
+                "file": "Introduction to Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms and Data Structures Tutorial.md",
+                "file": "Introduction to Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithms and Data Structures Tutorial.md",
+                "file": "Introduction to Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms and Data Structures Tutorial.md"
+                "file": "Introduction to Kubernetes.md"
               }
             }
           },
@@ -193,8 +193,9 @@
   },
   "active": "e9f8280754aa8773",
   "lastOpenFiles": [
-    "Grokking Algorithms/Grokking Algorithms.md",
+    "IMAGES/Labels2023.png",
     "Algorithms and Data Structures Tutorial.md",
+    "Grokking Algorithms/Grokking Algorithms.md",
     "AWK.md",
     "Untitled",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/spam_training_data.png",
@@ -238,7 +239,6 @@
     "Kubernetes Linked Notes/External Topology Kubernetes.md",
     "Kubernetes Linked Notes/Stacked Topology Kubernetes.md",
     "Mirantis CN50.md",
-    "Excalidraw/Drawing 2024-01-31 12.35.47.excalidraw.md",
     "Untitled.canvas"
   ]
 }
