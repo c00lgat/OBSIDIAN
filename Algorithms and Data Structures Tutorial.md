@@ -11,3 +11,6 @@ In order to Identify the problem, we need to specify how the input is defined an
 
 Break down the problem into smaller problems, where each problem can be clearly defined with an input and an output.
 
+First, we need to ensure correctness. 
+After that, we can calculate efficiency.
+
