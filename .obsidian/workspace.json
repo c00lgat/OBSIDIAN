@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker.md",
+                "file": "AWS For Non-Engineers.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.51103591918945
+    "width": 394.51103591918945
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker.md",
+                "file": "AWS For Non-Engineers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker.md",
+                "file": "AWS For Non-Engineers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker.md"
+                "file": "AWS For Non-Engineers.md"
               }
             }
           },
@@ -191,11 +191,12 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "e9f8280754aa8773",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
+    "AWS resources.md",
+    "Docker.md",
     "Introduction to Kubernetes.md",
     "Work Interview.md",
-    "Docker.md",
     "IMAGES/Labels2023.png",
     "Algorithms and Data Structures Tutorial.md",
     "Grokking Algorithms/Grokking Algorithms.md",
@@ -238,7 +239,6 @@
     "Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
     "Kubernetes Linked Notes/External Topology Kubernetes.md",
-    "Kubernetes Linked Notes/Stacked Topology Kubernetes.md",
     "Untitled.canvas"
   ]
 }
