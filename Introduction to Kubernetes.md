@@ -1775,3 +1775,5 @@ Know the CEO
 Know the AZURE concepts and 
 
 
+REDIS
+SQL
