@@ -1772,6 +1772,6 @@ Get to the solution through a conversation
 
 Know the CEO 
 
-
+Know the AZURE concepts and 
 
 
