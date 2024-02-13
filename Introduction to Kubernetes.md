@@ -1757,3 +1757,21 @@ IOS ANDROID WEB
 REACT
 .NET 6/7
 
+Study the company
+know everything about the company
+
+Mention everything i know about the company
+
+Something i made even if small 
+
+I heard about it but i know that other platform better and etc. etc. 
+
+Thinking out loud V IMPORTANT 
+Do you mean this one or that one 
+Get to the solution through a conversation 
+
+Know the CEO 
+
+
+
+
