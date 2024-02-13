@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction to Kubernetes.md"
+                "file": "Docker.md"
               }
             }
           },
@@ -193,6 +193,7 @@
   },
   "active": "e9f8280754aa8773",
   "lastOpenFiles": [
+    "Introduction to Kubernetes.md",
     "IMAGES/Labels2023.png",
     "Algorithms and Data Structures Tutorial.md",
     "Grokking Algorithms/Grokking Algorithms.md",
@@ -207,7 +208,6 @@
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system/user_graph.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system/users_to_numbers.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system/users_to_five_numbers.png",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system/users_and_ratings.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/101_classifying_oranges_vs_grapefruit",
@@ -217,7 +217,6 @@
     "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/ts/01_binary_search.ts",
     "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/ts",
     "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/swift/01_binary_search.swift",
-    "Introduction to Kubernetes.md",
     "Grokking Algorithms/grokking_algorithms/README.md",
     "Grokking Algorithms/grokking_algorithms/12_knn/README.md",
     "Grokking Algorithms/grokking_algorithms/05_hash_tables/kotlin/readme.md",
