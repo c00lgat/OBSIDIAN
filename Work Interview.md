@@ -59,4 +59,5 @@ clusters MUST
 **Jenkins **CICD **pipelines** **orchestration**
 
 
+
 i would be happy to learn it if i were given the opportunity when being asked about a technology i have yet to learn 
