@@ -45,4 +45,34 @@ Two types or URI:
 - URL: typical web address. URLs will typically be used when designing web APIs.
 
 ###### What are best practices in making the URI for RESTful web-services?
-URIs should mostly be standardized 
+URIs should mostly be standardized when developing a RESTful webservice. 
+This way, clients can more easily work with the web service. 
+
+Five best practices when making RESTful URIs:
+- Develop them with the understanding that forward slashes indicate hierarchy
+- Plural nouns for branches 
+- Use hyphens (-) for multiple words
+- Use lowercase 
+- Refrain from using file extensions
+
+
+###### What are the differences between REST and SOAP?
+REST is an architecture used to develop web services
+
+SOAP stands for Simple Object Access Protocol, serves as a protocol for exchanging structured information.
+While REST has flexible standards, SOAP standards are much more strict, their implementation and statefulness often means that the Client and Server are closer connected.  
+
+REST allows data transfer in JSON, XML and other formats, SOAP only supports XML.
+
+SOAP is stricter and more niche alternative to REST.
+
+Used in cases where more regulated and staple data needs to be transferred. 
+
+
+###### What are the differences between REST and AJAX
+AJAX refers to Asynchronous Javascript and XML.
+
+A collection of web technologies that allow for asynchronous web application using the built-in XML HTTP request object. 
+
+REST API refers to an architecture for handling HTTP requests, AJAX refers to a collection of web technologies for making asynchronous web requests. 
+
