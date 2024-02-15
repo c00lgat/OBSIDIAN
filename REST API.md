@@ -75,4 +75,24 @@ AJAX refers to Asynchronous Javascript and XML.
 A collection of web technologies that allow for asynchronous web application using the built-in XML HTTP request object. 
 
 REST API refers to an architecture for handling HTTP requests, AJAX refers to a collection of web technologies for making asynchronous web requests. 
+Meaning, a REST API may handle AJAX clients and that AJAX may be used to send RESTful requests but, a REST API could not be implemented nor replaced by AJAX.
 
+
+###### What are some tools used to develop and test REST APIs?
+POSTMAN is used to ensure resources are being delivered and each facet of a REST API is performing as designed.
+
+###### What are some real world examples of REST APIs?
+REST APIs are used to manipulate data using the four main HTTP methods.
+
+Operations like retrieving file data, accessing images and even hosting a website all require the use of REST APIs.
+
+###### Advantages of REST APIs
+- Easy to learn
+- Wide range on data transfers like JSON and XML
+- Statelessness, allowing for a simpler client experience 
+- Scalability due to the independent nature of client and server
+
+###### Disadvantages of REST APIs
+- Lack of built-in security
+- Need to be versioned for backwards compatibility when being updates
+- Consistency in URIs difficult to maintain for complex projects 
