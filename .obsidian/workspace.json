@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bf3cd73474564c7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "REST API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.51103591918945
+    "width": 394.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWK.md",
+                "file": "REST API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWK.md",
+                "file": "REST API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWK.md"
+                "file": "REST API.md"
               }
             }
           },
@@ -191,8 +204,10 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "bf3cd73474564c7f",
   "lastOpenFiles": [
+    "AWK.md",
+    "REST API.md",
     "AWS resources.md",
     "Docker.md",
     "Introduction to Kubernetes.md",
@@ -200,7 +215,6 @@
     "IMAGES/Labels2023.png",
     "Algorithms and Data Structures Tutorial.md",
     "Grokking Algorithms/Grokking Algorithms.md",
-    "AWK.md",
     "Untitled",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/spam_training_data.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/points_and_curves.png",
@@ -238,7 +252,6 @@
     "ReadItLater Inbox/Youtube - Be gentle with the Apple Vision Pro - ITS PLASTIC!!.md",
     "Kubernetes.md",
     "Kubernetes Linked Notes/kube-apiserver.md",
-    "Kubernetes Linked Notes/External Topology Kubernetes.md",
     "Untitled.canvas"
   ]
 }
