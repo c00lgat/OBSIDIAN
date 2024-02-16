@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "REST API.md",
+                "file": "Web/REST API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a3ba26e5ce5f3d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/HTTP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -94,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.51103591918945,
-    "collapsed": true
+    "width": 394.51103591918945
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -111,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "REST API.md",
+                "file": "Web/HTTP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "REST API.md",
+                "file": "Web/HTTP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "REST API.md"
+                "file": "Web/HTTP.md"
               }
             }
           },
@@ -204,10 +215,13 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "bf3cd73474564c7f",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
+    "Web/REST API.md",
+    "grep.md",
+    "Web/HTTP.md",
+    "Web",
     "AWK.md",
-    "REST API.md",
     "AWS resources.md",
     "Docker.md",
     "Introduction to Kubernetes.md",
@@ -215,7 +229,6 @@
     "IMAGES/Labels2023.png",
     "Algorithms and Data Structures Tutorial.md",
     "Grokking Algorithms/Grokking Algorithms.md",
-    "Untitled",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/spam_training_data.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/points_and_curves.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/new_char.png",
@@ -239,7 +252,6 @@
     "Grokking Algorithms/grokking_algorithms/05_hash_tables/kotlin/readme.md",
     "Grokking Algorithms/grokking_algorithms/02_selection_sort/Purescript/README.md",
     "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/Purescript/README.md",
-    "grep.md",
     "Markdown Guide.md",
     "Microservices.md",
     "Hexadecimal Numbers.md",
@@ -250,8 +262,6 @@
     "Podcasts.md",
     "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
     "ReadItLater Inbox/Youtube - Be gentle with the Apple Vision Pro - ITS PLASTIC!!.md",
-    "Kubernetes.md",
-    "Kubernetes Linked Notes/kube-apiserver.md",
     "Untitled.canvas"
   ]
 }
