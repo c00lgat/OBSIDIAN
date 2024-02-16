@@ -36,4 +36,11 @@ The body of the request is for instance, when we submit a form, the form fields 
 
 Both requests and responses have HTTP bodies.
 
-Just like both Request 
+Just like both Requests and Responses have bodies, they both also have Requests and Responses headers. 
+
+There are three parts to each HTTP header, and there's also different fields on each part. 
+![[Pasted image 20240216171527.png]]
+HTTP headers will look something like the picture above. 
+There is the method GET, being made to the specific path as in the picture, using the HTTP 1.1 protocol version.
+
+Then we have all 
