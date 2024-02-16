@@ -43,4 +43,10 @@ There are three parts to each HTTP header, and there's also different fields on 
 HTTP headers will look something like the picture above. 
 There is the method GET, being made to the specific path as in the picture, using the HTTP 1.1 protocol version.
 
-Then we have all 
+Then we have all kinds of different header fields such as:
+- Request URL
+- Request Method
+- Status Code
+- Remote Address
+- Referrer Policy
+
