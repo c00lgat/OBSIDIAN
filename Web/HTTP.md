@@ -75,3 +75,31 @@ Requests fields:
 	  Typically a long string that has to do with the software that the user is using such as the operating system, the browser, and metadata like that
 - Referrer
 	  Has info regarding the referring site; typically when we click on a link and we get a pop-up that loads another website etc. 
+
+###### HTTP Status Codes
+*1xx: Informational*
+It means the request has been received and the process is currently running. 
+
+*2xx: Success*
+Means that it was successful; successfully received, understood and accepted.
+
+*3xx: Redirect*
+Usually has to do with redirection or further action must be taken.
+
+*4xx: Client Error*
+The request doesn't have what it needs from the client. 
+For example, let's say the server needs a name field sent in the request body that was not sent by the Client, the client will receive a 400 error.
+
+*5xx: Server Error*
+A Server error. The Server failed to fulfil an apparent valid request. 
+Everything seems okay as far as what the Client sent to the Server but the Client still got an error. 
+Something's wrong on the server side. 
+
+>Important Status Codes:
+*200 - OK*
+*201 - OK created*. Also means everything passed through, but that something was created in the process. If we created a blog post and everything went okay, then we might get a 201 response. 
+*301 - Moved to new URL*. Has to do with redirection.
+*304 - Not modified (Cached version)*. Meaning that if we visited a page and it got cached, and it hasn't changed at all, then we get a 304 status.
+*400 - Bad request*. If the Client is not sending the correct data to the Server.
+*401 - Unauthorized*. If the Client is missing a token or something like that. 
+*404 - Not found*. Not found; when the Client is looking for a page on the server that doesn't exist. 
