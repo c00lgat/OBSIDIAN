@@ -43,10 +43,35 @@ There are three parts to each HTTP header, and there's also different fields on 
 HTTP headers will look something like the picture above. 
 There is the method GET, being made to the specific path as in the picture, using the HTTP 1.1 protocol version.
 
-Then we have all kinds of different header fields such as:
+Then we have all kinds of different header fields. There are the General fields such as:
 - Request URL
 - Request Method
 - Status Code
 - Remote Address
 - Referrer Policy
 
+Then we have Response fields:
+- Server (nginx for example)
+- Set-Cookie (used for servers to send small pieces of data from the server to the client)
+- Content-Type (every response has a content type; for instance: 
+	  - If its an HTML page, it'll have a content type of text/html
+	  - CSS files would be text/CSS 
+	  - Images would be image/png, image/jpeg 
+	  - JSON data it will be application/JSON
+- Content-Length (length, which is in octets- 8 bit bytes)
+- Date
+
+Requests fields:
+- Cookies 
+	  If we had a cookie previously sent by the server and we need to sent it back to the server, it would be done in this field.
+- Accept-xxx 
+	  Accepting coding, accept character set, accept language. Different encodings and languages the client is able to understand.
+- Content Type
+	  If we are sending data, JSON for example, we set it to application/JSON
+- Content Length
+- Authorization 
+	  Since HTTP is stateless; so we might need to send some type of token within the authorization in the header so that we can for instance validate a user to access a protected route or protected page. (Unless sessions are being used on the server).
+- User Agent
+	  Typically a long string that has to do with the software that the user is using such as the operating system, the browser, and metadata like that
+- Referrer
+	  Has info regarding the referring site; typically when we click on a link and we get a pop-up that loads another website etc. 
