@@ -103,3 +103,4 @@ Something's wrong on the server side.
 *400 - Bad request*. If the Client is not sending the correct data to the Server.
 *401 - Unauthorized*. If the Client is missing a token or something like that. 
 *404 - Not found*. Not found; when the Client is looking for a page on the server that doesn't exist. 
+*500 - Internal server error*. Could mean anything on the server side.
