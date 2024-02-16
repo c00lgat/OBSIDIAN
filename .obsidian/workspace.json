@@ -4,47 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "01775976b2a91751",
+        "id": "f3470d8c4191038b",
         "type": "tabs",
         "children": [
           {
-            "id": "bd12a92c638567ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWK.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9f8280754aa8773",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AWS For Non-Engineers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bf3cd73474564c7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web/REST API.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9a3ba26e5ce5f3d0",
+            "id": "e71c52b0cdd37bfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -55,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -215,13 +178,14 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "9a3ba26e5ce5f3d0",
+  "active": "e71c52b0cdd37bfb",
   "lastOpenFiles": [
-    "Pasted image 20240216172821.png",
-    "Pasted image 20240216171527.png",
-    "Web/REST API.md",
-    "grep.md",
+    "IMAGES/Pasted image 20240216171527.png",
     "Web/HTTP.md",
+    "Web/REST API.md",
+    "IMAGES/Pasted image 20240216180702.png",
+    "IMAGES/Pasted image 20240216172821.png",
+    "grep.md",
     "Web",
     "AWK.md",
     "AWS resources.md",
@@ -237,8 +201,6 @@
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/machine_learning.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/number.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/business_cat.png",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system/user_graph.png",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system/users_to_numbers.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/101_classifying_oranges_vs_grapefruit",
