@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/HTTP.md",
+                "file": "Introduction to Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.51103591918945,
-    "collapsed": true
+    "width": 394.51103591918945
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/HTTP.md",
+                "file": "Introduction to Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/HTTP.md",
+                "file": "Introduction to Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/HTTP.md"
+                "file": "Introduction to Kubernetes.md"
               }
             }
           },
@@ -181,8 +180,10 @@
   },
   "active": "e71c52b0cdd37bfb",
   "lastOpenFiles": [
-    "IMAGES/Pasted image 20240216171527.png",
+    "Basic Command Syntax.md",
+    "Bash.md",
     "Web/HTTP.md",
+    "IMAGES/Pasted image 20240216171527.png",
     "Web/REST API.md",
     "IMAGES/Pasted image 20240216180702.png",
     "IMAGES/Pasted image 20240216172821.png",
@@ -225,7 +226,6 @@
     "README.md",
     "Podcasts.md",
     "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
-    "ReadItLater Inbox/Youtube - Be gentle with the Apple Vision Pro - ITS PLASTIC!!.md",
     "Untitled.canvas"
   ]
 }
