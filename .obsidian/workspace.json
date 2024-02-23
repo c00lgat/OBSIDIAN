@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWS resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWS resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basic Command Syntax.md",
+                "file": "AWS resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basic Command Syntax.md"
+                "file": "AWS resources.md"
               }
             }
           },
@@ -193,6 +193,8 @@
   },
   "active": "8fa49d042eda1f02",
   "lastOpenFiles": [
+    "AWS For Non-Engineers.md",
+    "AWS AGENDA.md",
     "Basic Command Syntax.md",
     "Bash.md",
     "Web/HTTP.md",
@@ -237,8 +239,6 @@
     "Practical Vim Edit Text at the Speed of Thought.md",
     "SED.md",
     "README.md",
-    "Podcasts.md",
-    "ReadItLater Inbox/Demo Getting Started with Minikube on Linux.md",
     "Untitled.canvas"
   ]
 }
