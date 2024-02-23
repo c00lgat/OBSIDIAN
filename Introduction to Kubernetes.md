@@ -1,4 +1,4 @@
-https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS158x+1T2022/home
+qhttps://learning.edx.org/course/course-v1:LinuxFoundationX+LFS158x+1T2022/home
 
 **Welcome to LFS158x - Introduction to Kubernetes!**
 
