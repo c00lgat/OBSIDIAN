@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS resources.md",
+                "file": "Terraform.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS resources.md",
+                "file": "Terraform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS resources.md",
+                "file": "Terraform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS resources.md"
+                "file": "Terraform.md"
               }
             }
           },
@@ -192,8 +191,9 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "c065c2bfb3e29145",
+  "active": "8fa49d042eda1f02",
   "lastOpenFiles": [
+    "Introduction to Kubernetes.md",
     "AWS For Non-Engineers.md",
     "AWS AGENDA.md",
     "Basic Command Syntax.md",
@@ -208,7 +208,6 @@
     "AWK.md",
     "AWS resources.md",
     "Docker.md",
-    "Introduction to Kubernetes.md",
     "Work Interview.md",
     "IMAGES/Labels2023.png",
     "Algorithms and Data Structures Tutorial.md",
