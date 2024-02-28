@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform.md",
+                "file": "Introduction to Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.51103591918945
+    "width": 394.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform.md",
+                "file": "Introduction to Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform.md",
+                "file": "Introduction to Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform.md"
+                "file": "Introduction to Kubernetes.md"
               }
             }
           },
@@ -191,8 +192,9 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "8fa49d042eda1f02",
+  "active": "04b98147acbe29e3",
   "lastOpenFiles": [
+    "Terraform.md",
     "Introduction to Kubernetes.md",
     "AWS For Non-Engineers.md",
     "AWS AGENDA.md",
@@ -238,7 +240,6 @@
     "GIT & Github.md",
     "Practical Vim Edit Text at the Speed of Thought.md",
     "SED.md",
-    "README.md",
     "Untitled.canvas"
   ]
 }
