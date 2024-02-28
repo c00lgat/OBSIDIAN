@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Website Project.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.51103591918945,
-    "collapsed": true
+    "width": 394.51103591918945
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Website Project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Website Project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction to Kubernetes.md"
+                "file": "Website Project.md"
               }
             }
           },
@@ -192,10 +191,10 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "04b98147acbe29e3",
+  "active": "8fa49d042eda1f02",
   "lastOpenFiles": [
-    "Terraform.md",
     "Introduction to Kubernetes.md",
+    "Terraform.md",
     "AWS For Non-Engineers.md",
     "AWS AGENDA.md",
     "Basic Command Syntax.md",
