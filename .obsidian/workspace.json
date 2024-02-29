@@ -30,19 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "59a3c0f053eb3201",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md",
+                "file": "Weunity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md",
+                "file": "Weunity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md"
+                "file": "Weunity.md"
               }
             }
           },
@@ -202,11 +192,11 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "59a3c0f053eb3201",
+  "active": "8fa49d042eda1f02",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md",
     "Pasted Image 20240228215716_512.png",
     "Weunity.md",
-    "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md",
     "Introduction to Kubernetes.md",
     "Terraform.md",
     "AWS For Non-Engineers.md",
@@ -232,7 +222,6 @@
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/new_char.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/machine_learning.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/number.png",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning/business_cat.png",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/101_classifying_oranges_vs_grapefruit",
