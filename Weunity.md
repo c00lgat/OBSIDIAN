@@ -6,3 +6,9 @@
 	 
 3) AWS Pipeline vs GitHub actions
 4) open source alternatives(?)
+
+IGW
+S3 
+route tables
+AMI
+node

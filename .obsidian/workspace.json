@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Weunity.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Weunity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction to Kubernetes.md",
+                "file": "Weunity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction to Kubernetes.md"
+                "file": "Weunity.md"
               }
             }
           },
@@ -192,10 +192,12 @@
   },
   "active": "e71c52b0cdd37bfb",
   "lastOpenFiles": [
+    "Vue.js.md",
+    "Work Interview.md",
+    "Introduction to Kubernetes.md",
     "Weunity.md",
     "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md",
     "Pasted Image 20240228215716_512.png",
-    "Introduction to Kubernetes.md",
     "Terraform.md",
     "AWS For Non-Engineers.md",
     "AWS AGENDA.md",
@@ -211,7 +213,6 @@
     "AWK.md",
     "AWS resources.md",
     "Docker.md",
-    "Work Interview.md",
     "IMAGES/Labels2023.png",
     "Algorithms and Data Structures Tutorial.md",
     "Grokking Algorithms/Grokking Algorithms.md",
