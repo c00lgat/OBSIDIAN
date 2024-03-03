@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash.md",
+                "file": "Weunity.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bash.md",
+                "file": "Weunity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bash.md",
+                "file": "Weunity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bash.md"
+                "file": "Weunity.md"
               }
             }
           },
@@ -201,12 +201,13 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "54f7dec94b25b795",
+  "active": "1c9d7972354f9cee",
   "lastOpenFiles": [
+    "Work Interview.md",
+    "Bash.md",
     "2024-03-02.md",
     "Weunity.md",
     "Vue.js.md",
-    "Work Interview.md",
     "Introduction to Kubernetes.md",
     "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md",
     "Pasted Image 20240228215716_512.png",
@@ -214,7 +215,6 @@
     "AWS For Non-Engineers.md",
     "AWS AGENDA.md",
     "Basic Command Syntax.md",
-    "Bash.md",
     "Web/HTTP.md",
     "IMAGES/Pasted image 20240216171527.png",
     "Web/REST API.md",
