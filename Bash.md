@@ -1,3 +1,4 @@
+
 Finds bugs in shell scripts
 https://www.shellcheck.net/
 

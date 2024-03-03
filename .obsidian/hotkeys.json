@@ -1,1 +1,10 @@
-{}
+{
+  "simple-time-tracker:insert": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "X"
+    }
+  ]
+}
