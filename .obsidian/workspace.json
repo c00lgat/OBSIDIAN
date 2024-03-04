@@ -156,33 +156,9 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          },
-          {
-            "id": "7750edb2874cd38d",
-            "type": "leaf",
-            "state": {
-              "type": "google-calendar-view-schedule",
-              "state": {}
-            }
-          },
-          {
-            "id": "598556a04e259e65",
-            "type": "leaf",
-            "state": {
-              "type": "google-calendar-view-month",
-              "state": {}
-            }
-          },
-          {
-            "id": "54f7dec94b25b795",
-            "type": "leaf",
-            "state": {
-              "type": "google-calendar-view-day",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
