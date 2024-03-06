@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weunity.md",
+                "file": "Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.51103591918945
+    "width": 394.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weunity.md",
+                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weunity.md",
+                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weunity.md"
+                "file": "Docker.md"
               }
             }
           },
@@ -162,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5
+    "width": 408.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,10 +181,10 @@
   },
   "active": "1c9d7972354f9cee",
   "lastOpenFiles": [
+    "Weunity.md",
     "Work Interview.md",
     "Bash.md",
     "2024-03-02.md",
-    "Weunity.md",
     "Vue.js.md",
     "Introduction to Kubernetes.md",
     "Excalidraw/Drawing 2024-02-28 21.57.01.excalidraw.md",
