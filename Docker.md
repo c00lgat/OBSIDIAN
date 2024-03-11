@@ -534,3 +534,16 @@ So basically, Docker Compose is just a structured way to contain normal common c
 - Easier to make changes, and see current configuration
 - Declarative approach: defining the desired state
 
+> By default, Compose sets up a single network for your app. Docker compose will take care of creating a shared network for all the containers when we execute this file. 
+
+- Communication will be done via container name.
+
+###### Running Docker Compose file
+`docker-compose -f mongo-services.yaml up`
+Builds, creates and starts the defined containers. 
+Also picks up any changes by stopping and recreating the container if changes are made after the creation.
+
+Despite Docker compose takes care of creating the network for our containers stack, it will still give it an explicit name, with the name of the folder in which the docker-compose file is located being the prefix: `foldername_default`.
+It also adds a prefix and a suffix to the container names that we have created:
+`foldername-containername-x` with the x denoting how many containers of said configuration are running.
+
