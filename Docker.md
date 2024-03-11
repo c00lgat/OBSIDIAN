@@ -615,3 +615,6 @@ So, in this case, where we want to stop the containers and not remove them, in o
 After running `docker ps -a`, we can see that the containers still persist but simply not running:
 ![[Pasted image 20240311194130.png]]
 
+And after we have done the changes we wanted to make, we run `docker-compose -f mongo-services.yaml start`.
+![[Pasted image 20240311210655.png]]
+
