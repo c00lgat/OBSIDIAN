@@ -547,3 +547,32 @@ Despite Docker compose takes care of creating the network for our containers sta
 It also adds a prefix and a suffix to the container names that we have created:
 `foldername-containername-x` with the x denoting how many containers of said configuration are running.
 
+Sometimes, we will have the need to control the manner in which the containers get created and up and running. 
+In the MongoDB and MongoExpress example, MongoExpress cannot connect to MongoDB if the MongoDB container has not been created yet, leading to complications that will result in the application not running properly.
+
+Such dependencies can and will show up in different projects as well. 
+
+Docker-compose provides an attribute called `depends_on`. It explicitly tells Docker that this service actually needs to wait for another service/container to be full up and running until it can run.
+Below is the modified YAML that shows the use of `depends_on` attribute:
+```YAML
+version: '3.1'
+services:
+	mongodb: # container-name
+		image: mongo
+		ports:
+			- 27017:27017 # HOST:CONTAINER
+		environment:
+			- MONGO_INITDB_ROOT_USERNAME=admin
+			- MONGO_INITDB_ROOT_PASSWORD=secret
+	mongo-express: # container-name
+		image: mongo-express
+		ports:
+			- 8081:8081
+		environment:
+			- ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+			- ME_CONFIG_MONGODB_ADMINPASSWORD=password
+			- ME_CONFIG_MONGODB_SERVER=mongodb
+		depends_on:
+			- "mongodb"
+```
+Multiple services can be added under the `depends_on` attribute. For example, if a service first needs to have the database service as well as the authentication service up and running before it can run itself, we can simply add both of them to the `depends_on` attribute.
