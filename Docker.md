@@ -453,3 +453,29 @@ When we have containers at hand that need to:
 A tool to define and run multiple services and application that belong together in one environment.
 
 
+`docker network create mongo-network`
+Creates a docker network
+
+```bash
+docker run -d \ 
+-p 27017:27017 \
+-e MONGO_INITDB_ROOT_USERNAME=admin \
+-e MONGO_INITDB_ROOT_PASSWORD=supersecret \
+--network mongo-network \
+--name mongodb \
+mongo
+```
+Creates docker container,  detaches it from the terminal, maps it out to port 27017 and gives it two environment variables: `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD`.
+It also attaches it to the network that we have created, `mongo-network`, gives it `mongodb` name and `mongo` being the image on which the container is based on.
+
+`docker ps` shows us the currently running container(s).
+
+
+We run another Docker container, mongo-express, which is the UI that communicates with MongoDB.
+```bash
+docker run -d \
+-p 8081:8081 \
+-e ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
+-e ME_CONFIG_MONGODB_ADMINPASSWORD=supersecret\
+
+```
