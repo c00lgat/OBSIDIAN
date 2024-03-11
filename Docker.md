@@ -576,3 +576,27 @@ services:
 			- "mongodb"
 ```
 Multiple services can be added under the `depends_on` attribute. For example, if a service first needs to have the database service as well as the authentication service up and running before it can run itself, we can simply add both of them to the `depends_on` attribute.
+
+###### Removing Docker compose containers
+What if we wanted to remove the containers that were started up by Docker-compose?
+Or at least restart the containers after updating our docker-compose file?
+*Control + c* will cause the containers to stop. 
+If we do not want *Control + c* to affect our containers, we simply run the docker-compose in detached (`-d`) mode:
+```bash
+docker-compose -f mongo-services.yaml up -d
+```
+
+If we had run the containers in detached mode and still wanted to stop the containers, we can use the `docker stop` command: 
+`docker stop [container-id]`
+This way is only really efficient when we have a couple containers running. But what if we had more? 20 containers up and running for example?
+For that, we use the `down` option in the docker-compose command:
+
+```bash
+docker-compose -f mongo-services.yaml down
+```
+
+The command is going to go through all the containers that were brought up after running docker-compose on the `mongo-services.yaml` file and bring the containers down.
+
+Not only does it stop the containers, but it also **removes** the containers, networks, volumes and images created by `up`.
+
+But that is not always the intention, to have th
