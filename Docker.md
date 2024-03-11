@@ -501,5 +501,9 @@ Docker compose helps us create containers that are dependent on each other as a 
 `docker-compose` is a YAML file that configures and maintains the application's services.
 With a single command, we can create and start all the services from our configuration.
 
+![[Pasted image 20240311125329.png]]
 
+What we can do is, copy the script that we used to run the container and paste it into the `docker-compose` file. The `docker-compose` file is *more structured*, abstracts away the low-level commands and provides a higher-level, more human-readable configuration format.
 
+ First two lines are the required attributes of Docker compose file. 
+ First 
