@@ -506,4 +506,31 @@ With a single command, we can create and start all the services from our configu
 What we can do is, copy the script that we used to run the container and paste it into the `docker-compose` file. The `docker-compose` file is *more structured*, abstracts away the low-level commands and provides a higher-level, more human-readable configuration format.
 
  First two lines are the required attributes of Docker compose file. 
- First 
+ First line defines the version of Docker compose which is the latest version which should be compatible with the locally installed Docker compose. 
+ 
+```YAML
+version: '3.1'
+services:
+	mongodb: # container-name
+		image: mongo
+		ports:
+			- 27017:27017 # HOST:CONTAINER
+		environment:
+			- MONGO_INITDB_ROOT_USERNAME=admin
+			- MONGO_INITDB_ROOT_PASSWORD=secret
+	mongo-express: # container-name
+		image: mongo-express
+		ports:
+			- 8081:8081
+		environment:
+			- ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+			- ME_CONFIG_MONGODB_ADMINPASSWORD=password
+			- ME_CONFIG_MONGODB_SERVER=mongodb
+```
+
+So basically, Docker Compose is just a structured way to contain normal common commands, and it is easier to edit the file if we wanted to change some variables.
+- Helps structure our commands
+- Simplifies container management
+- Easier to make changes, and see current configuration
+- Declarative approach: defining the desired state
+
