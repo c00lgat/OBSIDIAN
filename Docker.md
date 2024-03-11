@@ -449,4 +449,4 @@ https://www.youtube.com/watch?v=SXwC9fSwct8
 To have different containers that are running different services and applications within them, and need to talk to each other
 When we have containers at hand that need to:
 - Deployed and run together
-- The services need 
+- The services need to communicate
