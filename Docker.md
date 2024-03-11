@@ -599,4 +599,19 @@ The command is going to go through all the containers that were brought up after
 
 Not only does it stop the containers, but it also **removes** the containers, networks, volumes and images created by `up`.
 
-But that is not always the intention, to have th
+But that is not always our intention, to have the entire thing go down.
+What if we simply needed to reconfigure our docker-compose file and then see the changes in our application? And still retain the containers, networks and the volumes. 
+Only ***stop*** the containers and ***restart*** them to apply the changes? 
+
+Containers are known to be ephemeral. Anything written down in the data layer that does not belong to the original image will be gone when the container is removed. 
+So, containers are, by default:
+- No persistence by default
+- All data is gone, when containers are removed
+
+However, if we only wanted to stop and restart the containers, we will still have the state and data because the containers themselves were not removed. 
+
+So, in this case, where we want to stop the containers and not remove them, in order to have the data persist, we run: `docker-compose -f mongo-services.yaml stop`
+
+After running `docker ps -a`, we can see that the containers still persist but simply not running:
+![[Pasted image 20240311194130.png]]
+
