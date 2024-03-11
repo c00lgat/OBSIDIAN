@@ -450,3 +450,6 @@ To have different containers that are running different services and application
 When we have containers at hand that need to:
 - Deployed and run together
 - The services need to communicate
+A tool to define and run multiple services and application that belong together in one environment.
+
+
