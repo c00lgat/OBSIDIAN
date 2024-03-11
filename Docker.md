@@ -444,4 +444,9 @@ Registries are split into repositories just like GitHub: You can `docker pull` f
 To use Docker Hub, we will need a username, repository name and a tag: e.g. `acantril/containerofcats:latest`
 
 ---
-# DEMO: Uploading our application to Docker Hub
+https://www.youtube.com/watch?v=SXwC9fSwct8
+# Docker Compose
+To have different containers that are running different services and applications within them, and need to talk to each other
+When we have containers at hand that need to:
+- Deployed and run together
+- The services need 
