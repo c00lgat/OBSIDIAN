@@ -463,7 +463,7 @@ docker run -d \
 -e MONGO_INITDB_ROOT_PASSWORD=supersecret \
 --network mongo-network \
 --name mongodb \
-mongo
+mongo # IMAGE
 ```
 Creates docker container,  detaches it from the terminal, maps it out to port 27017 and gives it two environment variables: `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD`.
 It also attaches it to the network that we have created, `mongo-network`, gives it `mongodb` name and `mongo` being the image on which the container is based on.
@@ -476,6 +476,30 @@ We run another Docker container, mongo-express, which is the UI that communicate
 docker run -d \
 -p 8081:8081 \
 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
--e ME_CONFIG_MONGODB_ADMINPASSWORD=supersecret\
-
+-e ME_CONFIG_MONGODB_ADMINPASSWORD=supersecret \
+-e ME_CONFIG_MONGODB_SERVER=mongodb \
+--network mongo-network \
+--name mongo-express \
+mongo-express # IMAGE
 ```
+
+`docker ps` should once again show us the currently running containers:
+![[Pasted image 20240311124548.png]]
+
+In order to check whether Mongo-express has connected properly to our MongoDB database, we log into http://localhost:8081 and log in using the credentials we have entered as environment variables. 
+
+Running `docker logs [containerID]` shows us the container logs. 
+![[Pasted image 20240311124743.png]]
+
+In this demo, we demonstrated running two containers that are co-dependent using the normal, plain Docker run command. 
+
+In a microservice application, where the scale of containers that have to communicate is much bigger, it becomes clear pretty quick that using the plain Docker commands to run them all in the same manner that we have just done is not efficient at all. 
+
+Not only that, but if we wanted to stop containers or re-run them, it can get very manual and tedious to do.
+
+Docker compose helps us create containers that are dependent on each other as a single unit.
+`docker-compose` is a YAML file that configures and maintains the application's services.
+With a single command, we can create and start all the services from our configuration.
+
+
+

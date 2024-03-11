@@ -1,7 +1,8 @@
 {
   "accentColor": "#89ee81",
-  "baseFontSize": 30,
+  "baseFontSize": 24,
   "cssTheme": "Obsidianite",
   "theme": "obsidian",
-  "translucency": false
+  "translucency": false,
+  "baseFontSizeAction": true
 }
