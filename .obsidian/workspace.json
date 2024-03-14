@@ -8,29 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1c9d7972354f9cee",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "IMAGES/Pasted image 20240311124548.png"
-              }
-            }
-          },
-          {
             "id": "e9fc220e5cbc3da9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Student Support.md",
+                "file": "Basic Shell Programming.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.51103591918945,
-    "collapsed": true
+    "width": 270.500732421875
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Student Support.md",
+                "file": "Basic Shell Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Student Support.md",
+                "file": "Basic Shell Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Student Support.md"
+                "file": "Basic Shell Programming.md"
               }
             }
           },
@@ -192,10 +180,13 @@
   },
   "active": "e9fc220e5cbc3da9",
   "lastOpenFiles": [
+    "Basic Command Syntax.md",
+    "Basic Shell Programming.md",
+    "Bash.md",
+    "iNT Student Support.md",
     "Pasted image 20240314172006.png",
     "Pasted image 20240314170435.png",
     "IMAGES/Pasted image 20240311124548.png",
-    "iNT Student Support.md",
     "IMAGES/Pasted image 20240311124715.png",
     "IMAGES/Pasted image 20240311124743.png",
     "IMAGES/Pasted Image 20240228215716_512.png",
@@ -204,10 +195,8 @@
     "IMAGES/Pasted image 20240311210655.png",
     "IMAGES/Pasted image 20240311210615.png",
     "IMAGES/Pasted image 20240311194130.png",
-    "IMAGES/Pasted image 20240311194017.png",
     "Weunity.md",
     "Work Interview.md",
-    "Bash.md",
     "2024-03-02.md",
     "Vue.js.md",
     "Introduction to Kubernetes.md",
@@ -215,7 +204,6 @@
     "Terraform.md",
     "AWS For Non-Engineers.md",
     "AWS AGENDA.md",
-    "Basic Command Syntax.md",
     "Web/HTTP.md",
     "Web/REST API.md",
     "grep.md",
