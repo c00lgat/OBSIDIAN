@@ -664,3 +664,4 @@ They will be identical in terms of the filesystem, the permissions and the metad
 ![[Pasted image 20240314133322.png]]
 
 ###### Section 1, 2. Quick Container Run
+https://labs.play-with-docker.com/
