@@ -663,3 +663,4 @@ If we added a second server with a second instance of the Docker Engine running,
 They will be identical in terms of the filesystem, the permissions and the metadata.
 ![[Pasted image 20240314133322.png]]
 
+###### Section 1, 2. Quick Container Run
