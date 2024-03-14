@@ -11,15 +11,26 @@
             "id": "1c9d7972354f9cee",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "IMAGES/Pasted image 20240311124548.png"
+              }
+            }
+          },
+          {
+            "id": "e9fc220e5cbc3da9",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker.md",
+                "file": "iNT.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker.md",
+                "file": "iNT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker.md",
+                "file": "iNT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker.md"
+                "file": "iNT.md"
               }
             }
           },
@@ -179,19 +190,21 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "1c9d7972354f9cee",
+  "active": "e9fc220e5cbc3da9",
   "lastOpenFiles": [
-    "Pasted image 20240314133322.png",
-    "Pasted image 20240311210655.png",
-    "Pasted image 20240311210615.png",
-    "Pasted image 20240311194130.png",
-    "Pasted image 20240311194017.png",
-    "Pasted image 20240311125415.png",
-    "Pasted image 20240311125329.png",
-    "Pasted image 20240311125128.png",
-    "Pasted image 20240311124743.png",
-    "Pasted image 20240311124715.png",
-    "Pasted image 20240311124548.png",
+    "Pasted image 20240314170435.png",
+    "IMAGES/Pasted image 20240311124548.png",
+    "iNT.md",
+    "IMAGES/Pasted image 20240311124715.png",
+    "IMAGES/Pasted image 20240311124743.png",
+    "IMAGES/Pasted Image 20240228215716_512.png",
+    "Docker.md",
+    "IMAGES/Pasted image 20240314133322.png",
+    "IMAGES/Pasted image 20240311210655.png",
+    "IMAGES/Pasted image 20240311210615.png",
+    "IMAGES/Pasted image 20240311194130.png",
+    "IMAGES/Pasted image 20240311194017.png",
+    "IMAGES/Pasted image 20240311125415.png",
     "Weunity.md",
     "Work Interview.md",
     "Bash.md",
@@ -209,7 +222,6 @@
     "Web",
     "AWK.md",
     "AWS resources.md",
-    "Docker.md",
     "Algorithms and Data Structures Tutorial.md",
     "Grokking Algorithms/Grokking Algorithms.md",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning",
@@ -226,7 +238,6 @@
     "Grokking Algorithms/grokking_algorithms/05_hash_tables/kotlin/readme.md",
     "Grokking Algorithms/grokking_algorithms/02_selection_sort/Purescript/README.md",
     "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/Purescript/README.md",
-    "Markdown Guide.md",
     "Untitled.canvas"
   ]
 }
