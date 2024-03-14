@@ -639,4 +639,14 @@ CMD python app.py
 ```
 Docker goes over to the docker registry, pulls the python image from the registry; and that only includes just Python and its binaries and its libraries. It doesn't contain host drivers, or the Linux Kernel or anything outside of what Python needs to run. 
 
-Once Docker grabs the Python image, docker then runs the `RUN pip install flask` command. It installs flask which a Python dependency. While installing Flask, it creates 
+Once Docker grabs the Python image, docker then runs the `RUN pip install flask` command. It installs flask which a Python dependency. While installing Flask, it creates a new layer that adds Flask.
+What happens in the background is that Docker executes quick little containers for each of these layers running the commands inside these layers and then storing them as their own distinct location on the Linux host which is building this. 
+
+`COPY . .` command copies our source code from the Host that we are running the commands on onto its own layer stacked on top of the others.
+
+The Docker registry is a Universal app distribution. It is an image registry where people can store their Docker images and share them with others or store them online. Dockerhub is the most popular but there are other registries out there as well. 
+
+Each image has its *own unique* SHA hash that identifies all those layers together in a way that we can guarantee if we looked at the hash on two different systems, we can tell for sure if its the exact same image with the exact same files and metadata or not. 
+
+`docker push` takes the layers of the image that we have created and pushes them to a registry. Once the image is there, we can go to another machine and `docker pull`, which pulls an identical copy of the image that we have created on the first machine. 
+This is one of the core principals of Docker that we are able to take the software that we made on one machine and run it exactly the same way on another system that runs different OS or different hardware. 
