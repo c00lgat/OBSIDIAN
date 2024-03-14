@@ -650,3 +650,16 @@ Each image has its *own unique* SHA hash that identifies all those layers togeth
 
 `docker push` takes the layers of the image that we have created and pushes them to a registry. Once the image is there, we can go to another machine and `docker pull`, which pulls an identical copy of the image that we have created on the first machine. 
 This is one of the core principals of Docker that we are able to take the software that we made on one machine and run it exactly the same way on another system that runs different OS or different hardware. 
+
+Imagine a Windows or a Linux machine running the Docker engine, which is a daemon that manages all the steps that need to be taken such as building the image, pulling the images from the registry, verifying the image, and running it. 
+`systemctl start docker` might need to be ran before we can start using the docker commands. 
+Then we get the image through a `docker pull` command and then run a container from the image with a `docker run my-app` command. 
+Once that is done, we will have the python app running in its own container. 
+That container is known as a *namespace*. That's a Linux features that prevents the application running in the container from seeing the rest of the operating system. It gets its own blank file system, and it will only include the files that were in that image that we just built. It will have its own IP address, its own NIC and its own process list. Basically, looks like its own system inside there.
+Then, if we run that `docker run` command again with our image name or image hash, then we get an identical container running side-by-side. These two processes are isolated from each other.  
+The Python app in container 1 can't see the Python app in container 2. 
+If we change a file in container 2, container 1 won't see that file by default. 
+If we added a second server with a second instance of the Docker Engine running, and did the same thing, we can have a highly available setup with our application running many times for redundancy or better performance etc.
+They will be identical in terms of the filesystem, the permissions and the metadata.
+![[Pasted image 20240314133322.png]]
+
