@@ -618,4 +618,25 @@ After running `docker ps -a`, we can see that the containers still persist but s
 And after we have done the changes we wanted to make, we run `docker-compose -f mongo-services.yaml start`.
 ![[Pasted image 20240311210655.png]]
 
-###### Connecting our own application to the DB
+---
+https://www.udemy.com/course/docker-mastery/
+# Section 1
+Build. Ship. Run.
+Non-containerized software turned into a docker image, put it onto a registry, get it to wherever we need to run it and finally create a container from it. 
+
+Docker is a package manager of sorts. Except its cross OS, cross platform and program language agnostic. It is versatile and truly mobile. 
+
+Every Dockerfile starts off with the `FROM` keyword. 
+And then comes the rest of the code such as the `RUN` commands, `WORKDIR`, `COPY`, etc., and finally the `CMD` command.
+Docker reads these instructions from the top down, creating layers which are moved around servers as *tarballs* and inside those layers are files, directories, file permissions and sometimes metadata. 
+A Dockerfile example:
+```Dockerfile
+FROM python
+RUN pip install flask
+WORKDIR /app
+COPY . .
+CMD python app.py
+```
+Docker goes over to the docker registry, pulls the python image from the registry; and that only includes just Python and its binaries and its libraries. It doesn't contain host drivers, or the Linux Kernel or anything outside of what Python needs to run. 
+
+Once Docker grabs the Python image, docker then runs the `RUN pip install flask` command. It installs flask which a Python dependency. While installing Flask, it creates 
