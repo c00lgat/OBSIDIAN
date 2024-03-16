@@ -20,5 +20,8 @@ Disks are usually accessed in physical blocks rather than a byte (8 bits) at a t
 A file is represented by an *inode*, a kind of serial number containing information about the data that makes up the file: to whom this file belongs and where is it located on the hard disk.
 
 ###### inode
-Inodes (index node) are data structures in a fileystem that store metadata about files, such as file permissions, timestamps, and file size. 
-Each file and directory in a filesystem is represented by an inode, which helps the operating system locate and manage the file's data on the disk `ls -i`
+Inodes (index node) are data structures in a filesystem that store metadata about files, such as file permissions, timestamps, and file size. 
+Each file and directory in a filesystem is represented by an inode, which helps the operating system locate and manage the file's data on the disk `ls -i`. 
+Metadata regarding the file. 
+![[Pasted image 20240316160149.png]]
+Helps the filesystem determine where a file is located, as the inode stores the attributes and disk block location of the object's data.
