@@ -37,3 +37,26 @@ Here's an exhaustive list of the things that an inode stores about files/directo
 - Size of the file
 - Number of blocks allocated to the file
 - Pointers to the data blocks of the file
+
+###### Partitioning
+Disk partitioning in Linux involves dividing a physical disk into multiple logical sections called partitions. 
+Each partition behaves like a separate disk, with its own file system and storage space.
+Partitioning is done for various reasons, such as organizing data, installing multiple operating systems, or improving performance and security.
+
+Tools for disk partitioning:
+- *fdisk* - basic command-line partitioning tool, it does not support GPT.
+- *parted* - is a command line tool that supports both MBR and GPT partitioning
+- *gparted* - GUI version of parted.
+- *gdisk* - fdisk, but it does not support MBR. Only supports GPT.
+
+Useful commands for disk management:
+- `df`
+- `du`
+
+###### Mount
+Mounting is the process of making a file system available for access in a specific location in the Linux directory tree. 
+When you mount a file system, you attach it to an existing directory (known as the mount point), and the files and directories in the file system become accessible under that mount point. 
+
+Commands for mount and unmount:
+- `sudo mount /dev/sdb1/mnt/mydisk`
+- `sudo unmount /mnt/mydisk`
