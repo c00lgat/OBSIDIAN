@@ -25,3 +25,15 @@ Each file and directory in a filesystem is represented by an inode, which helps 
 Metadata regarding the file. 
 ![[Pasted image 20240316160149.png]]
 Helps the filesystem determine where a file is located, as the inode stores the attributes and disk block location of the object's data.
+File-system object attributes may include [metadata](https://en.wikipedia.org/wiki/Metadata "Metadata") (times of last change, access, modification), as well as owner and [permission](https://en.wikipedia.org/wiki/File_system_permissions "File system permissions") data.
+
+Here's an exhaustive list of the things that an inode stores about files/directories:
+- File Type
+- Owner
+- Group
+- Access permissions
+- Timestamps
+- Number of hardlinks to the file 
+- Size of the file
+- Number of blocks allocated to the file
+- Pointers to the data blocks of the file
