@@ -18,3 +18,7 @@ The standard Linux file systems organize storage on hard disk drives.
 Disks are usually accessed in physical blocks rather than a byte (8 bits) at a time. Block sizes may range from 512 bytes to 4000 or larger.
 
 A file is represented by an *inode*, a kind of serial number containing information about the data that makes up the file: to whom this file belongs and where is it located on the hard disk.
+
+###### inode
+Inodes (index node) are data structures in a fileystem that store metadata about files, such as file permissions, timestamps, and file size. 
+Each file and directory in a filesystem is represented by an inode, which helps the operating system locate and manage the file's data on the disk `ls -i`
