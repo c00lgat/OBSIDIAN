@@ -52,6 +52,20 @@ Disks are usually accessed in physical blocks rather than a byte (8 bits) at a t
 
 A file is represented by an *inode*, a kind of serial number containing information about the data that makes up the file: to whom this file belongs and where is it located on the hard disk.
 
+###### Block devices and standards streams
+Let's take a closer look on the `/dev` directory:
+```BASH
+myuser@hostname:~$ ls -l /dev
+brw-rw----  1 root disk    	8,   0 Apr  1 18:30 sda
+brw-rw----  1 root disk    	8,   1 Apr  1 18:30 sda1
+brw-rw----  1 root disk    	8,   2 Apr  1 18:30 sda2
+…
+lrwxrwxrwx  1 root root     	15 Apr  1 18:29 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root root      	15 Apr  1 18:29 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root root       	15 Apr  1 18:29 stdout -> /proc/self/fd/1
+```
+
+
 ###### inode
 Inodes (index node) are data structures in a filesystem that store metadata about files, such as file permissions, timestamps, and file size. 
 Each file and directory in a filesystem is represented by an inode, which helps the operating system locate and manage the file's data on the disk `ls -i`. 
