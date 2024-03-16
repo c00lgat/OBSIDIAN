@@ -17,6 +17,21 @@ Journaling - the ability of fault tolerance through logs. In case a system goes 
 
 ![[Pasted image 20240315185006.png]]
 
+Another important feature of the Linux filesystem: filenames are Case sensitive, and files have no extensions. Use the `file` command to figure out the content type of a file:
+```SHELL
+myuser@hostname:~$ touch file1.png
+myuser@hostname:~$ echo "hi" > file1.png
+myuser@hostname:~$ ls
+	file1.png
+...
+myuser@hostname:~$ file file1.png
+	file1.png: ASCII text
+myuser@hostname:~$ file File1.png
+	File1: ERROR: cannot open 'File1.png' (No such file or     directory)
+```
+
+In the above example, we used the `touch` command to create an empty file called `file1.png`, and the text "hi" was written into it (this command uses the `>` operator which will be discussed later on). Then we use the `file` command to inspect the type of the file. We can see that even though the file extension is `.png` (which is known for images), linux recognizes the file type as a regular text file, which is the correct type. In linux OS, file extensions are meaningless.
+
 ###### Block Storage
 The standard Linux file systems organize storage on hard disk drives. 
 Disks are usually accessed in physical blocks rather than a byte (8 bits) at a time. Block sizes may range from 512 bytes to 4000 or larger.
@@ -64,3 +79,4 @@ When you mount a file system, you attach it to an existing directory (known as t
 Commands for mount and unmount:
 - `sudo mount /dev/sdb1/mnt/mydisk`
 - `sudo unmount /mnt/mydisk`
+
