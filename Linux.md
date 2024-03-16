@@ -1,3 +1,7 @@
+- Good Linux tutorial for beginners [https://ryanstutorials.net/linuxtutorial/](https://ryanstutorials.net/linuxtutorial/)
+- Linux comprehensive book for beginners [https://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf](https://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
+- Advanced Linux and Bash scripting [https://tldp.org/LDP/abs/abs-guide.pdf](https://tldp.org/LDP/abs/abs-guide.pdf)
+
 ###### File System
 There are a number of types of filesystems out there. A system might host a number of different filesystems.
 Common filesystems:
