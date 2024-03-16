@@ -2,6 +2,19 @@
 - Linux comprehensive book for beginners [https://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf](https://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
 - Advanced Linux and Bash scripting [https://tldp.org/LDP/abs/abs-guide.pdf](https://tldp.org/LDP/abs/abs-guide.pdf)
 
+###### Terminal Shortcuts
+| Key or key combination          | Function                                                                                                           |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Ctrl+A or Home key              | Move cursor to the *beginning* of the command line.                                                                |
+| Ctrl+D                          | *Log out* of the current shell session, equal to typing the `exit` or `logout` commands                            |
+| Ctrl+E or End key               | Move cursor to the *end* of the command line.                                                                      |
+| Ctrl+L                          | *Clear* this terminal, equivalent to the `clear` command                                                           |
+| Ctrl+R                          | *Search* command history                                                                                           |
+| ArrowUp and ArrowDown           | *Browse* history. Go to the line that you want to repeat, edit details if necessary, and press Enter to save time. |
+| Shift+PageUp and Shift+PageDown | *Browse* terminal buffer                                                                                           |
+| Tab                             | Command or filename completion                                                                                     |
+| Tab Tab                         | Shows file or command completion possibilities.                                                                    |
+
 ###### File System
 There are a number of types of filesystems out there. A system might host a number of different filesystems.
 Common filesystems:
@@ -15,6 +28,19 @@ Virtual File System (VFS) - the bridge/layer between the filesystem and the appl
 
 Journaling - the ability of fault tolerance through logs. In case a system goes down while dealing with files, the system will be able to figure out where it left off if the filesystem supports journaling, since it had logged the last thing it was doing before the system went down. 
 
+Here are a few common types in Linux OS:
+
+| Symbol | Meaning      |
+| ------ | ------------ |
+| -      | Regular file |
+| d      | Directory    |
+| l      | Link         |
+| c      | Special file |
+| s      | Socket       |
+| p      | Named pipe   |
+| b      | Block device |
+
+
 ![[Pasted image 20240315185006.png]]
 
 Another important feature of the Linux filesystem: filenames are Case sensitive, and files have no extensions. Use the `file` command to figure out the content type of a file:
@@ -27,7 +53,7 @@ myuser@hostname:~$ ls
 myuser@hostname:~$ file file1.png
 	file1.png: ASCII text
 myuser@hostname:~$ file File1.png
-	File1: ERROR: cannot open 'File1.png' (No such file or     directory)
+	File1: ERROR: cannot open 'File1.png' (No such file or directory)
 ```
 
 In the above example, we used the `touch` command to create an empty file called `file1.png`, and the text "hi" was written into it (this command uses the `>` operator which will be discussed later on). Then we use the `file` command to inspect the type of the file. We can see that even though the file extension is `.png` (which is known for images), linux recognizes the file type as a regular text file, which is the correct type. In linux OS, file extensions are meaningless.
