@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "07f4031ef9edac36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.500732421875,
-    "collapsed": true
+    "width": 270.500732421875
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
+                "file": "iNT Tutorials/Linux/Linux Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
+                "file": "iNT Tutorials/Linux/Linux Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md"
+                "file": "iNT Tutorials/Linux/Linux Intro.md"
               }
             }
           },
@@ -192,12 +178,12 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "07f4031ef9edac36",
+  "active": "f9e524f278c11b56",
   "lastOpenFiles": [
+    "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
     "Pasted image 20240317141342.png",
     "Pasted image 20240317141330.png",
     "iNT Tutorials/Linux/Exercises/2_basic_linux_commands.md",
-    "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
     "iNT Tutorials/Linux/Tutorials/5_bash_and_other_shells.md",
     "iNT Tutorials/Linux/Tutorials",
     "2_basic_linux_commands.png",
@@ -215,7 +201,6 @@
     "Pasted image 20240317121151.png",
     "Pasted image 20240317121118.png",
     "Pasted image 20240316230919.png",
-    "Pasted image 20240316230746.png",
     "Linux - Intro- multichoice questions.md",
     "iNT Tutorials/Linux",
     "Linux - Intro- multichoice questions.htm",
