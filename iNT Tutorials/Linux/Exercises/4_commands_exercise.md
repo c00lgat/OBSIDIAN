@@ -56,20 +56,54 @@ https://linuxhandbook.com/linux-alias-command/
 ### Command History and Clearing:
 
 1. Clear the command history using the `history` command.
+	- `history clear`
 2. Clear the terminal screen using the `clear` command.
-
-File and Directory Permissions:
-
+	- `clear`
+---
+### File and Directory Permissions:
 1. Display the size of each file in blocks using the `ls` command.
+	- `ls -lba`
 2. Add execute permission to the owner of a file using the `chmod` command.
+	- `chmod o+x`
 3. Set the owner and group of a file to match another file using the `chown` command.
-
-Alias and Unalias:
+	- `chwon --reference=file2.txt file1.txt`
+---
+### Alias and Unalias:
 
 1. Display a list of currently defined aliases using the `alias` command.
-2. Remove all aliases using the `unalias` command.
+	```BASH
+	anan1337@localhost:~> alias
+alias +='pushd .'
+alias -- -='popd'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias beep='echo -en "\007"'
+alias cd..='cd ..'
+alias dir='ls -l'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip --color=auto'
+alias l='ls -alF'
+alias la='ls -la'
+alias ll='ls -l'
+alias ls='_ls'
+alias ls-l='ls -l'
+alias md='mkdir -p'
+alias o='less'
+alias rd='rmdir'
+alias rehash='hash -r'
+alias unmount='echo "Error: Try the command: umount" 1>&2; false'
+alias you='if test "$EUID" = 0 ; then /sbin/yast2 online_update ; else su - -c "/sbin/yast2 online_update" ; fi'
 
-Exiting and Logging Out:
+	```
+2. Remove all aliases using the `unalias` command.
+	- `unalias -a`
+	- Does not affect aliases defined in your shell's configuration files (like `.bashrc` or `.zshrc`), so they will reappear in new shell sessions unless you remove or comment them out in those files.
+---
+### Exiting and Logging Out:
 
 1. Exit the shell without saving the command history using the `exit` command.
+	- `unset HISTFILE && exit`
 2. Force logout, even if processes are running, using the `logout` command.
+	- `killall -u anan1337`
