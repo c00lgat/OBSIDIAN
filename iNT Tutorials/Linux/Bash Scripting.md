@@ -13,3 +13,7 @@ Overall, learning Bash can help you to become a more efficient and effective sys
 The UNIX shell program interprets user commands to the kernel, which are either directly entered by the user, or which can be read from a file called the **shell script**. Apart from passing commands to the kernel, the main task of a shell is providing a **user environment**, which can be configured individually using shell resource configuration files.
 
 The below example shows the evolution bash program. It starts simply by grouping a few commands into a file, without any error handling and flow control... until the form of a well written professional script.
+
+### From Bash commands to Bash program
+Consider the below script to clean up log files (messages, wtmp) in /var/log. Copy and execute the following snippet to a .sh file in your local Linux machine.
+
