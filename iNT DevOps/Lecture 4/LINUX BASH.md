@@ -45,4 +45,14 @@ Bash, short for "Bourse Again Shell", is a popular shell and command language in
 - exit
 - logout
 
+###### Exit codes
+*Exit code 0*: all good.
+*Exit code anything other than 0*: no good. The code did not execute properly. *127* means command *not found*.
 
+*echo $?*: Prints the exit code of the last command
+
+
+Tests/4_bash_script_test
+Submit into submissions.
+mkdir into submissions, dir should be my name/4_linux/scriptname.sh
+Submission/AnanAbed/4_linux/script.sh
