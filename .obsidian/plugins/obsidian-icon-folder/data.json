@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiTmux",
       "SiKubernetes",
       "FabVuejs",
       "SiTerraform",
-      "SiPython",
-      "LiInfinity"
+      "SiPython"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -39,5 +39,6 @@
   "Terraform.md": "SiTerraform",
   "Vue.js.md": "FabVuejs",
   "Kubernetes.md": "SiKubernetes",
-  "Introduction to Kubernetes.md": "SiKubernetes"
+  "Introduction to Kubernetes.md": "SiKubernetes",
+  "Tmux.md": "SiTmux"
 }
