@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Tutorials/Linux/Exercises/Untitled.md",
+                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.500732421875
+    "width": 270.500732421875,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Tutorials/Linux/Exercises/Untitled.md",
+                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Tutorials/Linux/Exercises/Untitled.md",
+                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Tutorials/Linux/Exercises/Untitled.md"
+                "file": "iNT Tutorials/Linux/Exercises/4_commands_exercise.md"
               }
             }
           },
@@ -194,7 +195,7 @@
   "active": "07f4031ef9edac36",
   "lastOpenFiles": [
     "iNT Tutorials/Linux/Exercises/2_basic_linux_commands.md",
-    "iNT Tutorials/Linux/Exercises/Untitled.md",
+    "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
     "iNT Tutorials/Linux/Tutorials/5_bash_and_other_shells.md",
     "iNT Tutorials/Linux/Tutorials",
     "2_basic_linux_commands.png",
