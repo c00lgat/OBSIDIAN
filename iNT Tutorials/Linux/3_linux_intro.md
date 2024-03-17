@@ -42,3 +42,5 @@ Change to `/etc`
 	- `cat \etc\localtime`
 
 ## Kernel System Calls
+`tail -n 10 | strace ./whatIdo`
+![[Pasted image 20240317130610.png]]

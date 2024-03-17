@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux.md",
+                "file": "iNT Tutorials/Linux/3_linux_intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux.md",
+                "file": "iNT Tutorials/Linux/3_linux_intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux.md",
+                "file": "iNT Tutorials/Linux/3_linux_intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux.md"
+                "file": "iNT Tutorials/Linux/3_linux_intro.md"
               }
             }
           },
@@ -193,7 +193,12 @@
   },
   "active": "07f4031ef9edac36",
   "lastOpenFiles": [
+    "iNT Tutorials/Linux/3_linux_intro.pandoc.md",
+    "iNT Tutorials/Linux/3_linux_intro.pandoc.tex",
     "iNT Tutorials/Linux/3_linux_intro.md",
+    "Pasted image 20240317130610.png",
+    "iNT Tutorials/Linux/Linux.md",
+    "Pasted image 20240317130605.png",
     "iNT Tutorials/Linux/3_linux_intro.docx",
     "Pasted image 20240317121258.png",
     "Pasted image 20240317121206.png",
@@ -202,20 +207,17 @@
     "Pasted image 20240316230919.png",
     "Pasted image 20240316230746.png",
     "Pasted image 20240316230658.png",
-    "iNT Tutorials/Linux/Linux.md",
     "Linux - Intro- multichoice questions.md",
     "iNT Tutorials/Linux",
     "Linux - Intro- multichoice questions.htm",
     "iNT Tutorials",
     "Pasted image 20240316160149.png",
-    "Pasted image 20240315185006.png",
     "2024-03-02.md",
     "2023-09-03.md",
     "Basic Shell Programming.md",
     "Basic Command Syntax.md",
     "Bash.md",
     "iNT Student Support.md",
-    "Pasted image 20240314172006.png",
     "Docker.md",
     "Weunity.md",
     "Work Interview.md",
@@ -232,12 +234,10 @@
     "AWK.md",
     "AWS resources.md",
     "Algorithms and Data Structures Tutorial.md",
-    "Grokking Algorithms/Grokking Algorithms.md",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/101_classifying_oranges_vs_grapefruit",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors",
-    "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/zig/binary-search.zig",
     "Untitled.canvas"
   ]
 }
