@@ -11,24 +11,26 @@ https://www.geeksforgeeks.org/man-command-in-linux-with-examples/
 3. Display a specific manual page for a built-in shell command using the `help` command.
 	- `help echo`
 4. Display the full description of the `pwd` command using the `whatis` command.
-```BASH
-anan1337@localhost:~> whatis pwd
-bash_builtins (1)    - bash built-in commands, see bash(1)
-pwd (n)              - Return the absolute path of the current working directory
-
-```
-
-Navigation and File Management:
-
+	```BASH
+	anan1337@localhost:~> whatis pwd
+	bash_builtins (1)    - bash built-in commands, see bash(1)
+	pwd (n)              - Return the absolute path of the current working directory
+	```
+---
+https://linuxhandbook.com/symbolic-link-linux/
+https://linuxhandbook.com/linux-alias-command/
+### Navigation and File Management:
 1. Display the physical current working directory using the `pwd` command.
+	 ![[Pasted image 20240317141342.png]]
 2. Force symbolic links to be followed when changing directories using the `cd` command.
+	- 
 3. List all files and directories, including hidden ones, with detailed information using the `ls` command.
-4. Prevent creating a new file if it already exists using the `touch` command.
-5. Display the first 5 lines of the `file.txt` file using the `head` command.
-6. Display the last 10 lines of the `file.txt` file using the `tail` command.
-
-File System Navigation:
-
+	- `ls -la`
+1. Prevent creating a new file if it already exists using the `touch` command.
+2. Display the first 5 lines of the `file.txt` file using the `head` command.
+3. Display the last 10 lines of the `file.txt` file using the `tail` command.
+---
+### File System Navigation:
 1. Recursively list all files and directories in the current directory and its subdirectories using the `ls` command.
 2. Change to a directory that starts with a hyphen using the `cd` command.
 3. List files and directories by modification time, newest first, using the `ls` command.
