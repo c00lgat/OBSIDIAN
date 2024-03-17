@@ -34,5 +34,15 @@ Bash, short for "Bourse Again Shell", is a popular shell and command language in
 - clear
 - cp
 	- Wildcards: \*, \[], ?
-- 
+- mv (also used for renaming)
+- mkdir (-p)
+- rm (-f, -r)
+- where (where python3)
+- alias
+	- alias c=clear
+- unalias
+	- Removes a specific alias
+- exit
+- logout
+
 
