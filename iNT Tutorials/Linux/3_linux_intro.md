@@ -23,7 +23,17 @@ Change directory to **/proc**.
 ---
 Change to `/etc`
 1. How long does the system keep the log file in which user logins are monitored?
+	- `cat /etc/logrotate.d/mcelog`
+	- Logs are controlled by `logrotate`. It keeps a configurable number of `*.log.1`, `*.log.2.gz`, ... files (compressing old ones).
+	- See `man logrotate`, `/etc/cron.daily/logrotate` and `/etc/logrotate.conf`.
+	- Reading logs can most easily be done with `journalctl` - see `man journalctl`, and [this article](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
 2. How many users are defined on your system? Don't count them, let the computer do it for you using wc!
+	- `cat /etc/passwd | wc`
 3. How many groups do you have?
+	- `cat \etc\passwd | wc`
+	![[Pasted image 20240317121118.png]]
 4. Which version of bash is installed on this system?
+	- `bash --version`
+	![[Pasted image 20240317121206.png]]
 5. Where is the time zone information kept?
+	- 

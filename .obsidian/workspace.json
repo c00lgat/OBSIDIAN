@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.500732421875
+    "width": 270.500732421875,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -193,6 +194,9 @@
   },
   "active": "07f4031ef9edac36",
   "lastOpenFiles": [
+    "Pasted image 20240317121206.png",
+    "Pasted image 20240317121151.png",
+    "Pasted image 20240317121118.png",
     "Pasted image 20240316230919.png",
     "Pasted image 20240316230746.png",
     "Pasted image 20240316230658.png",
@@ -213,9 +217,6 @@
     "Pasted image 20240314172006.png",
     "Pasted image 20240314170435.png",
     "IMAGES/Pasted image 20240311124548.png",
-    "IMAGES/Pasted image 20240311124715.png",
-    "IMAGES/Pasted image 20240311124743.png",
-    "IMAGES/Pasted Image 20240228215716_512.png",
     "Docker.md",
     "Weunity.md",
     "Work Interview.md",
