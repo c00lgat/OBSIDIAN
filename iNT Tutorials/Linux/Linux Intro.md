@@ -24,9 +24,9 @@ Common filesystems:
 
 To check what filesystem the system is currently running, run `df`.
 
-Virtual File System (VFS) - the bridge/layer between the filesystem and the applications.
+**Virtual File System** (VFS) - the bridge/layer between the filesystem and the applications. Allows the applications to access the Filesystem for its processes and purposes.
 
-Journaling - the ability of fault tolerance through logs. In case a system goes down while dealing with files, the system will be able to figure out where it left off if the filesystem supports journaling, since it had logged the last thing it was doing before the system went down. 
+**Journaling** - the ability of fault tolerance through logs. In case a system goes down while dealing with files, the system will be able to figure out where it left off if the filesystem supports journaling, since it had logged the last thing it was doing before the system went down. 
 
 Here are a few common types in Linux OS:
 
@@ -154,6 +154,8 @@ Here's an exhaustive list of the things that an inode stores about files/directo
 Disk partitioning in Linux involves dividing a physical disk into multiple logical sections called partitions. 
 Each partition behaves like a separate disk, with its own file system and storage space.
 Partitioning is done for various reasons, such as organizing data, installing multiple operating systems, or improving performance and security.
+
+Each different partition can run a different Filesystem than the other.
 
 Tools for disk partitioning:
 - *fdisk* - basic command-line partitioning tool, it does not support GPT.
