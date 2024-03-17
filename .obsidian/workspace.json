@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Tutorials/Linux/Bash Scripting.md",
+                "file": "iNT Tutorials/Linux/Exercises/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.500732421875,
-    "collapsed": true
+    "width": 270.500732421875
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Tutorials/Linux/Bash Scripting.md",
+                "file": "iNT Tutorials/Linux/Exercises/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Tutorials/Linux/Bash Scripting.md",
+                "file": "iNT Tutorials/Linux/Exercises/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Tutorials/Linux/Bash Scripting.md"
+                "file": "iNT Tutorials/Linux/Exercises/Untitled.md"
               }
             }
           },
@@ -194,10 +193,15 @@
   },
   "active": "07f4031ef9edac36",
   "lastOpenFiles": [
-    "iNT Tutorials/Linux/Linux Intro.md",
+    "iNT Tutorials/Linux/Exercises/2_basic_linux_commands.md",
+    "iNT Tutorials/Linux/Exercises/Untitled.md",
+    "iNT Tutorials/Linux/Tutorials/5_bash_and_other_shells.md",
+    "iNT Tutorials/Linux/Tutorials",
+    "2_basic_linux_commands.png",
+    "iNT Tutorials/Linux/Tutorials/3_linux_intro.md",
+    "iNT Tutorials/Linux/Exercises",
     "iNT Tutorials/Linux/Bash Scripting.md",
-    "iNT Tutorials/Linux/5_bash_and_other_shells.md",
-    "iNT Tutorials/Linux/3_linux_intro.md",
+    "iNT Tutorials/Linux/Linux Intro.md",
     "iNT Tutorials/Linux/3_linux_intro.pandoc.md",
     "iNT Tutorials/Linux/3_linux_intro.pandoc.tex",
     "Pasted image 20240317130610.png",
@@ -214,7 +218,6 @@
     "iNT Tutorials/Linux",
     "Linux - Intro- multichoice questions.htm",
     "iNT Tutorials",
-    "Pasted image 20240316160149.png",
     "2024-03-02.md",
     "2023-09-03.md",
     "Basic Shell Programming.md",
@@ -234,12 +237,8 @@
     "Web/REST API.md",
     "grep.md",
     "Web",
-    "AWK.md",
-    "AWS resources.md",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/101_classifying_oranges_vs_grapefruit",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors",
     "Untitled.canvas"
   ]
 }
