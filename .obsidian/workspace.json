@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Tutorials/Linux/3_linux_intro.md",
+                "file": "iNT Tutorials/Linux/Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Tutorials/Linux/3_linux_intro.md",
+                "file": "iNT Tutorials/Linux/Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Tutorials/Linux/3_linux_intro.md",
+                "file": "iNT Tutorials/Linux/Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Tutorials/Linux/3_linux_intro.md"
+                "file": "iNT Tutorials/Linux/Linux.md"
               }
             }
           },
@@ -193,6 +193,7 @@
   },
   "active": "07f4031ef9edac36",
   "lastOpenFiles": [
+    "iNT Tutorials/Linux/3_linux_intro.md",
     "iNT Tutorials/Linux/3_linux_intro.docx",
     "Pasted image 20240317121258.png",
     "Pasted image 20240317121206.png",
@@ -202,7 +203,6 @@
     "Pasted image 20240316230746.png",
     "Pasted image 20240316230658.png",
     "iNT Tutorials/Linux/Linux.md",
-    "iNT Tutorials/Linux/3_linux_intro.md",
     "Linux - Intro- multichoice questions.md",
     "iNT Tutorials/Linux",
     "Linux - Intro- multichoice questions.htm",
@@ -238,7 +238,6 @@
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/101_classifying_oranges_vs_grapefruit",
     "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors",
     "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/zig/binary-search.zig",
-    "Grokking Algorithms/grokking_algorithms/01_introduction_to_algorithms/zig",
     "Untitled.canvas"
   ]
 }

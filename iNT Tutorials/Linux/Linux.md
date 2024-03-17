@@ -173,3 +173,34 @@ Commands for mount and unmount:
 - `sudo mount /dev/sdb1/mnt/mydisk`
 - `sudo unmount /mnt/mydisk`
 
+### ✏️ Kernel System Calls
+
+(https://github.com/nirsht/DevOpsCourseINT2024/blob/main/Tutorials/Linux/3_linux_intro.md#pencil2-kernel-system-calls)
+
+The Linux Kernel was presented in our first linux lecture - the main component of a Linux OS which functions as the core interface between a computer's hardware and its applications.
+
+
+Then we moved to learn how to use the Terminal and communicate with the OS using commands such as `ls` or `chmod`.  
+But how does it really work? We type a command and hit the Enter key, then what happens? This question tries to investigate this point.
+
+Under the hood, linux commands are compiled C code (get yourself to know what is a compilation process if you don't know..). The C code contains **system calls**. The system call is the fundamental interface between an application and the Linux kernel.
+
+In simple words, when your application wants to use the hardware (e.g. calculate something in the CPU, or write data to the disk), you create a system call to the Linux Kernel, and the linux kernel talks with the hardware on your behalf. Read more about what System Calls are.
+
+`strace` is a Linux command, which traces system calls and signals of a program. It is an important tool to debug your programs in advanced cases. In this assignment, you should follow the `strace` output of a program in order to understand what exactly it does (i.e. what are the system calls of the program to the kernel). You can assume that the program does only what you can see by using `strace`.
+
+To run the program, open a linux terminal in an empty directory and perform:
+
+```shell
+wget https://github.com/alonitac/DevOpsBootcampUPES/raw/main/strace_ex/whatIdo
+```
+
+The `wget` command is able to retrieve data from the internet.
+
+1. Give the `whatIdo` file an exec permission (make sure you don't get Permission denied when running it).
+2. Run the program using strace: `strace ./whatIdo`.
+3. Follow strace output. Tip: many lines in the beginning are part of the load of the program. The first “interesting” line comes only at the end of the output.
+
+Try to get a general idea of what this program does by observing the sys calls and the directory you've run the program.
+
+** Credit for Alon Itach
