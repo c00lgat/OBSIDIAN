@@ -31,4 +31,21 @@ Additionally we can *turn a pane into a window* by using the prefix followed by 
 To close a pane, we can either close the shell that is running or use the prefix followed by the `x` key.
 
 As well as panes and windows, we should also cover sessions. 
-Sessions can be created by using the tmux command 
+Sessions can be created by using the tmux command whilst not attached to a current tmux. 
+This will create the new session and attach you to it. 
+
+We can also pass the S argument to the tmux new command:
+`tmux new -s my-session`to create a session with a name.
+
+Whilst in tmux, a new session can be created using the new command. 
+
+We can list any active sessions we have using `tmux ls` command when outside of tmux, or by pressing the prefix followed by `s` when inside of a session.
+
+We can also use the prefix followed by the `w` key to preview windows for each session as well and attach to these sessions by pressing enter.
+
+To attach when outside of a session you can use the tmux attach command which will attach to your most recent session or you can pass in the `-t` argument to specify which session you want to attach to. 
+
+That covers most of the basic commands for tmux but there are plenty of others. https://tmuxcheatsheet.com/
+
+Vim tmux navigation: `ctrl + h`, `ctrl + j`, `ctrl + k`, `ctrl + l`.
+Allows seamless integration with both tmux and neovim.
