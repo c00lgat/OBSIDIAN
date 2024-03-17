@@ -23,17 +23,22 @@ https://linuxhandbook.com/linux-alias-command/
 1. Display the physical current working directory using the `pwd` command.
 	 ![[Pasted image 20240317141342.png]]
 2. Force symbolic links to be followed when changing directories using the `cd` command.
-	- 
+	- ?
 3. List all files and directories, including hidden ones, with detailed information using the `ls` command.
 	- `ls -la`
-1. Prevent creating a new file if it already exists using the `touch` command.
-2. Display the first 5 lines of the `file.txt` file using the `head` command.
-3. Display the last 10 lines of the `file.txt` file using the `tail` command.
+4. Prevent creating a new file if it already exists using the `touch` command.
+	- `touch -c file`
+5. Display the first 5 lines of the `file.txt` file using the `head` command.
+	- `head -n 5 file.txt`
+6. Display the last 10 lines of the `file.txt` file using the `tail` command.
+	- `tail -n 10 file.txt`
 ---
 ### File System Navigation:
 1. Recursively list all files and directories in the current directory and its subdirectories using the `ls` command.
+	- `ls -R`
 2. Change to a directory that starts with a hyphen using the `cd` command.
-3. List files and directories by modification time, newest first, using the `ls` command.
+	- `mkdir ./-hype
+1. List files and directories by modification time, newest first, using the `ls` command.
 
 File System Management:
 
