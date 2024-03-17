@@ -71,8 +71,8 @@ https://linuxhandbook.com/linux-alias-command/
 ### Alias and Unalias:
 
 1. Display a list of currently defined aliases using the `alias` command.
-	```BASH
-	anan1337@localhost:~> alias
+```
+anan1337@localhost:~> alias
 alias +='pushd .'
 alias -- -='popd'
 alias ..='cd ..'
@@ -95,8 +95,7 @@ alias rd='rmdir'
 alias rehash='hash -r'
 alias unmount='echo "Error: Try the command: umount" 1>&2; false'
 alias you='if test "$EUID" = 0 ; then /sbin/yast2 online_update ; else su - -c "/sbin/yast2 online_update" ; fi'
-
-	```
+```
 2. Remove all aliases using the `unalias` command.
 	- `unalias -a`
 	- Does not affect aliases defined in your shell's configuration files (like `.bashrc` or `.zshrc`), so they will reappear in new shell sessions unless you remove or comment them out in those files.
