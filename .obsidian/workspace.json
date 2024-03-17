@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "414cd399955cc462",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tmux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.500732421875,
-    "collapsed": true
+    "width": 270.500732421875
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT DevOps/Lecture 4/LINUX BASH.md",
+                "file": "Tmux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT DevOps/Lecture 4/LINUX BASH.md",
+                "file": "Tmux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT DevOps/Lecture 4/LINUX BASH.md"
+                "file": "Tmux.md"
               }
             }
           },
@@ -179,10 +191,11 @@
       "obsidian-read-it-later:ReadItLater: Save clipboard": false
     }
   },
-  "active": "f9e524f278c11b56",
+  "active": "414cd399955cc462",
   "lastOpenFiles": [
-    "iNT DevOps/Lecture 3/Lecture.md",
     "iNT DevOps/Lecture 4/LINUX BASH.md",
+    "Tmux.md",
+    "iNT DevOps/Lecture 3/Lecture.md",
     "iNT DevOps/Lecture 4",
     "iNT Tutorials/Linux/Linux Intro.md",
     "iNT DevOps/Lecture 3",
@@ -226,7 +239,6 @@
     "Terraform.md",
     "AWS For Non-Engineers.md",
     "AWS AGENDA.md",
-    "Web/HTTP.md",
     "Untitled.canvas"
   ]
 }
