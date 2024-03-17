@@ -31,4 +31,7 @@ Bash, short for "Bourse Again Shell", is a popular shell and command language in
 - less
 - file
 - history and pipe
+- clear
+- cp
+- 
 
