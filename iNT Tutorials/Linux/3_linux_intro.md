@@ -3,6 +3,8 @@
 
 
 # Exercises
+
+## Know your system
 Change directory to **/proc**.
 1. What CPU(s) is the system running on?
 	- `cat /proc/cpuinfo`
@@ -29,11 +31,14 @@ Change to `/etc`
 	- Reading logs can most easily be done with `journalctl` - see `man journalctl`, and [this article](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
 2. How many users are defined on your system? Don't count them, let the computer do it for you using wc!
 	- `cat /etc/passwd | wc`
-3. How many groups do you have?
+	- https://phoenixnap.com/kb/how-to-list-users-linux
+1. How many groups do you have?
 	- `cat \etc\passwd | wc`
 	![[Pasted image 20240317121118.png]]
 4. Which version of bash is installed on this system?
 	- `bash --version`
 	![[Pasted image 20240317121206.png]]
 5. Where is the time zone information kept?
-	- 
+	- `cat \etc\localtime`
+
+## Kernel System Calls

@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.500732421875,
-    "collapsed": true
+    "width": 270.500732421875
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -194,6 +193,7 @@
   },
   "active": "07f4031ef9edac36",
   "lastOpenFiles": [
+    "Pasted image 20240317121258.png",
     "Pasted image 20240317121206.png",
     "Pasted image 20240317121151.png",
     "Pasted image 20240317121118.png",
@@ -216,7 +216,6 @@
     "iNT Student Support.md",
     "Pasted image 20240314172006.png",
     "Pasted image 20240314170435.png",
-    "IMAGES/Pasted image 20240311124548.png",
     "Docker.md",
     "Weunity.md",
     "Work Interview.md",
