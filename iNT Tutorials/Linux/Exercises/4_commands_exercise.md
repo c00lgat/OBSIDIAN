@@ -37,17 +37,23 @@ https://linuxhandbook.com/linux-alias-command/
 1. Recursively list all files and directories in the current directory and its subdirectories using the `ls` command.
 	- `ls -R`
 2. Change to a directory that starts with a hyphen using the `cd` command.
-	- `mkdir ./-hype
-1. List files and directories by modification time, newest first, using the `ls` command.
-
-File System Management:
-
+	- `mkdir ./-hyphen`
+	- `cd ./-hyphen/`
+3. List files and directories by modification time, newest first, using the `ls` command.
+	- `ls -lt`
+---
+### File System Management:
 1. Recursively copy a directory and its contents using the `cp` command.
+	- `cp -r Dir1 Dir1Copy`
 2. Interactively move a file, prompting before overwriting, using the `mv` command.
+	- `mv -i file.txt /home/anan1337/Dir1/file.txt`
+	- If the file already exists, the terminal is going to ask if i want to replace the already existing file.txt inside Dir1.
 3. Create parent directories if they don't exist using the `mkdir` command.
+	- `mkdir -p /home/anan1337/newDir/thisDirDoesntExist/anotherNewDir`
 4. Forcefully remove a directory and its contents using the `rm` command.
-
-Command History and Clearing:
+	- `rm -rf directory`
+---
+### Command History and Clearing:
 
 1. Clear the command history using the `history` command.
 2. Clear the terminal screen using the `clear` command.
