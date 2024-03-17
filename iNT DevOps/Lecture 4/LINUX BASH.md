@@ -22,7 +22,7 @@ Bash, short for "Bourse Again Shell", is a popular shell and command language in
 - help
 - whatis
 - pwd
-- cd (., .., ,-)
+- cd (., .., ~, -)
 - ls
 - touch
 - head
