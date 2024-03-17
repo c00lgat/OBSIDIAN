@@ -33,5 +33,6 @@ Bash, short for "Bourse Again Shell", is a popular shell and command language in
 - history and pipe
 - clear
 - cp
+	- Wildcards: \*, \[], ?
 - 
 
