@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux Intro.md",
+                "file": "iNT DevOps/Lecture 3/Lecture.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux Intro.md",
+                "file": "iNT DevOps/Lecture 3/Lecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux Intro.md",
+                "file": "iNT DevOps/Lecture 3/Lecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Tutorials/Linux/Linux Intro.md"
+                "file": "iNT DevOps/Lecture 3/Lecture.md"
               }
             }
           },
@@ -180,6 +180,11 @@
   },
   "active": "f9e524f278c11b56",
   "lastOpenFiles": [
+    "iNT Tutorials/Linux/Linux Intro.md",
+    "iNT DevOps/Lecture 3/Lecture.md",
+    "iNT DevOps/Lecture 3",
+    "iNT DevOps",
+    "ןNT",
     "iNT Tutorials/Linux/Exercises/4_commands_exercise.md",
     "Pasted image 20240317141342.png",
     "Pasted image 20240317141330.png",
@@ -190,7 +195,6 @@
     "iNT Tutorials/Linux/Tutorials/3_linux_intro.md",
     "iNT Tutorials/Linux/Exercises",
     "iNT Tutorials/Linux/Bash Scripting.md",
-    "iNT Tutorials/Linux/Linux Intro.md",
     "iNT Tutorials/Linux/3_linux_intro.pandoc.md",
     "iNT Tutorials/Linux/3_linux_intro.pandoc.tex",
     "Pasted image 20240317130610.png",
@@ -222,9 +226,6 @@
     "AWS AGENDA.md",
     "Web/HTTP.md",
     "Web/REST API.md",
-    "Web",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/103_introduction_to_machine_learning",
-    "Grokking Algorithms/grokking_algorithms/images/10_k_nearest_neighbors/102_building_a_recommendations_system",
     "Untitled.canvas"
   ]
 }
