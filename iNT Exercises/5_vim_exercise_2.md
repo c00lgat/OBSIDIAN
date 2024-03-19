@@ -46,7 +46,7 @@ Lession 1.3: Text editing - deletion
 
 Instructions: Correct the lines of text below by deleting the
 
-unneccesary characters with  x . Hint: use 0 to return to the left.
+unnecessary characters with  x . Hint: use 0 to return to the left.
 
   
 
