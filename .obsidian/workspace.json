@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise_2.md",
+                "file": "iNT DevOps/Lecture 5/More of bash scripting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise_2.md",
+                "file": "iNT DevOps/Lecture 5/More of bash scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise_2.md",
+                "file": "iNT DevOps/Lecture 5/More of bash scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise_2.md"
+                "file": "iNT DevOps/Lecture 5/More of bash scripting.md"
               }
             }
           },
@@ -180,8 +180,8 @@
   },
   "active": "f9e524f278c11b56",
   "lastOpenFiles": [
-    "iNT Exercises/5_vim_exercise.md",
     "iNT Exercises/5_vim_exercise_2.md",
+    "iNT Exercises/5_vim_exercise.md",
     "iNT DevOps/Lecture 5/More of bash scripting.md",
     "iNT Exercises",
     "Learning the vi and Vim Editors.md",
