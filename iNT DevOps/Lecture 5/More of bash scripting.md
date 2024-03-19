@@ -6,3 +6,5 @@ echo "anan" > /dev/null
 Takes the output of left side to the right side. We are not writing inside a file, but rather, if the command returns an error, it redirects the stderror to the /dev/null path instead of displaying it to the terminal.
 
 ![[Pasted image 20240319182614.png]]
+ https://github.com/nirsht/DevOpsCourseINT2024/blob/main/Tutorials/Linux/5_bash_and_other_shells.md
+ 
