@@ -52,7 +52,7 @@ unneccesary characters with  x . Hint: use 0 to return to the left.
 
 Faar ouxt inn trhe unchttarteed bakckwataers oof the unfashionable end of the
 
-Weeestern sSpiral arrm ohf thze Gallaxy lies ae sm*all unregarded yellow syun.
+Weeestern sSpiral arrm ohf thze Gallaxy lies ae small unregarded yellow syun.
 
   
 
@@ -64,7 +64,7 @@ possessibon of aw gopod fort^une muost bee in wantxxx of a) wife.&&
 
 Int waes lourvve at first sighght.. The feeirst time Yossarian sa9w th$e
 
-chaplain heee fell maaadly in lov*ve with himmmm.
+chaplain heee fell maaadly in lovve with himmmm.
 
   
 
@@ -84,7 +84,7 @@ IIIn fair% Verrrrona, whereq wiie lay# ou987r sc"ene,
 
 Frrom ++ancient grudddge brrrreak tto #new mutiny,,,
 
-Where7 ciiviil blo*od mak^es civil h=ands uncclean.
+Where7 ciiviil blood mak^es civil h=ands uncclean.
 
   
 
