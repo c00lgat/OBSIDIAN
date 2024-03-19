@@ -69,7 +69,7 @@ echo my script is running...
 8. Try to use the `myscript` command in another new terminal session. Does it work? Why?
 
 
-### :pencil2: Manipulate env vars
+### Manipulate env vars
 
 In your current terminal session, type `printenv` to list your environment variables. 
 Find specific env var to manipulate, such that the command `cd ~` will actually change to the `/tmp` directory, instead to your regular home directory.
