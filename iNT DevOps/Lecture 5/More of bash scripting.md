@@ -21,3 +21,10 @@ To remove an environment variable, run the `unset` command: `unset TEMP` is goin
 In order to have the environment variable available for all future sessions of the terminal, we have to add it to the `./bashrc` file.
 
 `$PATH` - specifies the directories in which the shell looks for executable files. It is a colon-separated list of directories (e.g., /usr/bin:/bin:/usr/local/bin)
+
+`where ls` prints where the command is located. 
+The output is `ls: aliased to ls -G` `/bin/ls`. In `/bin` exists the binary of the `ls` command. 
+Since `/bin` is in the `PATH` environment variable, the system was able to find the binary for the `ls` command.
+
+Adding directories to the PATH:
+`export PATH=$PATH:/add/directory`

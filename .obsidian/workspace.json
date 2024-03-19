@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT DevOps/Lecture 5/More of bash scripting.md",
+                "file": "iNT Tutorials/Linux/Tutorials/5_environment_variables.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8209416ba59bf8f8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT DevOps/Lecture 5/More of bash scripting.md",
+                "file": "iNT Tutorials/Linux/Tutorials/5_environment_variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT DevOps/Lecture 5/More of bash scripting.md",
+                "file": "iNT Tutorials/Linux/Tutorials/5_environment_variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT DevOps/Lecture 5/More of bash scripting.md"
+                "file": "iNT Tutorials/Linux/Tutorials/5_environment_variables.md"
               }
             }
           },
@@ -180,9 +181,12 @@
   },
   "active": "f9e524f278c11b56",
   "lastOpenFiles": [
+    "iNT Tutorials/Linux/Tutorials/5_bash_and_other_shells.md",
+    "iNT Tutorials/Linux/Tutorials/5_environment_variables.md",
+    "iNT Tutorials/Linux/Tutorials/3_linux_intro.md",
+    "iNT DevOps/Lecture 5/More of bash scripting.md",
     "iNT Exercises/5_vim_exercise_2.md",
     "iNT Exercises/5_vim_exercise.md",
-    "iNT DevOps/Lecture 5/More of bash scripting.md",
     "iNT Exercises",
     "Learning the vi and Vim Editors.md",
     "Regex.md",
@@ -208,9 +212,6 @@
     "iNT Tutorials/Linux/Exercises/2_basic_linux_commands.md",
     "AWS reStart/Canvas/Tagging.md",
     "Python Learning Resources.md",
-    "Python Essentials 1.md",
-    "OCaml.md",
-    "Networks and Subnetting, AWS.md",
     "iNT DevOps/Lecture 5",
     "IMAGES/Pasted image 20240317121118.png",
     "IMAGES/Pasted image 20240316230919.png",
