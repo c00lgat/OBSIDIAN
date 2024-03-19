@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise.md",
+                "file": "iNT Exercises/5_vim_exercise_2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise.md",
+                "file": "iNT Exercises/5_vim_exercise_2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise.md",
+                "file": "iNT Exercises/5_vim_exercise_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iNT Exercises/5_vim_exercise.md"
+                "file": "iNT Exercises/5_vim_exercise_2.md"
               }
             }
           },
@@ -180,8 +180,9 @@
   },
   "active": "f9e524f278c11b56",
   "lastOpenFiles": [
-    "iNT DevOps/Lecture 5/More of bash scripting.md",
     "iNT Exercises/5_vim_exercise.md",
+    "iNT Exercises/5_vim_exercise_2.md",
+    "iNT DevOps/Lecture 5/More of bash scripting.md",
     "iNT Exercises",
     "Learning the vi and Vim Editors.md",
     "Regex.md",
@@ -210,7 +211,6 @@
     "Python Essentials 1.md",
     "OCaml.md",
     "Networks and Subnetting, AWS.md",
-    "grep.md",
     "iNT DevOps/Lecture 5",
     "IMAGES/Pasted image 20240317121118.png",
     "IMAGES/Pasted image 20240316230919.png",
